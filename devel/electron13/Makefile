@@ -56,7 +56,7 @@ TEST_DEPENDS=		git:devel/git \
 			npm-node14>0:www/npm-node14
 
 USES=		bison cpe dos2unix gettext-tools gl gnome jpeg localbase:ldflags \
-		ninja pkgconfig python:2.7,build,test shebangfix tar:xz xorg
+		ninja pkgconfig python:3.5+,build,test shebangfix tar:xz xorg
 CPE_VENDOR=	electronjs
 DOS2UNIX_FILES=	third_party/skia/third_party/vulkanmemoryallocator/include/vk_mem_alloc.h \
 		third_party/vulkan_memory_allocator/src/vk_mem_alloc.h
