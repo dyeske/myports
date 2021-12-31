@@ -1,13 +1,13 @@
 # Created by: Matías Pizarro <matias@pizarro.net>
 
 PORTNAME=	bcompare
-# https://www.scootersoftware.com/bcompare-3.3.13.18981.i386.rpm
 DISTVERSION=	3.3.13
 DISTVERSIONSUFFIX=	.18981 
 CATEGORIES=	editors devel linux
 MASTER_SITES=	http://scootersoftware.com/
 PKGNAMEPREFIX=	linux-
 EXTRACT_SUFX=	.rpm
+# EXTRACT_DEPENDS=	rpm2cpio.pl:archivers/rpm2cpio
 
 MAINTAINER=	matias@pizarro.net
 COMMENT=	Compare, sync, and merge files and folders (X11)
@@ -17,15 +17,15 @@ LICENSE_NAME=	Scooter Software License
 LICENSE_FILE=	${FILESDIR}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
+# USE_LINUX_RPM=	yes
+USE_LINUX_RPM_BAD_PERMS=	yes
 ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	upstream only supports amd64 and i386
-
-USES=		desktop-file-utils gnome linux shared-mime-info shebangfix
-USE_LINUX=	base:run devtools:build qt-x11:run xorglibs:run
-
+USES=		linux:c7
+USE_LINUX=	xorglibs
 NO_BUILD=	yes
-
 NO_WRKSUBDIR=	true
+# USE_LDCONFIG=	yes
 
 DATA_FILTER=	-type d -o -name *\.html -o -name *\.js -o -name *\.css -o \
 		-name *\.gif -o -name *\.png -o -name *\.jpg -o -name \
@@ -33,6 +33,7 @@ DATA_FILTER=	-type d -o -name *\.html -o -name *\.js -o -name *\.css -o \
 		BCompare.mad -o -name RPM-GPG-KEY-scootersoftware -o -name \
 		scootersoftware.repo
 
+# DISTNAME_amd64=	${DISTNAME}.x86_64
 DISTNAME_i386=	${DISTNAME}.i386
 LIB_FILES=	libQt4Pas.so.5 lib7z.so libunrar.so nosched.so
 PROGRAM_FILES=	BCompare bcmount32 bcmount64
@@ -42,21 +43,25 @@ SCRIPT_FILES=	bcmount.sh kde_context_menu
 
 .if ${ARCH} == i386
 LIBDIR=		lib
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-usr_bin_bcompare_i386
+# EXTRA_PATCHES=	${PATCHDIR}/extra-patch-usr_bin_bcompare_i386
 PLIST_SUB+=	QT4AMD64="@comment "
 .elif ${ARCH} == amd64
 LIBDIR=		lib64
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-usr_bin_bcompare_amd64
+# EXTRA_PATCHES=	${PATCHDIR}/extra-patch-usr_bin_bcompare_amd64
 PLIST_SUB+=	QT4AMD64=""
 .endif
 
 BCLIB_SRC=	${WRKSRC}/usr/${LIBDIR}/beyondcompare
 BCLIB_STG=	${STAGEDIR}${PREFIX}/lib/beyondcompare
 
-SHEBANG_FILES=	${BCLIB_SRC}/bcmount.sh ${BCLIB_SRC}/kde_context_menu
+# SHEBANG_FILES=	${BCLIB_SRC}/bcmount.sh ${BCLIB_SRC}/kde_context_menu
 
-pre-install:
-	${LINUXBASE}/usr/bin/gcc -Wall -fPIC -shared ${FILESDIR}/nosched.c -ldl -o ${BCLIB_SRC}/nosched.so
+post-extract:
+	# cd ${WRKSRC} && rpm2cpio.pl 2>/dev/null *.rpm | ${CPIO} -idu --quiet
+	cd ${WRKSRC} && ls -la
+
+# pre-install:
+# 	${LINUXBASE}/usr/bin/gcc -Wall -fPIC -shared ${FILESDIR}/nosched.c -ldl -o ${BCLIB_SRC}/nosched.so
 
 do-install:
 # bin
