@@ -67,7 +67,7 @@ TEST_DEPENDS=	electron${ELECTRON_VER_MAJOR}:devel/electron${ELECTRON_VER_MAJOR} 
 		bash:shells/bash
 
 USES=		desktop-file-utils gl gmake gnome jpeg pkgconfig \
-		python:build shebangfix xorg
+		python:3.5+,build shebangfix xorg
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	microsoft
