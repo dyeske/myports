@@ -1,7 +1,0 @@
-[
-{ type: install
-  message: <<EOM
-Place your Suica card on PaSoRi before executing SuicaValue.
-EOM
-}
-]
