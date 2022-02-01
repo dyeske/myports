@@ -43,6 +43,7 @@
     SUBDIR += bareos-webui
     SUBDIR += bareos18-webui
     SUBDIR += bareos19-webui
+    SUBDIR += bareos20-webui
     SUBDIR += beehive
     SUBDIR += bkmrkconv
     SUBDIR += bluefish
@@ -195,8 +196,8 @@
     SUBDIR += gitlab-workhorse
     SUBDIR += glassfish
     SUBDIR += glassfish4
-    SUBDIR += glpi
     SUBDIR += glewlwyd
+    SUBDIR += glpi
     SUBDIR += gnome-user-share
     SUBDIR += go-www
     SUBDIR += gobuffalo
@@ -391,7 +392,6 @@
     SUBDIR += mod_mono
     SUBDIR += mod_mpm_itk
     SUBDIR += mod_perl2
-    SUBDIR += mod_php73
     SUBDIR += mod_php74
     SUBDIR += mod_php80
     SUBDIR += mod_php81
@@ -475,6 +475,7 @@
     SUBDIR += oneshot
     SUBDIR += onionbalance
     SUBDIR += onionshare
+    SUBDIR += onlyoffice-documentserver
     SUBDIR += openarc
     SUBDIR += opencart
     SUBDIR += orangehrm
@@ -1375,17 +1376,14 @@
     SUBDIR += pglogd
     SUBDIR += phalcon
     SUBDIR += phalcon4
-    SUBDIR += php73-opcache
-    SUBDIR += php73-session
-    SUBDIR += php73-tidy
     SUBDIR += php74-opcache
     SUBDIR += php74-session
     SUBDIR += php74-tidy
     SUBDIR += php80-opcache
-    SUBDIR += php81-opcache
     SUBDIR += php80-session
-    SUBDIR += php81-session
     SUBDIR += php80-tidy
+    SUBDIR += php81-opcache
+    SUBDIR += php81-session
     SUBDIR += php81-tidy
     SUBDIR += phpbb
     SUBDIR += phpbb3
@@ -1591,6 +1589,7 @@
     SUBDIR += py-fake-useragent
     SUBDIR += py-falcon
     SUBDIR += py-fastapi
+    SUBDIR += py-fastapi-users
     SUBDIR += py-feedgenerator
     SUBDIR += py-flask
     SUBDIR += py-flask-admin
@@ -1671,6 +1670,7 @@
     SUBDIR += py-httpretty
     SUBDIR += py-httptools
     SUBDIR += py-httpx
+    SUBDIR += py-httpx-oauth
     SUBDIR += py-httpx-socks
     SUBDIR += py-httpx013
     SUBDIR += py-hyper
@@ -1724,11 +1724,7 @@
     SUBDIR += py-python-multipart
     SUBDIR += py-pyweblib
     SUBDIR += py-pywikibot
-    SUBDIR += py-qt5-webchannel
     SUBDIR += py-qt5-webengine
-    SUBDIR += py-qt5-webkit
-    SUBDIR += py-qt5-webkitwidgets
-    SUBDIR += py-qt5-websockets
     SUBDIR += py-quilt3
     SUBDIR += py-rackspace-monitoring
     SUBDIR += py-recaptcha
@@ -1822,6 +1818,7 @@
     SUBDIR += rejik
     SUBDIR += reportmagic
     SUBDIR += repos-style
+    SUBDIR += reproxy
     SUBDIR += resin3
     SUBDIR += restbed
     SUBDIR += retawq
@@ -1838,12 +1835,14 @@
     SUBDIR += rubygem-actioncable52
     SUBDIR += rubygem-actioncable60
     SUBDIR += rubygem-actioncable61
+    SUBDIR += rubygem-actioncable70
     SUBDIR += rubygem-actionpack4
     SUBDIR += rubygem-actionpack5
     SUBDIR += rubygem-actionpack50
     SUBDIR += rubygem-actionpack52
     SUBDIR += rubygem-actionpack60
     SUBDIR += rubygem-actionpack61
+    SUBDIR += rubygem-actionpack70
     SUBDIR += rubygem-activeresource
     SUBDIR += rubygem-activeresource4
     SUBDIR += rubygem-acts-as-taggable-on
@@ -1874,6 +1873,7 @@
     SUBDIR += rubygem-chromedriver-helper
     SUBDIR += rubygem-cookiejar
     SUBDIR += rubygem-crass
+    SUBDIR += rubygem-cssbundling-rails
     SUBDIR += rubygem-cuba
     SUBDIR += rubygem-d3_rails
     SUBDIR += rubygem-d3_rails-rails4
@@ -1895,10 +1895,12 @@
     SUBDIR += rubygem-faraday-em_http
     SUBDIR += rubygem-faraday-em_synchrony
     SUBDIR += rubygem-faraday-httpclient
+    SUBDIR += rubygem-faraday-multipart
     SUBDIR += rubygem-faraday-net_http
     SUBDIR += rubygem-faraday-net_http_persistent
     SUBDIR += rubygem-faraday-patron
     SUBDIR += rubygem-faraday-rack
+    SUBDIR += rubygem-faraday-retry
     SUBDIR += rubygem-faraday0
     SUBDIR += rubygem-faraday14
     SUBDIR += rubygem-faraday_middleware
@@ -1951,6 +1953,7 @@
     SUBDIR += rubygem-httpclient
     SUBDIR += rubygem-httpi
     SUBDIR += rubygem-hurley
+    SUBDIR += rubygem-importmap-rails
     SUBDIR += rubygem-innate
     SUBDIR += rubygem-jekyll
     SUBDIR += rubygem-jekyll-sanity
@@ -1966,6 +1969,7 @@
     SUBDIR += rubygem-jquery-turbolinks
     SUBDIR += rubygem-jquery-ui-rails-rails4
     SUBDIR += rubygem-jruby-rack
+    SUBDIR += rubygem-jsbundling-rails
     SUBDIR += rubygem-jsobfu
     SUBDIR += rubygem-json-jwt
     SUBDIR += rubygem-jwt
@@ -2028,7 +2032,9 @@
     SUBDIR += rubygem-ostatus2
     SUBDIR += rubygem-pagerduty
     SUBDIR += rubygem-passenger
+    SUBDIR += rubygem-patron
     SUBDIR += rubygem-platform-api
+    SUBDIR += rubygem-propshaft
     SUBDIR += rubygem-protocol-hpack
     SUBDIR += rubygem-protocol-http
     SUBDIR += rubygem-protocol-http1
@@ -2065,6 +2071,7 @@
     SUBDIR += rubygem-rails60
     SUBDIR += rubygem-rails61
     SUBDIR += rubygem-rails61-node16
+    SUBDIR += rubygem-rails70
     SUBDIR += rubygem-rails_12factor
     SUBDIR += rubygem-rails_autolink
     SUBDIR += rubygem-rails_serve_static_assets
@@ -2075,6 +2082,7 @@
     SUBDIR += rubygem-railties52
     SUBDIR += rubygem-railties60
     SUBDIR += rubygem-railties61
+    SUBDIR += rubygem-railties70
     SUBDIR += rubygem-raindrops
     SUBDIR += rubygem-ramaze
     SUBDIR += rubygem-raphael-rails
@@ -2123,7 +2131,9 @@
     SUBDIR += rubygem-sinatra1
     SUBDIR += rubygem-smashing
     SUBDIR += rubygem-socksify
+    SUBDIR += rubygem-stimulus-rails
     SUBDIR += rubygem-swd
+    SUBDIR += rubygem-tailwindcss-rails
     SUBDIR += rubygem-task_list
     SUBDIR += rubygem-thin
     SUBDIR += rubygem-tinyatom
@@ -2131,6 +2141,7 @@
     SUBDIR += rubygem-toml-rb
     SUBDIR += rubygem-totoridipjp
     SUBDIR += rubygem-tumblr_client
+    SUBDIR += rubygem-turbo-rails
     SUBDIR += rubygem-turbolinks
     SUBDIR += rubygem-turbolinks-source
     SUBDIR += rubygem-typhoeus
@@ -2149,6 +2160,7 @@
     SUBDIR += rubygem-webrick
     SUBDIR += rubygem-webrobots
     SUBDIR += rubygem-websocket
+    SUBDIR += rubygem-websocket-client-simple
     SUBDIR += rubygem-websocket-driver
     SUBDIR += rubygem-websocket-extensions
     SUBDIR += rubygem-yapra
@@ -2367,7 +2379,6 @@
     SUBDIR += ytdl
     SUBDIR += yuicompressor
     SUBDIR += zend-framework
-    SUBDIR += zend-framework1
     SUBDIR += zenphoto
     SUBDIR += zerowait-httpd
     SUBDIR += zola

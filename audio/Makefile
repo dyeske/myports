@@ -322,6 +322,7 @@
     SUBDIR += invada-studio-plugins-lv2
     SUBDIR += ir-lv2
     SUBDIR += jack
+    SUBDIR += jack-example-tools
     SUBDIR += jack-keyboard
     SUBDIR += jack-smf-utils
     SUBDIR += jack_ghero
@@ -536,7 +537,6 @@
     SUBDIR += ncmpcpp
     SUBDIR += ncpamixer
     SUBDIR += ncspot
-    SUBDIR += nekobi-lv2
     SUBDIR += noise-repellent-lv2
     SUBDIR += noise-suppression-for-voice-lv2
     SUBDIR += normalize
@@ -676,6 +676,7 @@
     SUBDIR += qmidinet
     SUBDIR += qsampler
     SUBDIR += qsynth
+    SUBDIR += qtractor
     SUBDIR += quimup
     SUBDIR += qxgedit
     SUBDIR += raul
