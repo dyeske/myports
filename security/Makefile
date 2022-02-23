@@ -222,6 +222,7 @@
     SUBDIR += hashcat
     SUBDIR += hashcat-legacy
     SUBDIR += heaan
+    SUBDIR += headscale
     SUBDIR += heimdal
     SUBDIR += helib
     SUBDIR += hexl
@@ -748,6 +749,7 @@
     SUBDIR += pam_yubico
     SUBDIR += pamtester
     SUBDIR += paperkey
+    SUBDIR += passh
     SUBDIR += passivedns
     SUBDIR += pbc
     SUBDIR += pbnj
@@ -802,10 +804,8 @@
     SUBDIR += php74-openssl
     SUBDIR += php74-sodium
     SUBDIR += php80-filter
-    SUBDIR += php80-openssl
     SUBDIR += php80-sodium
     SUBDIR += php81-filter
-    SUBDIR += php81-openssl
     SUBDIR += php81-sodium
     SUBDIR += phpsecinfo
     SUBDIR += picosha2
@@ -948,6 +948,7 @@
     SUBDIR += py-ospd-openvas
     SUBDIR += py-paramiko
     SUBDIR += py-pass-audit
+    SUBDIR += py-pass-git-helper
     SUBDIR += py-passlib
     SUBDIR += py-pbkdf2
     SUBDIR += py-pgpdump
@@ -1074,7 +1075,6 @@
     SUBDIR += rubygem-declarative_policy
     SUBDIR += rubygem-devise-two-factor
     SUBDIR += rubygem-devise-two-factor-rails5
-    SUBDIR += rubygem-devise-two-factor-rails60
     SUBDIR += rubygem-devise-two-factor-rails61
     SUBDIR += rubygem-devise_pam_authenticatable2
     SUBDIR += rubygem-digest
@@ -1246,6 +1246,7 @@
     SUBDIR += ssb
     SUBDIR += ssdeep
     SUBDIR += ssh-multiadd
+    SUBDIR += ssh-tools
     SUBDIR += ssh-vault
     SUBDIR += sshguard
     SUBDIR += sshpass

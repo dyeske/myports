@@ -140,6 +140,7 @@
     SUBDIR += kf5-kwayland
     SUBDIR += kf5-kwindowsystem
     SUBDIR += kf5-plasma-framework
+    SUBDIR += kickoff
     SUBDIR += kitty
     SUBDIR += konsole
     SUBDIR += lavalauncher
@@ -349,6 +350,7 @@
     SUBDIR += swaybg
     SUBDIR += swayfloatingswitcher
     SUBDIR += swayidle
+    SUBDIR += swayimg
     SUBDIR += swaylock
     SUBDIR += swaylock-effects
     SUBDIR += swaync
@@ -378,8 +380,10 @@
     SUBDIR += virtualgl
     SUBDIR += wallutils
     SUBDIR += wapanel
+    SUBDIR += way-displays
     SUBDIR += waybar
     SUBDIR += wayland-logout
+    SUBDIR += wayout
     SUBDIR += wbar
     SUBDIR += wcm
     SUBDIR += wdisplays
@@ -388,6 +392,7 @@
     SUBDIR += wezterm
     SUBDIR += wf-shell
     SUBDIR += wl-clipboard
+    SUBDIR += wl-mirror
     SUBDIR += wlogout
     SUBDIR += wlr-randr
     SUBDIR += wlrctl

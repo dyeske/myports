@@ -301,6 +301,7 @@ bin/@GetAfniView
 bin/@GradFlipTest
 bin/@Install_3dPFM_Demo
 bin/@Install_APMULTI_Demo1_rest
+bin/@Install_APMULTI_Demo2_realtime
 bin/@Install_AfniRetinoDemo
 bin/@Install_ClustScat_Demo
 bin/@Install_D99_macaque
@@ -796,6 +797,7 @@ lib/afni/plug_zeropad.so
 %%PYTHON_SITELIBDIR%%/afnipy/lib_apqc_html.py
 %%PYTHON_SITELIBDIR%%/afnipy/lib_apqc_html_css.py
 %%PYTHON_SITELIBDIR%%/afnipy/lib_apqc_io.py
+%%PYTHON_SITELIBDIR%%/afnipy/lib_apqc_stats_dset.py
 %%PYTHON_SITELIBDIR%%/afnipy/lib_apqc_tcsh.py
 %%PYTHON_SITELIBDIR%%/afnipy/lib_b0_corr.py
 %%PYTHON_SITELIBDIR%%/afnipy/lib_cdiflist.py

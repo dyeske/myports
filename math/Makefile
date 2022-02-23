@@ -240,6 +240,7 @@
     SUBDIR += dbcsr
     SUBDIR += deal.ii
     SUBDIR += dieharder
+    SUBDIR += dionysus
     SUBDIR += disco
     SUBDIR += djbfft
     SUBDIR += drgeo
@@ -435,7 +436,6 @@
     SUBDIR += mate-calc
     SUBDIR += math77
     SUBDIR += mathgl
-    SUBDIR += mathics-django
     SUBDIR += mathicsscript
     SUBDIR += mathmod
     SUBDIR += mathomatic
@@ -825,6 +825,7 @@
     SUBDIR += py-cyipopt
     SUBDIR += py-cypari2
     SUBDIR += py-deap
+    SUBDIR += py-dionysus
     SUBDIR += py-ducc0
     SUBDIR += py-ecos
     SUBDIR += py-faiss
@@ -955,7 +956,7 @@
     SUBDIR += qalculate
     SUBDIR += qd
     SUBDIR += qhull
-    SUBDIR += qhull8
+    SUBDIR += qhull7
     SUBDIR += qposases
     SUBDIR += qrupdate
     SUBDIR += qtiplot-doc
@@ -1080,6 +1081,7 @@
     SUBDIR += wxmaxima
     SUBDIR += xblas
     SUBDIR += xfce4-calculator-plugin
+    SUBDIR += xgap
     SUBDIR += xgraph
     SUBDIR += xlapack
     SUBDIR += xldlas

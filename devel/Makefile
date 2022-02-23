@@ -31,6 +31,7 @@
     SUBDIR += R-cran-cliapp
     SUBDIR += R-cran-clipr
     SUBDIR += R-cran-clisymbols
+    SUBDIR += R-cran-collapse
     SUBDIR += R-cran-covr
     SUBDIR += R-cran-cpp11
     SUBDIR += R-cran-crayon
@@ -61,6 +62,7 @@
     SUBDIR += R-cran-gmodels
     SUBDIR += R-cran-gsubfn
     SUBDIR += R-cran-gtools
+    SUBDIR += R-cran-hardhat
     SUBDIR += R-cran-hms
     SUBDIR += R-cran-ini
     SUBDIR += R-cran-iterators
@@ -210,6 +212,7 @@
     SUBDIR += asyncplusplus
     SUBDIR += atf
     SUBDIR += athens
+    SUBDIR += atlantis
     SUBDIR += atlas
     SUBDIR += atlas-devel
     SUBDIR += aunit
@@ -445,6 +448,7 @@
     SUBDIR += cut
     SUBDIR += cutils
     SUBDIR += cutter
+    SUBDIR += cvise
     SUBDIR += cvs
     SUBDIR += cvs+ipv6
     SUBDIR += cvs-devel
@@ -616,6 +620,7 @@
     SUBDIR += envsubst
     SUBDIR += epl.el
     SUBDIR += epm
+    SUBDIR += eql5
     SUBDIR += eric6
     SUBDIR += eris
     SUBDIR += erlang-backoff
@@ -935,6 +940,7 @@
     SUBDIR += grpc
     SUBDIR += grpc130
     SUBDIR += grpc134
+    SUBDIR += grpc142
     SUBDIR += grv
     SUBDIR += gsettings-desktop-schemas
     SUBDIR += gsoap
@@ -1481,6 +1487,7 @@
     SUBDIR += llvm11
     SUBDIR += llvm12
     SUBDIR += llvm13
+    SUBDIR += llvm14
     SUBDIR += llvm70
     SUBDIR += llvm80
     SUBDIR += llvm90
@@ -1580,6 +1587,7 @@
     SUBDIR += mm
     SUBDIR += mm-common
     SUBDIR += modd
+    SUBDIR += mold
     SUBDIR += mongo-c-driver
     SUBDIR += mono-addins
     SUBDIR += monotone
@@ -4580,6 +4588,7 @@
     SUBDIR += py-google-pasta
     SUBDIR += py-google-re2
     SUBDIR += py-googleapis-common-protos
+    SUBDIR += py-gpxpy
     SUBDIR += py-grab
     SUBDIR += py-graphene
     SUBDIR += py-graphene-django
@@ -5159,6 +5168,7 @@
     SUBDIR += py-qutip
     SUBDIR += py-ramlfications
     SUBDIR += py-rapidfuzz
+    SUBDIR += py-rapidfuzz-capi
     SUBDIR += py-ratelimiter
     SUBDIR += py-rauth
     SUBDIR += py-raven
@@ -6368,7 +6378,6 @@
     SUBDIR += rubygem-gettext_i18n_rails_js-rails5
     SUBDIR += rubygem-gettext_i18n_rails_js-rails50
     SUBDIR += rubygem-gettext_i18n_rails_js-rails52
-    SUBDIR += rubygem-gettext_i18n_rails_js-rails60
     SUBDIR += rubygem-gettext_i18n_rails_js-rails61
     SUBDIR += rubygem-gh
     SUBDIR += rubygem-gibbler
@@ -6449,6 +6458,7 @@
     SUBDIR += rubygem-io-like
     SUBDIR += rubygem-io-nonblock
     SUBDIR += rubygem-io-wait
+    SUBDIR += rubygem-io-wait01
     SUBDIR += rubygem-iobuffer
     SUBDIR += rubygem-iostruct
     SUBDIR += rubygem-ipynbdiff
@@ -7199,6 +7209,7 @@
     SUBDIR += wininfo
     SUBDIR += wizardkit
     SUBDIR += woff2
+    SUBDIR += wrangler
     SUBDIR += wxformbuilder
     SUBDIR += xa65
     SUBDIR += xbyak

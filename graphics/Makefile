@@ -100,6 +100,7 @@
     SUBDIR += chafa
     SUBDIR += charls
     SUBDIR += cimg
+    SUBDIR += cloudcompare
     SUBDIR += clutter
     SUBDIR += clutter-gtk3
     SUBDIR += cluttermm
@@ -115,6 +116,7 @@
     SUBDIR += cptutils
     SUBDIR += crw
     SUBDIR += curator
+    SUBDIR += curtail
     SUBDIR += cuttlefish
     SUBDIR += darktable
     SUBDIR += darktable38
@@ -260,6 +262,7 @@
     SUBDIR += gimp-beautify-plugin
     SUBDIR += gimp-data-extras
     SUBDIR += gimp-gmic-plugin
+    SUBDIR += gimp-jxl-plugin
     SUBDIR += gimp-lensfun-plugin
     SUBDIR += gimp-lqr-plugin
     SUBDIR += gimp-refocus-plugin
@@ -267,6 +270,7 @@
     SUBDIR += gkrellkam2
     SUBDIR += glad
     SUBDIR += glaxnimate
+    SUBDIR += glbinding
     SUBDIR += gle
     SUBDIR += glee
     SUBDIR += glew
@@ -360,6 +364,7 @@
     SUBDIR += imageworsener
     SUBDIR += imc
     SUBDIR += imlib2
+    SUBDIR += imlib2-jxl
     SUBDIR += imlib2-webp
     SUBDIR += imlib2_loaders
     SUBDIR += impressive
@@ -409,6 +414,7 @@
     SUBDIR += klatexformula
     SUBDIR += kludge3d
     SUBDIR += kmscube
+    SUBDIR += knotter
     SUBDIR += kolourpaint
     SUBDIR += kontrast
     SUBDIR += kooka
