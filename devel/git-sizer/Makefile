@@ -9,11 +9,11 @@ COMMENT=	Computes size metrics for a git repository
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
+BUILD_DEPENDS=	bash:shells/bash
 USES=		go:modules gmake shebangfix
 SHEBANG_FILES=	${WRKSRC}/script/go
 USE_GITHUB=	yes
 GH_ACCOUNT=	github
-BUILD_DEPENDS=	bash:shells/bash
 
 PLIST_FILES=	bin/${PORTNAME}
 
