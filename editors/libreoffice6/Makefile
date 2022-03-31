@@ -1,5 +1,5 @@
 
-PORTREVISION=	20
+PORTREVISION=	22
 
 .include "${.CURDIR}/Makefile.common"
 

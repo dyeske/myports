@@ -263,6 +263,7 @@
     SUBDIR += ilias
     SUBDIR += ilias6
     SUBDIR += interchange
+    SUBDIR += iridium
     SUBDIR += itop
     SUBDIR += janus
     SUBDIR += jericho-html
@@ -483,6 +484,7 @@
     SUBDIR += onlyoffice-documentserver
     SUBDIR += openarc
     SUBDIR += opencart
+    SUBDIR += openresty
     SUBDIR += orangehrm
     SUBDIR += osrm-backend
     SUBDIR += osticket
@@ -1606,6 +1608,7 @@
     SUBDIR += py-flask-babelex
     SUBDIR += py-flask-bootstrap
     SUBDIR += py-flask-cache
+    SUBDIR += py-flask-caching
     SUBDIR += py-flask-collect
     SUBDIR += py-flask-compress
     SUBDIR += py-flask-cors
@@ -2319,6 +2322,7 @@
     SUBDIR += varnish-nagios
     SUBDIR += varnish4
     SUBDIR += varnish6
+    SUBDIR += varnish7
     SUBDIR += varnish_exporter
     SUBDIR += vdr-plugin-live
     SUBDIR += vdradmin-am
