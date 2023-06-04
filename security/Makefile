@@ -140,7 +140,6 @@
     SUBDIR += easy-rsa
     SUBDIR += enchive
     SUBDIR += eschalot
-    SUBDIR += esteidfirefoxplugin
     SUBDIR += expiretable
     SUBDIR += f-prot
     SUBDIR += fakebo
@@ -170,6 +169,7 @@
     SUBDIR += gcr
     SUBDIR += gef
     SUBDIR += git-credential-gopass
+    SUBDIR += git-credential-oauth
     SUBDIR += git-crypt
     SUBDIR += git-remote-gcrypt
     SUBDIR += git-secret
@@ -249,7 +249,6 @@
     SUBDIR += keepassxc
     SUBDIR += keybase
     SUBDIR += keychain
-    SUBDIR += keynote
     SUBDIR += keyprint
     SUBDIR += keysmith
     SUBDIR += kf5-kdesu
@@ -674,7 +673,6 @@
     SUBDIR += p5-Net-OpenID-JanRain
     SUBDIR += p5-Net-OpenID-Server
     SUBDIR += p5-Net-Radius-Server
-    SUBDIR += p5-Net-SAML
     SUBDIR += p5-Net-SAML2
     SUBDIR += p5-Net-SSH-AuthorizedKeysFile
     SUBDIR += p5-Net-SSL-ExpireDate
@@ -1361,7 +1359,6 @@
     SUBDIR += zaproxy
     SUBDIR += zeek
     SUBDIR += zeronet
-    SUBDIR += zxid
     SUBDIR += zzuf
 
 .include <bsd.port.subdir.mk>

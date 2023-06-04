@@ -451,7 +451,6 @@
     SUBDIR += nibbleblog
     SUBDIR += nift
     SUBDIR += node
-    SUBDIR += node14
     SUBDIR += node16
     SUBDIR += node18
     SUBDIR += node19
@@ -462,7 +461,6 @@
     SUBDIR += npapi-xine
     SUBDIR += npc
     SUBDIR += npm
-    SUBDIR += npm-node14
     SUBDIR += npm-node16
     SUBDIR += npm-node18
     SUBDIR += npm-node19
@@ -1477,6 +1475,8 @@
     SUBDIR += py-dj41-django-taggit
     SUBDIR += py-dj41-django-timezone-field
     SUBDIR += py-dj41-djangorestframework
+    SUBDIR += py-dj41-drf-spectacular
+    SUBDIR += py-dj41-drf-spectacular-sidecar
     SUBDIR += py-dj41-drf-yasg
     SUBDIR += py-django-admin-rangefilter
     SUBDIR += py-django-advanced-filters
@@ -2409,7 +2409,6 @@
     SUBDIR += websocat
     SUBDIR += websocketd
     SUBDIR += webstone
-    SUBDIR += webstone-ssl
     SUBDIR += webtrees20
     SUBDIR += webtrees21
     SUBDIR += wget2
@@ -2437,7 +2436,6 @@
     SUBDIR += yabb
     SUBDIR += yanopaste
     SUBDIR += yarn
-    SUBDIR += yarn-node14
     SUBDIR += yarn-node16
     SUBDIR += yarn-node18
     SUBDIR += yarn-node19

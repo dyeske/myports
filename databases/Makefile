@@ -103,6 +103,7 @@
     SUBDIR += hiredis
     SUBDIR += hsqldb
     SUBDIR += immudb
+    SUBDIR += imposm3
     SUBDIR += influxdb
     SUBDIR += influxdb2-cli
     SUBDIR += innotop
@@ -177,8 +178,6 @@
     SUBDIR += mariadb-connector-odbc
     SUBDIR += mariadb1011-client
     SUBDIR += mariadb1011-server
-    SUBDIR += mariadb103-client
-    SUBDIR += mariadb103-server
     SUBDIR += mariadb104-client
     SUBDIR += mariadb104-server
     SUBDIR += mariadb105-client
@@ -721,10 +720,8 @@
     SUBDIR += proftpd-mod_sql_tds
     SUBDIR += prometheus-postgresql-adapter
     SUBDIR += pspg
-    SUBDIR += puppetdb-terminus6
     SUBDIR += puppetdb-terminus7
     SUBDIR += puppetdb-terminus8
-    SUBDIR += puppetdb6
     SUBDIR += puppetdb7
     SUBDIR += puppetdb8
     SUBDIR += puredb
