@@ -276,6 +276,7 @@
     SUBDIR += imapproxy
     SUBDIR += incidenceeditor
     SUBDIR += intel-em-kmod
+    SUBDIR += intel-igb-kmod
     SUBDIR += intel-ix-kmod
     SUBDIR += intel-ixl-kmod
     SUBDIR += iodine
@@ -1031,6 +1032,7 @@
     SUBDIR += py-amqp
     SUBDIR += py-amqplib
     SUBDIR += py-avahi
+    SUBDIR += py-bonsai
     SUBDIR += py-cepa
     SUBDIR += py-cjdns
     SUBDIR += py-cloudflare-scrape
@@ -1399,7 +1401,6 @@
     SUBDIR += rubygem-twitter-stream
     SUBDIR += rubygem-twitter4r
     SUBDIR += rubygem-u2f
-    SUBDIR += rubygem-u2f0
     SUBDIR += rubygem-uri
     SUBDIR += rubygem-uri-redis
     SUBDIR += rubygem-uri_template

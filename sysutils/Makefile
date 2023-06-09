@@ -277,6 +277,7 @@
     SUBDIR += devcpu-data-amd
     SUBDIR += devcpu-data-intel
     SUBDIR += devctl-jail-kmod
+    SUBDIR += devedeng
     SUBDIR += devstat
     SUBDIR += dfc
     SUBDIR += di
@@ -325,6 +326,7 @@
     SUBDIR += duply
     SUBDIR += dupmerge
     SUBDIR += dust
+    SUBDIR += dutree
     SUBDIR += dvd+rw-tools
     SUBDIR += dvdbackup
     SUBDIR += dvdimagecmp
@@ -1311,6 +1313,7 @@
     SUBDIR += safe-rm
     SUBDIR += safecat
     SUBDIR += safecopy
+    SUBDIR += sake
     SUBDIR += samdruckerclientshell
     SUBDIR += samefile
     SUBDIR += samesame
@@ -1321,6 +1324,7 @@
     SUBDIR += savelogs
     SUBDIR += scalpel
     SUBDIR += scan_ffs
+    SUBDIR += scanbd
     SUBDIR += scanbuttond
     SUBDIR += scanmem
     SUBDIR += scct

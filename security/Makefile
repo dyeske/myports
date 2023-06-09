@@ -265,6 +265,7 @@
     SUBDIR += krb5-118
     SUBDIR += krb5-119
     SUBDIR += krb5-120
+    SUBDIR += krb5-121
     SUBDIR += krb5-appl
     SUBDIR += krb5-devel
     SUBDIR += kstart
@@ -875,6 +876,7 @@
     SUBDIR += py-certbot-dns-rfc2136
     SUBDIR += py-certbot-dns-route53
     SUBDIR += py-certbot-dns-sakuracloud
+    SUBDIR += py-certbot-dns-standalone
     SUBDIR += py-certbot-nginx
     SUBDIR += py-certifi
     SUBDIR += py-certstream
@@ -1009,7 +1011,6 @@
     SUBDIR += py-scrypt
     SUBDIR += py-secure
     SUBDIR += py-securesystemslib
-    SUBDIR += py-sequoia
     SUBDIR += py-service_identity
     SUBDIR += py-signedjson
     SUBDIR += py-social-auth-core
@@ -1126,7 +1127,6 @@
     SUBDIR += rubygem-omniauth-bitbucket
     SUBDIR += rubygem-omniauth-cas
     SUBDIR += rubygem-omniauth-cas3
-    SUBDIR += rubygem-omniauth-cas3-oauth2
     SUBDIR += rubygem-omniauth-dingtalk-oauth2
     SUBDIR += rubygem-omniauth-gitlab
     SUBDIR += rubygem-omniauth-jwt
@@ -1215,6 +1215,7 @@
     SUBDIR += secure_delete
     SUBDIR += sedutil
     SUBDIR += sequoia
+    SUBDIR += sequoia-sq
     SUBDIR += setaudit
     SUBDIR += sha1collisiondetection
     SUBDIR += sha2wordlist
