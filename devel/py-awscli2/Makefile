@@ -4,6 +4,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	https://awscli.amazonaws.com/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=		awscli-${PORTVERSION}
+
 MAINTAINER=	dyeske@gmail.com
 COMMENT=	Universal Command Line Interface for Amazon Web Services
 WWW=		https://awscli.amazonaws.com/
@@ -18,12 +19,12 @@ BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}awscrt>=0:devel/py-awscrt@${PY_FLAVOR}
 BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}urllib3>=1.25.2:net/py-urllib3@${PY_FLAVOR}
 BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}prompt-toolkit>=0:devel/py-prompt-toolkit@${PY_FLAVOR}
 
-GNU_CONFIGURE=  yes
+GNU_CONFIGURE=	yes
 USES=		python:3.6+ gmake
 USE_PYTHON=	autoplist concurrent pep517
 CONFIGURE_ARGS+=	--prefix=${PREFIX} --bindir=${PREFIX}/bin --libdir=${PREFIX}/lib
 # CONFIGURE_ARGS+=	--with-download-deps
-CONFIGURE_ENV+= CC=${CC} CPP=${CPP} CXX=${CXX} CFLAGS="${CFLAGS}" CPPFLAGS="${CPPFLAGS}" CXXFLAGS="${CXXFLAGS}" LDFLAGS="${LDFLAGS}" LIBS="${LIBS}"
+CONFIGURE_ENV+=	CC=${CC} CPP=${CPP} CXX=${CXX} LIBS="${LIBS}"
 MAKE_ARGS+=	V=1
 NO_ARCH=	yes
 SUB_FILES=	pkg-message
