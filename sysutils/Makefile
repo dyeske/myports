@@ -185,9 +185,11 @@
     SUBDIR += cfengine-masterfiles318
     SUBDIR += cfengine-masterfiles320
     SUBDIR += cfengine-masterfiles321
+    SUBDIR += cfengine-masterfiles322
     SUBDIR += cfengine318
     SUBDIR += cfengine320
     SUBDIR += cfengine321
+    SUBDIR += cfengine322
     SUBDIR += chaoskube
     SUBDIR += checkrestart
     SUBDIR += chezmoi
@@ -564,7 +566,10 @@
     SUBDIR += incron
     SUBDIR += inotify-tools
     SUBDIR += installwatch
-    SUBDIR += intel-nvmupdate
+    SUBDIR += intel-epct
+    SUBDIR += intel-nvmupdate-10g
+    SUBDIR += intel-nvmupdate-40g
+    SUBDIR += intel-nvmupdate-100g
     SUBDIR += intel-pcm
     SUBDIR += intel-undervolt
     SUBDIR += inxi
@@ -832,6 +837,7 @@
     SUBDIR += nomad
     SUBDIR += nomad-pot-driver
     SUBDIR += npadmin
+    SUBDIR += npmount
     SUBDIR += nq
     SUBDIR += nrg2iso
     SUBDIR += nss_ndb
@@ -1008,6 +1014,8 @@
     SUBDIR += php81-posix
     SUBDIR += php82-fileinfo
     SUBDIR += php82-posix
+    SUBDIR += php83-fileinfo
+    SUBDIR += php83-posix
     SUBDIR += phybs
     SUBDIR += pick
     SUBDIR += pidof

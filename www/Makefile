@@ -392,6 +392,7 @@
     SUBDIR += mod_php80
     SUBDIR += mod_php81
     SUBDIR += mod_php82
+    SUBDIR += mod_php83
     SUBDIR += mod_proctitle
     SUBDIR += mod_qos
     SUBDIR += mod_realdoc
@@ -1085,6 +1086,7 @@
     SUBDIR += p5-Plack-Middleware-FixMissingBodyInRedirect
     SUBDIR += p5-Plack-Middleware-ForceEnv
     SUBDIR += p5-Plack-Middleware-Header
+    SUBDIR += p5-Plack-Middleware-Headers
     SUBDIR += p5-Plack-Middleware-IEnosniff
     SUBDIR += p5-Plack-Middleware-InteractiveDebugger
     SUBDIR += p5-Plack-Middleware-JSConcat
@@ -1389,6 +1391,9 @@
     SUBDIR += php82-opcache
     SUBDIR += php82-session
     SUBDIR += php82-tidy
+    SUBDIR += php83-opcache
+    SUBDIR += php83-session
+    SUBDIR += php83-tidy
     SUBDIR += phpbb
     SUBDIR += phpbb3
     SUBDIR += phpfpmtop
@@ -2064,6 +2069,7 @@
     SUBDIR += rubygem-nanoc-deploying
     SUBDIR += rubygem-nested_form
     SUBDIR += rubygem-net-http
+    SUBDIR += rubygem-net-http011
     SUBDIR += rubygem-net-http-digest_auth
     SUBDIR += rubygem-net-http-persistent
     SUBDIR += rubygem-net-http-persistent2

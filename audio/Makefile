@@ -294,7 +294,6 @@
     SUBDIR += hexter
     SUBDIR += hpsjam
     SUBDIR += hts_engine-API
-    SUBDIR += hvl2wav
     SUBDIR += hydrogen
     SUBDIR += icecast
     SUBDIR += icecast-kh
@@ -736,6 +735,7 @@
     SUBDIR += sidplay
     SUBDIR += sidplay2
     SUBDIR += sidplayer
+    SUBDIR += sidplayfp
     SUBDIR += simplemod
     SUBDIR += siren
     SUBDIR += snack

@@ -52,7 +52,7 @@
     SUBDIR += apache-commons-digester
     SUBDIR += apache-poi
     SUBDIR += apache-solr
-    SUBDIR += apache-solr9
+    SUBDIR += apache-solr8
     SUBDIR += apache-xmlbeans
     SUBDIR += apertium
     SUBDIR += apertium-eng
@@ -1267,6 +1267,15 @@
     SUBDIR += php82-xmlreader
     SUBDIR += php82-xmlwriter
     SUBDIR += php82-xsl
+    SUBDIR += php83-ctype
+    SUBDIR += php83-dom
+    SUBDIR += php83-enchant
+    SUBDIR += php83-pspell
+    SUBDIR += php83-simplexml
+    SUBDIR += php83-xml
+    SUBDIR += php83-xmlreader
+    SUBDIR += php83-xmlwriter
+    SUBDIR += php83-xsl
     SUBDIR += pict
     SUBDIR += po4a
     SUBDIR += pod2mdoc
@@ -1592,6 +1601,7 @@
     SUBDIR += py-typogrify
     SUBDIR += py-ucl
     SUBDIR += py-ufal.udpipe
+    SUBDIR += py-unicodeitplus
     SUBDIR += py-untangle
     SUBDIR += py-wcmatch
     SUBDIR += py-whatthepatch
@@ -2087,6 +2097,7 @@
     SUBDIR += yamcha
     SUBDIR += yaml-mode.el
     SUBDIR += yaml.el
+    SUBDIR += yamlfmt
     SUBDIR += ydiff
     SUBDIR += yelp-tools
     SUBDIR += yelp-xsl

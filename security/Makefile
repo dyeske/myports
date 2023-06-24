@@ -685,8 +685,6 @@
     SUBDIR += p5-Nmap-Scanner
     SUBDIR += p5-OpenCA-CRL
     SUBDIR += p5-OpenCA-CRR
-    SUBDIR += p5-OpenCA-OpenSSL
-    SUBDIR += p5-OpenCA-PKCS7
     SUBDIR += p5-OpenCA-REQ
     SUBDIR += p5-OpenCA-X509
     SUBDIR += p5-PBKDF2-Tiny
@@ -798,6 +796,8 @@
     SUBDIR += php81-sodium
     SUBDIR += php82-filter
     SUBDIR += php82-sodium
+    SUBDIR += php83-filter
+    SUBDIR += php83-sodium
     SUBDIR += picocrypt
     SUBDIR += picosha2
     SUBDIR += pidgin-encryption
@@ -1136,6 +1136,7 @@
     SUBDIR += rubygem-omniauth-saml
     SUBDIR += rubygem-omniauth-saml1
     SUBDIR += rubygem-omniauth-shibboleth
+    SUBDIR += rubygem-omniauth-shibboleth-redux
     SUBDIR += rubygem-omniauth1
     SUBDIR += rubygem-openssl
     SUBDIR += rubygem-openssl-ccm

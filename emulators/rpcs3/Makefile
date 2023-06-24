@@ -1,7 +1,7 @@
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.28-15143 # git rev-list --count HEAD
-DISTVERSIONSUFFIX=	-g6f834e99d2
+DISTVERSION=	0.0.28-15227 # git rev-list --count HEAD
+DISTVERSIONSUFFIX=	-g0a0ef50caf
 CATEGORIES=	emulators wayland
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -51,20 +51,18 @@ ELF_FEATURES=	+noaslr,wxneeded:bin/${PORTNAME}
 
 .if ${FLAVOR:U} == qt6 || make(makesum) || make(fetch)
 PATCH_SITES+=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/:qt6
-PATCHFILES+=	c196f09833b4.patch:-p1:qt6 # https://github.com/RPCS3/rpcs3/pull/12471
+PATCHFILES+=	b1f76399f65b.patch:-p1:qt6 # https://github.com/RPCS3/rpcs3/pull/12471
 PKGNAMESUFFIX=	-${FLAVOR}
 USES:=		${USES:S/qt:5/qt:6/}
 USE_QT=		base multimedia svg
 
 CONFLICTS_INSTALL=	${PORTNAME}
 
-pre-patch:	${FLAVOR}-pre-patch
-${FLAVOR}-pre-patch:
-# XXX Drop after reverting https://github.com/RPCS3/rpcs3/commit/5e6aa45658ef
-	@${REINPLACE_CMD} '/quarterly/s/^#//' ${WRKSRC}/.ci/install-freebsd.sh
-
 post-patch:	${FLAVOR}-post-patch
 ${FLAVOR}-post-patch:
+# XXX Drop after upstream fixes "undefined symbol: fmt_class_string<QByteArray, void>::..."
+	@${REINPLACE_CMD} -E '/camera_log/s/\.(id|description)\(\)/&.toStdString()/g' \
+		${WRKSRC}/rpcs3/rpcs3qt/qt_camera_handler.cpp
 # patch(1) doesn't support renames unlike git-apply(1)
 	@${MV}  ${WRKSRC}/rpcs3/rpcs3qt/qt_camera_video_surface.cpp \
 		${WRKSRC}/rpcs3/rpcs3qt/qt_camera_video_sink.cpp

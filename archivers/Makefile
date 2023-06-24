@@ -69,7 +69,7 @@
     SUBDIR += libmspack
     SUBDIR += libpar2
     SUBDIR += librtfcomp
-    SUBDIR += libunrar6
+    SUBDIR += libunrar
     SUBDIR += libzip
     SUBDIR += libzippp
     SUBDIR += linux-c7-lz4
@@ -170,6 +170,10 @@
     SUBDIR += php82-phar
     SUBDIR += php82-zip
     SUBDIR += php82-zlib
+    SUBDIR += php83-bz2
+    SUBDIR += php83-phar
+    SUBDIR += php83-zip
+    SUBDIR += php83-zlib
     SUBDIR += pigz
     SUBDIR += pixz
     SUBDIR += plzip

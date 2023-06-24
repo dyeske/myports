@@ -50,11 +50,8 @@
     SUBDIR += controllermap
     SUBDIR += cool-retro-term
     SUBDIR += coreterminal
-    SUBDIR += deforaos-desktop
     SUBDIR += deforaos-keyboard
     SUBDIR += deforaos-libdesktop
-    SUBDIR += deforaos-locker
-    SUBDIR += deforaos-panel
     SUBDIR += deskmenu
     SUBDIR += disman
     SUBDIR += dmenu
@@ -356,6 +353,7 @@
     SUBDIR += setlayout
     SUBDIR += setxkbmap
     SUBDIR += sfwbar
+    SUBDIR += shikane
     SUBDIR += shotman
     SUBDIR += showkeys
     SUBDIR += showmethekey
@@ -367,6 +365,7 @@
     SUBDIR += slop
     SUBDIR += slurp
     SUBDIR += smproxy
+    SUBDIR += somebar
     SUBDIR += sprop
     SUBDIR += squeekboard
     SUBDIR += srandrd
@@ -396,7 +395,6 @@
     SUBDIR += terminal.app
     SUBDIR += terminator
     SUBDIR += terminology
-    SUBDIR += thinglaunch
     SUBDIR += thingylaunch
     SUBDIR += tilda
     SUBDIR += tilix

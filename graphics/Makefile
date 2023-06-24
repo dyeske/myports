@@ -1,11 +1,10 @@
     COMMENT = Graphics tools and libraries
 
-    SUBDIR += 3d-ascii-viewer-c
+    SUBDIR += 3d-ascii-viewer
     SUBDIR += 4va
     SUBDIR += Coin
     SUBDIR += GraphicsMagick
     SUBDIR += Hermes
-    SUBDIR += IPA
     SUBDIR += ImageMagick6
     SUBDIR += ImageMagick7
     SUBDIR += O2-tools
@@ -94,6 +93,7 @@
     SUBDIR += cairomm
     SUBDIR += cal3d
     SUBDIR += camerakit
+    SUBDIR += catimg
     SUBDIR += cbonsai
     SUBDIR += cbviewer
     SUBDIR += cegui
@@ -200,7 +200,6 @@
     SUBDIR += flphoto
     SUBDIR += fly
     SUBDIR += fortytwo
-    SUBDIR += fotofix
     SUBDIR += fotoxx
     SUBDIR += founts
     SUBDIR += fpc-cairo
@@ -224,6 +223,7 @@
     SUBDIR += freetype-gl
     SUBDIR += frei0r
     SUBDIR += frei0r-plugins
+    SUBDIR += frei0r-plugins-cairo
     SUBDIR += frei0r-plugins-gavl
     SUBDIR += frei0r-plugins-opencv
     SUBDIR += frogr
@@ -786,6 +786,8 @@
     SUBDIR += php81-gd
     SUBDIR += php82-exif
     SUBDIR += php82-gd
+    SUBDIR += php83-exif
+    SUBDIR += php83-gd
     SUBDIR += phplot
     SUBDIR += picpuz
     SUBDIR += piddle
@@ -812,6 +814,7 @@
     SUBDIR += pngrewrite
     SUBDIR += pngwriter
     SUBDIR += podofo
+    SUBDIR += podofo09
     SUBDIR += polyclipping
     SUBDIR += poppler
     SUBDIR += poppler-data
