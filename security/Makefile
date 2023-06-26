@@ -262,7 +262,6 @@
     SUBDIR += kpkpass
     SUBDIR += kpmenu
     SUBDIR += krb5
-    SUBDIR += krb5-118
     SUBDIR += krb5-119
     SUBDIR += krb5-120
     SUBDIR += krb5-121
@@ -1332,6 +1331,7 @@
     SUBDIR += wazuh-manager
     SUBDIR += wazuh-server
     SUBDIR += webfwlog
+    SUBDIR += webtunnel-tor
     SUBDIR += weggli
     SUBDIR += whatweb
     SUBDIR += wipe
@@ -1361,6 +1361,7 @@
     SUBDIR += zaproxy
     SUBDIR += zeek
     SUBDIR += zeronet
+    SUBDIR += zlint
     SUBDIR += zzuf
 
 .include <bsd.port.subdir.mk>
