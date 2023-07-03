@@ -565,7 +565,6 @@
     SUBDIR += onionprobe
     SUBDIR += ooni-mini
     SUBDIR += ooni-probe-cli
-    SUBDIR += opal
     SUBDIR += open-isns
     SUBDIR += openbgpd
     SUBDIR += openbgpd6
@@ -1051,6 +1050,7 @@
     SUBDIR += py-duet
     SUBDIR += py-dugong
     SUBDIR += py-ec2-cli-tools
+    SUBDIR += py-ephemeral-port-reserve
     SUBDIR += py-errbot
     SUBDIR += py-eventlet
     SUBDIR += py-gdown
