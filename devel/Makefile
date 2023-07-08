@@ -38,6 +38,7 @@
     SUBDIR += R-cran-crayon
     SUBDIR += R-cran-cyclocomp
     SUBDIR += R-cran-data.table
+    SUBDIR += R-cran-decor
     SUBDIR += R-cran-desc
     SUBDIR += R-cran-devtools
     SUBDIR += R-cran-diffobj
@@ -888,7 +889,6 @@
     SUBDIR += godot
     SUBDIR += godot-tools
     SUBDIR += godot2
-    SUBDIR += godot2-tools
     SUBDIR += godot35
     SUBDIR += godot35-tools
     SUBDIR += goffice
@@ -1678,7 +1678,7 @@
     SUBDIR += ocaml-result
     SUBDIR += ocaml-sdl
     SUBDIR += ocaml-sem
-    SUBDIR += ocaml-sexplib
+    SUBDIR += ocaml-sexplib0
     SUBDIR += ocaml-topkg
     SUBDIR += ocaml-type_conv
     SUBDIR += ocaml-uchar
@@ -5909,6 +5909,7 @@
     SUBDIR += qt6-tools
     SUBDIR += qt6-translations
     SUBDIR += qtcreator
+    SUBDIR += qtutilities
     SUBDIR += quantum
     SUBDIR += quickcheck++
     SUBDIR += quickcpplib
@@ -6141,6 +6142,7 @@
     SUBDIR += rubygem-aws-sdk-core
     SUBDIR += rubygem-aws-sdk-core2
     SUBDIR += rubygem-aws-sdk-core3172
+    SUBDIR += rubygem-aws-sdk-core3175
     SUBDIR += rubygem-aws-sdk-costandusagereportservice
     SUBDIR += rubygem-aws-sdk-costexplorer
     SUBDIR += rubygem-aws-sdk-customerprofiles
@@ -6345,6 +6347,7 @@
     SUBDIR += rubygem-aws-sdk-s3
     SUBDIR += rubygem-aws-sdk-s31121
     SUBDIR += rubygem-aws-sdk-s31122
+    SUBDIR += rubygem-aws-sdk-s31126
     SUBDIR += rubygem-aws-sdk-s3control
     SUBDIR += rubygem-aws-sdk-s3outposts
     SUBDIR += rubygem-aws-sdk-sagemaker
@@ -6862,6 +6865,7 @@
     SUBDIR += rubygem-google-iam-v1
     SUBDIR += rubygem-google-protobuf
     SUBDIR += rubygem-google-protobuf322
+    SUBDIR += rubygem-google-protobuf323
     SUBDIR += rubygem-googleapis-common-protos
     SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf

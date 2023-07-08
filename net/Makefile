@@ -552,7 +552,6 @@
     SUBDIR += ntpsec
     SUBDIR += ntraceroute
     SUBDIR += nusoap
-    SUBDIR += nuster
     SUBDIR += nxproxy
     SUBDIR += nyancat
     SUBDIR += nylon
@@ -1038,6 +1037,7 @@
     SUBDIR += py-aiohttp-socks
     SUBDIR += py-amqp
     SUBDIR += py-amqplib
+    SUBDIR += py-anonfile
     SUBDIR += py-avahi
     SUBDIR += py-bonsai
     SUBDIR += py-cepa
