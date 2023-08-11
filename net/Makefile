@@ -464,6 +464,7 @@
     SUBDIR += mediastreamer
     SUBDIR += megacmd
     SUBDIR += megatools
+    SUBDIR += mercury
     SUBDIR += messagelib
     SUBDIR += mgen
     SUBDIR += micro_inetd
@@ -1079,6 +1080,7 @@
     SUBDIR += py-maxminddb
     SUBDIR += py-miniupnpc
     SUBDIR += py-mpi4py
+    SUBDIR += py-mpi4py-mpich
     SUBDIR += py-msrplib
     SUBDIR += py-ndg-httpsclient
     SUBDIR += py-netaddr
@@ -1331,7 +1333,6 @@
     SUBDIR += rubygem-mqtt
     SUBDIR += rubygem-nats-pure
     SUBDIR += rubygem-net-ldap
-    SUBDIR += rubygem-net-ldap017
     SUBDIR += rubygem-net-netrc
     SUBDIR += rubygem-net-ntp
     SUBDIR += rubygem-net-ping
@@ -1471,6 +1472,7 @@
     SUBDIR += socketpipe
     SUBDIR += socketw
     SUBDIR += sofia-sip
+    SUBDIR += speedtest
     SUBDIR += speedtest-go
     SUBDIR += spiritvnc
     SUBDIR += spoofer
@@ -1615,6 +1617,7 @@
     SUBDIR += wlvncc
     SUBDIR += wmnd
     SUBDIR += wmnet
+    SUBDIR += wmnetload
     SUBDIR += wmping
     SUBDIR += wmwave
     SUBDIR += wmwifi

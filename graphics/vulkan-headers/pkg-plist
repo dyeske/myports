@@ -32,6 +32,7 @@ include/vulkan/vulkan_static_assertions.hpp
 include/vulkan/vulkan_structs.hpp
 include/vulkan/vulkan_to_string.hpp
 include/vulkan/vulkan_vi.h
+include/vulkan/vulkan_video.hpp
 include/vulkan/vulkan_wayland.h
 include/vulkan/vulkan_win32.h
 include/vulkan/vulkan_xcb.h
@@ -39,7 +40,6 @@ include/vulkan/vulkan_xlib.h
 include/vulkan/vulkan_xlib_xrandr.h
 share/cmake/VulkanHeaders/VulkanHeadersConfig.cmake
 share/cmake/VulkanHeaders/VulkanHeadersConfigVersion.cmake
-share/cmake/VulkanHeaders/VulkanHeadersTargets.cmake
 share/vulkan/registry/apiconventions.py
 share/vulkan/registry/cgenerator.py
 share/vulkan/registry/generator.py
