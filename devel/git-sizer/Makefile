@@ -1,10 +1,11 @@
 PORTNAME=	git-sizer
-DISTVERSION=	1.5.0
 DISTVERSIONPREFIX=	v
+DISTVERSION=	1.5.0
 CATEGORIES=	devel
 
 MAINTAINER=	dyeske@gmail.com
-COMMENT=	computes size metrics for a git repository
+COMMENT=	Computes size metrics for a git repository
+WWW=		https://github.com/github/git-sizer
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md

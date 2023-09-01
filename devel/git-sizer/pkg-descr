@@ -1,3 +1,2 @@
-Compute various size metrics for a Git repository, flagging those that might cause problems
-
-WWW: https://github.com/github/git-sizer
+This computes various size metrics for a local Git repository, flagging those
+that might cause you problems or inconvenience
