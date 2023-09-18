@@ -332,6 +332,7 @@
     SUBDIR += caliper
     SUBDIR += capnproto
     SUBDIR += capnproto080
+    SUBDIR += capslock
     SUBDIR += capstone
     SUBDIR += capstone3
     SUBDIR += capstone4
@@ -1455,6 +1456,7 @@
     SUBDIR += libxo
     SUBDIR += libxs
     SUBDIR += libxtend
+    SUBDIR += libzakalwe
     SUBDIR += libzim
     SUBDIR += libzookeeper
     SUBDIR += libzvbi
@@ -1661,6 +1663,7 @@
     SUBDIR += obby
     SUBDIR += objconv
     SUBDIR += objecthash
+    SUBDIR += objfw
     SUBDIR += ocaml-annexlib
     SUBDIR += ocaml-calendar
     SUBDIR += ocaml-camljava
