@@ -1,5 +1,6 @@
 PORTNAME=	pipewire
 DISTVERSION=	0.3.81
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	https://gitlab.freedesktop.org/pipewire/media-session/-/archive/${MEDIA_SESSION_VERSION}/:media_session
 DISTFILES=	media-session-${MEDIA_SESSION_VERSION}${EXTRACT_SUFX}:media_session
@@ -15,6 +16,7 @@ BUILD_DEPENDS=	v4l_compat>0:multimedia/v4l_compat
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libinotify.so:devel/libinotify \
 		libepoll-shim.so:devel/libepoll-shim \
+		libopus.so:audio/opus \
 		libsndfile.so:audio/libsndfile \
 		libudev.so:devel/libudev-devd \
 		libwebrtc_audio_processing.so:audio/webrtc-audio-processing0
@@ -35,7 +37,6 @@ GSTREAMER_USES=		gstreamer
 GSTREAMER_MESON_ENABLED=gstreamer gstreamer-device-provider
 
 PIPEWIRE_JACK_DESC=		Build pipewire-jack
-PIPEWIRE_JACK_LIB_DEPENDS=	libopus.so:audio/opus
 PIPEWIRE_JACK_MESON_ENABLED=	pipewire-jack
 
 MANPAGES_BUILD_DEPENDS=	rst2man:textproc/py-docutils
@@ -61,7 +62,8 @@ SDL_USE=		sdl=sdl2
 VULKAN_DESC=		Enable Vulkan integration
 VULKAN_MESON_ENABLED=	vulkan
 VULKAN_BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers
-VULKAN_LIB_DEPENDS=	libvulkan.so:graphics/vulkan-loader
+VULKAN_LIB_DEPENDS=	libvulkan.so:graphics/vulkan-loader \
+			libdrm.so:graphics/libdrm
 
 MEDIA_SESSION_VERSION=	0.4.2
 
@@ -70,6 +72,7 @@ MESON_ARGS=	-D pw-cat=enabled \
 		-D raop=enabled \
 		-D avb=disabled \
 		-D bluez5=disabled \
+		-D compress-offload=disabled \
 		-D jack=disabled \
 		-D libcamera=disabled \
 		-D libcanberra=disabled \
@@ -106,4 +109,10 @@ post-install-MEDIASESSION-on:
 	${INSTALL_DATA} ${WRKDIR}/10-alsa-default.conf \
 		${STAGEDIR}${ETCDIR}/${PORTNAME}.conf.d
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${SSL_DEFAULT:C,3[0-9],3,} == openssl3
+CFLAGS+=	-DOPENSSL_API_COMPAT=0x10100000L
+.endif
+
+.include <bsd.port.post.mk>

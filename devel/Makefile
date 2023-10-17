@@ -4886,12 +4886,14 @@
     SUBDIR += py-jsonref
     SUBDIR += py-jsonrpclib-pelix
     SUBDIR += py-jsonschema
+    SUBDIR += py-jsonschema-path
     SUBDIR += py-jsonschema-spec
     SUBDIR += py-jsonschema-specifications
     SUBDIR += py-jsonschema3
     SUBDIR += py-jsonschema417
     SUBDIR += py-jsonsir
     SUBDIR += py-jupyter-client
+    SUBDIR += py-jupyter-collaboration
     SUBDIR += py-jupyter-core
     SUBDIR += py-jupyter-events
     SUBDIR += py-jupyter-kernel-test
@@ -4901,7 +4903,6 @@
     SUBDIR += py-jupyter-server-fileid
     SUBDIR += py-jupyter-server-mathjax
     SUBDIR += py-jupyter-server-terminals
-    SUBDIR += py-jupyter-server-ydoc
     SUBDIR += py-jupyter-telemetry
     SUBDIR += py-jupyter-ydoc
     SUBDIR += py-jupyter_console
@@ -5118,7 +5119,6 @@
     SUBDIR += py-ovsdbapp
     SUBDIR += py-p4python
     SUBDIR += py-packaging
-    SUBDIR += py-packaging21
     SUBDIR += py-parallax
     SUBDIR += py-param
     SUBDIR += py-parameterized
@@ -6701,6 +6701,7 @@
     SUBDIR += rubygem-cucumber-messages
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
+    SUBDIR += rubygem-cucumber-tag-expressions5
     SUBDIR += rubygem-cucumber-wire
     SUBDIR += rubygem-curses
     SUBDIR += rubygem-cyoi
@@ -6708,6 +6709,7 @@
     SUBDIR += rubygem-daemons
     SUBDIR += rubygem-danger
     SUBDIR += rubygem-danger-gitlab
+    SUBDIR += rubygem-datadog-ci
     SUBDIR += rubygem-date
     SUBDIR += rubygem-ddmemoize
     SUBDIR += rubygem-ddmetrics
@@ -6913,7 +6915,6 @@
     SUBDIR += rubygem-google-iam-credentials-v1
     SUBDIR += rubygem-google-iam-v1
     SUBDIR += rubygem-google-protobuf
-    SUBDIR += rubygem-google-protobuf323
     SUBDIR += rubygem-googleapis-common-protos
     SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf
@@ -7113,6 +7114,12 @@
     SUBDIR += rubygem-open3
     SUBDIR += rubygem-open3_backport
     SUBDIR += rubygem-open4
+    SUBDIR += rubygem-opentelemetry-api
+    SUBDIR += rubygem-opentelemetry-common
+    SUBDIR += rubygem-opentelemetry-instrumentation-base
+    SUBDIR += rubygem-opentelemetry-registry
+    SUBDIR += rubygem-opentelemetry-sdk
+    SUBDIR += rubygem-opentelemetry-semantic_conventions
     SUBDIR += rubygem-opentracing
     SUBDIR += rubygem-opt_parse_validator
     SUBDIR += rubygem-optimist
