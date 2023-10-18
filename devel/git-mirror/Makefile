@@ -1,0 +1,221 @@
+PORTNAME=	git-mirror
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.14.11
+CATEGORIES=	devel
+MASTER_SITES=	https://github.com/bachp/git-mirror/releases/download/v${PORTVERSION}/
+	# https://github.com/bachp/git-mirror/archive/refs/tags/v0.14.11.tar.gz
+
+MAINTAINER=	yuri@FreeBSD.org
+COMMENT=	One CLI to format the code tree
+WWW=		https://numtide.github.io/treefmt/
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+# https://github.com/bachp/git-mirror/archive/refs/tags/v0.14.11.tar.gz
+
+USES=		cargo
+USE_GITHUB=	yes
+GH_ACCOUNT=	bachp
+
+CARGO_CRATES=	clap-4.4.6 \
+		colored-1.9.3 \
+		env_logger-0.10.0 \
+		term-0.7.0 \
+		junit-report-0.8.0 \
+		regex-1.9.1 \
+		libc-0.2.149 \
+		termcolor-1.3.0 \
+		winapi-x86_64-pc-windows-gnu-0.4.0 \
+		is-terminal-0.4.9 \
+		humantime-2.1.0 \
+		deunicode-0.4.3 \
+		time-core-0.1.2 \
+		anstream-0.6.0 \
+		heck-0.4.0 \
+		strsim-0.10.0 \
+		clap_lex-0.5.0 \
+		normalize-line-endings-0.3.0 \
+		itertools-0.10.3 \
+		float-cmp-0.9.0 \
+		difflib-0.4.0 \
+		wait-timeout-0.2.0 \
+		predicates-tree-1.0.5 \
+		predicates-core-1.0.6 \
+		doc-comment-0.3.3 \
+		bstr-1.3.0 \
+		anstyle-1.0.1 \
+		powerfmt-0.2.0 \
+		deranged-0.3.9 \
+		thiserror-impl-1.0.49 \
+		indexmap-1.9.3 \
+		indexmap-2.0.0 \
+		tokio-util-0.7.8 \
+		futures-channel-0.3.5 \
+		tracing-0.1.35 \
+		unsafe-libyaml-0.2.8 \
+		ryu-1.0.15 \
+		itoa-1.0.6 \
+		syn-2.0.28 \
+		syn-1.0.0 \
+		form_urlencoded-1.1.0 \
+		idna-0.3.0 \
+		slab-0.4.6 \
+		pin-utils-0.1.0 \
+		futures-task-0.3.25 \
+		io-lifetimes-1.0.11 \
+		instant-0.1.12 \
+		tinyvec-1.6.0 \
+		futures-io-0.3.28 \
+		memoffset-0.6.0 \
+		crossbeam-utils-0.8.5 \
+		crossbeam-deque-0.8.1 \
+		parking_lot_core-0.9.8 \
+		lock_api-0.4.9 \
+		time-macros-0.2.15 \
+		vte-0.3.2 \
+		quote-1.0.29 \
+		hashbrown-0.14.0 \
+		hashbrown-0.12.3 \
+		equivalent-1.0.1 \
+		windows_x86_64_gnullvm-0.48.0 \
+		proc-macro2-1.0.63 \
+		windows_x86_64_msvc-0.48.0 \
+		windows_x86_64_gnu-0.48.0 \
+		rustix-0.38.0 \
+		rustix-0.37.11 \
+		windows_i686_msvc-0.48.0 \
+		windows_i686_gnu-0.48.0 \
+		windows_aarch64_msvc-0.48.0 \
+		windows_aarch64_gnullvm-0.48.0 \
+		errno-dragonfly-0.1.2 \
+		byteorder-1.4.3 \
+		bumpalo-3.13.0 \
+		tinyvec_macros-0.1.0 \
+		wasm-bindgen-shared-0.2.87 \
+		wasm-bindgen-backend-0.2.87 \
+		wasm-bindgen-macro-support-0.2.87 \
+		hermit-abi-0.2.6 \
+		hermit-abi-0.3.0 \
+		aho-corasick-1.0.0 \
+		regex-syntax-0.7.5 \
+		winapi-i686-pc-windows-gnu-0.4.0 \
+		winapi-util-0.1.5 \
+		regex-automata-0.3.1 \
+		regex-automata-0.1.5 \
+		termtree-0.2.4 \
+		anstyle-wincon-3.0.0 \
+		try-lock-0.2.3 \
+		tracing-core-0.1.30 \
+		utf8parse-0.2.1 \
+		utf8parse-0.1.0 \
+		redox_syscall-0.3.5 \
+		redox_syscall-0.2.8 \
+		smallvec-1.10.0 \
+		scopeguard-1.1.0 \
+		colorchoice-1.0.0 \
+		anstyle-query-1.0.0 \
+		anstyle-parse-0.2.1 \
+		num-traits-0.2.15 \
+		windows-sys-0.48.0 \
+		windows-sys-0.29.0 \
+		crossbeam-epoch-0.9.6 \
+		unicode-normalization-0.1.22 \
+		unicode-bidi-0.3.7 \
+		winreg-0.10.0 \
+		system-configuration-0.5.1 \
+		web-sys-0.3.60 \
+		wasm-bindgen-futures-0.4.33 \
+		wasm-bindgen-0.2.87 \
+		js-sys-0.3.64 \
+		unicode-ident-1.0.9 \
+		system-configuration-sys-0.5.0 \
+		core-foundation-0.9.3 \
+		fastrand-1.9.0 \
+		core-foundation-sys-0.8.4 \
+		bitflags-2.3.3 \
+		bitflags-1.3.2 \
+		unicode-xid-0.2.2 \
+		windows-targets-0.48.1 \
+		errno-0.3.1 \
+		linux-raw-sys-0.4.3 \
+		foreign-types-shared-0.1.1 \
+		openssl-src-111.15.0+1.1.1k \
+		linux-raw-sys-0.3.8 \
+		tokio-native-tls-0.3.0 \
+		tokio-1.28.1 \
+		pin-project-lite-0.2.9 \
+		percent-encoding-2.2.0 \
+		futures-sink-0.3.28 \
+		once_cell-1.17.1 \
+		native-tls-0.2.11 \
+		mime-0.3.17 \
+		ipnet-2.7.0 \
+		hyper-tls-0.5.0 \
+		hyper-0.14.21 \
+		security-framework-2.6.1 \
+		security-framework-sys-2.6.1 \
+		tempfile-3.6.0 \
+		wasm-bindgen-macro-0.2.87 \
+		autocfg-1.1.0 \
+		num_cpus-1.15.0 \
+		mio-0.8.8 \
+		schannel-0.1.19 \
+		wasi-0.11.0+wasi-snapshot-preview1 \
+		vcpkg-0.2.15 \
+		pkg-config-0.3.27 \
+		cc-1.0.67 \
+		openssl-macros-0.1.1 \
+		foreign-types-0.3.2 \
+		openssl-sys-0.9.89 \
+		openssl-0.10.55 \
+		want-0.3.0 \
+		socket2-0.4.9 \
+		httpdate-1.0.3 \
+		httparse-1.8.0 \
+		http-body-0.4.5 \
+		h2-0.3.20 \
+		encoding_rs-0.8.31 \
+		url-2.3.1 \
+		tower-service-0.3.2 \
+		serde_urlencoded-0.7.1 \
+		http-0.2.9 \
+		futures-util-0.3.25 \
+		openssl-probe-0.1.5 \
+		futures-core-0.3.28 \
+		predicates-3.0.3 \
+		bytes-1.5.0 \
+		clap_builder-4.4.6 \
+		clap_derive-4.4.2 \
+		rayon-1.8.0 \
+		base64-0.21.0 \
+		assert_cmd-2.0.12 \
+		time-0.3.30 \
+		rayon-core-1.12.0 \
+		either-1.9.0 \
+		protobuf-2.0.0 \
+		thiserror-1.0.49 \
+		parking_lot-0.12.1 \
+		memchr-2.6.4 \
+		slug-0.1.4 \
+		lazy_static-1.4.0 \
+		serde_yaml-0.9.22 \
+		prometheus-0.13.3 \
+		fnv-1.0.7 \
+		cfg-if-1.0.0 \
+		strip-ansi-escapes-0.1.0 \
+		derive-getters-0.2.0 \
+		quick-xml-0.24.0 \
+		serde-1.0.189 \
+		serde_derive-1.0.189 \
+		serde_json-1.0.107 \
+		reqwest-0.11.18 \
+		log-0.4.20 \
+		fs2-0.4.3 \
+		winapi-0.3.9
+
+PLIST_FILES=	bin/${PORTNAME}
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+
+.include <bsd.port.mk>
