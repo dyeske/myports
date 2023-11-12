@@ -38,11 +38,12 @@ MAKE_ARGS=	AR=${AR} \
 
 # Append user-settable build args from make.conf
 MAKE_ARGS+=	${IPXE_MAKE_ARGS}
-ALL_TARGET=	bin/ipxe.dsk bin/ipxe.lkrn bin/ipxe.pxe bin/ipxe.usb \
-		bin/undionly.kpxe
+ALL_TARGET=	bin/ipxe.dsk bin/ipxe.lkrn bin/ipxe.exe \
+		bin/ipxe.pxe bin/ipxe.usb bin/ipxe.nbi \
+		bin/undionly.kpxe bin/ipxe.vhd
 # VMware ROMs
 ALL_TARGET+=	bin/8086100f.mrom bin/808610d3.mrom bin/10222000.rom \
-		bin/15ad07b0.rom
+		bin/15ad07b0.rom bin/rtl8139.rom
 SUB_FILES=	pkg-message
 WRKSRC_SUBDIR=	src
 PLIST_FILES=	${ALL_TARGET:S@^bin/@${DATADIR}/@}
@@ -53,14 +54,22 @@ PLIST_FILES=	${ALL_TARGET:S@^bin/@${DATADIR}/@}
 _IPXE_BUILDCFG=	branding:PRODUCT_NAME="${PKGNAME} (${OPSYS} ${OSREL}/${ARCH})" \
 		console:CONSOLE_SERIAL \
 		console:KEYBOARD_MAP=us \
+		console:CONSOLE_FRAMEBUFFER \
+		console:CONSOLE_SYSLOG \
 		general:!DOWNLOAD_PROTO_FTP \
 		general:DOWNLOAD_PROTO_HTTPS \
 		general:DOWNLOAD_PROTO_NFS \
+		general:DOWNLOAD_PROTO_TFTP \
+		general:IMAGE_SCRIPT \
 		general:IMAGE_TRUST_CMD \
-		general:NET_PROTO_IPV6 \
 		general:NTP_CMD \
 		general:PING_CMD \
-		general:POWEROFF_CMD
+		general:REBOOT_CMD \
+		general:!IMAGE_MULTIBOOT \
+		general:POWEROFF_CMD \
+		general:SHELL_CMD \
+		settings:CPUID_SETTINGS \
+		settings:VMWARE_SETTINGS
 
 OPTIONS_DEFINE=		EFI ISO
 OPTIONS_DEFAULT=	EFI ISO
