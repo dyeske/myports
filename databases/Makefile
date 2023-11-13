@@ -68,16 +68,6 @@
     SUBDIR += firebird40-server
     SUBDIR += fortytwo-bdb
     SUBDIR += foundationdb
-    SUBDIR += fpc-dblib
-    SUBDIR += fpc-fpindexer
-    SUBDIR += fpc-gdbm
-    SUBDIR += fpc-ibase
-    SUBDIR += fpc-mysql
-    SUBDIR += fpc-odbc
-    SUBDIR += fpc-oracle
-    SUBDIR += fpc-postgres
-    SUBDIR += fpc-pxlib
-    SUBDIR += fpc-sqlite
     SUBDIR += frece
     SUBDIR += freetds
     SUBDIR += freetds-devel
@@ -95,6 +85,7 @@
     SUBDIR += go-pgweb
     SUBDIR += gobang
     SUBDIR += gom
+    SUBDIR += goose
     SUBDIR += gqlplus
     SUBDIR += grass7
     SUBDIR += grass8
@@ -559,6 +550,7 @@
     SUBDIR += pg_similarity
     SUBDIR += pg_stat_kcache
     SUBDIR += pg_tileserv
+    SUBDIR += pg_vector
     SUBDIR += pgaccess
     SUBDIR += pgadmin3
     SUBDIR += pgagroal

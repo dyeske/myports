@@ -224,6 +224,7 @@
     SUBDIR += conky-awesome
     SUBDIR += conman
     SUBDIR += conmon
+    SUBDIR += conserve
     SUBDIR += consolehm
     SUBDIR += consolekit2
     SUBDIR += consul
@@ -420,10 +421,6 @@
     SUBDIR += foremost
     SUBDIR += fortunelock
     SUBDIR += fpart
-    SUBDIR += fpc-syslog
-    SUBDIR += fpc-users
-    SUBDIR += fpc-utmp
-    SUBDIR += fpc-uuid
     SUBDIR += frand
     SUBDIR += freebsd-snapshot
     SUBDIR += freecolor
@@ -1413,6 +1410,7 @@
     SUBDIR += sysvbanner
     SUBDIR += szyszka
     SUBDIR += tai64nfrac
+    SUBDIR += tailspin
     SUBDIR += tarsnap
     SUBDIR += tarsnap-gui
     SUBDIR += tarsnap-periodic
@@ -1476,6 +1474,7 @@
     SUBDIR += u-boot-bananapi
     SUBDIR += u-boot-bananapim2
     SUBDIR += u-boot-beaglebone
+    SUBDIR += u-boot-bhyve-arm64
     SUBDIR += u-boot-chip
     SUBDIR += u-boot-clearfog
     SUBDIR += u-boot-cubieboard

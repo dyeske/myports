@@ -203,6 +203,7 @@
     SUBDIR += extract_url
     SUBDIR += ezxml
     SUBDIR += fa-aspell
+    SUBDIR += fblog
     SUBDIR += fcitx-m17n
     SUBDIR += fcitx-qt5
     SUBDIR += fcitx-table-other
@@ -228,8 +229,6 @@
     SUBDIR += foiltex
     SUBDIR += fop
     SUBDIR += fox-xml
-    SUBDIR += fpc-aspell
-    SUBDIR += fpc-libxml2
     SUBDIR += freexl
     SUBDIR += fuzzysearchdatabase
     SUBDIR += fy-aspell
@@ -355,7 +354,6 @@
     SUBDIR += kf5-kcodecs
     SUBDIR += kf5-sonnet
     SUBDIR += kf5-syntax-highlighting
-    SUBDIR += kibana7
     SUBDIR += kibana8
     SUBDIR += kiss-templates
     SUBDIR += kmfl-european-latin
@@ -443,6 +441,7 @@
     SUBDIR += linuxdoc
     SUBDIR += linuxdoc-tools
     SUBDIR += localize
+    SUBDIR += logseq
     SUBDIR += lookatme
     SUBDIR += loook
     SUBDIR += lowdown

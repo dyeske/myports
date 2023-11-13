@@ -185,12 +185,6 @@
     SUBDIR += foreign-cdm
     SUBDIR += formication
     SUBDIR += foswiki
-    SUBDIR += fpc-fastcgi
-    SUBDIR += fpc-googleapi
-    SUBDIR += fpc-httpd22
-    SUBDIR += fpc-httpd24
-    SUBDIR += fpc-libmicrohttpd
-    SUBDIR += fpc-webidl
     SUBDIR += free-sa-devel
     SUBDIR += fswiki
     SUBDIR += fusionpbx
@@ -243,7 +237,6 @@
     SUBDIR += h2o
     SUBDIR += h2o-devel
     SUBDIR += habari
-    SUBDIR += hedgedoc
     SUBDIR += hiawatha
     SUBDIR += hiawatha-monitor
     SUBDIR += homer-web
@@ -351,6 +344,7 @@
     SUBDIR += lzr
     SUBDIR += madsonic
     SUBDIR += man2web
+    SUBDIR += manpageblog
     SUBDIR += mathjax
     SUBDIR += mathjax3
     SUBDIR += mathopd
@@ -2315,7 +2309,6 @@
     SUBDIR += serf
     SUBDIR += servlet-api
     SUBDIR += sfeed
-    SUBDIR += sfnt2woff
     SUBDIR += shellinabox
     SUBDIR += shiori
     SUBDIR += silicon
@@ -2462,6 +2455,7 @@
     SUBDIR += vdradmin-am
     SUBDIR += vertx
     SUBDIR += vger
+    SUBDIR += vieb
     SUBDIR += vigil
     SUBDIR += vimb
     SUBDIR += visitors
