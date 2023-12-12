@@ -1,7 +1,8 @@
 PORTNAME=	fontbakery
-PORTVERSION=	0.10.2
-DISTVERSIONPREFIX=	v
+PORTVERSION=	0.10.4
 CATEGORIES=	print python
+MASTER_SITES=	PYPI \
+		https://github.com/fonttools/fontbakery/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -34,9 +35,6 @@ USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
 
-GH_ACCOUNT=	googlefonts
-USE_GITHUB=	yes
-
 OPTIONS_DEFINE=	FONTVAL FONTWERK GOOGLEFONTS ISO15008 NOTOFONTS SHAPING TYPENETWORK UFO_SOURCES
 OPTIONS_DEFAULT=FONTVAL FONTWERK GOOGLEFONTS ISO15008 NOTOFONTS SHAPING TYPENETWORK UFO_SOURCES
 FONTVAL_DESC=		Checks for Font Validator
@@ -63,7 +61,7 @@ GOOGLEFONTS_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}axisregistry>=0.3.0:x11-fonts/py-
 			${PYTHON_PKGNAMEPREFIX}vharfbuzz>=0.2.0:print/py-vharfbuzz@${PY_FLAVOR}
 ISO15008_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}uharfbuzz>=0:print/py-uharfbuzz@${PY_FLAVOR}
 SHAPING_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}collidoscope>=0.5.2:print/py-collidoscope@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}shaperglot>=0.2.0:x11-fonts/py-shaperglot@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}shaperglot>=0.3.0:x11-fonts/py-shaperglot@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}stringbrewer>=0:devel/py-stringbrewer@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}ufo2ft>=2.25.2:x11-fonts/py-ufo2ft@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}vharfbuzz>=0.2.0:print/py-vharfbuzz@${PY_FLAVOR}

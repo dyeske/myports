@@ -78,7 +78,6 @@
     SUBDIR += bib2html
     SUBDIR += bibclean
     SUBDIR += bibtex2html
-    SUBDIR += bibtool
     SUBDIR += bibutils
     SUBDIR += biodiff
     SUBDIR += bn-aspell
@@ -354,6 +353,9 @@
     SUBDIR += kf5-kcodecs
     SUBDIR += kf5-sonnet
     SUBDIR += kf5-syntax-highlighting
+    SUBDIR += kf6-kcodecs
+    SUBDIR += kf6-sonnet
+    SUBDIR += kf6-syntax-highlighting
     SUBDIR += kibana8
     SUBDIR += kiss-templates
     SUBDIR += kmfl-european-latin
@@ -803,6 +805,7 @@
     SUBDIR += p5-Spreadsheet-ParseExcel
     SUBDIR += p5-Spreadsheet-ParseXLSX
     SUBDIR += p5-Spreadsheet-Read
+    SUBDIR += p5-Spreadsheet-ReadGnumeric
     SUBDIR += p5-Spreadsheet-ReadSXC
     SUBDIR += p5-Spreadsheet-WriteExcel
     SUBDIR += p5-Spreadsheet-WriteExcel-FromXML
@@ -1420,6 +1423,7 @@
     SUBDIR += py-markups
     SUBDIR += py-markupsafe
     SUBDIR += py-mathics-pygments
+    SUBDIR += py-mdformat
     SUBDIR += py-mdit-py-plugins
     SUBDIR += py-mdurl
     SUBDIR += py-merge3
@@ -1492,7 +1496,6 @@
     SUBDIR += py-pyexcel-xlsx
     SUBDIR += py-pygccxml
     SUBDIR += py-pygments
-    SUBDIR += py-pygments-25
     SUBDIR += py-pygtail
     SUBDIR += py-pyhamcrest
     SUBDIR += py-pyjade
@@ -1814,6 +1817,7 @@
     SUBDIR += rubygem-liquid4
     SUBDIR += rubygem-loggability
     SUBDIR += rubygem-loofah
+    SUBDIR += rubygem-loofah221
     SUBDIR += rubygem-ltsv
     SUBDIR += rubygem-markaby
     SUBDIR += rubygem-mdl
@@ -1863,7 +1867,6 @@
     SUBDIR += rubygem-ronn
     SUBDIR += rubygem-rouge
     SUBDIR += rubygem-rouge3
-    SUBDIR += rubygem-rouge41
     SUBDIR += rubygem-rttool
     SUBDIR += rubygem-ruby-augeas
     SUBDIR += rubygem-ruby-xslt
@@ -1989,7 +1992,6 @@
     SUBDIR += ssddiff
     SUBDIR += stardict-dict-fa_IR
     SUBDIR += stardict-dictd_mova
-    SUBDIR += stardict-quick
     SUBDIR += stardict-rptts
     SUBDIR += stardict3
     SUBDIR += sv-aspell
