@@ -61,6 +61,7 @@
     SUBDIR += docker-tray
     SUBDIR += dsbautostart
     SUBDIR += dsbxinput
+    SUBDIR += dwlb
     SUBDIR += dwmblocks
     SUBDIR += dxpc
     SUBDIR += dzen2
@@ -118,7 +119,6 @@
     SUBDIR += hs-xmobar
     SUBDIR += hsetroot
     SUBDIR += hybrid-bar
-    SUBDIR += hyprland-share-picker
     SUBDIR += hyprpaper
     SUBDIR += hyprpicker
     SUBDIR += i3bar-river
@@ -626,6 +626,7 @@
     SUBDIR += xskyroot
     SUBDIR += xsm
     SUBDIR += xsnow
+    SUBDIR += xss-lock
     SUBDIR += xssstate
     SUBDIR += xstarroll
     SUBDIR += xstdcmap
