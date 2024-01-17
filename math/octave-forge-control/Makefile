@@ -1,6 +1,7 @@
 PORTNAME=	octave-forge-control
 DISTVERSIONPREFIX=	control-
 DISTVERSION=	4.0.0
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -19,6 +20,9 @@ GH_TAGNAME=	401037e:slicot
 OCTAVE_SRC=	${GH_PROJECT}-control-${DISTVERSION}
 
 GNU_CONFIGURE=	yes
+
+post-patch:
+	${MV} ${WRKSRC}/TG04BX.f ${WRKSRC_slicot}/src
 
 pre-configure:
 	${REINPLACE_CMD} -e '/SC_SRC.*\:\=/s+slicot+${WRKSRC_slicot}'+ ${WRKSRC}/Makefile
