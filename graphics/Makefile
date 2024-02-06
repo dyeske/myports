@@ -115,6 +115,7 @@
     SUBDIR += cosmoplayer
     SUBDIR += cptutils
     SUBDIR += crw
+    SUBDIR += ctl
     SUBDIR += curator
     SUBDIR += curtail
     SUBDIR += cuttlefish
@@ -165,6 +166,7 @@
     SUBDIR += enblend
     SUBDIR += engauge-digitizer
     SUBDIR += entangle
+    SUBDIR += entice
     SUBDIR += eog
     SUBDIR += eog-plugins
     SUBDIR += eom
@@ -584,6 +586,7 @@
     SUBDIR += nanosvg
     SUBDIR += netpbm
     SUBDIR += nip2
+    SUBDIR += noaa-apt
     SUBDIR += nomacs
     SUBDIR += nplot
     SUBDIR += npretty
@@ -1114,6 +1117,7 @@
     SUBDIR += skanlite
     SUBDIR += skanpage
     SUBDIR += spectacle
+    SUBDIR += spectacle-devel
     SUBDIR += spirv-tools
     SUBDIR += springgraph
     SUBDIR += squish
