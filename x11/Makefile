@@ -86,6 +86,7 @@
     SUBDIR += foot
     SUBDIR += fstobdf
     SUBDIR += fuzzel
+    SUBDIR += gbsddialog
     SUBDIR += gdm
     SUBDIR += glcapsviewer
     SUBDIR += gmrun
@@ -121,6 +122,8 @@
     SUBDIR += hs-xmobar
     SUBDIR += hsetroot
     SUBDIR += hybrid-bar
+    SUBDIR += hypridle
+    SUBDIR += hyprlock
     SUBDIR += hyprpaper
     SUBDIR += hyprpicker
     SUBDIR += i3bar-river
@@ -244,6 +247,7 @@
     SUBDIR += lxpanel
     SUBDIR += lxqt-about
     SUBDIR += lxqt-globalkeys
+    SUBDIR += lxqt-menu-data
     SUBDIR += lxqt-runner
     SUBDIR += lxrandr
     SUBDIR += ly

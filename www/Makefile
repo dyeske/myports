@@ -49,6 +49,7 @@
     SUBDIR += angie-module-rtmp
     SUBDIR += angie-module-set-misc
     SUBDIR += angie-module-subs
+    SUBDIR += angie-module-testcookie
     SUBDIR += angie-module-upload
     SUBDIR += angie-module-vod
     SUBDIR += angie-module-xslt
@@ -96,7 +97,6 @@
     SUBDIR += cgi-lib
     SUBDIR += cgi-lib.pl
     SUBDIR += cgicc
-    SUBDIR += cgichk
     SUBDIR += cgiwrap
     SUBDIR += checkbot
     SUBDIR += chems
@@ -144,6 +144,7 @@
     SUBDIR += dolibarr
     SUBDIR += dolibarr16
     SUBDIR += dolibarr17
+    SUBDIR += dolibarr18
     SUBDIR += domoticz
     SUBDIR += dooble
     SUBDIR += dot-http
@@ -188,6 +189,7 @@
     SUBDIR += formication
     SUBDIR += foswiki
     SUBDIR += free-sa-devel
+    SUBDIR += freenginx
     SUBDIR += fswiki
     SUBDIR += fusionpbx
     SUBDIR += g-cows
@@ -327,6 +329,7 @@
     SUBDIR += litmus
     SUBDIR += ljdeps
     SUBDIR += llhttp
+    SUBDIR += loco
     SUBDIR += logswan
     SUBDIR += logtools
     SUBDIR += ls-qpack
@@ -467,7 +470,6 @@
     SUBDIR += nginx-prometheus-exporter
     SUBDIR += nginx-ultimate-bad-bot-blocker
     SUBDIR += nginx-vts-exporter
-    SUBDIR += nibbleblog
     SUBDIR += nift
     SUBDIR += node
     SUBDIR += node16
@@ -975,6 +977,7 @@
     SUBDIR += p5-HTTP-Throwable
     SUBDIR += p5-HTTP-Tiny
     SUBDIR += p5-HTTP-Tiny-Multipart
+    SUBDIR += p5-HTTP-Tiny-Paranoid
     SUBDIR += p5-HTTP-Tiny-SPDY
     SUBDIR += p5-HTTP-Tiny-UA
     SUBDIR += p5-HTTP-Tiny-UNIX
@@ -1412,7 +1415,6 @@
     SUBDIR += php83-opcache
     SUBDIR += php83-session
     SUBDIR += php83-tidy
-    SUBDIR += phpbb
     SUBDIR += phpbb3
     SUBDIR += phpfpmtop
     SUBDIR += phpgroupware
@@ -1489,22 +1491,35 @@
     SUBDIR += py-cssutils
     SUBDIR += py-daphne
     SUBDIR += py-dj-database-url
+    SUBDIR += py-dj42-channels
+    SUBDIR += py-dj42-channels-redis
+    SUBDIR += py-dj42-django-allauth
+    SUBDIR += py-dj42-django-auditlog
     SUBDIR += py-dj42-django-auth-ldap
+    SUBDIR += py-dj42-django-celery-results
+    SUBDIR += py-dj42-django-compression-middleware
     SUBDIR += py-dj42-django-cors-headers
+    SUBDIR += py-dj42-django-crispy-forms
     SUBDIR += py-dj42-django-debug-toolbar
+    SUBDIR += py-dj42-django-extensions
     SUBDIR += py-dj42-django-filter
     SUBDIR += py-dj42-django-graphiql-debug-toolbar
+    SUBDIR += py-dj42-django-guardian
     SUBDIR += py-dj42-django-js-asset
     SUBDIR += py-dj42-django-mptt
+    SUBDIR += py-dj42-django-multiselectfield
     SUBDIR += py-dj42-django-prometheus
     SUBDIR += py-dj42-django-redis
     SUBDIR += py-dj42-django-rich
     SUBDIR += py-dj42-django-tables2
     SUBDIR += py-dj42-django-taggit
     SUBDIR += py-dj42-django-timezone-field
+    SUBDIR += py-dj42-djangoql
     SUBDIR += py-dj42-djangorestframework
+    SUBDIR += py-dj42-djangorestframework-guardian
     SUBDIR += py-dj42-drf-spectacular
     SUBDIR += py-dj42-drf-spectacular-sidecar
+    SUBDIR += py-dj42-drf-writable-nested
     SUBDIR += py-django-admin-rangefilter
     SUBDIR += py-django-advanced-filters
     SUBDIR += py-django-allauth
@@ -1666,6 +1681,7 @@
     SUBDIR += py-flask-sockets
     SUBDIR += py-flask-uploads
     SUBDIR += py-flask-wtf
+    SUBDIR += py-flower
     SUBDIR += py-flup6
     SUBDIR += py-folium
     SUBDIR += py-forcediphttpsadapter
@@ -1709,6 +1725,7 @@
     SUBDIR += py-html3
     SUBDIR += py-html5-parser
     SUBDIR += py-html5lib
+    SUBDIR += py-htmldate
     SUBDIR += py-httmock
     SUBDIR += py-http-parser
     SUBDIR += py-httpbin
@@ -1735,6 +1752,7 @@
     SUBDIR += py-lektor
     SUBDIR += py-lesscpy
     SUBDIR += py-libsass
+    SUBDIR += py-limits
     SUBDIR += py-livereload
     SUBDIR += py-mechanicalsoup
     SUBDIR += py-mechanize
@@ -1857,6 +1875,7 @@
     SUBDIR += py-webtest
     SUBDIR += py-webunit
     SUBDIR += py-werkzeug
+    SUBDIR += py-werkzeug2
     SUBDIR += py-wfuzz
     SUBDIR += py-whitenoise
     SUBDIR += py-wikipedia
@@ -1953,6 +1972,7 @@
     SUBDIR += rubygem-crass
     SUBDIR += rubygem-cssbundling-rails
     SUBDIR += rubygem-cssbundling-rails-rails70
+    SUBDIR += rubygem-cssbundling-rails13-rails70
     SUBDIR += rubygem-cuba
     SUBDIR += rubygem-d3_rails
     SUBDIR += rubygem-davclient
@@ -1970,6 +1990,7 @@
     SUBDIR += rubygem-eventmachine_httpserver
     SUBDIR += rubygem-faraday
     SUBDIR += rubygem-faraday-em_http
+    SUBDIR += rubygem-faraday-em_http1
     SUBDIR += rubygem-faraday-em_synchrony
     SUBDIR += rubygem-faraday-follow_redirects
     SUBDIR += rubygem-faraday-http-cache
@@ -2155,6 +2176,7 @@
     SUBDIR += rubygem-rack-protection
     SUBDIR += rubygem-rack-protection1
     SUBDIR += rubygem-rack-protection2
+    SUBDIR += rubygem-rack-protection3
     SUBDIR += rubygem-rack-proxy
     SUBDIR += rubygem-rack-session
     SUBDIR += rubygem-rack-ssl

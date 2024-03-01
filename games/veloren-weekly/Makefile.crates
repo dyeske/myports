@@ -109,6 +109,7 @@ CARGO_CRATES=	ab_glyph-0.2.23 \
 		combine-4.6.6 \
 		compact_str-0.7.1 \
 		concurrent-queue-2.4.0 \
+		console-0.15.8 \
 		constant_time_eq-0.3.0 \
 		copypasta-0.8.2 \
 		core-foundation-0.9.4 \
@@ -186,6 +187,7 @@ CARGO_CRATES=	ab_glyph-0.2.23 \
 		egui_winit_platform-0.20.0 \
 		either-1.9.0 \
 		emath-0.23.0 \
+		encode_unicode-0.3.6 \
 		encoding_rs-0.8.33 \
 		endian-type-0.1.2 \
 		enum-as-inner-0.6.0 \
@@ -295,6 +297,7 @@ CARGO_CRATES=	ab_glyph-0.2.23 \
 		image-0.24.8 \
 		indexmap-1.9.3 \
 		indexmap-2.2.2 \
+		indicatif-0.17.8 \
 		indoc-2.0.4 \
 		inline_tweak-1.1.1 \
 		inotify-0.9.6 \
@@ -412,6 +415,7 @@ CARGO_CRATES=	ab_glyph-0.2.23 \
 		num_enum-0.6.1 \
 		num_enum_derive-0.5.11 \
 		num_enum_derive-0.6.1 \
+		number_prefix-0.4.0 \
 		objc-0.2.7 \
 		objc-foundation-0.1.1 \
 		objc-sys-0.2.0-beta.2 \
@@ -458,6 +462,7 @@ CARGO_CRATES=	ab_glyph-0.2.23 \
 		pistoncore-input-0.24.0 \
 		pkg-config-0.3.29 \
 		png-0.17.11 \
+		portable-atomic-1.6.0 \
 		powerfmt-0.2.0 \
 		pp-rs-0.2.1 \
 		ppv-lite86-0.2.17 \
@@ -799,11 +804,11 @@ CARGO_CRATES=	ab_glyph-0.2.23 \
 		zstd-safe-5.0.2+zstd.1.5.2 \
 		zstd-sys-2.0.9+zstd.1.5.5 \
 		keyboard-keynames@git+https://gitlab.com/Imbris/keyboard-keynames.git?tag=veloren-winit-0.28\#fca4bbdfa51bf054b155a455935b3792975c989d \
+		naga,wgpu,wgpu-core,wgpu-hal,wgpu-types@git+https://github.com/Imberflur/wgpu.git?tag=0.18-with-fixes-for-veloren-v1\#df527ef82e2eba827eda9278caa583506a06aa87 \
 		shred,shred-derive@git+https://github.com/amethyst/shred.git?rev=5d52c6fc390dd04c12158633e77591f6523d1f85\#5d52c6fc390dd04c12158633e77591f6523d1f85 \
 		egui_wgpu_backend@git+https://github.com/hasenbanck/egui_wgpu_backend.git?rev=34691d4e9149deb9cd0bb8cbb5a56bffebf47588\#34691d4e9149deb9cd0bb8cbb5a56bffebf47588 \
 		auth-common,authc@git+https://gitlab.com/veloren/auth.git?rev=abb1a705827984e11706d7bb97fb7a459e1e6533\#abb1a705827984e11706d7bb97fb7a459e1e6533 \
 		fluent,fluent-bundle,fluent-syntax,intl-memoizer@git+https://github.com/juliancoffee/fluent-rs.git?branch=patched\#929cf9512de121cce9b4cbf1cb860cd3294a1cd9 \
 		conrod_core,conrod_derive,conrod_winit@git+https://gitlab.com/veloren/conrod.git?branch=copypasta_0.7\#59fddc617696e68d28a75c2137a08c2572efb986 \
 		iced_core,iced_futures,iced_graphics,iced_native,iced_style,iced_winit@git+https://github.com/Imberflur/iced?tag=veloren-winit-0.28\#47243c257c8b8dd6c506b060804cb00b618aa0aa \
-		naga,wgpu,wgpu-core,wgpu-hal,wgpu-types@git+https://github.com/IsseW/wgpu?rev=5ea160164\#5ea16016402bb83b4ccd7ac8e6d4b0a2f85da6a0 \
 		portpicker@git+https://github.com/xMAC94x/portpicker-rs?rev=df6b37872f3586ac3b21d08b56c8ec7cd92fb172\#df6b37872f3586ac3b21d08b56c8ec7cd92fb172
