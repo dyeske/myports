@@ -983,7 +983,6 @@
     SUBDIR += py-pyaes
     SUBDIR += py-pyaff4
     SUBDIR += py-pyaxo
-    SUBDIR += py-pyblake2
     SUBDIR += py-pyclamd
     SUBDIR += py-pycryptodome
     SUBDIR += py-pycryptodome-test-vectors
@@ -1329,6 +1328,7 @@
     SUBDIR += transcrypt
     SUBDIR += trezord
     SUBDIR += tripwire
+    SUBDIR += trivy
     SUBDIR += trousers
     SUBDIR += trufflehog
     SUBDIR += tthsum

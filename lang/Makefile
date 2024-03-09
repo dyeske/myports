@@ -101,6 +101,7 @@
     SUBDIR += ghc
     SUBDIR += ghc810
     SUBDIR += ghc92
+    SUBDIR += ghc94
     SUBDIR += gir-to-d
     SUBDIR += gjs
     SUBDIR += gleam
@@ -279,6 +280,7 @@
     SUBDIR += php83
     SUBDIR += php83-extensions
     SUBDIR += picoc
+    SUBDIR += picolisp
     SUBDIR += plexil
     SUBDIR += pocl
     SUBDIR += polyml
