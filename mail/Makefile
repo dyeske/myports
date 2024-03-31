@@ -198,6 +198,7 @@
     SUBDIR += mailfront
     SUBDIR += mailgraph
     SUBDIR += mailhog
+    SUBDIR += mailio
     SUBDIR += mailman
     SUBDIR += mailman-exim4
     SUBDIR += mailman-postfix
@@ -377,6 +378,7 @@
     SUBDIR += p5-Mail-Mbox-MessageParser
     SUBDIR += p5-Mail-MboxParser
     SUBDIR += p5-Mail-Message
+    SUBDIR += p5-Mail-Milter-Authentication
     SUBDIR += p5-Mail-OpenDKIM
     SUBDIR += p5-Mail-OpenRelay-Simple
     SUBDIR += p5-Mail-POP3Client

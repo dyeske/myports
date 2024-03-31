@@ -1,6 +1,7 @@
     COMMENT = Miscellaneous utilities
 
     SUBDIR += R-cran-mime
+    SUBDIR += R-cran-optimx
     SUBDIR += R-cran-xfun
     SUBDIR += aclgen
     SUBDIR += actiona
@@ -450,6 +451,7 @@
     SUBDIR += py-onnx
     SUBDIR += py-onnx-tf
     SUBDIR += py-openai
+    SUBDIR += py-openai-whisper
     SUBDIR += py-openpaperwork-core
     SUBDIR += py-openpaperwork-gtk
     SUBDIR += py-openvdb
@@ -487,6 +489,7 @@
     SUBDIR += py-serverfiles
     SUBDIR += py-shap2
     SUBDIR += py-shell-gpt
+    SUBDIR += py-sigopt
     SUBDIR += py-soapy_power
     SUBDIR += py-spdx
     SUBDIR += py-spdx-lookup
@@ -498,6 +501,8 @@
     SUBDIR += py-tflite
     SUBDIR += py-tflite-support
     SUBDIR += py-thermocouples_reference
+    SUBDIR += py-timm
+    SUBDIR += py-timm-vis
     SUBDIR += py-toil
     SUBDIR += py-torch-geometric
     SUBDIR += py-torchmetrics
@@ -508,6 +513,7 @@
     SUBDIR += py-vaderSentiment
     SUBDIR += py-wandb
     SUBDIR += py-wurlitzer
+    SUBDIR += py-xformers
     SUBDIR += py-xgboost
     SUBDIR += pyobd
     SUBDIR += pytorch

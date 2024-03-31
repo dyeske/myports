@@ -165,7 +165,6 @@
     SUBDIR += ammonite
     SUBDIR += amqp-cpp
     SUBDIR += android-tools
-    SUBDIR += anjuta
     SUBDIR += antlr
     SUBDIR += antlr3
     SUBDIR += antlr4
@@ -624,6 +623,7 @@
     SUBDIR += elixir-hex
     SUBDIR += elixir-make
     SUBDIR += elm-format
+    SUBDIR += emacs-lsp-booster
     SUBDIR += embb
     SUBDIR += emscripten
     SUBDIR += entt
@@ -828,6 +828,7 @@
     SUBDIR += gitqlient
     SUBDIR += gittrac
     SUBDIR += gitty
+    SUBDIR += gitu
     SUBDIR += gitui
     SUBDIR += glab
     SUBDIR += glade
@@ -898,7 +899,6 @@
     SUBDIR += grcov
     SUBDIR += grex
     SUBDIR += grpc
-    SUBDIR += grpc142
     SUBDIR += grv
     SUBDIR += gsettings-desktop-schemas
     SUBDIR += gsoap
@@ -1387,6 +1387,7 @@
     SUBDIR += libs11n
     SUBDIR += libsavitar
     SUBDIR += libscca
+    SUBDIR += libscfg
     SUBDIR += libsearpc
     SUBDIR += libserdes
     SUBDIR += libserialport
@@ -1672,8 +1673,12 @@
     SUBDIR += objecthash
     SUBDIR += objfw
     SUBDIR += ocaml-annexlib
+    SUBDIR += ocaml-astring
+    SUBDIR += ocaml-base
+    SUBDIR += ocaml-bos
     SUBDIR += ocaml-calendar
     SUBDIR += ocaml-camljava
+    SUBDIR += ocaml-camlp-streams
     SUBDIR += ocaml-camlp4
     SUBDIR += ocaml-camlp5
     SUBDIR += ocaml-camomile
@@ -1682,27 +1687,36 @@
     SUBDIR += ocaml-classes
     SUBDIR += ocaml-cmdliner
     SUBDIR += ocaml-cppo
+    SUBDIR += ocaml-csexp
     SUBDIR += ocaml-dune
     SUBDIR += ocaml-extlib
     SUBDIR += ocaml-findlib
+    SUBDIR += ocaml-fmt
+    SUBDIR += ocaml-fpath
     SUBDIR += ocaml-ipaddr
     SUBDIR += ocaml-lacaml
+    SUBDIR += ocaml-logs
     SUBDIR += ocaml-lwt
     SUBDIR += ocaml-magic
+    SUBDIR += ocaml-mtime
     SUBDIR += ocaml-ocamlbuild
     SUBDIR += ocaml-opam
     SUBDIR += ocaml-ounit
     SUBDIR += ocaml-parmap
     SUBDIR += ocaml-pcre
+    SUBDIR += ocaml-pcre2
     SUBDIR += ocaml-pomap
     SUBDIR += ocaml-ppx-tools
     SUBDIR += ocaml-re
     SUBDIR += ocaml-react
     SUBDIR += ocaml-res
     SUBDIR += ocaml-result
+    SUBDIR += ocaml-rresult
     SUBDIR += ocaml-sdl
     SUBDIR += ocaml-sem
+    SUBDIR += ocaml-seq
     SUBDIR += ocaml-sexplib0
+    SUBDIR += ocaml-stdio
     SUBDIR += ocaml-topkg
     SUBDIR += ocaml-type_conv
     SUBDIR += ocaml-uchar
@@ -1718,6 +1732,7 @@
     SUBDIR += okteta
     SUBDIR += omake
     SUBDIR += omniORB
+    SUBDIR += omnilinter
     SUBDIR += onetbb
     SUBDIR += oniguruma
     SUBDIR += open-beagle
@@ -4100,6 +4115,9 @@
     SUBDIR += perlconsole
     SUBDIR += phabricator
     SUBDIR += phasar
+    SUBDIR += phorgeit-arcanist
+    SUBDIR += phorgeit-arcanist-lib
+    SUBDIR += phorgeit-phorge
     SUBDIR += php-Psr_Log
     SUBDIR += php-composer
     SUBDIR += php-geshi
@@ -4579,6 +4597,7 @@
     SUBDIR += py-dal
     SUBDIR += py-darts.util.lru
     SUBDIR += py-dask
+    SUBDIR += py-dask-expr
     SUBDIR += py-dask-histogram
     SUBDIR += py-dataclass-array
     SUBDIR += py-dataclasses-json
@@ -4605,6 +4624,7 @@
     SUBDIR += py-deepmerge
     SUBDIR += py-defusedxml
     SUBDIR += py-demjson
+    SUBDIR += py-dep-logic
     SUBDIR += py-deprecat
     SUBDIR += py-deprecated
     SUBDIR += py-deprecation
@@ -5088,6 +5108,7 @@
     SUBDIR += py-num2words
     SUBDIR += py-numba
     SUBDIR += py-objgraph
+    SUBDIR += py-objprint
     SUBDIR += py-objsize
     SUBDIR += py-oci
     SUBDIR += py-odfpy
@@ -5233,6 +5254,7 @@
     SUBDIR += py-plux
     SUBDIR += py-ply
     SUBDIR += py-pnio-dcp
+    SUBDIR += py-pnu-libpnu
     SUBDIR += py-pockets
     SUBDIR += py-podcastparser
     SUBDIR += py-poetry
@@ -5328,6 +5350,7 @@
     SUBDIR += py-pyee
     SUBDIR += py-pyelftools
     SUBDIR += py-pyface
+    SUBDIR += py-pyfakefs
     SUBDIR += py-pyfcm
     SUBDIR += py-pyflakes
     SUBDIR += py-pyformance
@@ -5429,6 +5452,7 @@
     SUBDIR += py-pytest-isort
     SUBDIR += py-pytest-jupyter
     SUBDIR += py-pytest-lazy-fixture
+    SUBDIR += py-pytest-lazy-fixtures
     SUBDIR += py-pytest-localserver
     SUBDIR += py-pytest-markdown
     SUBDIR += py-pytest-metadata
@@ -5754,6 +5778,7 @@
     SUBDIR += py-transitions
     SUBDIR += py-tree-format
     SUBDIR += py-tree-sitter
+    SUBDIR += py-tree-sitter-languages
     SUBDIR += py-treelib
     SUBDIR += py-trimesh
     SUBDIR += py-trove-classifiers
@@ -5800,6 +5825,7 @@
     SUBDIR += py-ubelt
     SUBDIR += py-uhid-freebsd
     SUBDIR += py-ujson
+    SUBDIR += py-undefined
     SUBDIR += py-unearth
     SUBDIR += py-unicodecsv
     SUBDIR += py-unicodedata2
@@ -6203,6 +6229,7 @@
     SUBDIR += rubygem-aws-sdk-billingconductor
     SUBDIR += rubygem-aws-sdk-braket
     SUBDIR += rubygem-aws-sdk-budgets
+    SUBDIR += rubygem-aws-sdk-chatbot
     SUBDIR += rubygem-aws-sdk-chime
     SUBDIR += rubygem-aws-sdk-chimesdkidentity
     SUBDIR += rubygem-aws-sdk-chimesdkmediapipelines
@@ -6518,6 +6545,7 @@
     SUBDIR += rubygem-aws-sdk-swf
     SUBDIR += rubygem-aws-sdk-synthetics
     SUBDIR += rubygem-aws-sdk-textract
+    SUBDIR += rubygem-aws-sdk-timestreaminfluxdb
     SUBDIR += rubygem-aws-sdk-timestreamquery
     SUBDIR += rubygem-aws-sdk-timestreamwrite
     SUBDIR += rubygem-aws-sdk-tnb
@@ -7421,6 +7449,7 @@
     SUBDIR += rubygem-semi_semantic
     SUBDIR += rubygem-semver2
     SUBDIR += rubygem-semver_dialects
+    SUBDIR += rubygem-semver_dialects1
     SUBDIR += rubygem-semver_dialects12
     SUBDIR += rubygem-semverse
     SUBDIR += rubygem-sentry-rails
@@ -7633,6 +7662,7 @@
     SUBDIR += rubygem-will_paginate
     SUBDIR += rubygem-windows_error
     SUBDIR += rubygem-wisper
+    SUBDIR += rubygem-with_advisory_lock61
     SUBDIR += rubygem-with_env
     SUBDIR += rubygem-wmi-lite
     SUBDIR += rubygem-xdg
@@ -7905,6 +7935,7 @@
     SUBDIR += vc
     SUBDIR += vc-intrinsics
     SUBDIR += vcglib
+    SUBDIR += venom
     SUBDIR += vera++
     SUBDIR += vexcl
     SUBDIR += viewvc-devel
@@ -7923,6 +7954,7 @@
     SUBDIR += wasi-compiler-rt15
     SUBDIR += wasi-compiler-rt16
     SUBDIR += wasi-compiler-rt17
+    SUBDIR += wasi-compiler-rt18
     SUBDIR += wasi-libc
     SUBDIR += wasi-libcxx
     SUBDIR += wasi-libcxx12
@@ -7931,6 +7963,7 @@
     SUBDIR += wasi-libcxx15
     SUBDIR += wasi-libcxx16
     SUBDIR += wasi-libcxx17
+    SUBDIR += wasi-libcxx18
     SUBDIR += wasm3
     SUBDIR += wasmer
     SUBDIR += websocketpp

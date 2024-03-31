@@ -51,6 +51,7 @@
     SUBDIR += bearssl
     SUBDIR += beecrypt
     SUBDIR += beid
+    SUBDIR += beidconnect
     SUBDIR += belier
     SUBDIR += bfbtester
     SUBDIR += binwalk
@@ -147,6 +148,7 @@
     SUBDIR += duo
     SUBDIR += duo_openvpn
     SUBDIR += easy-rsa
+    SUBDIR += enc
     SUBDIR += enchive
     SUBDIR += eschalot
     SUBDIR += expiretable
@@ -392,6 +394,7 @@
     SUBDIR += nist-kat
     SUBDIR += nitrokey-app
     SUBDIR += nmap
+    SUBDIR += nmap-devel
     SUBDIR += nss
     SUBDIR += nss_compat_ossl
     SUBDIR += nuclei
@@ -429,6 +432,7 @@
     SUBDIR += openssl31
     SUBDIR += openssl31-quictls
     SUBDIR += openssl32
+    SUBDIR += openssl33
     SUBDIR += openvas
     SUBDIR += openvpn
     SUBDIR += openvpn-admin
@@ -795,6 +799,7 @@
     SUBDIR += pecl-pkcs11
     SUBDIR += pecl-scrypt
     SUBDIR += pecl-ssh2
+    SUBDIR += pecl-xxtea
     SUBDIR += peda
     SUBDIR += pev
     SUBDIR += pgpdump
@@ -941,6 +946,7 @@
     SUBDIR += py-iris-webhooks-module
     SUBDIR += py-itsdangerous
     SUBDIR += py-josepy
+    SUBDIR += py-joserfc
     SUBDIR += py-jwcrypto
     SUBDIR += py-keepkey
     SUBDIR += py-kerberos
@@ -978,6 +984,8 @@
     SUBDIR += py-pgpdump
     SUBDIR += py-pgpy
     SUBDIR += py-plaso
+    SUBDIR += py-pnu-certwatch
+    SUBDIR += py-pnu-vuxml
     SUBDIR += py-potr
     SUBDIR += py-pwntools
     SUBDIR += py-pyaes
@@ -1068,6 +1076,7 @@
     SUBDIR += quantis-kmod
     SUBDIR += racoon2
     SUBDIR += rage-encryption
+    SUBDIR += ratify
     SUBDIR += ratproxy
     SUBDIR += rats
     SUBDIR += rcracki_mt
@@ -1121,7 +1130,6 @@
     SUBDIR += rubygem-hrr_rb_ssh
     SUBDIR += rubygem-hrr_rb_ssh-ed25519
     SUBDIR += rubygem-lockbox
-    SUBDIR += rubygem-metasploit-aggregator
     SUBDIR += rubygem-metasploit-concern
     SUBDIR += rubygem-metasploit-credential
     SUBDIR += rubygem-metasploit-model
@@ -1367,12 +1375,12 @@
     SUBDIR += wpa_supplicant-devel
     SUBDIR += wpa_supplicant29
     SUBDIR += xca
+    SUBDIR += xhash
     SUBDIR += xinetd
     SUBDIR += xml-security
     SUBDIR += xmlsec1
     SUBDIR += xorsearch
     SUBDIR += xray-core
-    SUBDIR += xhash
     SUBDIR += yafic
     SUBDIR += yapet
     SUBDIR += yara
