@@ -38,7 +38,6 @@
     SUBDIR += boxes
     SUBDIR += broot
     SUBDIR += bsod
-    SUBDIR += buffer
     SUBDIR += caffe
     SUBDIR += chatgpt-shell-cli
     SUBDIR += cheat
@@ -401,6 +400,7 @@
     SUBDIR += py-SQSnobFit
     SUBDIR += py-SimpleSoapy
     SUBDIR += py-SoapySDR
+    SUBDIR += py-accelerate
     SUBDIR += py-alive-progress
     SUBDIR += py-apache-beam
     SUBDIR += py-ascii-magic
@@ -482,7 +482,6 @@
     SUBDIR += py-pytorch
     SUBDIR += py-pytorch-lightning
     SUBDIR += py-pyviz-comms
-    SUBDIR += py-qiskit-machine-learning
     SUBDIR += py-safetensors
     SUBDIR += py-scikit-fusion
     SUBDIR += py-scikit-quant
@@ -541,6 +540,7 @@
     SUBDIR += rsclock
     SUBDIR += rtfm
     SUBDIR += rubygem-dotenv
+    SUBDIR += rubygem-dotenv-rails
     SUBDIR += rubygem-dotenv-rails-rails4
     SUBDIR += rubygem-dotenv-rails-rails5
     SUBDIR += rubygem-dotenv-rails-rails50
@@ -617,7 +617,6 @@
     SUBDIR += unclutter-xfixes
     SUBDIR += unicode-emoji
     SUBDIR += upclient
-    SUBDIR += urbit
     SUBDIR += urh
     SUBDIR += usbids
     SUBDIR += usbrh-libusb
@@ -653,7 +652,6 @@
     SUBDIR += xfce4-appfinder
     SUBDIR += xfce4-weather-plugin
     SUBDIR += xfce4-wm-themes
-    SUBDIR += xgas
     SUBDIR += xgboost
     SUBDIR += xiphos
     SUBDIR += xless

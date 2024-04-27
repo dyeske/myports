@@ -46,7 +46,6 @@
     SUBDIR += hatari
     SUBDIR += hercules
     SUBDIR += higan
-    SUBDIR += hugo
     SUBDIR += hv_kvp_cmd
     SUBDIR += javatari
     SUBDIR += joytran
@@ -138,7 +137,6 @@
     SUBDIR += tme
     SUBDIR += tnylpo
     SUBDIR += tpm-emulator
-    SUBDIR += tuxnes
     SUBDIR += uae
     SUBDIR += ucon64
     SUBDIR += uconvert

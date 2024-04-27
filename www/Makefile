@@ -204,11 +204,10 @@
     SUBDIR += geckodriver
     SUBDIR += geneweb
     SUBDIR += geolizer
-    SUBDIR += get_flash_videos
     SUBDIR += ghostunnel
     SUBDIR += gist
     SUBDIR += gitea
-    SUBDIR += gitlab-ce
+    SUBDIR += gitlab
     SUBDIR += gitlab-pages
     SUBDIR += gitlab-workhorse
     SUBDIR += glassfish
@@ -352,7 +351,6 @@
     SUBDIR += matomo
     SUBDIR += mattermost-server
     SUBDIR += mattermost-webapp
-    SUBDIR += mediawiki135
     SUBDIR += mediawiki139
     SUBDIR += mediawiki140
     SUBDIR += mediawiki141
@@ -424,7 +422,6 @@
     SUBDIR += mod_scgi
     SUBDIR += mod_security
     SUBDIR += mod_setenvifplus
-    SUBDIR += mod_tidy
     SUBDIR += mod_umask
     SUBDIR += mod_webauth
     SUBDIR += mod_webkit
@@ -438,6 +435,7 @@
     SUBDIR += moodle41
     SUBDIR += moodle42
     SUBDIR += moodle43
+    SUBDIR += moodle44
     SUBDIR += morty
     SUBDIR += multisort
     SUBDIR += multiwatch
@@ -685,7 +683,6 @@
     SUBDIR += p5-Catalyst-Plugin-Email
     SUBDIR += p5-Catalyst-Plugin-ErrorCatcher
     SUBDIR += p5-Catalyst-Plugin-FillInForm
-    SUBDIR += p5-Catalyst-Plugin-FormBuilder
     SUBDIR += p5-Catalyst-Plugin-FormValidator
     SUBDIR += p5-Catalyst-Plugin-I18N
     SUBDIR += p5-Catalyst-Plugin-Log-Dispatch
@@ -1334,7 +1331,6 @@
     SUBDIR += p5-chklinks
     SUBDIR += p5-jQuery-File-Upload
     SUBDIR += p5-libapreq2
-    SUBDIR += p5-libservlet
     SUBDIR += p5-libwww
     SUBDIR += p5-pQuery
     SUBDIR += p5-webservice-validator-css-w3c
@@ -1538,6 +1534,7 @@
     SUBDIR += py-django-bootstrap4
     SUBDIR += py-django-braces
     SUBDIR += py-django-cacheops
+    SUBDIR += py-django-choices-field
     SUBDIR += py-django-ckeditor-5
     SUBDIR += py-django-classy-tags
     SUBDIR += py-django-cms
@@ -1843,6 +1840,7 @@
     SUBDIR += py-spyne
     SUBDIR += py-sseclient
     SUBDIR += py-starlette
+    SUBDIR += py-strawberry-graphql-django
     SUBDIR += py-swapper
     SUBDIR += py-textile
     SUBDIR += py-ticketutil
@@ -1912,6 +1910,7 @@
     SUBDIR += rearx
     SUBDIR += reddsaver
     SUBDIR += redmine50
+    SUBDIR += redmine51
     SUBDIR += rejik
     SUBDIR += remark42
     SUBDIR += reportmagic
@@ -1976,7 +1975,6 @@
     SUBDIR += rubygem-crass
     SUBDIR += rubygem-cssbundling-rails
     SUBDIR += rubygem-cssbundling-rails-rails70
-    SUBDIR += rubygem-cssbundling-rails13-rails70
     SUBDIR += rubygem-cuba
     SUBDIR += rubygem-d3_rails
     SUBDIR += rubygem-davclient
@@ -2011,9 +2009,9 @@
     SUBDIR += rubygem-faraday-rack1
     SUBDIR += rubygem-faraday-retry
     SUBDIR += rubygem-faraday-retry1
+    SUBDIR += rubygem-faraday-typhoeus
     SUBDIR += rubygem-faraday0
     SUBDIR += rubygem-faraday1
-    SUBDIR += rubygem-faraday14
     SUBDIR += rubygem-faraday_middleware
     SUBDIR += rubygem-faraday_middleware0
     SUBDIR += rubygem-faye
@@ -2332,6 +2330,7 @@
     SUBDIR += smarty
     SUBDIR += smarty2
     SUBDIR += smarty3
+    SUBDIR += smarty4
     SUBDIR += smb_auth
     SUBDIR += snarf
     SUBDIR += so
@@ -2368,6 +2367,7 @@
     SUBDIR += tdom
     SUBDIR += template_
     SUBDIR += templatelite
+    SUBDIR += tgpt
     SUBDIR += thirtybees
     SUBDIR += threejs
     SUBDIR += threema-web
@@ -2531,7 +2531,6 @@
     SUBDIR += yaws
     SUBDIR += you-get
     SUBDIR += yourls
-    SUBDIR += youtube_dl
     SUBDIR += yt-dlp
     SUBDIR += ytdl
     SUBDIR += yuicompressor

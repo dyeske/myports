@@ -2,7 +2,6 @@
 
     SUBDIR += beebeep
     SUBDIR += biboumi
-    SUBDIR += cawbird
     SUBDIR += chatterino2
     SUBDIR += climm
     SUBDIR += coccinella
@@ -171,7 +170,6 @@
     SUBDIR += toxext
     SUBDIR += toxic
     SUBDIR += toxins
-    SUBDIR += tut
     SUBDIR += twirssi
     SUBDIR += uTox
     SUBDIR += vqcc-gtk
