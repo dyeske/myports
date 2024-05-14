@@ -1,6 +1,6 @@
 PORTNAME=	wine
 DISTVERSION=	9.0
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	https://dl.winehq.org/wine/source/9.0/
@@ -156,7 +156,7 @@ PLIST_SUB+=		WINE32="" WINE64="@comment " WINEARCH="i386"
 .endif
 
 pre-build:
-	cd ${WRKSRC} && ${MAKE_CMD} depend
+	cd ${WRKSRC} && ${SETENVI} ${WRK_ENV} ${MAKE_CMD} depend
 
 post-install:
 .if ${ARCH} == i386
