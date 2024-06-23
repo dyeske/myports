@@ -1,5 +1,6 @@
 PORTNAME=	ord
 DISTVERSION=	0.18.5
+PORTREVISION=	1
 CATEGORIES=	finance
 PKGNAMESUFFIX=	-crypto-wallet
 
@@ -13,6 +14,8 @@ USES=		cargo ssl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ordinals
+
+RUSTFLAGS=	${ARCH:S/i386/YES/:C/^[a-z].*//:S/YES/-C target-feature=+sse,+sse2/} # add sse sse2 target-features only on i386
 
 CARGO_CRATES=	addr2line-0.21.0 \
 		adler-1.0.2 \
