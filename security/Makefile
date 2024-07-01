@@ -568,7 +568,6 @@
     SUBDIR += p5-Crypt-MySQL
     SUBDIR += p5-Crypt-NULL
     SUBDIR += p5-Crypt-OFB
-    SUBDIR += p5-Crypt-OICQ
     SUBDIR += p5-Crypt-OTP
     SUBDIR += p5-Crypt-OpenPGP
     SUBDIR += p5-Crypt-OpenSSL-AES
@@ -724,7 +723,6 @@
     SUBDIR += p5-POE-Filter-SSL
     SUBDIR += p5-Parse-Snort
     SUBDIR += p5-PerlCryptLib
-    SUBDIR += p5-Protocol-ACME
     SUBDIR += p5-SAVI-Perl
     SUBDIR += p5-SHA
     SUBDIR += p5-Safe-Hole
@@ -1267,7 +1265,6 @@
     SUBDIR += signify
     SUBDIR += signing-party
     SUBDIR += silktools
-    SUBDIR += sks
     SUBDIR += smurflog
     SUBDIR += sniffglue
     SUBDIR += snoopy
