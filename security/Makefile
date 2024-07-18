@@ -44,7 +44,6 @@
     SUBDIR += barnyard2
     SUBDIR += barnyard2-sguil
     SUBDIR += bastillion
-    SUBDIR += bcrypt
     SUBDIR += bcwipe
     SUBDIR += bdes
     SUBDIR += bearssl
@@ -324,6 +323,7 @@
     SUBDIR += libssh
     SUBDIR += libssh2
     SUBDIR += libtasn1
+    SUBDIR += libtatsu
     SUBDIR += libtomcrypt
     SUBDIR += libu2f-host
     SUBDIR += libuecc
@@ -973,6 +973,7 @@
     SUBDIR += py-maec
     SUBDIR += py-merkletools
     SUBDIR += py-mixbox
+    SUBDIR += py-mkpasswd
     SUBDIR += py-mnemonic
     SUBDIR += py-msoffcrypto-tool
     SUBDIR += py-muacrypt
@@ -1237,6 +1238,7 @@
     SUBDIR += rubygem-vault
     SUBDIR += rubygem-webauthn
     SUBDIR += rubygem-webpush
+    SUBDIR += rustls-ffi
     SUBDIR += rustscan
     SUBDIR += s2n-tls
     SUBDIR += safesh
