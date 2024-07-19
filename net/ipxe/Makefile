@@ -13,7 +13,8 @@ ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	not yet ported to anything other than amd64/i386
 
 BUILD_DEPENDS=	bash:shells/bash \
-		syslinux:sysutils/syslinux
+		syslinux:sysutils/syslinux \
+		genisoimage:sysutils:/genisoimage
 
 USES=		gmake perl5 shebangfix
 USE_BINUTILS=	yes
