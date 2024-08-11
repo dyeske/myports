@@ -1250,7 +1250,9 @@
     SUBDIR += pear-XML_HTMLSax
     SUBDIR += pear-XML_Wddx
     SUBDIR += pear-YAML
+    SUBDIR += pecl-pspell
     SUBDIR += pecl-xdiff2
+    SUBDIR += pecl-xlswriter
     SUBDIR += pecl-yaml
     SUBDIR += pecl-zephir_parser
     SUBDIR += peco
@@ -1283,6 +1285,14 @@
     SUBDIR += php83-xmlreader
     SUBDIR += php83-xmlwriter
     SUBDIR += php83-xsl
+    SUBDIR += php84-ctype
+    SUBDIR += php84-dom
+    SUBDIR += php84-enchant
+    SUBDIR += php84-simplexml
+    SUBDIR += php84-xml
+    SUBDIR += php84-xmlreader
+    SUBDIR += php84-xmlwriter
+    SUBDIR += php84-xsl
     SUBDIR += pict
     SUBDIR += po4a
     SUBDIR += pod2mdoc
@@ -1642,6 +1652,7 @@
     SUBDIR += py-tomlkit
     SUBDIR += py-toronado
     SUBDIR += py-towncrier
+    SUBDIR += py-towncrier23
     SUBDIR += py-trans
     SUBDIR += py-translationstring
     SUBDIR += py-transpopy
@@ -2064,6 +2075,7 @@
     SUBDIR += ts-hunspell
     SUBDIR += tth
     SUBDIR += tttcmds
+    SUBDIR += ttynt
     SUBDIR += turboxsl
     SUBDIR += txt2html
     SUBDIR += txt2man
@@ -2125,6 +2137,7 @@
     SUBDIR += xlhtml
     SUBDIR += xlnt
     SUBDIR += xlreader
+    SUBDIR += xlsxio
     SUBDIR += xml-commons
     SUBDIR += xml-format
     SUBDIR += xml-lite.el
