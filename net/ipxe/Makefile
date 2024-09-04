@@ -41,7 +41,9 @@ MAKE_ARGS=	AR=${AR} \
 MAKE_ARGS+=	${IPXE_MAKE_ARGS}
 ALL_TARGET=	bin/ipxe.dsk bin/ipxe.lkrn bin/ipxe.exe \
 		bin/ipxe.pxe bin/ipxe.usb bin/ipxe.nbi \
-		bin/undionly.kpxe bin/ipxe.vhd
+		bin/undionly.kpxe bin/ipxe.vhd \
+		bin/ipxe.sdsk bin/ipxe.hd bin/ipxe.raw bin/virtio-net.isarom
+		# bin/ipxe.iso
 # VMware ROMs
 ALL_TARGET+=	bin/8086100f.mrom bin/808610d3.mrom bin/10222000.rom \
 		bin/15ad07b0.rom bin/rtl8139.rom
@@ -64,9 +66,13 @@ _IPXE_BUILDCFG=	branding:PRODUCT_NAME="${PKGNAME} (${OPSYS} ${OSREL}/${ARCH})" \
 		general:DOWNLOAD_PROTO_TFTP \
 		general:IMAGE_SCRIPT \
 		general:IMAGE_TRUST_CMD \
+		general:CONSOLE_CMD \
 		general:NTP_CMD \
 		general:PING_CMD \
+		general:PXE_MENU \
 		general:REBOOT_CMD \
+		general:IMAGE_PNG \
+		general:!IMAGE_COMBOOT \
 		general:!IMAGE_MULTIBOOT \
 		general:POWEROFF_CMD \
 		general:SHELL_CMD \
