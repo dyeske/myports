@@ -131,6 +131,7 @@
     SUBDIR += ddgr
     SUBDIR += deforaos-surfer
     SUBDIR += deno
+    SUBDIR += deno-dom
     SUBDIR += devd
     SUBDIR += dezoomify-rs
     SUBDIR += dillo2
@@ -142,6 +143,7 @@
     SUBDIR += dolibarr17
     SUBDIR += dolibarr18
     SUBDIR += domoticz
+    SUBDIR += domoticz-devel
     SUBDIR += dooble
     SUBDIR += dot-http
     SUBDIR += dpp
@@ -318,7 +320,9 @@
     SUBDIR += links1
     SUBDIR += linux-c7-qtwebkit
     SUBDIR += linux-chrome
+    SUBDIR += linux-freetube
     SUBDIR += linux-rl9-libnghttp2
+    SUBDIR += linux-vieb
     SUBDIR += linux-widevine-cdm
     SUBDIR += litmus
     SUBDIR += ljdeps
@@ -1812,6 +1816,7 @@
     SUBDIR += py-scrapy
     SUBDIR += py-seafdav
     SUBDIR += py-seafobj
+    SUBDIR += py-searxng-devel
     SUBDIR += py-secure-cookie
     SUBDIR += py-selector
     SUBDIR += py-selenium
