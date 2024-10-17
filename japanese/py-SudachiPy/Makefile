@@ -1,7 +1,7 @@
 PORTNAME=	SudachiPy
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese python
 #MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +11,8 @@ COMMENT=	Implementation of Sudachi, a Japanese morphological analyzer
 WWW=		https://github.com/WorksApplications/sudachi.rs
 
 LICENSE=	APACHE20
+
+BROKEN_i386=	compilation fails: error[E0425]: cannot find value `SEED` in this scope ; constant `crate::hash::SEED` exists but is inaccessible
 
 BUILD_DEPENDS=	${PY_SETUPTOOLS} \
 		${PYTHON_PKGNAMEPREFIX}setuptools-rust>0:devel/py-setuptools-rust@${PY_FLAVOR} \
@@ -167,9 +169,6 @@ CARGO_CRATES=	aho-corasick-1.1.3 \
 
 CARGO_BUILD=		no
 CARGO_INSTALL=		no
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/sudachipy/sudachipy${PYTHON_EXT_SUFFIX}.so
 
 # The sudachipy executable fails, see https://github.com/WorksApplications/sudachi.rs/issues/270
 

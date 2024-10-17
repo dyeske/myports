@@ -1,5 +1,5 @@
 PORTNAME=	aws-sdk-resources
-PORTVERSION=	3.200.0
+PORTVERSION=	3.209.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -91,7 +91,6 @@ RUN_DEPENDS=	rubygem-aws-sdk-accessanalyzer>=1<2:devel/rubygem-aws-sdk-accessana
 		rubygem-aws-sdk-codegurureviewer>=1<2:devel/rubygem-aws-sdk-codegurureviewer \
 		rubygem-aws-sdk-codegurusecurity>=1<2:devel/rubygem-aws-sdk-codegurusecurity \
 		rubygem-aws-sdk-codepipeline>=1<2:devel/rubygem-aws-sdk-codepipeline \
-		rubygem-aws-sdk-codestar>=1<2:devel/rubygem-aws-sdk-codestar \
 		rubygem-aws-sdk-codestarconnections>=1<2:devel/rubygem-aws-sdk-codestarconnections \
 		rubygem-aws-sdk-codestarnotifications>=1<2:devel/rubygem-aws-sdk-codestarnotifications \
 		rubygem-aws-sdk-cognitoidentity>=1<2:devel/rubygem-aws-sdk-cognitoidentity \
@@ -125,6 +124,7 @@ RUN_DEPENDS=	rubygem-aws-sdk-accessanalyzer>=1<2:devel/rubygem-aws-sdk-accessana
 		rubygem-aws-sdk-devopsguru>=1<2:devel/rubygem-aws-sdk-devopsguru \
 		rubygem-aws-sdk-directconnect>=1<2:devel/rubygem-aws-sdk-directconnect \
 		rubygem-aws-sdk-directoryservice>=1<2:devel/rubygem-aws-sdk-directoryservice \
+		rubygem-aws-sdk-directoryservicedata>=1<2:devel/rubygem-aws-sdk-directoryservicedata \
 		rubygem-aws-sdk-dlm>=1<2:devel/rubygem-aws-sdk-dlm \
 		rubygem-aws-sdk-docdb>=1<2:devel/rubygem-aws-sdk-docdb \
 		rubygem-aws-sdk-docdbelastic>=1<2:devel/rubygem-aws-sdk-docdbelastic \
@@ -216,7 +216,6 @@ RUN_DEPENDS=	rubygem-aws-sdk-accessanalyzer>=1<2:devel/rubygem-aws-sdk-accessana
 		rubygem-aws-sdk-kms>=1<2:devel/rubygem-aws-sdk-kms \
 		rubygem-aws-sdk-lakeformation>=1<2:devel/rubygem-aws-sdk-lakeformation \
 		rubygem-aws-sdk-lambda>=1<2:devel/rubygem-aws-sdk-lambda \
-		rubygem-aws-sdk-lambdapreview>=1<2:devel/rubygem-aws-sdk-lambdapreview \
 		rubygem-aws-sdk-launchwizard>=1<2:devel/rubygem-aws-sdk-launchwizard \
 		rubygem-aws-sdk-lex>=1<2:devel/rubygem-aws-sdk-lex \
 		rubygem-aws-sdk-lexmodelbuildingservice>=1<2:devel/rubygem-aws-sdk-lexmodelbuildingservice \
@@ -243,6 +242,7 @@ RUN_DEPENDS=	rubygem-aws-sdk-accessanalyzer>=1<2:devel/rubygem-aws-sdk-accessana
 		rubygem-aws-sdk-marketplacedeployment>=1<2:devel/rubygem-aws-sdk-marketplacedeployment \
 		rubygem-aws-sdk-marketplaceentitlementservice>=1<2:devel/rubygem-aws-sdk-marketplaceentitlementservice \
 		rubygem-aws-sdk-marketplacemetering>=1<2:devel/rubygem-aws-sdk-marketplacemetering \
+		rubygem-aws-sdk-marketplacereporting>=1<2:devel/rubygem-aws-sdk-marketplacereporting \
 		rubygem-aws-sdk-mediaconnect>=1<2:devel/rubygem-aws-sdk-mediaconnect \
 		rubygem-aws-sdk-mediaconvert>=1<2:devel/rubygem-aws-sdk-mediaconvert \
 		rubygem-aws-sdk-medialive>=1<2:devel/rubygem-aws-sdk-medialive \
@@ -284,6 +284,7 @@ RUN_DEPENDS=	rubygem-aws-sdk-accessanalyzer>=1<2:devel/rubygem-aws-sdk-accessana
 		rubygem-aws-sdk-paymentcryptographydata>=1<2:devel/rubygem-aws-sdk-paymentcryptographydata \
 		rubygem-aws-sdk-pcaconnectorad>=1<2:devel/rubygem-aws-sdk-pcaconnectorad \
 		rubygem-aws-sdk-pcaconnectorscep>=1<2:devel/rubygem-aws-sdk-pcaconnectorscep \
+		rubygem-aws-sdk-pcs>=1<2:devel/rubygem-aws-sdk-pcs \
 		rubygem-aws-sdk-personalize>=1<2:devel/rubygem-aws-sdk-personalize \
 		rubygem-aws-sdk-personalizeevents>=1<2:devel/rubygem-aws-sdk-personalizeevents \
 		rubygem-aws-sdk-personalizeruntime>=1<2:devel/rubygem-aws-sdk-personalizeruntime \
@@ -355,6 +356,7 @@ RUN_DEPENDS=	rubygem-aws-sdk-accessanalyzer>=1<2:devel/rubygem-aws-sdk-accessana
 		rubygem-aws-sdk-snowball>=1<2:devel/rubygem-aws-sdk-snowball \
 		rubygem-aws-sdk-snowdevicemanagement>=1<2:devel/rubygem-aws-sdk-snowdevicemanagement \
 		rubygem-aws-sdk-sns>=1<2:devel/rubygem-aws-sdk-sns \
+		rubygem-aws-sdk-socialmessaging>=1<2:devel/rubygem-aws-sdk-socialmessaging \
 		rubygem-aws-sdk-sqs>=1<2:devel/rubygem-aws-sdk-sqs \
 		rubygem-aws-sdk-ssm>=1<2:devel/rubygem-aws-sdk-ssm \
 		rubygem-aws-sdk-ssmcontacts>=1<2:devel/rubygem-aws-sdk-ssmcontacts \
@@ -388,7 +390,6 @@ RUN_DEPENDS=	rubygem-aws-sdk-accessanalyzer>=1<2:devel/rubygem-aws-sdk-accessana
 		rubygem-aws-sdk-wafv2>=1<2:devel/rubygem-aws-sdk-wafv2 \
 		rubygem-aws-sdk-wellarchitected>=1<2:devel/rubygem-aws-sdk-wellarchitected \
 		rubygem-aws-sdk-workdocs>=1<2:devel/rubygem-aws-sdk-workdocs \
-		rubygem-aws-sdk-worklink>=1<2:devel/rubygem-aws-sdk-worklink \
 		rubygem-aws-sdk-workmail>=1<2:devel/rubygem-aws-sdk-workmail \
 		rubygem-aws-sdk-workmailmessageflow>=1<2:devel/rubygem-aws-sdk-workmailmessageflow \
 		rubygem-aws-sdk-workspaces>=1<2:devel/rubygem-aws-sdk-workspaces \

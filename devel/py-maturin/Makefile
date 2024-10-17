@@ -1,6 +1,6 @@
 PORTNAME=	maturin
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.7.1
+DISTVERSION=	1.7.4
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -43,8 +43,5 @@ CARGO_BUILD_ARGS=	--no-default-features \
 
 post-patch:
 	${REINPLACE_CMD} 's|%%PYTHON_VER%%|${PYTHON_VER}|' ${WRKSRC}/maturin/__init__.py
-
-post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/maturin
 
 .include <bsd.port.mk>
