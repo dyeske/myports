@@ -1,11 +1,12 @@
 PORTNAME=	narrowlink
 DISTVERSION=	0.2.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Self-hosted solution for secure connectivity between devices
-WWW=		https://narrowlink.com
+WWW=		https://narrowlink.com \
+		https://github.com/narrowlink/narrowlink
 
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
