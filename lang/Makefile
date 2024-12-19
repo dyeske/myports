@@ -46,6 +46,8 @@
     SUBDIR += dhall
     SUBDIR += dlang-tools
     SUBDIR += dotnet
+    SUBDIR += dotnet-runtime
+    SUBDIR += dotnet8
     SUBDIR += duktape
     SUBDIR += duktape-lib
     SUBDIR += ecl
@@ -335,6 +337,7 @@
     SUBDIR += rust
     SUBDIR += rust-bootstrap
     SUBDIR += rust-nightly
+    SUBDIR += rust182
     SUBDIR += rustpython
     SUBDIR += s7
     SUBDIR += sagittarius-scheme

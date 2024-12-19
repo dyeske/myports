@@ -167,7 +167,6 @@
     SUBDIR += gnome-mime-data
     SUBDIR += gnome-user-docs
     SUBDIR += gnu-watch
-    SUBDIR += gnuls
     SUBDIR += gobuster
     SUBDIR += gollama
     SUBDIR += gone
@@ -484,6 +483,7 @@
     SUBDIR += py-oterm
     SUBDIR += py-palettable
     SUBDIR += py-papermill
+    SUBDIR += py-pdd
     SUBDIR += py-pexpect
     SUBDIR += py-pkbar
     SUBDIR += py-placekey

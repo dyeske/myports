@@ -1,5 +1,5 @@
 PORTNAME=	alpaca
-DISTVERSION=	2.7.0
+DISTVERSION=	2.9.0
 CATEGORIES=	misc
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -12,8 +12,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libappstream.so:devel/appstream \
 		libgtksourceview-5.so:x11-toolkits/gtksourceview5
 RUN_DEPENDS=	${PY_PILLOW} \
-		${PYTHON_PKGNAMEPREFIX}gobject3>=3.42.2:devel/py-gobject3@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}html2text>=2.2.3:textproc/py-html2text@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pydbus>=0.6.0:devel/py-pydbus@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pypdf>=4.3.1:print/py-pypdf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytube>=15.0.0:multimedia/py-pytube@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.32.3:www/py-requests@${PY_FLAVOR} \
@@ -21,11 +21,13 @@ RUN_DEPENDS=	${PY_PILLOW} \
 		ollama:misc/ollama
 
 USES=		desktop-file-utils gettext-runtime gettext-tools gnome meson \
-		python
+		python shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	Jeffser
 GH_PROJECT=	Alpaca
-USE_GNOME=	vte3
+USE_GNOME=	vte3 pygobject3:run
+
+SHEBANG_FILES=	src/alpaca_search_provider.py.in
 
 post-patch:
 	@${REINPLACE_CMD} \

@@ -1,6 +1,6 @@
 PORTNAME=	authenticator
 DISTVERSION=	4.4.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 
 MAINTAINER=	ports@FreeBSD.org
@@ -33,7 +33,6 @@ post-patch:
 	@${REINPLACE_CMD} -e '/gstreamer.*bad/d' \
 		${WRKSRC}/meson.build
 # Make each cargo subcommand very verbose
-# Add explicit <triple> subdir for --target from USES=cargo
 	@${REINPLACE_CMD} -e "/cargo_options =/s/ '--/&verbose', &verbose', &/" \
 		${WRKSRC}/src/meson.build
 

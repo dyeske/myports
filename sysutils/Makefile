@@ -9,6 +9,7 @@
     SUBDIR += R-cran-processx
     SUBDIR += R-cran-ps
     SUBDIR += R-cran-xopen
+    SUBDIR += RyzenAdj
     SUBDIR += UEFITool
     SUBDIR += abduco
     SUBDIR += abgx360
@@ -196,6 +197,7 @@
     SUBDIR += chgrep
     SUBDIR += choria
     SUBDIR += chyves
+    SUBDIR += cilium
     SUBDIR += cinnamon-control-center
     SUBDIR += cinnamon-settings-daemon
     SUBDIR += ciso
@@ -206,7 +208,6 @@
     SUBDIR += clone
     SUBDIR += clonehdd
     SUBDIR += cloud-nuke
-    SUBDIR += cloudabi-utils
     SUBDIR += clsync
     SUBDIR += cluster-glue
     SUBDIR += cmdwatch
@@ -411,6 +412,7 @@
     SUBDIR += freebsd-bsdlabel
     SUBDIR += freebsd-fdisk
     SUBDIR += freebsd-rustdate
+    SUBDIR += freebsd-shar
     SUBDIR += freebsd-snapshot
     SUBDIR += freecolor
     SUBDIR += freedt
@@ -422,8 +424,6 @@
     SUBDIR += fsearch
     SUBDIR += fselect
     SUBDIR += ftwin
-    SUBDIR += fusefs-funionfs
-    SUBDIR += fusefs-fusepak
     SUBDIR += fvcool
     SUBDIR += fwup
     SUBDIR += fx
@@ -689,6 +689,7 @@
     SUBDIR += mcfly
     SUBDIR += mcron
     SUBDIR += mcweject
+    SUBDIR += mdcat
     SUBDIR += mdf2iso
     SUBDIR += megacli
     SUBDIR += megarc
@@ -1310,7 +1311,6 @@
     SUBDIR += snmp_exporter
     SUBDIR += snooze
     SUBDIR += sockaddr
-    SUBDIR += socket
     SUBDIR += socklog
     SUBDIR += solaar
     SUBDIR += spcm
