@@ -1,7 +1,6 @@
 PORTNAME=	units
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.1-24
-DISTVERSIONSUFFIX=	-g0e7f8ea
+DISTVERSION=	0.12.1
 CATEGORIES=	misc
 PKGNAMESUFFIX=	-library
 
@@ -17,10 +16,13 @@ USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	LLNL
+GH_TUPLE=	google:googletest:v1.15.2:googletest/ThirdParty/googletest
 
 CMAKE_ON=	UNITS_BUILD_OBJECT_LIBRARY \
 		UNITS_BUILD_SHARED_LIBRARY
 CMAKE_OFF=	UNITS_ENABLE_TESTS
 CMAKE_TESTING_ON=	UNITS_ENABLE_TESTS # tests expect the googletest source tree, see https://github.com/LLNL/units/issues/340
+
+# 100% tests passed, 0 tests failed out of 21
 
 .include <bsd.port.mk>

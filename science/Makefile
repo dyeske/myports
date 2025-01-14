@@ -22,6 +22,7 @@
     SUBDIR += R-cran-som
     SUBDIR += R-cran-udunits2
     SUBDIR += abinit
+    SUBDIR += acados
     SUBDIR += afni
     SUBDIR += agrum
     SUBDIR += aircraft-datcom
@@ -380,7 +381,6 @@
     SUBDIR += py-netcdf-flattener
     SUBDIR += py-nglview
     SUBDIR += py-nibabel
-    SUBDIR += py-nilearn
     SUBDIR += py-obspy
     SUBDIR += py-oddt
     SUBDIR += py-openEMS

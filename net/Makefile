@@ -57,6 +57,7 @@
     SUBDIR += bindtest
     SUBDIR += binkd
     SUBDIR += bird2
+    SUBDIR += bird3
     SUBDIR += bittwist
     SUBDIR += bmon
     SUBDIR += boinc-client
@@ -1106,6 +1107,7 @@
     SUBDIR += py-pamqp
     SUBDIR += py-pcapy
     SUBDIR += py-pcapy-ng
+    SUBDIR += py-pook
     SUBDIR += py-port-for
     SUBDIR += py-portend
     SUBDIR += py-pychromecast
@@ -1191,6 +1193,7 @@
     SUBDIR += py-url-normalize
     SUBDIR += py-urlextract
     SUBDIR += py-urllib3
+    SUBDIR += py-urllib3-future
     SUBDIR += py-whois
     SUBDIR += py-wmi-query
     SUBDIR += py-wsdd
@@ -1262,6 +1265,7 @@
     SUBDIR += rubygem-activestorage70
     SUBDIR += rubygem-activestorage71
     SUBDIR += rubygem-activestorage72
+    SUBDIR += rubygem-activestorage80
     SUBDIR += rubygem-amazon-ec2
     SUBDIR += rubygem-amq-protocol
     SUBDIR += rubygem-amqp
@@ -1288,6 +1292,7 @@
     SUBDIR += rubygem-epp-client-secdns
     SUBDIR += rubygem-epp-client-smallregistry
     SUBDIR += rubygem-fog-aliyun
+    SUBDIR += rubygem-fog-aliyun-gitlab
     SUBDIR += rubygem-fog-atmos
     SUBDIR += rubygem-fog-aws
     SUBDIR += rubygem-fog-aws328
@@ -1353,7 +1358,6 @@
     SUBDIR += rubygem-google-cloud-spanner-v1
     SUBDIR += rubygem-google-cloud-storage
     SUBDIR += rubygem-google-cloud-storage-gitlab
-    SUBDIR += rubygem-google-cloud-storage145
     SUBDIR += rubygem-google-cloud-storage_transfer
     SUBDIR += rubygem-google-cloud-storage_transfer-gitlab
     SUBDIR += rubygem-google-cloud-storage_transfer-v1
@@ -1397,7 +1401,6 @@
     SUBDIR += rubygem-octokit
     SUBDIR += rubygem-octokit-gitlab
     SUBDIR += rubygem-octokit4
-    SUBDIR += rubygem-octokit8
     SUBDIR += rubygem-octopress-deploy
     SUBDIR += rubygem-omniauth-auth0
     SUBDIR += rubygem-omniauth-auth0-gitlab
@@ -1620,6 +1623,7 @@
     SUBDIR += udt
     SUBDIR += uget
     SUBDIR += uhttpmock
+    SUBDIR += uhttpmock0
     SUBDIR += ulxmlrpcpp
     SUBDIR += unfs3
     SUBDIR += unison

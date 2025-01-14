@@ -1,6 +1,6 @@
 PORTNAME=	xine
 DISTVERSION=	1.2.13
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-lib/${DISTVERSION}
 PKGNAMEPREFIX=	lib
@@ -12,6 +12,9 @@ WWW=		https://www.xine-project.org/
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Depends on expired multimedia/libfame
+EXPIRATION_DATE=2025-02-01
 
 LIB_DEPENDS=	libFLAC.so:audio/flac \
 		liba52.so:audio/liba52 \

@@ -15,8 +15,10 @@ LICENSE_NAME=	End User License Agreement
 LICENSE_TEXT=	License restrictions -- See http://astah.net/faq/community/enduser-license-agreement
 LICENSE_PERMS=	no-dist-mirror no-dist-sell no-pkg-mirror no-pkg-sell no-auto-accept
 
-USES=		zip
-USE_JAVA=	yes
+DEPRECATED=	Upstream no longer provides community edition
+EXPIRATION_DATE=	2025-02-11
+
+USES=		java zip
 REVISION=	b4c6e9
 
 WRKSRC=		${WRKDIR}/${PORTNAME}${PKGNAMESUFFIX:S!-!_!}

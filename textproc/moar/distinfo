@@ -1,5 +1,5 @@
-TIMESTAMP = 1731994012
-SHA256 (go/textproc_moar/moar-v1.29.0/v1.29.0.mod) = 46d8c4603eba4d080499882a8ba488a9e63ae7d1aa73a136a2bd5d9269d7601d
-SIZE (go/textproc_moar/moar-v1.29.0/v1.29.0.mod) = 559
-SHA256 (go/textproc_moar/moar-v1.29.0/v1.29.0.zip) = 86214bde1ef941ea172c07473f71f6a16084855764a3c6585401a7226df2dc90
-SIZE (go/textproc_moar/moar-v1.29.0/v1.29.0.zip) = 2938025
+TIMESTAMP = 1736735766
+SHA256 (go/textproc_moar/moar-v1.31.2/v1.31.2.mod) = 46d8c4603eba4d080499882a8ba488a9e63ae7d1aa73a136a2bd5d9269d7601d
+SIZE (go/textproc_moar/moar-v1.31.2/v1.31.2.mod) = 559
+SHA256 (go/textproc_moar/moar-v1.31.2/v1.31.2.zip) = 4ff4e9e6e01f01c0a0eeb25b564217836e6304985b933910912b837c750d346e
+SIZE (go/textproc_moar/moar-v1.31.2/v1.31.2.zip) = 2940375

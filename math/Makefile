@@ -130,6 +130,7 @@
     SUBDIR += R-cran-quantreg
     SUBDIR += R-cran-raster
     SUBDIR += R-cran-recipes
+    SUBDIR += R-cran-reformulas
     SUBDIR += R-cran-rgenoud
     SUBDIR += R-cran-robustbase
     SUBDIR += R-cran-sandwich
@@ -686,7 +687,6 @@
     SUBDIR += openlibm
     SUBDIR += openmesh
     SUBDIR += openscop
-    SUBDIR += opensolaris-libm
     SUBDIR += openturns
     SUBDIR += optpp
     SUBDIR += or-tools
@@ -922,7 +922,6 @@
     SUBDIR += py-bitmath
     SUBDIR += py-bitvector
     SUBDIR += py-blis
-    SUBDIR += py-blis07
     SUBDIR += py-bottleneck
     SUBDIR += py-brial
     SUBDIR += py-chaospy
@@ -1158,7 +1157,6 @@
     SUBDIR += rubygem-rb-gsl
     SUBDIR += rumur
     SUBDIR += saga
-    SUBDIR += sage
     SUBDIR += savage
     SUBDIR += sc
     SUBDIR += sc-im
