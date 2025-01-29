@@ -1104,8 +1104,6 @@
     SUBDIR += kdevelop-pg-qt
     SUBDIR += kdsingleapplication
     SUBDIR += kerl
-    SUBDIR += kf5-extra-cmake-modules
-    SUBDIR += kf5-kapidox
     SUBDIR += kf5-kauth
     SUBDIR += kf5-kbookmarks
     SUBDIR += kf5-kcmutils
@@ -2255,6 +2253,7 @@
     SUBDIR += p5-Data-Dumper-Perltidy
     SUBDIR += p5-Data-Dumper-Simple
     SUBDIR += p5-Data-Flow
+    SUBDIR += p5-Data-Frame
     SUBDIR += p5-Data-GUID
     SUBDIR += p5-Data-Grouper
     SUBDIR += p5-Data-HashArray
@@ -2546,6 +2545,7 @@
     SUBDIR += p5-Eval-Closure
     SUBDIR += p5-Eval-Context
     SUBDIR += p5-Eval-LineNumbers
+    SUBDIR += p5-Eval-Quosure
     SUBDIR += p5-Eval-WithLexicals
     SUBDIR += p5-Event
     SUBDIR += p5-Event-ExecFlow
@@ -2587,6 +2587,7 @@
     SUBDIR += p5-ExtUtils-PkgConfig
     SUBDIR += p5-ExtUtils-XSBuilder
     SUBDIR += p5-ExtUtils-XSpp
+    SUBDIR += p5-FFI-C
     SUBDIR += p5-FFI-C-Stat
     SUBDIR += p5-FFI-CheckLib
     SUBDIR += p5-FFI-Platypus
@@ -3793,6 +3794,7 @@
     SUBDIR += p5-Test2-Tools-FFI
     SUBDIR += p5-Test2-Tools-LoadModule
     SUBDIR += p5-Test2-Tools-MemoryCycle
+    SUBDIR += p5-Test2-Tools-PDL
     SUBDIR += p5-Text-Levenshtein
     SUBDIR += p5-Text-Levenshtein-Damerau
     SUBDIR += p5-Text-Levenshtein-Damerau-XS
@@ -3882,7 +3884,9 @@
     SUBDIR += p5-Type-Tiny
     SUBDIR += p5-Type-Tiny-Signatures
     SUBDIR += p5-Type-Tiny-XS
+    SUBDIR += p5-Type-TinyX-Facets
     SUBDIR += p5-Types-Core
+    SUBDIR += p5-Types-PDL
     SUBDIR += p5-Types-Path-Tiny
     SUBDIR += p5-Types-Self
     SUBDIR += p5-Types-Serialiser
@@ -3959,6 +3963,7 @@
     SUBDIR += p5-enum
     SUBDIR += p5-ex-lib
     SUBDIR += p5-experimental
+    SUBDIR += p5-failures
     SUBDIR += p5-forks
     SUBDIR += p5-github_creator
     SUBDIR += p5-goto-file
@@ -5668,6 +5673,7 @@
     SUBDIR += py-pytest-mutagen
     SUBDIR += py-pytest-mypy
     SUBDIR += py-pytest-mypy-plugins
+    SUBDIR += py-pytest-mypy-testing
     SUBDIR += py-pytest-nunit
     SUBDIR += py-pytest-order
     SUBDIR += py-pytest-parallel
@@ -6038,6 +6044,7 @@
     SUBDIR += py-types-MarkupSafe
     SUBDIR += py-types-Pillow
     SUBDIR += py-types-PyYAML
+    SUBDIR += py-types-Pygments
     SUBDIR += py-types-Werkzeug
     SUBDIR += py-types-click
     SUBDIR += py-types-cryptography
@@ -6055,6 +6062,7 @@
     SUBDIR += py-types-setuptools
     SUBDIR += py-types-toml
     SUBDIR += py-types-typed-ast
+    SUBDIR += py-types-ujson
     SUBDIR += py-types-urllib3
     SUBDIR += py-typeshed-client
     SUBDIR += py-typing-extensions
@@ -7896,7 +7904,6 @@
     SUBDIR += rubygem-strings
     SUBDIR += rubygem-strings-ansi
     SUBDIR += rubygem-strong_migrations
-    SUBDIR += rubygem-strong_migrations61
     SUBDIR += rubygem-strptime
     SUBDIR += rubygem-strscan
     SUBDIR += rubygem-structured_warnings
@@ -8335,6 +8342,7 @@
     SUBDIR += wf-config
     SUBDIR += wininfo
     SUBDIR += wizardkit
+    SUBDIR += wizer
     SUBDIR += woff2
     SUBDIR += wrangler
     SUBDIR += wxformbuilder
