@@ -75,7 +75,7 @@ GUILE_DEFAULT?=		2.2
 IMAGEMAGICK_DEFAULT?=	7
 # Possible values: 8, 11, 17, 18, 19, 20, 21, 22 23
 JAVA_DEFAULT?=		8
-# Possible values: 3.8.0, 3.99
+# Possible values: 3.8.0, 4.99
 .  if (defined(WANT_LAZARUS_DEVEL) && !empty(WANT_LAZARUS_DEVEL)) || ${ARCH:Maarch64}
 LAZARUS_DEFAULT?=	4.99
 .  else
@@ -144,7 +144,7 @@ PYTHON2_DEFAULT?=	2.7
 RUBY_DEFAULT?=		3.2
 # Possible values: rust, rust-nightly
 RUST_DEFAULT?=		rust
-# Possible values: 4.16, 4.19
+# Possible values: 4.16, 4.19, 4.20
 SAMBA_DEFAULT?=		4.16
 # When updating this, please also update the same list in ssl.mk and the checks
 # for USES=ssl in qa.sh!

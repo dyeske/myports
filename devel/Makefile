@@ -136,6 +136,7 @@
     SUBDIR += R-cran-sessioninfo
     SUBDIR += R-cran-sfsmisc
     SUBDIR += R-cran-sourcetools
+    SUBDIR += R-cran-sparsevctrs
     SUBDIR += R-cran-sys
     SUBDIR += R-cran-systemfonts
     SUBDIR += R-cran-testit
@@ -937,6 +938,7 @@
     SUBDIR += gradle-completion
     SUBDIR += gradle5
     SUBDIR += gradle6
+    SUBDIR += gradle8
     SUBDIR += gradle62
     SUBDIR += gradle761
     SUBDIR += grantlee5
@@ -1566,6 +1568,7 @@
     SUBDIR += linux_libusb
     SUBDIR += listserialc
     SUBDIR += liteide
+    SUBDIR += llama.el
     SUBDIR += llbuild
     SUBDIR += lldb-mi
     SUBDIR += llnextgen
@@ -2574,6 +2577,7 @@
     SUBDIR += p5-ExtUtils-Constant
     SUBDIR += p5-ExtUtils-CppGuess
     SUBDIR += p5-ExtUtils-Depends
+    SUBDIR += p5-ExtUtils-H2PM
     SUBDIR += p5-ExtUtils-HasCompiler
     SUBDIR += p5-ExtUtils-Helpers
     SUBDIR += p5-ExtUtils-Install
@@ -3727,6 +3731,7 @@
     SUBDIR += p5-Test-Pod
     SUBDIR += p5-Test-Pod-Coverage
     SUBDIR += p5-Test-Pod-Coverage-Permissive
+    SUBDIR += p5-Test-Pod-Links
     SUBDIR += p5-Test-Portability-Files
     SUBDIR += p5-Test-Prereq
     SUBDIR += p5-Test-RandomResults
@@ -3933,6 +3938,7 @@
     SUBDIR += p5-XS-Parse-Keyword
     SUBDIR += p5-XS-Parse-Sublike
     SUBDIR += p5-XSLoader
+    SUBDIR += p5-XT-Files
     SUBDIR += p5-XXX
     SUBDIR += p5-Xporter
     SUBDIR += p5-YAML-AppConfig
@@ -8206,6 +8212,7 @@
     SUBDIR += tagref
     SUBDIR += tailor
     SUBDIR += talloc
+    SUBDIR += talloc242
     SUBDIR += task
     SUBDIR += taskctl
     SUBDIR += taskflow
@@ -8235,6 +8242,7 @@
     SUBDIR += terraform-ls
     SUBDIR += test-drive
     SUBDIR += tevent
+    SUBDIR += tevent016
     SUBDIR += tex-kpathsea
     SUBDIR += tex-libtexlua
     SUBDIR += tex-libtexluajit
