@@ -183,6 +183,7 @@
     SUBDIR += fsplib
     SUBDIR += gamenetworkingsockets
     SUBDIR += gdrive
+    SUBDIR += gemget
     SUBDIR += gemserv
     SUBDIR += geoclue
     SUBDIR += geocode-glib
@@ -318,6 +319,7 @@
     SUBDIR += kdenetwork
     SUBDIR += kdenetwork-filesharing
     SUBDIR += kea
+    SUBDIR += kea-devel
     SUBDIR += keama
     SUBDIR += keycloak
     SUBDIR += kf5-kcalendarcore

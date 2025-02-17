@@ -46,7 +46,7 @@
     SUBDIR += dhall
     SUBDIR += dlang-tools
     SUBDIR += dotnet
-    SUBDIR += dotnet-runtime
+    SUBDIR += dotnet-host
     SUBDIR += dotnet8
     SUBDIR += duktape
     SUBDIR += duktape-lib
@@ -378,7 +378,6 @@
     SUBDIR += tcl-manual
     SUBDIR += tcl-wrapper
     SUBDIR += tcl86
-    SUBDIR += tcl87
     SUBDIR += tcl90
     SUBDIR += tclX
     SUBDIR += tolua

@@ -6,6 +6,7 @@
     SUBDIR += R-cran-Defaults
     SUBDIR += R-cran-Hmisc
     SUBDIR += R-cran-ModelMetrics
+    SUBDIR += R-cran-R.cache
     SUBDIR += R-cran-R.methodsS3
     SUBDIR += R-cran-R.oo
     SUBDIR += R-cran-R.utils
@@ -98,6 +99,7 @@
     SUBDIR += R-cran-pak
     SUBDIR += R-cran-parallelly
     SUBDIR += R-cran-parsedate
+    SUBDIR += R-cran-patrick
     SUBDIR += R-cran-pillar
     SUBDIR += R-cran-pkgbuild
     SUBDIR += R-cran-pkgcache
@@ -242,7 +244,6 @@
     SUBDIR += asmjit
     SUBDIR += asmutils
     SUBDIR += asmx
-    SUBDIR += astah-community
     SUBDIR += astyle
     SUBDIR += asyncplusplus
     SUBDIR += atf
@@ -329,6 +330,7 @@
     SUBDIR += boost-docs
     SUBDIR += boost-jam
     SUBDIR += boost-libs
+    SUBDIR += boost-mpi-libs
     SUBDIR += boost-python-libs
     SUBDIR += boost_build
     SUBDIR += bossa
@@ -1182,9 +1184,6 @@
     SUBDIR += lager
     SUBDIR += laminar
     SUBDIR += lasi
-    SUBDIR += lattice-ice40-examples-hx1k
-    SUBDIR += lattice-ice40-examples-hx8k
-    SUBDIR += lattice-ice40-tools
     SUBDIR += lazygit
     SUBDIR += lcov
     SUBDIR += leaktracer
@@ -4781,6 +4780,7 @@
     SUBDIR += py-defusedxml
     SUBDIR += py-demjson
     SUBDIR += py-dep-logic
+    SUBDIR += py-dependency-groups
     SUBDIR += py-deprecat
     SUBDIR += py-deprecated
     SUBDIR += py-deprecation
@@ -4796,6 +4796,8 @@
     SUBDIR += py-distributed
     SUBDIR += py-dj50-django-rq
     SUBDIR += py-dj50-strawberry-graphql
+    SUBDIR += py-dj51-django-rq
+    SUBDIR += py-dj51-strawberry-graphql
     SUBDIR += py-django-rq
     SUBDIR += py-dm-tree
     SUBDIR += py-docformatter
@@ -5161,6 +5163,7 @@
     SUBDIR += py-lazy_loader
     SUBDIR += py-libcst
     SUBDIR += py-libcst03
+    SUBDIR += py-libevdev
     SUBDIR += py-libioc
     SUBDIR += py-libpeas
     SUBDIR += py-libplist
@@ -5701,6 +5704,7 @@
     SUBDIR += py-pytest-repeat
     SUBDIR += py-pytest-rerunfailures
     SUBDIR += py-pytest-ruff
+    SUBDIR += py-pytest-run-parallel
     SUBDIR += py-pytest-runner
     SUBDIR += py-pytest-services
     SUBDIR += py-pytest-shutil
@@ -6213,7 +6217,6 @@
     SUBDIR += py-yacs
     SUBDIR += py-yamllint
     SUBDIR += py-yamlordereddictloader
-    SUBDIR += py-yandex-money-sdk
     SUBDIR += py-yappi
     SUBDIR += py-yapps2
     SUBDIR += py-yarg

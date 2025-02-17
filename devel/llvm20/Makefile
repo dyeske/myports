@@ -1,5 +1,5 @@
 PORTNAME=	llvm
-DISTVERSION=	20.1.0-rc1
+DISTVERSION=	20.1.0-rc2
 PORTREVISION=	0
 CATEGORIES=	devel lang
 MASTER_SITES=	https://github.com/llvm/llvm-project/releases/download/llvmorg-${DISTVERSION}/
@@ -386,7 +386,8 @@ FREEBSD_BACKENDS+=	WebAssembly
 NATIVE_BACKENDS+=	WebAssembly
 .endif
 STANDARD_BACKENDS=	${_FREEBSD_BACKENDS} AMDGPU AVR BPF Hexagon Lanai \
-			LoongArch MSP430 NVPTX SystemZ VE WebAssembly XCore
+			LoongArch MSP430 NVPTX SPIRV SystemZ VE WebAssembly \
+			XCore
 _BE_LIBS_COMMON=	CodeGen Desc Info
 _BE_LIBS_AArch64=	AsmParser Disassembler Utils
 _BE_LIBS_BACKWARDS_AArch64=Exegesis
@@ -411,6 +412,7 @@ _BE_MODS_PowerPC=	__ppc_intrinsics.mod mma.mod
 _BE_INCS_RISCV=		riscv_vector.h
 _BE_LIBS_RISCV=		AsmParser Disassembler TargetMCA
 _BE_LIBS_BACKWARDS_RISCV=Exegesis
+_BE_LIBS_SPIRV=		Analysis
 _BE_LIBS_Sparc=		AsmParser Disassembler
 _BE_LIBS_SystemZ=	AsmParser Disassembler
 _BE_LIBS_VE=		AsmParser Disassembler
