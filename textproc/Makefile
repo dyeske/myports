@@ -486,6 +486,7 @@
     SUBDIR += mdbook
     SUBDIR += mdbook-linkcheck
     SUBDIR += mdbook-mermaid
+    SUBDIR += mdq
     SUBDIR += meilisearch
     SUBDIR += meld
     SUBDIR += metauml
@@ -1542,7 +1543,6 @@
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
     SUBDIR += py-pyhamcrest
-    SUBDIR += py-pyjade
     SUBDIR += py-pykwalify
     SUBDIR += py-pylons-sphinx-themes
     SUBDIR += py-pyls-spyder
@@ -1571,7 +1571,6 @@
     SUBDIR += py-python-xmp-toolkit
     SUBDIR += py-pytidylib
     SUBDIR += py-pytkdocs
-    SUBDIR += py-pytoml
     SUBDIR += py-pytomlpp
     SUBDIR += py-pyx12
     SUBDIR += py-pyxlsb2
@@ -1591,6 +1590,7 @@
     SUBDIR += py-rich-cli
     SUBDIR += py-rich-rst
     SUBDIR += py-rnc2rng
+    SUBDIR += py-roman-numerals-py
     SUBDIR += py-rst2ansi
     SUBDIR += py-rst2html5
     SUBDIR += py-scour
@@ -1673,6 +1673,7 @@
     SUBDIR += py-textract
     SUBDIR += py-texttable
     SUBDIR += py-textual
+    SUBDIR += py-textual-autocomplete
     SUBDIR += py-textwrap3
     SUBDIR += py-three-merge
     SUBDIR += py-tika-client
@@ -1687,7 +1688,6 @@
     SUBDIR += py-toronado
     SUBDIR += py-towncrier
     SUBDIR += py-towncrier23
-    SUBDIR += py-trans
     SUBDIR += py-translationstring
     SUBDIR += py-transpopy
     SUBDIR += py-ttp
@@ -1803,6 +1803,7 @@
     SUBDIR += rubygem-case_transform61
     SUBDIR += rubygem-character_set
     SUBDIR += rubygem-charlock_holmes
+    SUBDIR += rubygem-chef-gyoku
     SUBDIR += rubygem-chewy
     SUBDIR += rubygem-citrus
     SUBDIR += rubygem-cld3
@@ -1907,6 +1908,7 @@
     SUBDIR += rubygem-nokogiri-diff
     SUBDIR += rubygem-nokogumbo
     SUBDIR += rubygem-octopress-escape-code
+    SUBDIR += rubygem-opensearch-ruby-gitlab
     SUBDIR += rubygem-opml
     SUBDIR += rubygem-org-ruby
     SUBDIR += rubygem-ox
@@ -1942,7 +1944,6 @@
     SUBDIR += rubygem-representable
     SUBDIR += rubygem-reverse_markdown
     SUBDIR += rubygem-rexml
-    SUBDIR += rubygem-rexml-gitlab
     SUBDIR += rubygem-ri_cal
     SUBDIR += rubygem-rly
     SUBDIR += rubygem-rmmseg-cpp
@@ -2086,6 +2087,7 @@
     SUBDIR += te-aspell
     SUBDIR += te-hunspell
     SUBDIR += teckit
+    SUBDIR += television
     SUBDIR += termshot
     SUBDIR += tet-aspell
     SUBDIR += texi2db
@@ -2130,10 +2132,11 @@
     SUBDIR += ugrep
     SUBDIR += uim
     SUBDIR += uim-el
-    SUBDIR += uim-gtk
+    SUBDIR += uim-gtk2
     SUBDIR += uim-gtk3
     SUBDIR += uim-m17nlib
     SUBDIR += uim-qt5
+    SUBDIR += uim-qt6
     SUBDIR += uml2svg
     SUBDIR += uncle
     SUBDIR += uncrustify
@@ -2220,7 +2223,6 @@
     SUBDIR += ytt
     SUBDIR += zed
     SUBDIR += zenxml
-    SUBDIR += zorba
     SUBDIR += zq
     SUBDIR += zu-aspell
     SUBDIR += zu-hunspell

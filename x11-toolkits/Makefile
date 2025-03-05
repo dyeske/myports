@@ -235,7 +235,7 @@
     SUBDIR += rubygem-uh
     SUBDIR += rubygem-vte3
     SUBDIR += rubygem-vte4
-    SUBDIR += scenefx
+    SUBDIR += scenefx02
     SUBDIR += scintilla
     SUBDIR += sdl2_pango
     SUBDIR += sdl_pango
@@ -258,9 +258,9 @@
     SUBDIR += viewklass
     SUBDIR += vte
     SUBDIR += vte3
-    SUBDIR += wlroots
     SUBDIR += wlroots015
     SUBDIR += wlroots017
+    SUBDIR += wlroots018
     SUBDIR += wmapp
     SUBDIR += wxgtk30
     SUBDIR += wxgtk32

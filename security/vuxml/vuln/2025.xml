@@ -1,3 +1,570 @@
+  <vuln vid="475d1968-f99d-11ef-b382-b0416f0c4c67">
+    <topic>Spotipy -- Spotipy&apos;s cache file, containing spotify auth token, is created with overly broad permissions</topic>
+    <affects>
+      <package>
+	<name>py38-spotipy</name>
+	<name>py39-spotipy</name>
+	<name>py310-spotipy</name>
+	<name>py311-spotipy</name>
+	<range><lt>2.25.1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security-advisories@github.com reports:</p>
+	<blockquote cite="https://github.com/spotipy-dev/spotipy/blob/master/spotipy/cache_handler.py#L93-L98">
+	  <p>Spotipy is a lightweight Python library for the Spotify Web API.
+	The `CacheHandler` class creates a cache file to store the auth
+	token.  Prior to version 2.25.1, the file created has `rw-r--r--`
+	(644) permissions by default, when it could be locked down to
+	`rw-------` (600) permissions.  This leads to overly broad exposure
+	of the spotify auth token.  If this token can be read by an attacker
+	(another user on the machine, or a process running as another user),
+	it can be used to perform administrative actions on the Spotify
+	account, depending on the scope granted to the token.  Version
+	2.25.1 tightens the cache file permissions.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-27154</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-27154</url>
+    </references>
+    <dates>
+      <discovery>2025-02-27</discovery>
+      <entry>2025-03-05</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="9c62d3f0-f997-11ef-85f3-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>134.0.6998.35</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>134.0.6998.35</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2025/03/stable-channel-update-for-desktop.html">
+	 <p>This update includes 14 security fixes:</p>
+	 <ul>
+	    <li>[397731718] High CVE-2025-1914: Out of bounds read in V8. Reported by Zhenghang Xiao (@Kipreyyy) and Nan Wang (@eternalsakura13) on 2025-02-20</li>
+	    <li>[391114799] Medium CVE-2025-1915: Improper Limitation of a Pathname to a Restricted Directory in DevTools. Reported by Topi Lassila on 2025-01-20</li>
+	    <li>[376493203] Medium CVE-2025-1916: Use after free in Profiles. Reported by parkminchan, SSD Labs Korea on 2024-10-31</li>
+	    <li>[329476341] Medium CVE-2025-1917: Inappropriate Implementation in Browser UI. Reported by Khalil Zhani on 2024-03-14</li>
+	    <li>[388557904] Medium CVE-2025-1918: Out of bounds read in PDFium. Reported by asnine on 2025-01-09</li>
+	    <li>[392375312] Medium CVE-2025-1919: Out of bounds read in Media. Reported by @Bl1nnnk and @Pisanbao on 2025-01-26</li>
+	    <li>[387583503] Medium CVE-2025-1921: Inappropriate Implementation in Media Stream. Reported by Kaiido on 2025-01-04</li>
+	    <li>[384033062] Low CVE-2025-1922: Inappropriate Implementation in Selection. Reported by Alesandro Ortiz on 2024-12-14</li>
+	    <li>[382540635] Low CVE-2025-1923: Inappropriate Implementation in Permission Prompts. Reported by Khalil Zhani on 2024-12-06</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-1914</cvename>
+      <cvename>CVE-2025-1915</cvename>
+      <cvename>CVE-2025-1916</cvename>
+      <cvename>CVE-2025-1917</cvename>
+      <cvename>CVE-2025-1918</cvename>
+      <cvename>CVE-2025-1919</cvename>
+      <cvename>CVE-2025-1921</cvename>
+      <cvename>CVE-2025-1922</cvename>
+      <cvename>CVE-2025-1923</cvename>
+      <url>https://chromereleases.googleblog.com/2025/03/stable-channel-update-for-desktop.html</url>
+    </references>
+    <dates>
+      <discovery>2025-03-04</discovery>
+      <entry>2025-03-05</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f4f3e001-402b-4d6d-8efa-ab11fcf8de2b">
+    <topic>electron{32,33} -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>electron32</name>
+	<range><lt>32.3.2</lt></range>
+      </package>
+      <package>
+	<name>electron33</name>
+	<range><lt>33.4.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Electron developers report:</p>
+	<blockquote cite="https://github.com/electron/electron/releases/tag/v32.3.2">
+	  <p>This update fixes the following vulnerabilities:</p>
+	  <ul>
+	    <li>Security: backported fix for CVE-2025-0611.</li>
+	    <li>Security: backported fix for CVE-2025-0612.</li>
+	    <li>Security: backported fix for CVE-2025-0999.</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-0611</cvename>
+      <url>https://github.com/advisories/GHSA-83vc-v46q-mv3w</url>
+      <cvename>CVE-2025-0612</cvename>
+      <url>https://github.com/advisories/GHSA-c6xg-jh94-mf2w</url>
+      <cvename>CVE-2025-0999</cvename>
+      <url>https://github.com/advisories/GHSA-f2jv-hxph-r5wm</url>
+    </references>
+    <dates>
+      <discovery>2025-02-27</discovery>
+      <entry>2025-03-04</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="6af5e3a3-f85a-11ef-95b9-589cfc10a551">
+    <topic>unit -- potential security issue</topic>
+    <affects>
+      <package>
+	<name>unit</name>
+	<name>unit-java</name>
+	<range><ge>1.11.0</ge><lt>1.34.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>SO-AND-SO reports:</p>
+	<blockquote cite="https://mailman.nginx.org/pipermail/unit/2025-March/QVYLJKLBIDWOJ7OLYGT27VUWH7RGBRQM.html">
+	  <p>Unit 1.34.2 fixes two issues in the Java language module websocket code.</p>
+	    <ol>
+	    <li>It addresses a potential security issue where we could get a negative
+	    payload length that could cause the Java language module process(es) to
+	    enter an infinite loop and consume excess CPU. This was a bug carried
+	    over from the initial Java websocket code import. It has been re-issued
+	    a CVE number (CVE-2025-1695).</li>
+	    <li>It addresses an issue whereby decoded payload lengths would be limited
+	    to 32 bits.</li>
+	    </ol>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-1695</cvename>
+      <url>https://mailman.nginx.org/pipermail/unit/2025-March/QVYLJKLBIDWOJ7OLYGT27VUWH7RGBRQM.html</url>
+    </references>
+    <dates>
+      <discovery>2025-03-03</discovery>
+      <entry>2025-03-03</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="398d1ec1-f7e6-11ef-bb15-002590af0794">
+    <topic>vim -- Potential code execution</topic>
+    <affects>
+      <package>
+	<name>vim</name>
+	<name>vim-gtk2</name>
+	<name>vim-gtk3</name>
+	<name>vim-motif</name>
+	<name>vim-x11</name>
+	<name>vim-tiny</name>
+	<range><lt>9.1.1164</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>vim reports:</p>
+	<blockquote cite="https://github.com/vim/vim/security/advisories/GHSA-wfmf-8626-q3r3">
+	  <h1>Summary</h1>
+	  <p>Potential code execution with tar.vim and special crafted tar files</p>
+	  <h1>Description</h1>
+	  <p>Vim is distributed with the tar.vim plugin, that allows easy
+	  editing and viewing of (compressed or uncompressed) tar files.</p>
+	  <p>Since commit 129a844 (Nov 11, 2024 runtime(tar): Update tar.vim to
+	  support permissions), the tar.vim plugin uses the ":read " ex command
+	  line to append below the cursor position, however the is not sanitized
+	  and is taken literaly from the tar archive. This allows to execute
+	  shell commands via special crafted tar archives. Whether this really
+	  happens, depends on the shell being used ('shell' option, which is set
+	  using $SHELL).</p>
+	  <h1>Impact</h1>
+	  <p>Impact is high but a user must be convinced to edit such a file
+	  using Vim which will reveal the filename, so a careful user may suspect
+	  some strange things going on.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/vim/vim/security/advisories/GHSA-wfmf-8626-q3r3</url>
+    </references>
+    <dates>
+      <discovery>2025-03-02</discovery>
+      <entry>2025-03-02</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="8fb9101e-f58a-11ef-b4e4-2cf05da270f3">
+    <topic>Gitlab -- Vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>gitlab-ce</name>
+	<name>gitlab-ee</name>
+	<range><ge>17.9.0</ge><lt>17.9.1</lt></range>
+	<range><ge>17.8.0</ge><lt>17.8.4</lt></range>
+	<range><ge>15.10.0</ge><lt>17.7.6</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://about.gitlab.com/releases/2025/02/26/patch-release-gitlab-17-9-1-released/">
+	  <p>XSS in k8s proxy endpoint</p>
+	  <p>XSS Maven Dependency Proxy</p>
+	  <p>HTML injection leads to XSS on self hosted instances</p>
+	  <p>Improper Authorisation Check Allows Guest User to Read Security Policy</p>
+	  <p>Planner role can read code review analytics in private projects</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-0475</cvename>
+      <cvename>CVE-2025-0555</cvename>
+      <cvename>CVE-2024-8186</cvename>
+      <cvename>CVE-2024-10925</cvename>
+      <cvename>CVE-2025-0307</cvename>
+      <url>https://about.gitlab.com/releases/2025/02/26/patch-release-gitlab-17-9-1-released/</url>
+    </references>
+    <dates>
+      <discovery>2025-02-26</discovery>
+      <entry>2025-02-28</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a4cb7f9b-f506-11ef-85f3-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>133.0.6943.141</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>133.0.6943.141</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop_25.html">
+	 <p>This update includes 1 security fix.</p>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <url>https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop_25.html</url>
+    </references>
+    <dates>
+      <discovery>2025-02-25</discovery>
+      <entry>2025-02-27</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="6ae77556-f31d-11ef-a695-4ccc6adda413">
+    <topic>exiv2 -- Use after free in TiffSubIfd</topic>
+    <affects>
+      <package>
+	<name>exiv2</name>
+	<range><ge>0.28.0</ge><lt>0.28.5</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Kevin Backhouse reports:</p>
+	<blockquote cite="https://github.com/Exiv2/exiv2/security/advisories/GHSA-38h4-fx85-qcx7">
+	  <p>A heap buffer overflow was found in Exiv2 versions v0.28.0 to v0.28.4.
+	  Versions prior to v0.28.0, such as v0.27.7, are not affected. Exiv2 is a
+	  command-line utility and C++ library for reading, writing, deleting, and
+	  modifying the metadata of image files. The heap overflow is triggered when
+	  Exiv2 is used to write metadata into a crafted image file. An attacker
+	  could potentially exploit the vulnerability to gain code execution, if
+	  they can trick the victim into running Exiv2 on a crafted image file.</p>
+	  <p>Note that this bug is only triggered when writing the metadata, which
+	  is a less frequently used Exiv2 operation than reading the metadata. For
+	  example, to trigger the bug in the Exiv2 command-line application, you
+	  need to add an extra command-line argument such as fixiso.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-26623</cvename>
+      <url>https://github.com/Exiv2/exiv2/security/advisories/GHSA-38h4-fx85-qcx7</url>
+    </references>
+    <dates>
+      <discovery>2025-02-18</discovery>
+      <entry>2025-02-25</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="e60e538f-e795-4a00-b475-cc85a7546e00">
+    <topic>Emacs -- Arbitrary code execution vulnerability</topic>
+    <affects>
+      <package>
+	<name>emacs</name>
+	<name>emacs-canna</name>
+	<name>emacs-nox</name>
+	<name>emacs-wayland</name>
+	<range><lt>30.1,3</lt></range>
+      </package>
+      <package>
+	<name>emacs-devel</name>
+	<name>emacs-devel-nox</name>
+	<range><lt>30.0.50.20240115,3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	  <h1>Problem Description</h1>
+	  <p>A shell injection vulnerability exists in GNU Emacs due to improper
+	  handling of custom man URI schemes.</p>
+	  <h1>Impact</h1>
+	  <p>Initially considered low severity, as it required user interaction with
+	  local files, it was later discovered that an attacker could exploit this
+	  vulnerability by tricking a user into visiting a specially crafted
+	  website or an HTTP URL with a redirect, leading to arbitrary shell
+	  command execution without further user action.</p>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-1244</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-1244</url>
+    </references>
+    <dates>
+      <discovery>2025-02-11</discovery>
+      <entry>2025-02-24</entry>
+      <modified>2025-02-25</modified>
+    </dates>
+  </vuln>
+
+  <vuln vid="7ba6c085-1590-491a-98ce-5452646b196f">
+    <topic>Emacs -- Shell injection vulnerability</topic>
+    <affects>
+      <package>
+	<name>emacs</name>
+	<name>emacs-canna</name>
+	<name>emacs-nox</name>
+	<name>emacs-wayland</name>
+	<range><lt>30.1,3</lt></range>
+      </package>
+      <package>
+	<name>emacs-devel</name>
+	<name>emacs-devel-nox</name>
+	<range><lt>31.0.50.20250101,3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	  <h1>Problem Description:</h1>
+	  <p>An Emacs user who chooses to invoke elisp-completion-at-point (for
+	  code completion) on untrusted Emacs Lisp source code can trigger unsafe
+	  Lisp macro expansion that allows attackers to execute arbitrary code.
+	  This unsafe expansion also occurs if a user chooses to enable on-the-fly
+	  diagnosis that byte compiles untrusted Emacs Lisp source code.</p>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-53920</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2024-53920</url>
+    </references>
+    <dates>
+      <discovery>2024-11-27</discovery>
+      <entry>2025-02-24</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="07c34df5-f299-11ef-a441-b42e991fc52e">
+    <topic>exim -- SQL injection</topic>
+    <affects>
+      <package>
+	<name>exim</name>
+	<range><lt>4.98.1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>cve@mitre.org reports:</p>
+	<blockquote cite="https://bugzilla.suse.com/show_bug.cgi?id=1237424">
+	  <p>Exim 4.98 before 4.98.1, when SQLite hints and ETRN serialization
+	are used, allows remote SQL injection.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-26794</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-26794</url>
+    </references>
+    <dates>
+      <discovery>2025-02-21</discovery>
+      <entry>2025-02-24</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a8f1ee74-f267-11ef-87ba-002590c1f29c">
+    <topic>FreeBSD -- Multiple vulnerabilities in OpenSSH</topic>
+    <affects>
+      <package>
+	<name>FreeBSD</name>
+	<range><ge>14.2</ge><lt>14.2_2</lt></range>
+	<range><ge>14.1</ge><lt>14.1_8</lt></range>
+	<range><ge>13.4</ge><lt>13.4_4</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	<p>OpenSSH client host verification error (CVE-2025-26465)</p>
+	<p>ssh(1) contains a logic error that allows an on-path attacker to
+	impersonate any server during certain conditions when the
+	VerifyHostKeyDNS option is enabled.</p>
+	<p>OpenSSH server denial of service (CVE-2025-26466)</p>
+	<p>The OpenSSH client and server are both vulnerable to a memory/CPU
+	denial of service while handling SSH2_MSG_PING packets.</p>
+	<h1>Impact:</h1>
+	<p>OpenSSH client host verification error (CVE-2025-26465)</p>
+	<p>Under specific circumstances, a machine-in-the-middle may impersonate
+	any server when the client has the VerifyHostKeyDNS option enabled.</p>
+	<p>OpenSSH server denial of service (CVE-2025-26466)</p>
+	<p>During the processing of SSH2_MSG_PING packets, a server may be
+	subject to a memory/CPU denial of service.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-26465</cvename>
+      <cvename>CVE-2025-26466</cvename>
+      <freebsdsa>SA-25:05.openssh</freebsdsa>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-26465</url>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-26466</url>
+    </references>
+    <dates>
+      <discovery>2025-02-21</discovery>
+      <entry>2025-02-24</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="2a3be628-ef6e-11ef-85f3-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>133.0.6943.126</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>133.0.6943.126</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop_18.html">
+	 <p>This update includes 3 security fixes:</p>
+	 <ul>
+	    <li>[394350433] High CVE-2025-0999: Heap buffer overflow in V8. Reported by Seunghyun Lee (@0x10n) on 2025-02-04</li>
+	    <li>[383465163] High CVE-2025-1426: Heap buffer overflow in GPU. Reported by un3xploitable and GF on 2024-12-11</li>
+	    <li>[390590778] Medium CVE-2025-1006: Use after free in Network. Reported by Tal Keren, Sam Agranat, Eran Rom, Edouard Bochin, Adam Hatsir of Palo Alto Networks on 2025-01-18</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-0999</cvename>
+      <cvename>CVE-2025-1426</cvename>
+      <cvename>CVE-2025-1006</cvename>
+      <url>https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop_18.html</url>
+    </references>
+    <dates>
+      <discovery>2025-02-18</discovery>
+      <entry>2025-02-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f572b9d1-ef6d-11ef-85f3-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>133.0.6943.98</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>133.0.6943.98</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop_12.html">
+	 <p>This update includes 4 security fixes:</p>
+	 <ul>
+	    <li>[391907159] High CVE-2025-0995: Use after free in V8. Reported by Popax21 on 2025-01-24</li>
+	    <li>[391788835] High CVE-2025-0996: Inappropriate implementation in Browser UI. Reported by yuki yamaoto on 2025-01-23</li>
+	    <li>[391666328] High CVE-2025-0997: Use after free in Navigation. Reported by asnine on 2025-01-23</li>
+	    <li>[386857213] High CVE-2025-0998: Out of bounds memory access in V8. Reported by Alan Goodman on 2024-12-31</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-0995</cvename>
+      <cvename>CVE-2025-0996</cvename>
+      <cvename>CVE-2025-0997</cvename>
+      <cvename>CVE-2025-0998</cvename>
+      <url>https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop_12.html</url>
+    </references>
+    <dates>
+      <discovery>2025-02-12</discovery>
+      <entry>2025-02-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="b09d0b3b-ef6d-11ef-85f3-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>133.0.6943.53</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>133.0.6943.53</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop.html">
+	 <p>This update includes 12 security fixes:</p>
+	 <ul>
+	    <li>[390889644] High CVE-2025-0444: Use after free in Skia. Reported by Francisco Alonso (@revskills) on 2025-01-19</li>
+	    <li>[392521083] High CVE-2025-0445: Use after free in V8. Reported by 303f06e3 on 2025-01-27</li>
+	    <li>[40061026] Medium CVE-2025-0451: Inappropriate implementation in Extensions API. Reported by Vitor Torres and Alesandro Ortiz on 2022-09-18</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-0444</cvename>
+      <cvename>CVE-2025-0445</cvename>
+      <cvename>CVE-2025-0451</cvename>
+      <url>https://chromereleases.googleblog.com/2025/02/stable-channel-update-for-desktop.html</url>
+    </references>
+    <dates>
+      <discovery>2025-02-04</discovery>
+      <entry>2025-02-20</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="cbf5d976-656b-4bb6-805f-3af038e2de3e">
     <topic>vscode -- multiple vulnerabilities</topic>
     <affects>

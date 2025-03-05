@@ -168,6 +168,7 @@
     SUBDIR += fwanalog
     SUBDIR += fwknop
     SUBDIR += fwlogwatch
+    SUBDIR += gauth
     SUBDIR += gcr
     SUBDIR += gcr3
     SUBDIR += gef
@@ -180,7 +181,6 @@
     SUBDIR += gitjacker
     SUBDIR += globalprotect-openconnect
     SUBDIR += gnome-keyring
-    SUBDIR += gnome-keyring-sharp
     SUBDIR += gnupg
     SUBDIR += gnupg-pkcs11-scd
     SUBDIR += gnupg1
@@ -286,6 +286,7 @@
     SUBDIR += libcryptui
     SUBDIR += libdecaf
     SUBDIR += libecc
+    SUBDIR += libfcrypto
     SUBDIR += libfido2
     SUBDIR += libfprint
     SUBDIR += libgcrypt
@@ -1145,6 +1146,7 @@
     SUBDIR += rubygem-encryptor
     SUBDIR += rubygem-ezcrypto
     SUBDIR += rubygem-gitlab-cloud-connector
+    SUBDIR += rubygem-gitlab-secret_detection
     SUBDIR += rubygem-googleauth
     SUBDIR += rubygem-googleauth-gitlab
     SUBDIR += rubygem-gpgme

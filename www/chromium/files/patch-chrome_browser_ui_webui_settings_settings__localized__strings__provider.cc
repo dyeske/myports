@@ -1,7 +1,7 @@
---- chrome/browser/ui/webui/settings/settings_localized_strings_provider.cc.orig	2025-01-15 09:18:26 UTC
+--- chrome/browser/ui/webui/settings/settings_localized_strings_provider.cc.orig	2025-03-05 08:14:56 UTC
 +++ chrome/browser/ui/webui/settings/settings_localized_strings_provider.cc
-@@ -143,7 +143,7 @@
- #include "chrome/browser/ui/chrome_pages.h"
+@@ -137,7 +137,7 @@
+ #include "chrome/browser/ui/webui/settings/system_handler.h"
  #endif
  
 -#if BUILDFLAG(IS_LINUX)
@@ -9,7 +9,7 @@
  #include "ui/display/screen.h"
  #endif
  
-@@ -162,7 +162,7 @@
+@@ -156,7 +156,7 @@
  #include "chrome/browser/ui/webui/certificate_manager_localized_strings_provider.h"
  #endif
  
@@ -18,7 +18,7 @@
  #include "ui/linux/linux_ui_factory.h"
  #include "ui/ozone/public/ozone_platform.h"
  #endif
-@@ -283,7 +283,7 @@ void AddA11yStrings(content::WebUIDataSource* html_sou
+@@ -281,7 +281,7 @@ void AddA11yStrings(content::WebUIDataSource* html_sou
        {"focusHighlightLabel",
         IDS_SETTINGS_ACCESSIBILITY_FOCUS_HIGHLIGHT_DESCRIPTION},
  #endif
@@ -27,7 +27,7 @@
        {"overscrollHistoryNavigationTitle",
         IDS_SETTINGS_OVERSCROLL_HISTORY_NAVIGATION_TITLE},
        {"overscrollHistoryNavigationSubtitle",
-@@ -556,7 +556,7 @@ void AddAppearanceStrings(content::WebUIDataSource* ht
+@@ -581,7 +581,7 @@ void AddAppearanceStrings(content::WebUIDataSource* ht
        {"uiFeatureAlignLeft", IDS_SETTINGS_UI_FEATURE_ALIGN_LEFT},
        {"uiFeatureAlignRight", IDS_SETTINGS_UI_FEATURE_ALIGN_RIGHT},
        {"resetToDefault", IDS_SETTINGS_RESET_TO_DEFAULT},
@@ -36,7 +36,7 @@
        {"gtkTheme", IDS_SETTINGS_GTK_THEME},
        {"useGtkTheme", IDS_SETTINGS_USE_GTK_THEME},
        {"qtTheme", IDS_SETTINGS_QT_THEME},
-@@ -564,7 +564,7 @@ void AddAppearanceStrings(content::WebUIDataSource* ht
+@@ -589,7 +589,7 @@ void AddAppearanceStrings(content::WebUIDataSource* ht
        {"classicTheme", IDS_SETTINGS_CLASSIC_THEME},
        {"useClassicTheme", IDS_SETTINGS_USE_CLASSIC_THEME},
  #endif
@@ -45,7 +45,7 @@
        {"showWindowDecorations", IDS_SHOW_WINDOW_DECORATIONS},
  #endif
  #if BUILDFLAG(IS_MAC)
-@@ -590,7 +590,7 @@ void AddAppearanceStrings(content::WebUIDataSource* ht
+@@ -613,7 +613,7 @@ void AddAppearanceStrings(content::WebUIDataSource* ht
    html_source->AddBoolean("toolbarPinningEnabled",
                            features::IsToolbarPinningEnabled());
  

@@ -564,6 +564,7 @@
     SUBDIR += octave-forge-bsltl
     SUBDIR += octave-forge-cfitsio
     SUBDIR += octave-forge-cgi
+    SUBDIR += octave-forge-chartjs
     SUBDIR += octave-forge-civil-engineering
     SUBDIR += octave-forge-coder
     SUBDIR += octave-forge-communications
@@ -870,8 +871,8 @@
     SUBDIR += pari_nftables
     SUBDIR += pari_seadata
     SUBDIR += paritwine
-    SUBDIR += parmetis
     SUBDIR += parmgridgen
+    SUBDIR += pcalc
     SUBDIR += pdal
     SUBDIR += pear-Math_BigInteger
     SUBDIR += pear-Math_Combinatorics
@@ -906,7 +907,7 @@
     SUBDIR += primesum
     SUBDIR += primme
     SUBDIR += prng
-    SUBDIR += pspp
+    SUBDIR += proxsuite
     SUBDIR += psurface
     SUBDIR += py-CyLP
     SUBDIR += py-Diofant
@@ -956,6 +957,7 @@
     SUBDIR += py-cvxpy
     SUBDIR += py-cyipopt
     SUBDIR += py-cypari2
+    SUBDIR += py-daqp
     SUBDIR += py-deap
     SUBDIR += py-dgl
     SUBDIR += py-diffcp

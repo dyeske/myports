@@ -1,6 +1,6 @@
---- chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.cc.orig	2025-01-15 09:18:26 UTC
+--- chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.cc.orig	2025-03-05 08:14:56 UTC
 +++ chrome/browser/profiles/chrome_browser_main_extra_parts_profiles.cc
-@@ -352,7 +352,7 @@
+@@ -354,7 +354,7 @@
  #include "chrome/browser/profiles/gaia_info_update_service_factory.h"
  #endif
  
@@ -9,7 +9,7 @@
  #include "chrome/browser/policy/messaging_layer/util/manual_test_heartbeat_event_factory.h"
  #endif
  
-@@ -433,18 +433,18 @@
+@@ -443,18 +443,18 @@
  #endif
  
  #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX) || \
@@ -31,7 +31,16 @@
  #include "chrome/browser/browser_switcher/browser_switcher_service_factory.h"
  #include "chrome/browser/enterprise/client_certificates/certificate_provisioning_service_factory.h"
  #include "chrome/browser/enterprise/client_certificates/certificate_store_factory.h"
-@@ -719,7 +719,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+@@ -564,7 +564,7 @@
+ #endif  // BUILDFLAG(CHROME_ROOT_STORE_CERT_MANAGEMENT_UI)
+ 
+ #if BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || \
+-    BUILDFLAG(IS_WIN)
++    BUILDFLAG(IS_WIN) || BUILDFLAG(IS_BSD)
+ #include "chrome/browser/ui/tabs/saved_tab_groups/collaboration_messaging_observer_factory.h"
+ #include "chrome/browser/ui/tabs/saved_tab_groups/saved_tab_group_utils.h"
+ #endif  // BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) ||
+@@ -732,7 +732,7 @@ void ChromeBrowserMainExtraPartsProfiles::
    DiceBoundSessionCookieServiceFactory::GetInstance();
  #endif  // BUILDFLAG(ENABLE_DICE_SUPPORT)
  #endif  // BUILDFLAG(ENABLE_BOUND_SESSION_CREDENTIALS)
@@ -40,21 +49,31 @@
    browser_switcher::BrowserSwitcherServiceFactory::GetInstance();
  #endif
    browser_sync::UserEventServiceFactory::GetInstance();
-@@ -829,7 +829,7 @@ void ChromeBrowserMainExtraPartsProfiles::
-   enterprise_connectors::ConnectorsServiceFactory::GetInstance();
+@@ -791,7 +791,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+   commerce::ShoppingServiceFactory::GetInstance();
+   ConsentAuditorFactory::GetInstance();
+   ContentIndexProviderFactory::GetInstance();
+-#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
++#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_BSD)
+   contextual_cueing::ContextualCueingServiceFactory::GetInstance();
  #endif
+   CookieControlsServiceFactory::GetInstance();
+@@ -842,7 +842,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+ #endif
+   enterprise_connectors::ConnectorsServiceFactory::GetInstance();
  #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX) || \
 -    BUILDFLAG(IS_CHROMEOS)
 +    BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_BSD)
    enterprise_connectors::DeviceTrustConnectorServiceFactory::GetInstance();
    enterprise_connectors::DeviceTrustServiceFactory::GetInstance();
  #endif
-@@ -837,25 +837,25 @@ void ChromeBrowserMainExtraPartsProfiles::
+@@ -850,26 +850,26 @@ void ChromeBrowserMainExtraPartsProfiles::
    enterprise_connectors::ExtensionInstallEventRouterFactory::GetInstance();
    enterprise_connectors::ExtensionTelemetryEventRouterFactory::GetInstance();
  #endif
--#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
-+#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_BSD)
+-#if (BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)) && \
++#if (BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_BSD)) && \
+     BUILDFLAG(ENTERPRISE_LOCAL_CONTENT_ANALYSIS)
    enterprise_connectors::LocalBinaryUploadServiceFactory::GetInstance();
  #endif
  #if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX) || \
@@ -80,7 +99,7 @@
    enterprise_signin::EnterpriseSigninServiceFactory::GetInstance();
  #endif
  #if BUILDFLAG(ENABLE_SESSION_SERVICE)
-@@ -975,7 +975,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+@@ -997,7 +997,7 @@ void ChromeBrowserMainExtraPartsProfiles::
  #if BUILDFLAG(IS_ANDROID)
    MerchantViewerDataManagerFactory::GetInstance();
  #endif
@@ -88,8 +107,8 @@
 +#if BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_BSD)
    metrics::DesktopProfileSessionDurationsServiceFactory::GetInstance();
  #endif
-   NavigationPredictorKeyedServiceFactory::GetInstance();
-@@ -1080,7 +1080,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+ #if !BUILDFLAG(IS_ANDROID)
+@@ -1113,7 +1113,7 @@ void ChromeBrowserMainExtraPartsProfiles::
  #if BUILDFLAG(IS_CHROMEOS)
    policy::PolicyCertServiceFactory::GetInstance();
  #endif
@@ -98,7 +117,7 @@
    policy::ProfileTokenPolicyWebSigninServiceFactory::GetInstance();
    policy::UserPolicyOidcSigninServiceFactory::GetInstance();
  #endif
-@@ -1127,7 +1127,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+@@ -1159,7 +1159,7 @@ void ChromeBrowserMainExtraPartsProfiles::
  #if !BUILDFLAG(IS_CHROMEOS) && !BUILDFLAG(IS_ANDROID)
    ProfileStatisticsFactory::GetInstance();
  #endif
@@ -107,12 +126,21 @@
    ProfileTokenWebSigninInterceptorFactory::GetInstance();
    OidcAuthenticationSigninInterceptorFactory::GetInstance();
  #endif
-@@ -1146,7 +1146,7 @@ void ChromeBrowserMainExtraPartsProfiles::
- #endif
+@@ -1179,7 +1179,7 @@ void ChromeBrowserMainExtraPartsProfiles::
    ReduceAcceptLanguageFactory::GetInstance();
    RendererUpdaterFactory::GetInstance();
+   regional_capabilities::RegionalCapabilitiesServiceFactory::GetInstance();
 -#if BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_WIN)
 +#if BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_WIN) || BUILDFLAG(IS_BSD)
    reporting::ManualTestHeartbeatEventFactory::GetInstance();
  #endif
  #if !BUILDFLAG(IS_ANDROID)
+@@ -1368,7 +1368,7 @@ void ChromeBrowserMainExtraPartsProfiles::
+   WebDataServiceFactory::GetInstance();
+   webrtc_event_logging::WebRtcEventLogManagerKeyedServiceFactory::GetInstance();
+ #if BUILDFLAG(IS_CHROMEOS) || BUILDFLAG(IS_LINUX) || BUILDFLAG(IS_MAC) || \
+-    BUILDFLAG(IS_WIN)
++    BUILDFLAG(IS_WIN) || BUILDFLAG(IS_BSD)
+   if (tab_groups::SavedTabGroupUtils::SupportsSharedTabGroups()) {
+     tab_groups::CollaborationMessagingObserverFactory::GetInstance();
+   }

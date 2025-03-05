@@ -1,7 +1,7 @@
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.34-17491 # git rev-list --count HEAD
-DISTVERSIONSUFFIX=	-g7e10aa57c4
+DISTVERSION=	0.0.35 # git rev-list --count HEAD
+DISTVERSIONSUFFIX=	-17533-gb266e3d4bf
 CATEGORIES=	emulators wayland
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -14,8 +14,7 @@ LICENSE_FILE_ISCL=	${WRKSRC_cubeb}/LICENSE
 LICENSE_FILE_ZLIB=	${WRKSRC_asmjit}/LICENSE.md
 
 BUILD_DEPENDS=	flatc:devel/flatbuffers
-LIB_DEPENDS=	libxxhash.so:devel/xxhash \
-		libcurl.so:ftp/curl \
+LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpng.so:graphics/png \
 		libavcodec.so:multimedia/ffmpeg \
 		libpugixml.so:textproc/pugixml
@@ -28,7 +27,7 @@ GH_ACCOUNT=	RPCS3
 GH_TUPLE=	RPCS3:hidapi:hidapi-0.14.0-2-g8b43a97:hidapi/3rdparty/hidapi/hidapi \
 		RPCS3:soundtouch:2.3.1-68-g394e1f5:soundtouch/3rdparty/SoundTouch/soundtouch \
 		asmjit:asmjit:416f735:asmjit/3rdparty/asmjit/asmjit \
-		facebook:zstd:v1.4.7-2181-g97291fc5:zstd/3rdparty/zstd/zstd \
+		facebook:zstd:v1.5.7:zstd/3rdparty/zstd/zstd \
 		jbeder:yaml-cpp:0.8.0-11-g456c68f:yamlcpp/3rdparty/yaml-cpp/yaml-cpp \
 		KhronosGroup:glslang:13.1.1:glslang/3rdparty/glslang/glslang \
 		kcat:openal-soft:1.23.1:openal_soft/3rdparty/OpenAL/openal-soft \

@@ -440,8 +440,8 @@ openbao:*:482:
 # free: 497
 rustypaste:*:498:
 # free: 499
-# free: 500
-# free: 501
+qw:*:500:
+qwfwd:*:501:
 birdvty:*:502:
 # free: 503
 # free: 504
@@ -747,7 +747,7 @@ clickhouse:*:800:
 # free: 803
 # free: 804
 # free: 805
-# free: 806
+act_runner:*:806:
 bosun:*:807:
 clixon:*:808:
 # free: 809

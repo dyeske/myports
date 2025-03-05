@@ -425,6 +425,7 @@
     SUBDIR += jutils
     SUBDIR += jvgs
     SUBDIR += jzip
+    SUBDIR += kajongg
     SUBDIR += kanagram
     SUBDIR += kanatest
     SUBDIR += kapman
@@ -474,6 +475,7 @@
     SUBDIR += ksquares
     SUBDIR += ksudoku
     SUBDIR += ktuberling
+    SUBDIR += ktx
     SUBDIR += kubrick
     SUBDIR += kuklomenos
     SUBDIR += ladder
@@ -817,11 +819,13 @@
     SUBDIR += qonk
     SUBDIR += qqwing
     SUBDIR += qstat
+    SUBDIR += qtv
     SUBDIR += quackle
     SUBDIR += quadra
     SUBDIR += quadrapassel
     SUBDIR += quake-data
     SUBDIR += quake-dpmod
+    SUBDIR += quake-maps
     SUBDIR += quake-source
     SUBDIR += quake2-3zb2
     SUBDIR += quake2-ctf
@@ -848,6 +852,7 @@
     SUBDIR += quetoo
     SUBDIR += quit
     SUBDIR += qwdtools
+    SUBDIR += qwfwd
     SUBDIR += r1q2
     SUBDIR += railroad-rampage
     SUBDIR += rawgl
@@ -907,7 +912,6 @@
     SUBDIR += sets
     SUBDIR += sex
     SUBDIR += sgt-puzzles
-    SUBDIR += shaaft
     SUBDIR += shockolate
     SUBDIR += shootingstar
     SUBDIR += simplevaders
@@ -918,6 +922,7 @@
     SUBDIR += simutrans-pak64
     SUBDIR += sjeng
     SUBDIR += ski
+    SUBDIR += skladnik
     SUBDIR += sl
     SUBDIR += slade
     SUBDIR += slashem-tty

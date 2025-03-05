@@ -1,6 +1,6 @@
---- ui/base/ime/text_input_client.h.orig	2025-01-15 09:18:26 UTC
+--- ui/base/ime/text_input_client.h.orig	2025-03-05 08:14:56 UTC
 +++ ui/base/ime/text_input_client.h
-@@ -331,7 +331,7 @@ class COMPONENT_EXPORT(UI_BASE_IME) TextInputClient {
+@@ -337,7 +337,7 @@ class COMPONENT_EXPORT(UI_BASE_IME) TextInputClient {
    // fields that are considered 'private' (e.g. in incognito tabs).
    virtual bool ShouldDoLearning() = 0;
  

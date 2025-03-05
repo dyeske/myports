@@ -21,6 +21,7 @@
     SUBDIR += R-cran-shiny
     SUBDIR += R-cran-shinyjs
     SUBDIR += R-cran-webshot
+    SUBDIR += R-cran-webutils
     SUBDIR += UniversalFeedCreator
     SUBDIR += adguardhome
     SUBDIR += adjuster
@@ -118,7 +119,6 @@
     SUBDIR += codeigniter
     SUBDIR += colly
     SUBDIR += coppermine
-    SUBDIR += cplanet
     SUBDIR += cpp-httplib
     SUBDIR += cpr
     SUBDIR += crawl
@@ -219,7 +219,6 @@
     SUBDIR += gitlab-workhorse
     SUBDIR += glassfish
     SUBDIR += glassfish4
-    SUBDIR += glewlwyd
     SUBDIR += glpi
     SUBDIR += gnome-user-share
     SUBDIR += go-www
@@ -1546,6 +1545,7 @@
     SUBDIR += py-dj51-djangorestframework
     SUBDIR += py-dj51-drf-spectacular
     SUBDIR += py-dj51-drf-spectacular-sidecar
+    SUBDIR += py-dj51-social-auth-app-django
     SUBDIR += py-dj51-strawberry-graphql-django
     SUBDIR += py-django-admin-rangefilter
     SUBDIR += py-django-advanced-filters
@@ -1792,11 +1792,9 @@
     SUBDIR += py-hyperframe
     SUBDIR += py-hyperlink
     SUBDIR += py-inlinestyler
-    SUBDIR += py-instabot
     SUBDIR += py-internetarchive
     SUBDIR += py-jh2
     SUBDIR += py-jonpy
-    SUBDIR += py-jsonfield
     SUBDIR += py-kiss-headers
     SUBDIR += py-laces
     SUBDIR += py-legacy-cgi
