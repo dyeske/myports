@@ -1,5 +1,6 @@
 PORTNAME=	rhythmbox
 PORTVERSION=	3.4.8
+PORTREVISION=	1
 CATEGORIES=	audio gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
@@ -25,7 +26,7 @@ LIB_DEPENDS=	libtotem-plparser.so:multimedia/totem-pl-parser \
 
 USES=		desktop-file-utils gettext gnome gstreamer localbase:ldflags meson \
 		pkgconfig tar:xz vala:build xorg
-USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30 introspection libxml2
+USE_GNOME=	cairo gdkpixbuf glib20 gtk30 introspection libxml2
 USE_XORG=	ice x11 xorgproto
 USE_GSTREAMER=	flac lame jpeg cdparanoia vorbis
 MESON_ARGS=	-Dapidoc=false \
@@ -42,7 +43,7 @@ BRASERO_MESON_ENABLED=	brasero
 BRASERO_LIB_DEPENDS=	libbrasero-media3.so:sysutils/brasero
 DAAP_DESC=	DAAP support
 DAAP_MESON_ENABLED=	daap
-DAAP_LIB_DEPENDS=	libdmapsharing-3.0.so:net/libdmapsharing
+DAAP_LIB_DEPENDS=	libdmapsharing-4.0.so:net/libdmapsharing
 GRILO_DESC=		Media discovery with Grilo
 GRILO_MESON_ENABLED=	grilo
 GRILO_BUILD_DEPENDS=	grilo>=0.3.1:net/grilo

@@ -1,5 +1,6 @@
     COMMENT = Miscellaneous utilities
 
+    SUBDIR += R-cran-gapminder
     SUBDIR += R-cran-mime
     SUBDIR += R-cran-optimx
     SUBDIR += R-cran-xfun
@@ -436,6 +437,7 @@
     SUBDIR += py-files-to-prompt
     SUBDIR += py-fleep
     SUBDIR += py-fuzzy
+    SUBDIR += py-gguf
     SUBDIR += py-gluoncv
     SUBDIR += py-gluonnlp
     SUBDIR += py-halo
@@ -457,6 +459,7 @@
     SUBDIR += py-llm
     SUBDIR += py-llm-claude-3
     SUBDIR += py-log_symbols
+    SUBDIR += py-mcp
     SUBDIR += py-mffpy
     SUBDIR += py-mixpanel
     SUBDIR += py-mmcv
@@ -471,6 +474,7 @@
     SUBDIR += py-ollama
     SUBDIR += py-onnx
     SUBDIR += py-onnx-tf
+    SUBDIR += py-onnxconverter-common
     SUBDIR += py-openai
     SUBDIR += py-openai-whisper
     SUBDIR += py-openpaperwork-core

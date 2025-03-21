@@ -176,6 +176,7 @@
     SUBDIR += aegis
     SUBDIR += agar
     SUBDIR += aifad
+    SUBDIR += air-go
     SUBDIR += aixlog
     SUBDIR += ald
     SUBDIR += alire
@@ -392,7 +393,6 @@
     SUBDIR += cccc
     SUBDIR += ccdoc
     SUBDIR += ccls
-    SUBDIR += ccrtp
     SUBDIR += cctz
     SUBDIR += cdecl
     SUBDIR += cdialog
@@ -658,6 +658,7 @@
     SUBDIR += electron31
     SUBDIR += electron32
     SUBDIR += electron33
+    SUBDIR += electron34
     SUBDIR += elf
     SUBDIR += elf-dissector
     SUBDIR += elfcat
@@ -1468,7 +1469,6 @@
     SUBDIR += libthreadar
     SUBDIR += libtickit
     SUBDIR += libtifiles2
-    SUBDIR += tinysparql
     SUBDIR += libtool
     SUBDIR += libtpl
     SUBDIR += libtsm
@@ -5756,6 +5756,7 @@
     SUBDIR += py-python-socketio
     SUBDIR += py-python-statsd
     SUBDIR += py-python-subunit
+    SUBDIR += py-python-velbustcp
     SUBDIR += py-python-xcaplib
     SUBDIR += py-pythonbrew
     SUBDIR += py-pythondialog
@@ -6081,6 +6082,7 @@
     SUBDIR += py-typeshed-client
     SUBDIR += py-typing-extensions
     SUBDIR += py-typing-inspect
+    SUBDIR += py-typing-inspection
     SUBDIR += py-tzdata
     SUBDIR += py-tzlocal
     SUBDIR += py-u-msgpack-python
@@ -6275,6 +6277,7 @@
     SUBDIR += pythontidy
     SUBDIR += pytype
     SUBDIR += qbe
+    SUBDIR += qbs
     SUBDIR += qca
     SUBDIR += qconf
     SUBDIR += qcoro
@@ -6645,6 +6648,7 @@
     SUBDIR += rubygem-aws-sdk-freetier
     SUBDIR += rubygem-aws-sdk-fsx
     SUBDIR += rubygem-aws-sdk-gamelift
+    SUBDIR += rubygem-aws-sdk-gameliftstreams
     SUBDIR += rubygem-aws-sdk-gamesparks
     SUBDIR += rubygem-aws-sdk-geomaps
     SUBDIR += rubygem-aws-sdk-geoplaces
@@ -6678,6 +6682,7 @@
     SUBDIR += rubygem-aws-sdk-iotfleethub
     SUBDIR += rubygem-aws-sdk-iotfleetwise
     SUBDIR += rubygem-aws-sdk-iotjobsdataplane
+    SUBDIR += rubygem-aws-sdk-iotmanagedintegrations
     SUBDIR += rubygem-aws-sdk-iotroborunner
     SUBDIR += rubygem-aws-sdk-iotsecuretunneling
     SUBDIR += rubygem-aws-sdk-iotsitewise
@@ -8333,7 +8338,6 @@
     SUBDIR += urjtag
     SUBDIR += ut
     SUBDIR += utf8cpp
-    SUBDIR += utf8cpp3
     SUBDIR += uthash
     SUBDIR += util-linux
     SUBDIR += uv
@@ -8389,6 +8393,7 @@
     SUBDIR += xeus-zmq
     SUBDIR += xfce4-dev-tools
     SUBDIR += xmake
+    SUBDIR += xmake-io
     SUBDIR += xmltooling
     SUBDIR += xopcodecalc
     SUBDIR += xorg-macros

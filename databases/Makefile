@@ -557,6 +557,7 @@
     SUBDIR += pg_repack
     SUBDIR += pg_similarity
     SUBDIR += pg_stat_kcache
+    SUBDIR += pg_store_plans
     SUBDIR += pg_tileserv
     SUBDIR += pgaccess
     SUBDIR += pgadmin3
@@ -836,6 +837,7 @@
     SUBDIR += py-sqlalchemy14
     SUBDIR += py-sqlalchemy20
     SUBDIR += py-sqlcipher3
+    SUBDIR += py-sqlframe
     SUBDIR += py-sqlglot
     SUBDIR += py-sqlglotrs
     SUBDIR += py-sqlite-anyio
