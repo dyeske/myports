@@ -107,6 +107,7 @@
     SUBDIR += exercism
     SUBDIR += explosions
     SUBDIR += ezc3d
+    SUBDIR += fabric
     SUBDIR += far2l
     SUBDIR += fastscapelib
     SUBDIR += felis
@@ -201,7 +202,6 @@
     SUBDIR += iso-codes
     SUBDIR += jargon
     SUBDIR += jbidwatcher
-    SUBDIR += jirust
     SUBDIR += jojodiff
     SUBDIR += json-tui
     SUBDIR += kbdscan
@@ -512,6 +512,7 @@
     SUBDIR += py-pytorch-lightning
     SUBDIR += py-pyviz-comms
     SUBDIR += py-safetensors
+    SUBDIR += py-schedulefree
     SUBDIR += py-scikit-fusion
     SUBDIR += py-scikit-quant
     SUBDIR += py-serverfiles
@@ -558,6 +559,7 @@
     SUBDIR += quantum++
     SUBDIR += quary
     SUBDIR += randomx
+    SUBDIR += rash
     SUBDIR += raspberrypi-gpioshutdown
     SUBDIR += raspbsd-led
     SUBDIR += ree

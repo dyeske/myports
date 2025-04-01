@@ -101,7 +101,6 @@
     SUBDIR += cgiwrap
     SUBDIR += checkbot
     SUBDIR += chisel
-    SUBDIR += choqok
     SUBDIR += chpasswd
     SUBDIR += chrome-gnome-shell
     SUBDIR += chromium
@@ -151,6 +150,7 @@
     SUBDIR += domoticz-devel
     SUBDIR += dooble
     SUBDIR += dot-http
+    SUBDIR += dothttp
     SUBDIR += dpp
     SUBDIR += drill
     SUBDIR += drupal10
@@ -1599,7 +1599,6 @@
     SUBDIR += py-django-hashid-field
     SUBDIR += py-django-haystack
     SUBDIR += py-django-hierarkey
-    SUBDIR += py-django-hijack
     SUBDIR += py-django-htmlmin
     SUBDIR += py-django-htmx
     SUBDIR += py-django-i18nfield
@@ -1720,7 +1719,6 @@
     SUBDIR += py-flask-restful
     SUBDIR += py-flask-restx
     SUBDIR += py-flask-script
-    SUBDIR += py-flask-security
     SUBDIR += py-flask-session
     SUBDIR += py-flask-simpleldap
     SUBDIR += py-flask-smorest
@@ -1976,7 +1974,6 @@
     SUBDIR += radicale
     SUBDIR += rearx
     SUBDIR += reddsaver
-    SUBDIR += redmine50
     SUBDIR += redmine51
     SUBDIR += redmine60
     SUBDIR += rejik
@@ -2117,7 +2114,6 @@
     SUBDIR += rubygem-fuzzyurl
     SUBDIR += rubygem-geminabox
     SUBDIR += rubygem-gitlab-flowdock-git-hook
-    SUBDIR += rubygem-gitlab-gollum-lib
     SUBDIR += rubygem-gitlab-gollum-rugged_adapter
     SUBDIR += rubygem-gitlab-turbolinks-classic
     SUBDIR += rubygem-goldfinger
@@ -2444,7 +2440,6 @@
     SUBDIR += snarf
     SUBDIR += so
     SUBDIR += sogo
-    SUBDIR += sogo-activesync
     SUBDIR += sogo2
     SUBDIR += sogo2-activesync
     SUBDIR += spawn-fcgi
@@ -2638,8 +2633,8 @@
     SUBDIR += yaws
     SUBDIR += you-get
     SUBDIR += yourls
+    SUBDIR += youtube
     SUBDIR += yt-dlp
-    SUBDIR += ytdl
     SUBDIR += yuicompressor
     SUBDIR += zenphoto
     SUBDIR += zerowait-httpd
