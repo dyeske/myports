@@ -1,6 +1,7 @@
 PORTNAME=	hyprland
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.48.1
+PORTREVISION=	1
 CATEGORIES=	x11-wm wayland
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -99,6 +100,12 @@ update-hash:
 		${.CURDIR}/Makefile
 
 .include <bsd.port.mk>
+
+# XXX COMPILER_TYPE is defined after USES was already parsed
+.if "${CHOSEN_COMPILER_TYPE}-${_OSRELEASE:C/.*-//}" == "clang-CURRENT"
+llvm_ARGS=	build
+.include "${USESDIR}/llvm.mk"
+.endif
 
 # XXX Work around !target(makesum)
 makesum:	update-hash
