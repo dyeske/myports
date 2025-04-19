@@ -449,6 +449,7 @@
     SUBDIR += moodle43
     SUBDIR += moodle44
     SUBDIR += moodle45
+    SUBDIR += moodle50
     SUBDIR += morty
     SUBDIR += multisort
     SUBDIR += multiwatch
@@ -2153,6 +2154,7 @@
     SUBDIR += rubygem-http4
     SUBDIR += rubygem-http_router
     SUBDIR += rubygem-httparty
+    SUBDIR += rubygem-httparty-gitlab
     SUBDIR += rubygem-httparty021
     SUBDIR += rubygem-httpclient
     SUBDIR += rubygem-httpi
@@ -2215,6 +2217,7 @@
     SUBDIR += rubygem-less
     SUBDIR += rubygem-lighthouse-api
     SUBDIR += rubygem-link_header
+    SUBDIR += rubygem-llhttp
     SUBDIR += rubygem-llhttp-ffi
     SUBDIR += rubygem-lograge
     SUBDIR += rubygem-lograge-rails5

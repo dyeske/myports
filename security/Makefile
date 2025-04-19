@@ -21,6 +21,7 @@
     SUBDIR += aespipe
     SUBDIR += afl++
     SUBDIR += afterglow
+    SUBDIR += agave
     SUBDIR += age
     SUBDIR += aide
     SUBDIR += amavisd-milter
@@ -395,6 +396,7 @@
     SUBDIR += monocypher
     SUBDIR += munge
     SUBDIR += n2n
+    SUBDIR += naabu
     SUBDIR += ncrack
     SUBDIR += ncrypt
     SUBDIR += nebula
@@ -410,6 +412,7 @@
     SUBDIR += nitrokey-app
     SUBDIR += nmap
     SUBDIR += nmap-devel
+    SUBDIR += node-sqlcipher
     SUBDIR += nss
     SUBDIR += nss_compat_ossl
     SUBDIR += nuclei
@@ -921,6 +924,7 @@
     SUBDIR += py-cryptography
     SUBDIR += py-cryptography-legacy
     SUBDIR += py-cryptography-vectors
+    SUBDIR += py-cryptojwt
     SUBDIR += py-ctypescrypto
     SUBDIR += py-cybox
     SUBDIR += py-detect-secrets
@@ -1034,6 +1038,7 @@
     SUBDIR += py-python-cas
     SUBDIR += py-python-gnupg
     SUBDIR += py-python-gvm
+    SUBDIR += py-python-jose
     SUBDIR += py-python-nss
     SUBDIR += py-python-openid
     SUBDIR += py-python-pam
@@ -1299,7 +1304,6 @@
     SUBDIR += softether-devel
     SUBDIR += softether5
     SUBDIR += softhsm2
-    SUBDIR += solana
     SUBDIR += sops
     SUBDIR += spass
     SUBDIR += spass-qt5

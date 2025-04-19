@@ -138,6 +138,7 @@
     SUBDIR += dtcpclient
     SUBDIR += dual-dhclient
     SUBDIR += dual-dhclient-daemon
+    SUBDIR += dumbpipe
     SUBDIR += ecal
     SUBDIR += echoping
     SUBDIR += empty
@@ -1280,6 +1281,7 @@
     SUBDIR += rubygem-cloudflare
     SUBDIR += rubygem-connection_pool
     SUBDIR += rubygem-devfile
+    SUBDIR += rubygem-devfile-gitlab
     SUBDIR += rubygem-docker-api
     SUBDIR += rubygem-dogapi
     SUBDIR += rubygem-domain_name
@@ -1497,6 +1499,7 @@
     SUBDIR += self-service-password
     SUBDIR += sems
     SUBDIR += sendemail
+    SUBDIR += sendme
     SUBDIR += sendsms
     SUBDIR += sendsnpp
     SUBDIR += serveez
