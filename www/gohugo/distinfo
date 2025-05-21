@@ -1,5 +1,5 @@
-TIMESTAMP = 1744785108
-SHA256 (go/www_gohugo/hugo-v0.146.5/v0.146.5.mod) = a9df5025ea96784eb9e982b83a6fb7b93af784931289942137e78670cb00a998
-SIZE (go/www_gohugo/hugo-v0.146.5/v0.146.5.mod) = 8035
-SHA256 (go/www_gohugo/hugo-v0.146.5/v0.146.5.zip) = c3699b49370194270e5e53967538faf3388c8602d91b7eedbe87cd8d8ced2c9b
-SIZE (go/www_gohugo/hugo-v0.146.5/v0.146.5.zip) = 5610222
+TIMESTAMP = 1747741364
+SHA256 (go/www_gohugo/hugo-v0.147.4/v0.147.4.mod) = cb41ea476364590e46adc72d923c617f69d99544d2a78c743ae4608f4c43ea25
+SIZE (go/www_gohugo/hugo-v0.147.4/v0.147.4.mod) = 8036
+SHA256 (go/www_gohugo/hugo-v0.147.4/v0.147.4.zip) = e723aac853ffa451bac32b823192d8fcb78d18e378437f277e0e4c214bc126c2
+SIZE (go/www_gohugo/hugo-v0.147.4/v0.147.4.zip) = 5736653
