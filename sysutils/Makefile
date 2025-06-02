@@ -924,6 +924,7 @@
     SUBDIR += perp
     SUBDIR += personality
     SUBDIR += pfetch
+    SUBDIR += pfetch-rs
     SUBDIR += pflogx
     SUBDIR += pfstat
     SUBDIR += pftables
@@ -1123,6 +1124,7 @@
     SUBDIR += rhc
     SUBDIR += rinse
     SUBDIR += rkbin
+    SUBDIR += rldd
     SUBDIR += rmlint
     SUBDIR += rocinante
     SUBDIR += rocr
@@ -1262,7 +1264,6 @@
     SUBDIR += schilyutils
     SUBDIR += screen
     SUBDIR += screen-devel
-    SUBDIR += screen49
     SUBDIR += screen50
     SUBDIR += screenfetch
     SUBDIR += screenie

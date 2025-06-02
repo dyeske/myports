@@ -70,7 +70,6 @@
     SUBDIR += ast-aspell
     SUBDIR += augeas
     SUBDIR += az-aspell
-    SUBDIR += bar
     SUBDIR += bat
     SUBDIR += bat-extras
     SUBDIR += bbe
@@ -2141,6 +2140,7 @@
     SUBDIR += wv
     SUBDIR += wv2
     SUBDIR += xalan-j
+    SUBDIR += xan
     SUBDIR += xenv
     SUBDIR += xerces-c3
     SUBDIR += xerces-j

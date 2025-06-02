@@ -448,7 +448,6 @@
     SUBDIR += linux-c7-tcp_wrappers-libs
     SUBDIR += linux-rl9-avahi-libs
     SUBDIR += linux-rl9-openldap
-    SUBDIR += linux-rl9-sdl2_net
     SUBDIR += linux-rl9-sdl_net
     SUBDIR += linux-rl9-tcp_wrappers-libs
     SUBDIR += liveMedia
@@ -575,7 +574,6 @@
     SUBDIR += ooni-mini
     SUBDIR += ooni-probe-cli
     SUBDIR += open-isns
-    SUBDIR += openbgpd6
     SUBDIR += openbgpd7
     SUBDIR += openbgpd8
     SUBDIR += openldap25-client
@@ -1716,6 +1714,7 @@
     SUBDIR += zapret
     SUBDIR += zebra-server
     SUBDIR += zerotier
+    SUBDIR += ziina
     SUBDIR += zillion
     SUBDIR += zmap
     SUBDIR += zsync
