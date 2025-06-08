@@ -1299,9 +1299,9 @@
     SUBDIR += py-CommonMark
     SUBDIR += py-Morfessor
     SUBDIR += py-QDarkStyle
-    SUBDIR += py-RTFDE
     SUBDIR += py-TatSu
     SUBDIR += py-Tempita
+    SUBDIR += py-Tubes
     SUBDIR += py-accessible-pygments
     SUBDIR += py-acora
     SUBDIR += py-aeidon
@@ -1313,6 +1313,8 @@
     SUBDIR += py-ansicolors
     SUBDIR += py-ansiwrap
     SUBDIR += py-anyascii
+    SUBDIR += py-anymarkup
+    SUBDIR += py-anymarkup-core
     SUBDIR += py-arabic-reshaper
     SUBDIR += py-asciinema
     SUBDIR += py-asonic
@@ -1332,7 +1334,6 @@
     SUBDIR += py-cloud_sptheme
     SUBDIR += py-cmarkgfm
     SUBDIR += py-collective.checkdocs
-    SUBDIR += py-colorclass
     SUBDIR += py-creole
     SUBDIR += py-cssselect2
     SUBDIR += py-csvkit
@@ -1369,7 +1370,6 @@
     SUBDIR += py-epy-reader
     SUBDIR += py-et_xmlfile
     SUBDIR += py-evtx2splunk
-    SUBDIR += py-extract-msg
     SUBDIR += py-fastavro
     SUBDIR += py-fasttext-predict
     SUBDIR += py-faust-cchardet
@@ -1513,6 +1513,7 @@
     SUBDIR += py-pybtex
     SUBDIR += py-pybtex-docutils
     SUBDIR += py-pycountry
+    SUBDIR += py-pycddl
     SUBDIR += py-pydata-sphinx-theme
     SUBDIR += py-pyexcel
     SUBDIR += py-pyexcel-ezodf
@@ -1652,7 +1653,6 @@
     SUBDIR += py-text2digits
     SUBDIR += py-textdistance
     SUBDIR += py-textfsm
-    SUBDIR += py-textract
     SUBDIR += py-texttable
     SUBDIR += py-textual
     SUBDIR += py-textual-autocomplete
@@ -2151,7 +2151,6 @@
     SUBDIR += xhtml-basic
     SUBDIR += xhtml-modularization
     SUBDIR += xhtml1-xsd
-    SUBDIR += xincluder
     SUBDIR += xlhtml
     SUBDIR += xlnt
     SUBDIR += xlreader

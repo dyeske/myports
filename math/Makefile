@@ -988,7 +988,6 @@
     SUBDIR += py-gau2grid
     SUBDIR += py-gimmik
     SUBDIR += py-gmpy2
-    SUBDIR += py-grandalf
     SUBDIR += py-graphillion
     SUBDIR += py-gym
     SUBDIR += py-gym-notices
@@ -1120,7 +1119,6 @@
     SUBDIR += py-spopt
     SUBDIR += py-spot
     SUBDIR += py-spreg
-    SUBDIR += py-spvcm
     SUBDIR += py-squarify
     SUBDIR += py-ssm
     SUBDIR += py-statsmodels

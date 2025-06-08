@@ -322,7 +322,7 @@ walletd:*:378:
 renterd:*:379:
 spoofdpi:*:380:
 hydroxide:*:381:
-# free: 382
+_tlsrpt:*:382:
 # free: 383
 # free: 384
 # free: 385
@@ -776,7 +776,7 @@ cirrus:*:828:
 beehive:*:832:
 # free: 833
 # free: 834
-# free: 835
+filebrowser:*:835:
 # free: 836
 # free: 837
 # free: 838

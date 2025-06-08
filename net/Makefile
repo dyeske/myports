@@ -109,6 +109,7 @@
     SUBDIR += dante
     SUBDIR += daq
     SUBDIR += datapipe
+    SUBDIR += dataplaneapi
     SUBDIR += dbeacon
     SUBDIR += delegate
     SUBDIR += deltachat-rpc-server
@@ -1008,7 +1009,6 @@
     SUBDIR += php84-soap
     SUBDIR += php84-sockets
     SUBDIR += phpldapadmin
-    SUBDIR += pichi
     SUBDIR += pimcommon
     SUBDIR += pimd
     SUBDIR += pimdd
