@@ -5,6 +5,7 @@
     SUBDIR += 9menu
     SUBDIR += aclip
     SUBDIR += admiral
+    SUBDIR += alacarte
     SUBDIR += alacritty
     SUBDIR += albert
     SUBDIR += alttab
@@ -33,7 +34,6 @@
     SUBDIR += budgie-desktop
     SUBDIR += budgie-screensaver
     SUBDIR += cde
-    SUBDIR += cde-25
     SUBDIR += cde-devel
     SUBDIR += chayang
     SUBDIR += cinnamon
@@ -95,10 +95,13 @@
     SUBDIR += glcapsviewer
     SUBDIR += gmrun
     SUBDIR += gnome
+    SUBDIR += gnome-applets
     SUBDIR += gnome-clipboard-daemon
     SUBDIR += gnome-console
     SUBDIR += gnome-desktop
+    SUBDIR += gnome-flashback
     SUBDIR += gnome-menus
+    SUBDIR += gnome-panel
     SUBDIR += gnome-pie
     SUBDIR += gnome-session
     SUBDIR += gnome-shell
@@ -428,6 +431,7 @@
     SUBDIR += sxpc
     SUBDIR += tabbed
     SUBDIR += taiga
+    SUBDIR += tecla
     SUBDIR += temperature.app
     SUBDIR += terminal.app
     SUBDIR += terminator
@@ -538,6 +542,7 @@
     SUBDIR += xdg-desktop-portal-hyprland
     SUBDIR += xdg-desktop-portal-luminous
     SUBDIR += xdg-desktop-portal-wlr
+    SUBDIR += xdg-user-dirs-gtk
     SUBDIR += xdialog
     SUBDIR += xditview
     SUBDIR += xdm
@@ -676,6 +681,7 @@
     SUBDIR += yeahconsole
     SUBDIR += yelp
     SUBDIR += zenity
+    SUBDIR += zenity4
     SUBDIR += zutty
 
 .include <bsd.port.subdir.mk>

@@ -76,6 +76,7 @@
     SUBDIR += ccsrch
     SUBDIR += certificate_maker
     SUBDIR += certmgr
+    SUBDIR += certmonger
     SUBDIR += certspotter
     SUBDIR += cfssl
     SUBDIR += cfv
@@ -993,6 +994,7 @@
     SUBDIR += py-noiseprotocol
     SUBDIR += py-notus-scanner
     SUBDIR += py-ntlm-auth
+    SUBDIR += py-nvdlib
     SUBDIR += py-oauthlib
     SUBDIR += py-omemo-dr
     SUBDIR += py-onlykey
@@ -1283,6 +1285,7 @@
     SUBDIR += secure_delete
     SUBDIR += sedutil
     SUBDIR += sequoia
+    SUBDIR += sequoia-chameleon-gnupg
     SUBDIR += sequoia-sq
     SUBDIR += setaudit
     SUBDIR += sha1collisiondetection

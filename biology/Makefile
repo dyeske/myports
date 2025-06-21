@@ -194,6 +194,7 @@
     SUBDIR += py-pandas-charm
     SUBDIR += py-py2bit
     SUBDIR += py-pybigwig
+    SUBDIR += py-pydeseq2
     SUBDIR += py-pyfaidx
     SUBDIR += py-pyrodigal
     SUBDIR += py-pysam
