@@ -204,8 +204,7 @@
     SUBDIR += gpg-tui
     SUBDIR += gpgdir
     SUBDIR += gpgme
-    SUBDIR += gpgme-cpp
-    SUBDIR += gpgme-qt
+    SUBDIR += gpgmepp
     SUBDIR += gsa
     SUBDIR += gsad
     SUBDIR += gsasl
@@ -283,6 +282,7 @@
     SUBDIR += lasso
     SUBDIR += lastpass-cli
     SUBDIR += lego
+    SUBDIR += lfacme
     SUBDIR += libaegis
     SUBDIR += libargon2
     SUBDIR += libassuan
@@ -953,7 +953,7 @@
     SUBDIR += py-google-auth
     SUBDIR += py-google-auth-httplib2
     SUBDIR += py-google-auth-oauthlib
-    SUBDIR += py-gpgme
+    SUBDIR += py-gpg
     SUBDIR += py-gpsoauth
     SUBDIR += py-greenbone-feed-sync
     SUBDIR += py-gssapi
@@ -1101,6 +1101,7 @@
     SUBDIR += py-zkg
     SUBDIR += py-zxcvbn
     SUBDIR += pygost
+    SUBDIR += qgpgme
     SUBDIR += qt-sudo
     SUBDIR += qtkeychain
     SUBDIR += quantis-kmod

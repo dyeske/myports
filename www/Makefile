@@ -507,7 +507,6 @@
     SUBDIR += offpunk
     SUBDIR += oneshot
     SUBDIR += onionbalance
-    SUBDIR += onionshare
     SUBDIR += onionshare-cli
     SUBDIR += onlyoffice-documentserver
     SUBDIR += opencart
@@ -1453,6 +1452,7 @@
     SUBDIR += plasma6-plasma-browser-integration
     SUBDIR += pmwiki
     SUBDIR += pnews
+    SUBDIR += pocket-id
     SUBDIR += podcastamatic
     SUBDIR += pomerium
     SUBDIR += pound
@@ -1487,6 +1487,7 @@
     SUBDIR += py-beaker
     SUBDIR += py-beautifulsoup
     SUBDIR += py-betamax
+    SUBDIR += py-binarycookies
     SUBDIR += py-biscuits
     SUBDIR += py-bjoern
     SUBDIR += py-bleach
@@ -1562,6 +1563,7 @@
     SUBDIR += py-dj52-django-redis
     SUBDIR += py-dj52-django-rich
     SUBDIR += py-dj52-django-storages
+    SUBDIR += py-dj52-django-stubs-ext
     SUBDIR += py-dj52-django-tables2
     SUBDIR += py-dj52-django-taggit
     SUBDIR += py-dj52-django-timezone-field
@@ -2521,6 +2523,7 @@
     SUBDIR += tidy
     SUBDIR += tidy-html5
     SUBDIR += tikiwiki
+    SUBDIR += tinyauth
     SUBDIR += tinymce
     SUBDIR += tinyproxy
     SUBDIR += tivoka
