@@ -31,6 +31,7 @@
     SUBDIR += amphetadesk
     SUBDIR += analog
     SUBDIR += angie
+    SUBDIR += angie-console-light
     SUBDIR += angie-module-auth-jwt
     SUBDIR += angie-module-auth-spnego
     SUBDIR += angie-module-brotli
@@ -154,6 +155,7 @@
     SUBDIR += dothttp
     SUBDIR += dpp
     SUBDIR += drill
+    SUBDIR += drogon
     SUBDIR += drupal10
     SUBDIR += drupal11
     SUBDIR += drupal7
@@ -183,9 +185,9 @@
     SUBDIR += fcgiwrap
     SUBDIR += feroxbuster
     SUBDIR += ffproxy
-    SUBDIR += ffsend
     SUBDIR += fgallery
     SUBDIR += filebrowser
+    SUBDIR += filepizza
     SUBDIR += filtron
     SUBDIR += firedm
     SUBDIR += firefox
@@ -251,6 +253,7 @@
     SUBDIR += habari
     SUBDIR += hiawatha
     SUBDIR += hiawatha-monitor
+    SUBDIR += homepage
     SUBDIR += homer-web
     SUBDIR += hotcrp
     SUBDIR += hs-DAV
@@ -281,6 +284,7 @@
     SUBDIR += igal2
     SUBDIR += ikiwiki
     SUBDIR += ilias
+    SUBDIR += imaginary
     SUBDIR += iridium
     SUBDIR += janus
     SUBDIR += jericho-html
@@ -370,6 +374,7 @@
     SUBDIR += mediawiki139
     SUBDIR += mediawiki142
     SUBDIR += mediawiki143
+    SUBDIR += mediawiki144
     SUBDIR += mergelog
     SUBDIR += mhonarc
     SUBDIR += micro_httpd
@@ -426,6 +431,7 @@
     SUBDIR += mod_php82
     SUBDIR += mod_php83
     SUBDIR += mod_php84
+    SUBDIR += mod_php85
     SUBDIR += mod_proctitle
     SUBDIR += mod_qos
     SUBDIR += mod_realdoc
@@ -489,7 +495,6 @@
     SUBDIR += node18
     SUBDIR += node20
     SUBDIR += node22
-    SUBDIR += node23
     SUBDIR += node24
     SUBDIR += nostromo
     SUBDIR += novnc
@@ -499,7 +504,6 @@
     SUBDIR += npm-node18
     SUBDIR += npm-node20
     SUBDIR += npm-node22
-    SUBDIR += npm-node23
     SUBDIR += npm-node24
     SUBDIR += nyxt
     SUBDIR += oauth2-proxy
@@ -993,7 +997,6 @@
     SUBDIR += p5-HTTP-Tiny
     SUBDIR += p5-HTTP-Tiny-Multipart
     SUBDIR += p5-HTTP-Tiny-Paranoid
-    SUBDIR += p5-HTTP-Tiny-SPDY
     SUBDIR += p5-HTTP-Tiny-UA
     SUBDIR += p5-HTTP-Tiny-UNIX
     SUBDIR += p5-HTTP-WebTest
@@ -1437,6 +1440,9 @@
     SUBDIR += php84-opcache
     SUBDIR += php84-session
     SUBDIR += php84-tidy
+    SUBDIR += php85-opcache
+    SUBDIR += php85-session
+    SUBDIR += php85-tidy
     SUBDIR += phpbb3
     SUBDIR += phpfpmtop
     SUBDIR += phpgroupware
@@ -2013,6 +2019,7 @@
     SUBDIR += rsstool
     SUBDIR += rt44
     SUBDIR += rt50
+    SUBDIR += rt60
     SUBDIR += rubygem-ace-rails-ap
     SUBDIR += rubygem-actioncable-gitlab
     SUBDIR += rubygem-actioncable5
@@ -2508,6 +2515,7 @@
     SUBDIR += surf
     SUBDIR += swiggle
     SUBDIR += sws
+    SUBDIR += tailwindcss3
     SUBDIR += tcexam
     SUBDIR += tclhttpd
     SUBDIR += tclwebtest
@@ -2676,7 +2684,6 @@
     SUBDIR += yarn-node18
     SUBDIR += yarn-node20
     SUBDIR += yarn-node22
-    SUBDIR += yarn-node23
     SUBDIR += yarn-node24
     SUBDIR += yarr
     SUBDIR += yaws

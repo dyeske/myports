@@ -778,9 +778,9 @@ beehive:*:832:
 pocket-id:*:834:
 filebrowser:*:835:
 tinyauth:*:836:
-# free: 837
+homebox:*:837:
 # free: 838
-# free: 839
+shiori:*:839:
 netdisco:*:840:
 tcpcryptd:*:841:
 munin:*:842:
@@ -799,7 +799,7 @@ ebusd:*:854:
 opensearch:*:855:
 # free: 856
 # free: 857
-# free: 858
+umurmur:*:858:
 kanidm:*:859:
 plocate:*:860:
 rekor:*:861:

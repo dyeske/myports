@@ -423,6 +423,7 @@
     SUBDIR += libxml++26
     SUBDIR += libxml++30
     SUBDIR += libxml2
+    SUBDIR += libxml2-python
     SUBDIR += libxmlb
     SUBDIR += libxmlbird
     SUBDIR += libxode
@@ -472,6 +473,7 @@
     SUBDIR += mdbook-linkcheck
     SUBDIR += mdbook-mermaid
     SUBDIR += mdq
+    SUBDIR += mdtt
     SUBDIR += meilisearch
     SUBDIR += meld
     SUBDIR += metauml
@@ -531,6 +533,7 @@
     SUBDIR += opensp
     SUBDIR += openvanilla-framework
     SUBDIR += or-aspell
+    SUBDIR += otree
     SUBDIR += ov
     SUBDIR += ox-gfm.el
     SUBDIR += p5-AI-Categorizer
@@ -1291,6 +1294,14 @@
     SUBDIR += php84-xmlreader
     SUBDIR += php84-xmlwriter
     SUBDIR += php84-xsl
+    SUBDIR += php85-ctype
+    SUBDIR += php85-dom
+    SUBDIR += php85-enchant
+    SUBDIR += php85-simplexml
+    SUBDIR += php85-xml
+    SUBDIR += php85-xmlreader
+    SUBDIR += php85-xmlwriter
+    SUBDIR += php85-xsl
     SUBDIR += pict
     SUBDIR += po4a
     SUBDIR += pod2mdoc
@@ -1411,12 +1422,13 @@
     SUBDIR += py-jarowinkler
     SUBDIR += py-jc
     SUBDIR += py-jinja2-cli
+    SUBDIR += py-jinjanator
+    SUBDIR += py-jinjanator-plugins
     SUBDIR += py-jiter
     SUBDIR += py-jq
     SUBDIR += py-json2html
     SUBDIR += py-jsonslicer
     SUBDIR += py-jsx-lexer
-    SUBDIR += py-jtextfsm
     SUBDIR += py-junit-xml
     SUBDIR += py-jupyter_sphinx
     SUBDIR += py-jupyterlab-pygments
@@ -1427,7 +1439,6 @@
     SUBDIR += py-language-data
     SUBDIR += py-laserhammer
     SUBDIR += py-latexcodec
-    SUBDIR += py-libxml2
     SUBDIR += py-license-expression
     SUBDIR += py-line-protocol-parser
     SUBDIR += py-linkify-it-py
@@ -1606,6 +1617,7 @@
     SUBDIR += py-sphinx-inline-tabs
     SUBDIR += py-sphinx-intl
     SUBDIR += py-sphinx-issues
+    SUBDIR += py-sphinx-last-updated-by-git
     SUBDIR += py-sphinx-markdown-tables
     SUBDIR += py-sphinx-material
     SUBDIR += py-sphinx-me
@@ -2185,6 +2197,8 @@
     SUBDIR += xstream
     SUBDIR += xsv-rs
     SUBDIR += xwindiff
+    SUBDIR += xxdiff
+    SUBDIR += xxdiff-scripts
     SUBDIR += y2l
     SUBDIR += yali
     SUBDIR += yaml-mode.el
