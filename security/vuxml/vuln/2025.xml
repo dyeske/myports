@@ -1,3 +1,96 @@
+  <vuln vid="605a9d1e-6521-11f0-beb2-ac5afc632ba3">
+    <topic>libwasmtime -- host panic with fd_renumber WASIp1 function</topic>
+    <affects>
+      <package>
+	<name>libwasmtime</name>
+	<range><ge>24.0.0</ge><lt>24.0.4</lt></range>
+	<range><ge>33.0.0</ge><lt>33.0.2</lt></range>
+	<range><ge>34.0.0</ge><lt>34.0.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>WasmTime development team reports:</p>
+	<blockquote cite="https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-fm79-3f68-h2fc">
+	  <p>A bug in Wasmtime's implementation of the WASIp1 set of import
+	  functions can lead to a WebAssembly guest inducing a panic in the
+	  host (embedder).</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-53901</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-53901</url>
+    </references>
+    <dates>
+      <discovery>2025-07-18</discovery>
+      <entry>2025-07-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="e27ee4fc-cdc9-45a1-8242-09898cdbdc91">
+    <topic>unbound -- Cache poisoning via the ECS-enabled Rebirthday Attack</topic>
+    <affects>
+      <package>
+	<name>unbound</name>
+	<range><gt>1.6.1</gt><lt>1.23.0</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>sep@nlnetlabs.nl reports:</p>
+	<blockquote cite="https://nlnetlabs.nl/downloads/unbound/CVE-2025-5994.txt">
+	  <p>A multi-vendor cache poisoning vulnerability named &apos;Rebirthday
+	Attack&apos; has been discovered in caching resolvers that support
+	EDNS Client Subnet (ECS).  Unbound is also vulnerable when compiled
+	with ECS support, i.e., &apos;--enable-subnet&apos;, AND configured
+	to send ECS information along with queries to upstream name servers,
+	i.e., at least one of the &apos;send-client-subnet&apos;,
+	&apos;client-subnet-zone&apos; or &apos;client-subnet-always-forward&apos;
+	options is used.  Resolvers supporting ECS need to segregate outgoing
+	queries to accommodate for different outgoing ECS information.  This
+	re-opens up resolvers to a birthday paradox attack (Rebirthday
+	Attack) that tries to match the DNS transaction ID in order to cache
+	non-ECS poisonous replies.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-5994</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-5994</url>
+    </references>
+    <dates>
+      <discovery>2025-07-16</discovery>
+      <entry>2025-07-18</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="aeac223e-60e1-11f0-8baa-8447094a420f">
+    <topic>liboqs -- Secret-dependent branching in HQC</topic>
+    <affects>
+      <package>
+	<name>liboqs</name>
+	<range><lt>0.14.0</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OpenQuantumSafe project reports:</p>
+	<blockquote cite="https://github.com/open-quantum-safe/liboqs/security/advisories/GHSA-qq3m-rq9v-jfgm">
+	  <p>Secret-dependent branching in HQC reference implementation when compiled with Clang 17-20 for optimizations above -O0</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-52473</cvename>
+      <url>https://github.com/open-quantum-safe/liboqs/security/advisories/GHSA-qq3m-rq9v-jfgm</url>
+    </references>
+    <dates>
+      <discovery>2025-07-10</discovery>
+      <entry>2025-07-14</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c3e1df74-5e73-11f0-95e5-74563cf9e4e9">
     <topic>GnuTLS -- multiple vulnerabilities</topic>
     <affects>
@@ -106,15 +199,15 @@
     <affects>
       <package>
 	<name>libxml2</name>
-	<range><lt>3.0</lt></range> <!-- needs update once fixed version appears -->
+	<range><lt>2.14.5</lt></range>
       </package>
       <package>
 	<name>linux-c7-libxml2</name>
-	<range><lt>3.0</lt></range> <!-- needs update once fixed version appears -->
+	<range><lt>2.14.5</lt></range> <!-- needs update once fixed version appears -->
       </package>
       <package>
 	<name>linux-rl9-libxml2</name>
-	<range><lt>3.0</lt></range> <!-- needs update once fixed version appears -->
+	<range><lt>2.14.5</lt></range> <!-- needs update once fixed version appears -->
       </package>
     </affects>
     <description>
@@ -161,6 +254,7 @@
     <dates>
       <discovery>2025-05-27</discovery>
       <entry>2025-07-12</entry>
+      <modified>2025-07-15</modified>
     </dates>
   </vuln>
 
@@ -240,18 +334,15 @@
     <affects>
       <package>
 	<name>tomcat110</name>
-	<range><gt>11.0.0</gt></range>
-	<range><lt>11.0.9</lt></range>
+	<range><ge>11.0.0</ge><lt>11.0.9</lt></range>
       </package>
       <package>
 	<name>tomcat101</name>
-	<range><gt>10.1.0</gt></range>
-	<range><lt>10.1.43</lt></range>
+	<range><ge>10.1.0</ge><lt>10.1.43</lt></range>
       </package>
       <package>
 	<name>tomcat9</name>
-	<range><gt>9.0.0</gt></range>
-	<range><lt>9.0.107</lt></range>
+	<range><ge>9.0.0</ge><lt>9.0.107</lt></range>
       </package>
     </affects>
     <description>
@@ -284,6 +375,7 @@
     <dates>
       <discovery>2025-07-10</discovery>
       <entry>2025-07-10</entry>
+      <modified>2025-07-15</modified>
     </dates>
   </vuln>
 
