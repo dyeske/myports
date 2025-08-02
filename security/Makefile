@@ -255,6 +255,7 @@
     SUBDIR += keepass
     SUBDIR += keepass-plugin-keepassrpc
     SUBDIR += keepassxc
+    SUBDIR += keepassxc276
     SUBDIR += keybase
     SUBDIR += keychain
     SUBDIR += keyprint
@@ -785,6 +786,7 @@
     SUBDIR += passivedns
     SUBDIR += pcsc-tools
     SUBDIR += pdfcrack
+    SUBDIR += pdfrip
     SUBDIR += pear-Auth
     SUBDIR += pear-Auth_HTTP
     SUBDIR += pear-Auth_PrefManager

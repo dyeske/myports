@@ -131,7 +131,6 @@
     SUBDIR += libgda5-postgresql
     SUBDIR += libgda5-ui
     SUBDIR += libgda6
-    SUBDIR += libgdamm5
     SUBDIR += libhsclient
     SUBDIR += libiodbc
     SUBDIR += libmemcache
@@ -166,6 +165,7 @@
     SUBDIR += mantis
     SUBDIR += mariadb-connector-c
     SUBDIR += mariadb-connector-odbc
+    SUBDIR += mariadb-java-client
     SUBDIR += mariadb1011-client
     SUBDIR += mariadb1011-server
     SUBDIR += mariadb105-client
@@ -182,7 +182,6 @@
     SUBDIR += memcached
     SUBDIR += metabase
     SUBDIR += mongodb-tools
-    SUBDIR += mongodb50
     SUBDIR += mongodb60
     SUBDIR += mongodb70
     SUBDIR += mongodb80
@@ -224,8 +223,8 @@
     SUBDIR += ods2sql
     SUBDIR += opendbviewer
     SUBDIR += opendbx
-    SUBDIR += openvoxdb8
     SUBDIR += openvoxdb-terminus8
+    SUBDIR += openvoxdb8
     SUBDIR += ora2pg
     SUBDIR += oracle8-client
     SUBDIR += p5-Amazon-SimpleDB
@@ -768,6 +767,7 @@
     SUBDIR += py-couchdb
     SUBDIR += py-cymysql
     SUBDIR += py-databases
+    SUBDIR += py-datafusion
     SUBDIR += py-dbf
     SUBDIR += py-dbt-core
     SUBDIR += py-dbt-duckdb

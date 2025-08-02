@@ -26,6 +26,7 @@
     SUBDIR += UniversalFeedCreator
     SUBDIR += adguardhome
     SUBDIR += adjuster
+    SUBDIR += agate
     SUBDIR += alef-webfont
     SUBDIR += amfora
     SUBDIR += amphetadesk
@@ -499,7 +500,6 @@
     SUBDIR += node24
     SUBDIR += nostromo
     SUBDIR += novnc
-    SUBDIR += novnc-websockify
     SUBDIR += npc
     SUBDIR += npm
     SUBDIR += npm-node18
@@ -1441,7 +1441,6 @@
     SUBDIR += php84-opcache
     SUBDIR += php84-session
     SUBDIR += php84-tidy
-    SUBDIR += php85-opcache
     SUBDIR += php85-session
     SUBDIR += php85-tidy
     SUBDIR += phpbb3
@@ -1908,6 +1907,7 @@
     SUBDIR += py-restclient
     SUBDIR += py-rfc3986
     SUBDIR += py-rfc3987
+    SUBDIR += py-rfc3987-syntax
     SUBDIR += py-rollbar
     SUBDIR += py-routes
     SUBDIR += py-rules
@@ -2517,6 +2517,7 @@
     SUBDIR += swiggle
     SUBDIR += sws
     SUBDIR += tailwindcss3
+    SUBDIR += tailwindcss4
     SUBDIR += tcexam
     SUBDIR += tclhttpd
     SUBDIR += tclwebtest
