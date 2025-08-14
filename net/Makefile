@@ -17,6 +17,8 @@
     SUBDIR += akonadi-search
     SUBDIR += alligator
     SUBDIR += aluminum
+    SUBDIR += amnezia-kmod
+    SUBDIR += amnezia-tools
     SUBDIR += amqpcat
     SUBDIR += aoe
     SUBDIR += apache-commons-net
@@ -115,6 +117,7 @@
     SUBDIR += dbeacon
     SUBDIR += delegate
     SUBDIR += deltachat-rpc-server
+    SUBDIR += devfile
     SUBDIR += deviceatlas-enterprise-c
     SUBDIR += dgd
     SUBDIR += dgd-kernel
