@@ -1,3 +1,422 @@
+  <vuln vid="07335fb9-7eb1-11f0-ba14-b42e991fc52e">
+    <topic>Mozilla -- memory safety bugs</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>142,2</lt></range>
+      </package>
+      <package>
+	<name>thunderbird</name>
+	<range><lt>142</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/buglist.cgi?bug_id=1825621%2C1970079%2C1976736%2C1979072">
+	  <p>Memory safety bugs present in Firefox 141 and Thunderbird
+	  141. Some of these bugs showed evidence of memory corruption
+	  and we presume that with enough effort some of these could
+	  have been exploited to run arbitrary code.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-9187</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9187</url>
+    </references>
+    <dates>
+      <discovery>2025-08-19</discovery>
+      <entry>2025-08-21</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="feb359ef-7eb0-11f0-ba14-b42e991fc52e">
+    <topic>Mozilla -- memory safety bugs</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>142,2</lt></range>
+      </package>
+      <package>
+	<name>firefox-esr</name>
+	<range><lt>128.14</lt></range>
+      </package>
+      <package>
+	<name>thunderbird</name>
+	<range><lt>140.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/buglist.cgi?bug_id=1970154%2C1976782%2C1977166">
+	  <p>Memory safety bugs present in Firefox ESR 115.26, Firefox
+	  ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1,
+	  Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141.
+	  Some of these bugs showed evidence of memory corruption and
+	  we presume that with enough effort some of these could have
+	  been exploited to run arbitrary code.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-9184</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9184</url>
+      <cvename>CVE-2025-9185</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9185</url>
+    </references>
+    <dates>
+      <discovery>2025-08-19</discovery>
+      <entry>2025-08-21</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="fa7fd6d4-7eb0-11f0-ba14-b42e991fc52e">
+    <topic>Firefox -- Spoofing in the Address Bar</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>142,2</lt></range>
+      </package>
+      <package>
+	<name>firefox-esr</name>
+	<range><lt>140.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=1976102">
+	  <p>Spoofing issue in the Address Bar component.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-9183</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9183</url>
+    </references>
+    <dates>
+      <discovery>2025-08-19</discovery>
+      <entry>2025-08-21</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f994cea5-7eb0-11f0-ba14-b42e991fc52e">
+    <topic>Mozilla -- DoS in WebRender</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>142,2</lt></range>
+      </package>
+      <package>
+	<name>firefox-esr</name>
+	<range><lt>140.2</lt></range>
+      </package>
+      <package>
+	<name>thunderbird</name>
+	<range><lt>142</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=1975837">
+	  <p>&apos;Denial-of-service due to out-of-memory in the
+	  Graphics: WebRender component.&apos;</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-9182</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9182</url>
+    </references>
+    <dates>
+      <discovery>2025-08-19</discovery>
+      <entry>2025-08-21</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f7e8e9a3-7eb0-11f0-ba14-b42e991fc52e">
+    <topic>Mozilla -- Uninitialized memory</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>142,2</lt></range>
+      </package>
+      <package>
+	<name>firefox-esr</name>
+	<range><lt>140.2</lt></range>
+      </package>
+      <package>
+	<name>thunderbird</name>
+	<range><lt>140.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=1977130">
+	  <p>Uninitialized memory in the JavaScript Engine component.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-9181</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9181</url>
+    </references>
+    <dates>
+      <discovery>2025-08-19</discovery>
+      <entry>2025-08-21</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f6219d24-7eb0-11f0-ba14-b42e991fc52e">
+    <topic>Mozilla -- Same-origin policy bypass</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>142,2</lt></range>
+      </package>
+      <package>
+	<name>firefox-esr</name>
+	<range><lt>140.2</lt></range>
+      </package>
+      <package>
+	<name>thunderbird</name>
+	<range><lt>142</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=1979782">
+	  <p>&apos;Same-origin policy bypass in the Graphics: Canvas2D
+	component.&apos;</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-9180</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9180</url>
+    </references>
+    <dates>
+      <discovery>2025-08-19</discovery>
+      <entry>2025-08-21</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f42ee983-7eb0-11f0-ba14-b42e991fc52e">
+    <topic>Mozilla -- memory corruption in GMP</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>142,2</lt></range>
+      </package>
+      <package>
+	<name>firefox-esr</name>
+	<range><lt>140.2</lt></range>
+      </package>
+      <package>
+	<name>thunderbird</name>
+	<range><lt>140.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=1979527">
+	  <p>An attacker was able to perform memory corruption in the GMP process
+	which processes encrypted media.  This process is also heavily
+	sandboxed, but represents slightly different privileges from the
+	content process.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-9179</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-9179</url>
+    </references>
+    <dates>
+      <discovery>2025-08-19</discovery>
+      <entry>2025-08-21</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="eb03714d-79f0-11f0-b4c1-ac5afc632ba3">
+    <topic>nginx -- worker process memory disclosure</topic>
+    <affects>
+      <package>
+	<name>nginx-devel</name>
+	<range><lt>1.29.1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>F5 reports:</p>
+	<blockquote cite="https://my.f5.com/manage/s/article/K000152786">
+	  <p>NGINX Open Source and NGINX Plus have a vulnerability in the
+	  ngx_mail_smtp_module that might allow an unauthenticated attacker to
+	  over-read NGINX SMTP authentication process memory; as a result, the
+	  server side may leak arbitrary bytes sent in a request to the
+	  authentication server.  This issue happens during the NGINX SMTP
+	  authentication process and requires the attacker to make preparations
+	  against the target system to extract the leaked data.  The issue
+	  affects NGINX only if (1) it is built with the ngx_mail_smtp_module,
+	  (2) the smtp_auth directive is configured with method "none,"
+	  and (3) the authentication server returns the "Auth-Wait" response
+	  header.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-53859</cvename>
+      <url>https://www.cve.org/CVERecord?id=CVE-2025-53859</url>
+    </references>
+    <dates>
+      <discovery>2025-08-13</discovery>
+      <entry>2025-08-15</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a60e73e0-7942-11f0-b3f7-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>139.0.7258.127</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>139.0.7258.127</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2025/08/stable-channel-update-for-desktop_12.html">
+	 <p>This update includes 6 security fixes:</p>
+	 <ul>
+	    <li>[432035817] High CVE-2025-8879: Heap buffer overflow in libaom. Reported by Anonymous on 2025-07-15</li>
+	    <li>[433533359] High CVE-2025-8880: Race in V8. Reported by Seunghyun Lee (@0x10n) on 2025-07-23</li>
+	    <li>[435139154] High CVE-2025-8901: Out of bounds write in ANGLE. Reported by Google Big Sleep on 2025-07-30</li>
+	    <li>[433800617] Medium CVE-2025-8881: Inappropriate implementation in File Picker. Reported by Alesandro Ortiz on 2025-07-23</li>
+	    <li>[435623339] Medium CVE-2025-8882: Use after free in Aura. Reported by Umar Farooq on 2025-08-01</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-8579</cvename>
+      <cvename>CVE-2025-8580</cvename>
+      <cvename>CVE-2025-8901</cvename>
+      <cvename>CVE-2025-8881</cvename>
+      <cvename>CVE-2025-8882</cvename>
+      <url>https://chromereleases.googleblog.com/2025/08/stable-channel-update-for-desktop_12.html</url>
+    </references>
+    <dates>
+      <discovery>2025-08-12</discovery>
+      <entry>2025-08-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="fc048b51-7909-11f0-90a2-6cc21735f730">
+    <topic>PostgreSQL -- vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>postgresql17-server</name>
+	<range><lt>17.6</lt></range>
+      </package>
+      <package>
+	<name>postgresql16-server</name>
+	<range><lt>16.10</lt></range>
+      </package>
+      <package>
+	<name>postgresql15-server</name>
+	<range><lt>14.14</lt></range>
+      </package>
+      <package>
+	<name>postgresql14-server</name>
+	<range><lt>14.19</lt></range>
+      </package>
+      <package>
+	<name>postgresql13-server</name>
+	<range><lt>13.22</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PostgreSQL project reports:</p>
+	<blockquote cite="https://www.postgresql.org/about/news/postgresql-176-1610-1514-1419-1322-and-18-beta-3-released-3118/">
+	  <p>Tighten security checks in planner estimation functions.</p>
+	  <p>Prevent pg_dump scripts from being used to attack the user running the restore.</p>
+	  <p>Convert newlines to spaces in names included in comments in pg_dump output.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-8713</cvename>
+      <cvename>CVE-2025-8714</cvename>
+      <cvename>CVE-2025-8715</cvename>
+      <url>https://www.postgresql.org/about/news/postgresql-176-1610-1514-1419-1322-and-18-beta-3-released-3118/</url>
+    </references>
+    <dates>
+      <discovery>2025-08-11</discovery>
+      <entry>2025-08-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="7bfe6f39-78be-11f0-9d03-2cf05da270f3">
+    <topic>Gitlab -- vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>gitlab-ce</name>
+	<name>gitlab-ee</name>
+	<range><ge>18.2.0</ge><lt>18.2.2</lt></range>
+	<range><ge>18.1.0</ge><lt>18.1.4</lt></range>
+	<range><ge>8.14.0</ge><lt>18.0.6</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://about.gitlab.com/releases/2025/08/13/patch-release-gitlab-18-2-2-released/">
+	  <p>Cross-site scripting issue in blob viewer impacts GitLab CE/EE</p>
+	  <p>Cross-site scripting issue in labels impacts GitLab CE/EE</p>
+	  <p>Cross-site scripting issue in Workitem impacts GitLab CE/EE</p>
+	  <p>Improper Handling of Permissions issue in project API impacts GitLab CE/EE</p>
+	  <p>Incorrect Privilege Assignment issue in delete issues operation impacts GitLab CE/EE</p>
+	  <p>Allocation of Resources Without Limits issue in release name creation impacts GitLab CE/EE</p>
+	  <p>Incorrect Authorization issue in jobs API impacts GitLab CE/EE</p>
+	  <p>Authorization issue in Merge request approval policy impacts GitLab EE</p>
+	  <p>Inefficient Regular Expression Complexity issue in wiki impacts GitLab CE/EE</p>
+	  <p>Allocation of Resources Without Limits issue in Mattermost integration impacts GitLab CE/EE</p>
+	  <p>Incorrect Permission Assignment issue in ID token impacts GitLab CE/EE</p>
+	  <p>Insufficient Access Control issue in IP Restriction impacts GitLab EE</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-7734</cvename>
+      <cvename>CVE-2025-7739</cvename>
+      <cvename>CVE-2025-6186</cvename>
+      <cvename>CVE-2025-8094</cvename>
+      <cvename>CVE-2024-12303</cvename>
+      <cvename>CVE-2025-2614</cvename>
+      <cvename>CVE-2024-10219</cvename>
+      <cvename>CVE-2025-8770</cvename>
+      <cvename>CVE-2025-2937</cvename>
+      <cvename>CVE-2025-1477</cvename>
+      <cvename>CVE-2025-5819</cvename>
+      <cvename>CVE-2025-2498</cvename>
+      <url>https://about.gitlab.com/releases/2025/08/13/patch-release-gitlab-18-2-2-released/</url>
+    </references>
+    <dates>
+      <discovery>2025-08-13</discovery>
+      <entry>2025-08-14</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e2d49973-785a-11f0-a1c0-0050569f0b83">
     <topic>www/varnish7 -- Denial of Service in HTTP/2</topic>
     <affects>
