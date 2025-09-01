@@ -72,6 +72,7 @@
     SUBDIR += concourse
     SUBDIR += copperspice-examples
     SUBDIR += countrycodes
+    SUBDIR += cpp-mcp
     SUBDIR += cpuid
     SUBDIR += crosti
     SUBDIR += cryptoballot
@@ -432,6 +433,7 @@
     SUBDIR += py-colorzero
     SUBDIR += py-cppman
     SUBDIR += py-crudini
+    SUBDIR += py-csvw
     SUBDIR += py-datasets
     SUBDIR += py-detecta
     SUBDIR += py-diffusers
@@ -441,6 +443,7 @@
     SUBDIR += py-ezc3d
     SUBDIR += py-facenet-pytorch
     SUBDIR += py-fast-histogram
+    SUBDIR += py-fastmcp
     SUBDIR += py-fastscapelib
     SUBDIR += py-files-to-prompt
     SUBDIR += py-fleep
@@ -448,6 +451,7 @@
     SUBDIR += py-gguf
     SUBDIR += py-google-ai-generativelanguage
     SUBDIR += py-gpiozero
+    SUBDIR += py-gymnasium
     SUBDIR += py-halo
     SUBDIR += py-hf-doc-builder
     SUBDIR += py-hf-xet

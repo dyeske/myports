@@ -1,5 +1,6 @@
 PORTNAME=	acme
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/nginx/nginx-${PORTNAME}/releases/download/v${PORTVERSION}/:acme \
 		https://nginx.org/download/:nginx
@@ -48,7 +49,7 @@ NGX_CONFIGURE_ARGS=	--with-compat \
 
 PLIST_FILES=	libexec/nginx/ngx_http_acme_module.so
 
-post-extract:
+pre-configure:
 	( cd ${WRKDIR}/nginx-${NGINX_VERSION} && \
 		${SETENV} ${CONFIGURE_ENV} ${CONFIGURE_CMD} ${NGX_CONFIGURE_ARGS} )
 

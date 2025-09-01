@@ -1,5 +1,6 @@
 PORTNAME=	veloren
-PORTVERSION=	s20250820
+PORTVERSION=	s20250828
+PORTREVISION=	1
 CATEGORIES=	games wayland
 PKGNAMESUFFIX=	-weekly
 
@@ -24,7 +25,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/alsa-lib/libasound_module_pcm_oss.so:audio/alsa-pl
 USES=		cargo xorg
 USE_XORG=	xcb
 USE_GITLAB=	yes
-GL_TAGNAME=	v0.17.0-990-g5a77877ae2 # git describe --match='v[0-9]*' weekly
+GL_TAGNAME=	v0.17.0-1006-g4d7f84d834 # git describe --match='v[0-9]*' weekly
 CARGO_ENV=	VELOREN_USERDATA_STRATEGY=system SHADERC_LIB_DIR="${LOCALBASE}/lib"
 PLIST_FILES=	bin/${PORTNAME}-server-cli \
 		bin/${PORTNAME}-voxygen \
@@ -42,6 +43,10 @@ WITHOUT_LTO=	yes # XXX bug 277333
 CARGO_ENV+=		RUSTC_BOOTSTRAP=1
 # XXX https://github.com/rust-lang/cargo/issues/4101
 CARGO_INSTALL_PATH=	server-cli voxygen
+
+# https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289016
+CARGO_BUILDDEP=	no
+BUILD_DEPENDS+=	rust188>0:lang/rust188
 
 post-patch:
 # .git/ directory is missing, so don't abort if git binary is also missing
