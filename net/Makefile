@@ -514,6 +514,7 @@
     SUBDIR += nats-nsc
     SUBDIR += nats-server
     SUBDIR += nats-streaming-server
+    SUBDIR += nats-surveyor
     SUBDIR += nats-top
     SUBDIR += natscli
     SUBDIR += nbd-server
@@ -1194,6 +1195,7 @@
     SUBDIR += py-urlextract
     SUBDIR += py-urllib3
     SUBDIR += py-urllib3-future
+    SUBDIR += py-urllib31
     SUBDIR += py-whois
     SUBDIR += py-wmi-query
     SUBDIR += py-wsdd

@@ -525,9 +525,6 @@
     SUBDIR += openjade
     SUBDIR += opensearch
     SUBDIR += opensearch-dashboards
-    SUBDIR += opensearch-dashboards210
-    SUBDIR += opensearch-dashboards213
-    SUBDIR += opensearch-dashboards216
     SUBDIR += opensearch-dashboards219
     SUBDIR += opensearch13
     SUBDIR += opensearch210
@@ -1375,6 +1372,7 @@
     SUBDIR += py-dparse
     SUBDIR += py-duecredit
     SUBDIR += py-ebcdic
+    SUBDIR += py-elastic-transport
     SUBDIR += py-elasticsearch
     SUBDIR += py-elasticsearch-async
     SUBDIR += py-elasticsearch-curator
@@ -1382,6 +1380,7 @@
     SUBDIR += py-elasticsearch-dsl6
     SUBDIR += py-elasticsearch5
     SUBDIR += py-elasticsearch6
+    SUBDIR += py-elasticsearch7
     SUBDIR += py-elementpath
     SUBDIR += py-emeraldtree
     SUBDIR += py-empy
@@ -1611,6 +1610,7 @@
     SUBDIR += py-sentencepiece
     SUBDIR += py-simplebayes
     SUBDIR += py-smartypants
+    SUBDIR += py-smile
     SUBDIR += py-snowballstemmer
     SUBDIR += py-spacy
     SUBDIR += py-spacy-legacy
@@ -1828,6 +1828,7 @@
     SUBDIR += rubygem-cucumber-gherkin
     SUBDIR += rubygem-cucumber-gherkin27
     SUBDIR += rubygem-cucumber-gherkin30
+    SUBDIR += rubygem-cucumber-gherkin32
     SUBDIR += rubygem-cucumber-html-formatter
     SUBDIR += rubygem-dartsass
     SUBDIR += rubygem-diff-lcs
@@ -2123,6 +2124,7 @@
     SUBDIR += translate-shell
     SUBDIR += translate-toolkit
     SUBDIR += trdsql
+    SUBDIR += tree-sitter-grammars
     SUBDIR += ts-hunspell
     SUBDIR += tth
     SUBDIR += tttcmds

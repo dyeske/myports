@@ -204,7 +204,6 @@
     SUBDIR += rlpr
     SUBDIR += rtf2latex2e
     SUBDIR += rubygem-afm
-    SUBDIR += rubygem-afm0
     SUBDIR += rubygem-color
     SUBDIR += rubygem-color-tools
     SUBDIR += rubygem-color_diff
@@ -224,6 +223,7 @@
     SUBDIR += rubygem-prawn-rails
     SUBDIR += rubygem-prawn-security
     SUBDIR += rubygem-prawn-svg
+    SUBDIR += rubygem-prawn-svg036
     SUBDIR += rubygem-prawn-table
     SUBDIR += rubygem-prawn-templates
     SUBDIR += rubygem-prawn24

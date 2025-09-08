@@ -123,6 +123,7 @@
     SUBDIR += fortune-mod-epictetus
     SUBDIR += fortune-mod-freebsd-classic
     SUBDIR += fortune-mod-futurama
+    SUBDIR += fortune-mod-mormon
     SUBDIR += fortune-mod-psalms
     SUBDIR += fortuneit
     SUBDIR += fq
@@ -157,6 +158,7 @@
     SUBDIR += gedkeeper
     SUBDIR += geekcode
     SUBDIR += getopt
+    SUBDIR += ggml
     SUBDIR += gimp-help-en
     SUBDIR += gkrellm-gamma
     SUBDIR += gkrellm-xkb
@@ -450,6 +452,7 @@
     SUBDIR += py-fuzzy
     SUBDIR += py-gguf
     SUBDIR += py-google-ai-generativelanguage
+    SUBDIR += py-google-genai
     SUBDIR += py-gpiozero
     SUBDIR += py-gymnasium
     SUBDIR += py-halo
@@ -529,6 +532,7 @@
     SUBDIR += py-pytorch
     SUBDIR += py-pytorch-lightning
     SUBDIR += py-pyviz-comms
+    SUBDIR += py-runloop-api-client
     SUBDIR += py-safetensors
     SUBDIR += py-sagemaker
     SUBDIR += py-sagemaker-core
