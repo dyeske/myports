@@ -11,7 +11,6 @@
     SUBDIR += R-cran-sqldf
     SUBDIR += WWWdb
     SUBDIR += adminer
-    SUBDIR += adminerevo
     SUBDIR += adodb5
     SUBDIR += akonadi
     SUBDIR += apache-commons-dbutils
@@ -557,6 +556,7 @@
     SUBDIR += pg_store_plans
     SUBDIR += pg_tileserv
     SUBDIR += pgaccess
+    SUBDIR += pgactive
     SUBDIR += pgadmin3
     SUBDIR += pgagroal
     SUBDIR += pgbackrest
@@ -833,6 +833,7 @@
     SUBDIR += py-python-memcached
     SUBDIR += py-python-sql
     SUBDIR += py-python-swiftclient
+    SUBDIR += py-qdrant-client
     SUBDIR += py-queries
     SUBDIR += py-rb
     SUBDIR += py-redis
@@ -897,7 +898,6 @@
     SUBDIR += redis74
     SUBDIR += redis80
     SUBDIR += redis_exporter
-    SUBDIR += redisdesktopmanager
     SUBDIR += redisjson
     SUBDIR += retcl
     SUBDIR += rocksdb

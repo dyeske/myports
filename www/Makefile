@@ -36,6 +36,7 @@
     SUBDIR += angie-console-light
     SUBDIR += angie-module-auth-jwt
     SUBDIR += angie-module-auth-spnego
+    SUBDIR += angie-module-auth-totp
     SUBDIR += angie-module-brotli
     SUBDIR += angie-module-cache-purge
     SUBDIR += angie-module-dav-ext
@@ -1714,6 +1715,7 @@
     SUBDIR += py-fake-useragent
     SUBDIR += py-falcon
     SUBDIR += py-fastapi
+    SUBDIR += py-fastapi-sso
     SUBDIR += py-feedgen
     SUBDIR += py-feedgenerator
     SUBDIR += py-flasgger
