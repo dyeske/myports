@@ -10,10 +10,11 @@ WWW=		https://github.com/github/git-sizer
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
+BUILD_DEPENDS=	bash:shells/bash
+
 USES=		go:1.21,modules gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	github
-BUILD_DEPENDS=	bash:shells/bash
 
 PLIST_FILES=	bin/${PORTNAME}
 
