@@ -1,6 +1,6 @@
 PORTNAME=	gonic
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.17.0
+DISTVERSION=	0.18.0
 PORTREVISION=	1
 CATEGORIES=	audio net
 
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libtag.so:audio/taglib
 RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
 		mpv:multimedia/mpv
 
-USES=		go:modules pkgconfig sqlite
+USES=		go:1.25,modules pkgconfig sqlite
 
 USE_RC_SUBR=	${PORTNAME}
 

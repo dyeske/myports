@@ -1,7 +1,7 @@
-TIMESTAMP = 1757806392
-SHA256 (filebrowser-quantum-v0.8.5-beta.frontend.tar.gz) = 484fda105e6d485543497923a411832900291262f9b3c25e375363e1f1201b2f
-SIZE (filebrowser-quantum-v0.8.5-beta.frontend.tar.gz) = 1895545
-SHA256 (filebrowser-quantum-v0.8.5-beta.vendor.tar.gz) = 464c63172df9c00dad2aebb65b5a4d6276d94639cb9abe77f9d87bb174cdcf9e
-SIZE (filebrowser-quantum-v0.8.5-beta.vendor.tar.gz) = 67782348
-SHA256 (gtsteffaniak-filebrowser-v0.8.5-beta_GH0.tar.gz) = 699f8d8675b3a623dde55a398373deb4f42f27a8277ae5f718e29823d5c6f536
-SIZE (gtsteffaniak-filebrowser-v0.8.5-beta_GH0.tar.gz) = 4528372
+TIMESTAMP = 1759471096
+SHA256 (filebrowser-quantum-v0.8.7-beta.frontend.tar.gz) = bee9de933198fe1ca0abf965f59314cd6789f3e8c5b65beba0728907bdd8e0c4
+SIZE (filebrowser-quantum-v0.8.7-beta.frontend.tar.gz) = 1892013
+SHA256 (filebrowser-quantum-v0.8.7-beta.vendor.tar.gz) = ec25615e135e8f1dd4a0e90bd1d8e1642823ec17cf3e316bbb53261116a50d53
+SIZE (filebrowser-quantum-v0.8.7-beta.vendor.tar.gz) = 67815635
+SHA256 (gtsteffaniak-filebrowser-v0.8.7-beta_GH0.tar.gz) = efb1454ae650ca17aa5bc3a99f36b520b2c694e810e82369287f5d8bb6e23ecf
+SIZE (gtsteffaniak-filebrowser-v0.8.7-beta_GH0.tar.gz) = 4550630

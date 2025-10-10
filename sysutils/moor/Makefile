@@ -1,6 +1,7 @@
 PORTNAME=	moor
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.1
+DISTVERSION=	2.2.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	nxjoseph@protonmail.com
@@ -14,6 +15,7 @@ USES=		go:modules
 
 GO_MODULE=	github.com/walles/${PORTNAME}/v2
 GO_TARGET=	./cmd/${PORTNAME}
+GO_BUILDFLAGS=	-ldflags="-s -w -X main.versionString=${DISTVERSIONFULL}"
 
 PLIST_FILES=	bin/${PORTNAME} \
 		share/man/man1/${PORTNAME}.1.gz

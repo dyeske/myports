@@ -1,5 +1,5 @@
 PORTNAME=	treesheets
-DISTVERSION=	2507
+DISTVERSION=	2595
 CATEGORIES=	deskutils
 
 MAINTAINER=	eduardo@FreeBSD.org
