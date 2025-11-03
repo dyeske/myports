@@ -132,7 +132,7 @@
     SUBDIR += bugsx
     SUBDIR += bumprace
     SUBDIR += burgerspace
-    SUBDIR += burrtools
+    SUBDIR += burr-tools
     SUBDIR += bzflag
     SUBDIR += bzflag-server
     SUBDIR += cake
@@ -594,6 +594,7 @@
     SUBDIR += lm-solve
     SUBDIR += lmarbles
     SUBDIR += lmpc
+    SUBDIR += loderunner-ng
     SUBDIR += lolcat
     SUBDIR += lordsawar
     SUBDIR += lpairs
@@ -860,7 +861,6 @@
     SUBDIR += redorblack
     SUBDIR += regoth
     SUBDIR += reminiscence
-    SUBDIR += renpy
     SUBDIR += rescue
     SUBDIR += retroarch
     SUBDIR += retroarch-assets

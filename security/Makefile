@@ -639,6 +639,7 @@
     SUBDIR += p5-Crypt-Twofish2
     SUBDIR += p5-Crypt-Twofish_PP
     SUBDIR += p5-Crypt-URandom
+    SUBDIR += p5-Crypt-URandom-Token
     SUBDIR += p5-Crypt-UnixCrypt
     SUBDIR += p5-Crypt-UnixCrypt_XS
     SUBDIR += p5-Crypt-X509
@@ -1118,7 +1119,6 @@
     SUBDIR += rekor
     SUBDIR += reop
     SUBDIR += rhash
-    SUBDIR += rhonabwy
     SUBDIR += ridl
     SUBDIR += rifiuti2
     SUBDIR += rkhunter
