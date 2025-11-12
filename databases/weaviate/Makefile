@@ -1,6 +1,6 @@
 PORTNAME=	weaviate
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.30.20
+DISTVERSION=	1.34.0
 CATEGORIES=	databases # artificial-intelligence
 
 MAINTAINER=	yuri@FreeBSD.org
