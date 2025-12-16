@@ -63,6 +63,7 @@
     SUBDIR += angie-module-upload
     SUBDIR += angie-module-vod
     SUBDIR += angie-module-xslt
+    SUBDIR += angie-module-zstd
     SUBDIR += anyremote2html
     SUBDIR += apache-mode.el
     SUBDIR += apache24
@@ -212,6 +213,7 @@
     SUBDIR += foswiki
     SUBDIR += free-sa-devel
     SUBDIR += freenginx
+    SUBDIR += freenginx-acme
     SUBDIR += freenginx-devel
     SUBDIR += fswiki
     SUBDIR += fusionpbx
@@ -387,6 +389,7 @@
     SUBDIR += mediawiki139
     SUBDIR += mediawiki143
     SUBDIR += mediawiki144
+    SUBDIR += mediawiki145
     SUBDIR += mergelog
     SUBDIR += mhonarc
     SUBDIR += micro_httpd
@@ -1483,6 +1486,7 @@
     SUBDIR += py-WebFlash
     SUBDIR += py-adblock
     SUBDIR += py-advocate
+    SUBDIR += py-aiobreaker
     SUBDIR += py-aioh2
     SUBDIR += py-aiohttp
     SUBDIR += py-aiohttp-jinja2
@@ -1491,6 +1495,7 @@
     SUBDIR += py-aiohttp-session
     SUBDIR += py-aiohttp-wsgi
     SUBDIR += py-aiohttp_cors
+    SUBDIR += py-aiolimiter
     SUBDIR += py-aioquic
     SUBDIR += py-aioresponses
     SUBDIR += py-aiostream
@@ -1724,6 +1729,7 @@
     SUBDIR += py-django42
     SUBDIR += py-django51
     SUBDIR += py-django52
+    SUBDIR += py-django60
     SUBDIR += py-django_compressor
     SUBDIR += py-djangocms-admin-style
     SUBDIR += py-djangoql
@@ -1818,6 +1824,7 @@
     SUBDIR += py-google-cloud-resource-manager
     SUBDIR += py-google-cloud-speech
     SUBDIR += py-google-cloud-storage
+    SUBDIR += py-google-cloud-storage-control
     SUBDIR += py-google-cloud-testutils
     SUBDIR += py-google-cloud-translate
     SUBDIR += py-google-cloud-vision
@@ -1945,6 +1952,7 @@
     SUBDIR += py-requests-file
     SUBDIR += py-requests-futures
     SUBDIR += py-requests-gssapi
+    SUBDIR += py-requests-kerberos
     SUBDIR += py-requests-mock
     SUBDIR += py-requests-oauthlib
     SUBDIR += py-requests-toolbelt
@@ -2141,7 +2149,6 @@
     SUBDIR += rubygem-coverband
     SUBDIR += rubygem-crass
     SUBDIR += rubygem-cssbundling-rails
-    SUBDIR += rubygem-cssbundling-rails-gitlab
     SUBDIR += rubygem-cssbundling-rails-rails-gitlab
     SUBDIR += rubygem-cssbundling-rails-rails70
     SUBDIR += rubygem-cssbundling-rails-rails71

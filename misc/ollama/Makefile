@@ -1,7 +1,7 @@
 PORTNAME=	ollama
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.13.1-rc0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	bash:shells/bash \
 		${LOCALBASE}/include/nlohmann/json_fwd.hpp:devel/nlohmann-json \
 		${LOCALBASE}/include/stb/stb_image.h:devel/stb
 
-USES=		cmake:indirect go:1.24,modules localbase pkgconfig
+USES=		cmake:indirect go:1.24+,modules localbase pkgconfig
 
 GO_MODULE=	github.com/yurivict/${PORTNAME} # fork with FreeBSD patches
 GO_TARGET=	.
