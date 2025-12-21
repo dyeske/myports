@@ -1,6 +1,15 @@
---- Makefile.orig	2025-12-08 16:03:39 UTC
-+++ Makefile
-@@ -28,7 +28,7 @@ COMMIT_NO ?= $(shell git rev-parse HEAD 2> /dev/null |
+--- Makefile.orig	2025-12-02 10:39:29.000000000 -0500
++++ Makefile	2025-12-21 03:09:00.339985000 -0500
+@@ -12,7 +12,7 @@
+ PREFIX := /usr/local
+ BINDIR := $(PREFIX)/bin
+ BASHINSTALLDIR = $(PREFIX)/share/bash-completion/completions
+-BUILDFLAGS := -tags "$(BUILDTAGS)"
++BUILDFLAGS := -tags "$(BUILDTAGS)" -buildvcs=false
+ BUILDAH := buildah
+ SELINUXOPT ?= $(shell test -x /usr/sbin/selinuxenabled && selinuxenabled && echo -Z)
+ SELINUXTYPE=container_runtime_exec_t
+@@ -28,7 +28,7 @@
  RACEFLAGS ?= $(shell $(GO_TEST) -race ./pkg/dummy > /dev/null 2>&1 && echo -race)
  
  COMMIT_NO ?= $(shell git rev-parse HEAD 2> /dev/null || true)
@@ -9,7 +18,7 @@
  SOURCE_DATE_EPOCH ?= $(if $(shell date +%s),$(shell date +%s),$(error "date failed"))
  
  # we get GNU make 3.x in MacOS build envs, which wants # to be escaped in
-@@ -39,7 +39,7 @@ EXTRA_LDFLAGS ?=
+@@ -39,7 +39,7 @@
  
  SEQUOIA_SONAME_DIR =
  EXTRA_LDFLAGS ?=
