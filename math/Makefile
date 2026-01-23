@@ -492,6 +492,7 @@
     SUBDIR += ltl2ba
     SUBDIR += m4ri
     SUBDIR += m4rie
+    SUBDIR += manifold
     SUBDIR += mate-calc
     SUBDIR += math77
     SUBDIR += mathex
@@ -599,6 +600,7 @@
     SUBDIR += octave-forge-ident
     SUBDIR += octave-forge-image
     SUBDIR += octave-forge-informationtheory
+    SUBDIR += octave-forge-instrument-control
     SUBDIR += octave-forge-integration
     SUBDIR += octave-forge-internal-fluid-flow
     SUBDIR += octave-forge-interval
@@ -1046,6 +1048,7 @@
     SUBDIR += py-munkres
     SUBDIR += py-narwhals
     SUBDIR += py-ndindex
+    SUBDIR += py-ndonnx
     SUBDIR += py-networkx
     SUBDIR += py-nevergrad
     SUBDIR += py-nlopt
@@ -1130,6 +1133,7 @@
     SUBDIR += py-splot
     SUBDIR += py-spopt
     SUBDIR += py-spot
+    SUBDIR += py-spox
     SUBDIR += py-spreg
     SUBDIR += py-squarify
     SUBDIR += py-ssm
@@ -1175,6 +1179,7 @@
     SUBDIR += rubiks
     SUBDIR += rubygem-algebra
     SUBDIR += rubygem-bigdecimal
+    SUBDIR += rubygem-bigdecimal-gitlab
     SUBDIR += rubygem-cmath
     SUBDIR += rubygem-enumerable-statistics
     SUBDIR += rubygem-expression_parser

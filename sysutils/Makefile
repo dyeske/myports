@@ -119,7 +119,6 @@
     SUBDIR += battray
     SUBDIR += bchunk
     SUBDIR += beadm
-    SUBDIR += beats7
     SUBDIR += beats8
     SUBDIR += bfs
     SUBDIR += bhyve-firmware
@@ -192,12 +191,14 @@
     SUBDIR += cfengine-masterfiles324
     SUBDIR += cfengine-masterfiles325
     SUBDIR += cfengine-masterfiles326
+    SUBDIR += cfengine-masterfiles327
     SUBDIR += cfengine321
     SUBDIR += cfengine322
     SUBDIR += cfengine323
     SUBDIR += cfengine324
     SUBDIR += cfengine325
     SUBDIR += cfengine326
+    SUBDIR += cfengine327
     SUBDIR += chaoskube
     SUBDIR += checkrestart
     SUBDIR += chezmoi
@@ -292,6 +293,7 @@
     SUBDIR += devd-mount
     SUBDIR += devedeng
     SUBDIR += devstat
+    SUBDIR += devtui
     SUBDIR += dfc
     SUBDIR += di
     SUBDIR += diffoci
@@ -671,6 +673,8 @@
     SUBDIR += logstalgia
     SUBDIR += logstash7
     SUBDIR += logstash8
+    SUBDIR += logstash91
+    SUBDIR += logstash92
     SUBDIR += logtool
     SUBDIR += logwatch
     SUBDIR += loki
@@ -715,6 +719,7 @@
     SUBDIR += mcron
     SUBDIR += mdcat
     SUBDIR += mdf2iso
+    SUBDIR += mdfried
     SUBDIR += megacli
     SUBDIR += megarc
     SUBDIR += memdump
@@ -723,6 +728,7 @@
     SUBDIR += memtester
     SUBDIR += metalog
     SUBDIR += mfid
+    SUBDIR += michaelo-periodic
     SUBDIR += minikube
     SUBDIR += minimunin
     SUBDIR += minipot
@@ -738,8 +744,8 @@
     SUBDIR += mmc-utils
     SUBDIR += mmve
     SUBDIR += modman
-    SUBDIR += modules
     SUBDIR += mods
+    SUBDIR += modules
     SUBDIR += mog
     SUBDIR += mongodb_exporter
     SUBDIR += monit
@@ -754,6 +760,7 @@
     SUBDIR += msiklm
     SUBDIR += msktutil
     SUBDIR += mstflint
+    SUBDIR += mtail
     SUBDIR += mtm
     SUBDIR += mtxorbd
     SUBDIR += mult
@@ -1309,6 +1316,7 @@
     SUBDIR += screenie
     SUBDIR += scterc
     SUBDIR += sd-agent
+    SUBDIR += sdmon
     SUBDIR += sdparm
     SUBDIR += seatd
     SUBDIR += seatools
@@ -1590,6 +1598,7 @@
     SUBDIR += whowatch
     SUBDIR += wiimms
     SUBDIR += wiper
+    SUBDIR += witr
     SUBDIR += wmapmload
     SUBDIR += wmbluecpu
     SUBDIR += wmbsdbatt

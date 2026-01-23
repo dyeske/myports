@@ -223,6 +223,7 @@
     SUBDIR += hexl
     SUBDIR += hidden-lake
     SUBDIR += highwayhash
+    SUBDIR += himitsu
     SUBDIR += hitch
     SUBDIR += hockeypuck
     SUBDIR += honeytrap
@@ -688,6 +689,7 @@
     SUBDIR += p5-Digest-SHA1
     SUBDIR += p5-Digest-SHA3
     SUBDIR += p5-Digest-SV1
+    SUBDIR += p5-Digest-SipHash
     SUBDIR += p5-Digest-Tiger
     SUBDIR += p5-Digest-Whirlpool
     SUBDIR += p5-File-KeePass
@@ -773,6 +775,7 @@
     SUBDIR += pam_search_list
     SUBDIR += pam_ssh_agent_auth
     SUBDIR += pam_u2f
+    SUBDIR += pam_worker
     SUBDIR += pam_yubico
     SUBDIR += pamtester
     SUBDIR += paperkey
@@ -974,6 +977,7 @@
     SUBDIR += py-josepy
     SUBDIR += py-joserfc
     SUBDIR += py-jwcrypto
+    SUBDIR += py-k5test
     SUBDIR += py-keepkey
     SUBDIR += py-kerberos
     SUBDIR += py-keyring
@@ -1404,6 +1408,7 @@
     SUBDIR += vigenere
     SUBDIR += vlock
     SUBDIR += vm-to-tor
+    SUBDIR += voa
     SUBDIR += vouch-proxy
     SUBDIR += vpnc
     SUBDIR += vuls

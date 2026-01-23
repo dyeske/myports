@@ -699,7 +699,6 @@
     SUBDIR += exomizer
     SUBDIR += expected
     SUBDIR += f77flow
-    SUBDIR += fam
     SUBDIR += fatal
     SUBDIR += fbthrift
     SUBDIR += fc++
@@ -964,10 +963,7 @@
     SUBDIR += gum
     SUBDIR += gumbo
     SUBDIR += gwenhywfar
-    SUBDIR += gwenhywfar-fox16
-    SUBDIR += gwenhywfar-gtk2
     SUBDIR += gwenhywfar-gtk3
-    SUBDIR += gwenhywfar-qt5
     SUBDIR += gwenhywfar-qt6
     SUBDIR += gzstream
     SUBDIR += hapy
@@ -1338,6 +1334,7 @@
     SUBDIR += libibuddy
     SUBDIR += libical
     SUBDIR += libiec61850
+    SUBDIR += libigloo
     SUBDIR += libindicator
     SUBDIR += libinjection
     SUBDIR += libinotify
@@ -1586,6 +1583,7 @@
     SUBDIR += llvm19
     SUBDIR += llvm20
     SUBDIR += llvm21
+    SUBDIR += llvm22
     SUBDIR += lm4tools
     SUBDIR += lmdbg
     SUBDIR += lndir
@@ -4389,12 +4387,15 @@
     SUBDIR += py-aiortc
     SUBDIR += py-aiorwlock
     SUBDIR += py-aiosignal
+    SUBDIR += py-airspeed
+    SUBDIR += py-airspeed-ext
     SUBDIR += py-airtable-python-wrapper
     SUBDIR += py-all-repos
     SUBDIR += py-amalgamate
     SUBDIR += py-aniso8601
     SUBDIR += py-aniso86016
     SUBDIR += py-anndata
+    SUBDIR += py-annotated-doc
     SUBDIR += py-annotated-types
     SUBDIR += py-ansi
     SUBDIR += py-antlr4-python3-runtime
@@ -4466,6 +4467,8 @@
     SUBDIR += py-aws-xray-sdk
     SUBDIR += py-awscli
     SUBDIR += py-awscrt
+    SUBDIR += py-azure-ai-agents
+    SUBDIR += py-azure-ai-projects
     SUBDIR += py-azure-appconfiguration
     SUBDIR += py-azure-batch
     SUBDIR += py-azure-core
@@ -4478,6 +4481,7 @@
     SUBDIR += py-azure-identity
     SUBDIR += py-azure-keyvault
     SUBDIR += py-azure-keyvault-administration
+    SUBDIR += py-azure-keyvault-securitydomain
     SUBDIR += py-azure-loganalytics
     SUBDIR += py-azure-mgmt-advisor
     SUBDIR += py-azure-mgmt-apimanagement
@@ -4523,9 +4527,11 @@
     SUBDIR += py-azure-mgmt-media
     SUBDIR += py-azure-mgmt-monitor
     SUBDIR += py-azure-mgmt-msi
+    SUBDIR += py-azure-mgmt-mysqlflexibleservers
     SUBDIR += py-azure-mgmt-netapp
     SUBDIR += py-azure-mgmt-network
     SUBDIR += py-azure-mgmt-policyinsights
+    SUBDIR += py-azure-mgmt-postgresqlflexibleservers
     SUBDIR += py-azure-mgmt-privatedns
     SUBDIR += py-azure-mgmt-rdbms
     SUBDIR += py-azure-mgmt-recoveryservices
@@ -4535,6 +4541,10 @@
     SUBDIR += py-azure-mgmt-relay
     SUBDIR += py-azure-mgmt-reservations
     SUBDIR += py-azure-mgmt-resource
+    SUBDIR += py-azure-mgmt-resource-deployments
+    SUBDIR += py-azure-mgmt-resource-deploymentscripts
+    SUBDIR += py-azure-mgmt-resource-deploymentstacks
+    SUBDIR += py-azure-mgmt-resource-templatespecs
     SUBDIR += py-azure-mgmt-search
     SUBDIR += py-azure-mgmt-security
     SUBDIR += py-azure-mgmt-servicebus
@@ -4552,6 +4562,8 @@
     SUBDIR += py-azure-multiapi-storage
     SUBDIR += py-azure-storage-blob
     SUBDIR += py-azure-storage-common
+    SUBDIR += py-azure-storage-file-share
+    SUBDIR += py-azure-storage-queue
     SUBDIR += py-azure-synapse-accesscontrol
     SUBDIR += py-azure-synapse-artifacts
     SUBDIR += py-azure-synapse-managedprivateendpoints
@@ -4712,7 +4724,7 @@
     SUBDIR += py-configobj
     SUBDIR += py-configparser
     SUBDIR += py-configupdater
-    SUBDIR += py-confusable_homoglyphs
+    SUBDIR += py-confusable-homoglyphs
     SUBDIR += py-confuse
     SUBDIR += py-connection_pool
     SUBDIR += py-connexion
@@ -5088,6 +5100,7 @@
     SUBDIR += py-ipykernel
     SUBDIR += py-ipympl
     SUBDIR += py-ipyparallel
+    SUBDIR += py-ipython-pygments-lexers
     SUBDIR += py-ipython_genutils
     SUBDIR += py-ipywidgets
     SUBDIR += py-iso8601
@@ -5226,7 +5239,9 @@
     SUBDIR += py-llvmcpy
     SUBDIR += py-llvmlite
     SUBDIR += py-lml
+    SUBDIR += py-localstack
     SUBDIR += py-localstack-client
+    SUBDIR += py-localstack-core
     SUBDIR += py-locket
     SUBDIR += py-lockfile
     SUBDIR += py-logan
@@ -5297,6 +5312,7 @@
     SUBDIR += py-moreorless
     SUBDIR += py-moto
     SUBDIR += py-mox
+    SUBDIR += py-mpremote
     SUBDIR += py-mrkd
     SUBDIR += py-msal
     SUBDIR += py-msal-extensions
@@ -5851,9 +5867,9 @@
     SUBDIR += py-pyvisa-py
     SUBDIR += py-pyxb-x
     SUBDIR += py-pyyaml
+    SUBDIR += py-pyyaml-env-tag
     SUBDIR += py-pyyaml-ft
     SUBDIR += py-pyyaml-include
-    SUBDIR += py-pyyaml_env_tag
     SUBDIR += py-pyzipper
     SUBDIR += py-q
     SUBDIR += py-qasync
@@ -5883,6 +5899,7 @@
     SUBDIR += py-raven
     SUBDIR += py-rchitect
     SUBDIR += py-re-assert
+    SUBDIR += py-readerwriterlock
     SUBDIR += py-readme-renderer
     SUBDIR += py-rebulk
     SUBDIR += py-recordclass
@@ -6228,6 +6245,7 @@
     SUBDIR += py-vsts
     SUBDIR += py-vsts-cd-manager
     SUBDIR += py-vulture
+    SUBDIR += py-wadler-lindig
     SUBDIR += py-wadllib
     SUBDIR += py-wait-for2
     SUBDIR += py-warlock
@@ -6343,7 +6361,6 @@
     SUBDIR += pycharm
     SUBDIR += pycos
     SUBDIR += pycount
-    SUBDIR += pydbus-common
     SUBDIR += pydeps
     SUBDIR += pyderasn
     SUBDIR += pyenv
@@ -7351,6 +7368,7 @@
     SUBDIR += rubygem-excon0
     SUBDIR += rubygem-excon1-gitlab
     SUBDIR += rubygem-execjs
+    SUBDIR += rubygem-execjs-gitlab
     SUBDIR += rubygem-extlib
     SUBDIR += rubygem-extpp
     SUBDIR += rubygem-extras
@@ -7457,6 +7475,7 @@
     SUBDIR += rubygem-gitlab_chronic_duration
     SUBDIR += rubygem-gitlab_git
     SUBDIR += rubygem-gitlab_meta
+    SUBDIR += rubygem-gitlab_query_language
     SUBDIR += rubygem-glib2
     SUBDIR += rubygem-gobject-introspection
     SUBDIR += rubygem-google-api-client
@@ -7526,12 +7545,14 @@
     SUBDIR += rubygem-grpc-google-iam-v1
     SUBDIR += rubygem-grpc-google-iam-v1-gitlab
     SUBDIR += rubygem-guess_html_encoding
+    SUBDIR += rubygem-gvltools
     SUBDIR += rubygem-gyoku
     SUBDIR += rubygem-hamster
     SUBDIR += rubygem-hana
     SUBDIR += rubygem-hashdiff
     SUBDIR += rubygem-hashery
     SUBDIR += rubygem-hashie
+    SUBDIR += rubygem-hashie-gitlab
     SUBDIR += rubygem-hashie-forbidden_attributes
     SUBDIR += rubygem-health_check
     SUBDIR += rubygem-health_check-rails-gitlab
@@ -8049,6 +8070,7 @@
     SUBDIR += rubygem-slow_enumerator_tools
     SUBDIR += rubygem-smart_properties
     SUBDIR += rubygem-snaky_hash
+    SUBDIR += rubygem-snaky_hash-gitlab
     SUBDIR += rubygem-snowplow-tracker
     SUBDIR += rubygem-soap4r
     SUBDIR += rubygem-solve
@@ -8079,6 +8101,7 @@
     SUBDIR += rubygem-stackprof
     SUBDIR += rubygem-state_machine
     SUBDIR += rubygem-state_machines
+    SUBDIR += rubygem-state_machines-gitlab
     SUBDIR += rubygem-statsd
     SUBDIR += rubygem-statsd-instrument
     SUBDIR += rubygem-statsd-ruby
@@ -8415,8 +8438,7 @@
     SUBDIR += tcl-mmap
     SUBDIR += tcl-signal
     SUBDIR += tcl-trf
-    SUBDIR += tcl8-thread
-    SUBDIR += tcl9-thread
+    SUBDIR += tcl-thread
     SUBDIR += tclap
     SUBDIR += tclap12
     SUBDIR += tclbsd

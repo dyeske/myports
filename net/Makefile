@@ -19,6 +19,7 @@
     SUBDIR += aluminum
     SUBDIR += amnezia-kmod
     SUBDIR += amnezia-tools
+    SUBDIR += amneziawg-go
     SUBDIR += amqpcat
     SUBDIR += aoe
     SUBDIR += apache-commons-net
@@ -238,7 +239,6 @@
     SUBDIR += gupnp-igd
     SUBDIR += gupnp-tools
     SUBDIR += gutenfetch
-    SUBDIR += gwhois
     SUBDIR += h323plus
     SUBDIR += hanstunnel
     SUBDIR += haproxy
@@ -1728,6 +1728,7 @@
     SUBDIR += yggdrasil
     SUBDIR += yptransitd
     SUBDIR += zapret
+    SUBDIR += zapret2
     SUBDIR += zebra-server
     SUBDIR += zerotier
     SUBDIR += zmap

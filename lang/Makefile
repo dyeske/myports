@@ -43,7 +43,6 @@
     SUBDIR += csharp-mode.el
     SUBDIR += cython
     SUBDIR += cython0
-    SUBDIR += cython3
     SUBDIR += dhall
     SUBDIR += dlang-tools
     SUBDIR += dotnet
@@ -106,6 +105,7 @@
     SUBDIR += ghc92
     SUBDIR += ghc94
     SUBDIR += ghc96
+    SUBDIR += ghc98
     SUBDIR += gir-to-d
     SUBDIR += gjs
     SUBDIR += gleam
@@ -124,10 +124,6 @@
     SUBDIR += gnustep-base
     SUBDIR += go
     SUBDIR += go-devel
-    SUBDIR += go120
-    SUBDIR += go121
-    SUBDIR += go122
-    SUBDIR += go123
     SUBDIR += go124
     SUBDIR += go125
     SUBDIR += gomacro
@@ -168,6 +164,7 @@
     SUBDIR += kefir
     SUBDIR += kf5-kross
     SUBDIR += kotlin
+    SUBDIR += kotlin22
     SUBDIR += kturtle
     SUBDIR += lafontaine
     SUBDIR += lci

@@ -169,6 +169,7 @@
     SUBDIR += ebsynth
     SUBDIR += edje_viewer
     SUBDIR += egl-wayland
+    SUBDIR += egl-x11
     SUBDIR += eglexternalplatform
     SUBDIR += elastix
     SUBDIR += elementary-photos
@@ -1228,6 +1229,7 @@
     SUBDIR += tslib
     SUBDIR += ttygif
     SUBDIR += ttyplot
+    SUBDIR += tulip
     SUBDIR += tweeny
     SUBDIR += ufraw
     SUBDIR += unpaper

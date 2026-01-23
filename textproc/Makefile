@@ -208,6 +208,7 @@
     SUBDIR += fcitx5-gtk-common
     SUBDIR += fcitx5-lua
     SUBDIR += fcitx5-m17n
+    SUBDIR += fcitx5-mcfoxim
     SUBDIR += fcitx5-qt
     SUBDIR += fcitx5-qt-common
     SUBDIR += feluda
@@ -345,6 +346,7 @@
     SUBDIR += jshon
     SUBDIR += json-yaml
     SUBDIR += json2yaml
+    SUBDIR += jsonfmt
     SUBDIR += jtc
     SUBDIR += kdiff3
     SUBDIR += kepubify
@@ -1531,7 +1533,6 @@
     SUBDIR += py-pscript
     SUBDIR += py-pss
     SUBDIR += py-pyPEG2
-    SUBDIR += py-pyRdfa3
     SUBDIR += py-pyahocorasick
     SUBDIR += py-pyaml
     SUBDIR += py-pybtex
@@ -1549,6 +1550,7 @@
     SUBDIR += py-pygccxml
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
+    SUBDIR += py-pygtkspellcheck
     SUBDIR += py-pyhamcrest
     SUBDIR += py-pykwalify
     SUBDIR += py-pylatexenc
@@ -1558,6 +1560,7 @@
     SUBDIR += py-pypa-docs-theme
     SUBDIR += py-pypandoc
     SUBDIR += py-pyphen
+    SUBDIR += py-pyrdfa3
     SUBDIR += py-pyrss2gen
     SUBDIR += py-pyscss
     SUBDIR += py-pysrt
@@ -1747,6 +1750,7 @@
     SUBDIR += py-zensical
     SUBDIR += py-zope.i18nmessageid
     SUBDIR += py-zpt
+    SUBDIR += qo
     SUBDIR += qprint
     SUBDIR += qr
     SUBDIR += qrcodegen
@@ -1835,6 +1839,7 @@
     SUBDIR += rubygem-commonmarker
     SUBDIR += rubygem-commonmarker0
     SUBDIR += rubygem-creole
+    SUBDIR += rubygem-cronex
     SUBDIR += rubygem-css_parser
     SUBDIR += rubygem-cssmin
     SUBDIR += rubygem-cucumber-gherkin

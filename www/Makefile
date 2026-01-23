@@ -1481,12 +1481,12 @@
     SUBDIR += py-aiobreaker
     SUBDIR += py-aioh2
     SUBDIR += py-aiohttp
+    SUBDIR += py-aiohttp-cors
     SUBDIR += py-aiohttp-jinja2
     SUBDIR += py-aiohttp-middlewares
     SUBDIR += py-aiohttp-oauthlib
     SUBDIR += py-aiohttp-session
     SUBDIR += py-aiohttp-wsgi
-    SUBDIR += py-aiohttp_cors
     SUBDIR += py-aiolimiter
     SUBDIR += py-aioquic
     SUBDIR += py-aioresponses
@@ -1925,6 +1925,7 @@
     SUBDIR += py-rfc3987-syntax
     SUBDIR += py-robot-detection
     SUBDIR += py-rollbar
+    SUBDIR += py-rolo
     SUBDIR += py-routes
     SUBDIR += py-rules
     SUBDIR += py-scgi
@@ -1963,6 +1964,7 @@
     SUBDIR += py-tuir
     SUBDIR += py-turbogears2
     SUBDIR += py-tvdb_api
+    SUBDIR += py-twill
     SUBDIR += py-urlgrabber
     SUBDIR += py-urlman
     SUBDIR += py-urlobject
@@ -2630,6 +2632,7 @@
     SUBDIR += typo3-11
     SUBDIR += typo3-12
     SUBDIR += typo3-13
+    SUBDIR += typo3-14
     SUBDIR += uchiwa
     SUBDIR += ufdbguard
     SUBDIR += ulfius

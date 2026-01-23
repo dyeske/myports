@@ -4,7 +4,7 @@ DISTVERSION=	2.0.5
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	loader@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pure-Python Reed Solomon encoder/decoder
 WWW=		https://github.com/tomerfiliba-org/reedsolomon
 
@@ -19,7 +19,7 @@ USES=		python
 USE_GITHUB=	yes
 GH_ACCOUNT=	tomerfiliba-org
 GH_PROJECT=	reedsolomon
-USE_PYTHON=	autoplist cython3 distutils pytest
+USE_PYTHON=	autoplist cython distutils pytest
 
 TEST_ENV+=	PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
 

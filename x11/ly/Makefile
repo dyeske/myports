@@ -1,12 +1,12 @@
 PORTNAME=	ly
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.0
+DISTVERSION=	1.3.1
 CATEGORIES=	x11
-MASTER_SITES=	https://codeberg.org/AnErrupTion/${PORTNAME}/archive/${DISTVERSIONFULL}${EXTRACT_SUFX}?dummy=/
+MASTER_SITES=	https://codeberg.org/fairyglade/${PORTNAME}/archive/${DISTVERSIONFULL}${EXTRACT_SUFX}?dummy=/
 
 MAINTAINER=	bapt@FreeBSD.org
 COMMENT=	TUI (ncurses-like) display manager for X and Wayland
-WWW=		https://codeberg.org/AnErrupTion/ly
+WWW=		https://codeberg.org/fairyglade/ly
 
 LICENSE=	WTFPL
 LICENSE_FILE=	${WRKSRC}/license.md
@@ -14,6 +14,8 @@ LICENSE_FILE=	${WRKSRC}/license.md
 USES=		zig pkgconfig xorg
 USE_XORG=	xcb
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+SUB_FILES=	pkg-message
 
 USE_GITHUB=	yes
 
@@ -47,6 +49,6 @@ post-install:
 		s,$$CONFIG_DIRECTORY/csh.login,/etc/csh.login,g ; \
 		s,"$$CONFIG_DIRECTORY",${PREFIX}/etc,g ;' \
 		${WRKSRC}/res/setup.sh
-	${INSTALL_DATA} ${WRKSRC}/res/setup.sh ${STAGEDIR}${ETCDIR}/setup.sh.sample
+	${INSTALL_SCRIPT} ${WRKSRC}/res/setup.sh ${STAGEDIR}${ETCDIR}/setup.sh.sample
 
 .include <bsd.port.mk>
