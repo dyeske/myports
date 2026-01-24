@@ -7,6 +7,8 @@ CATEGORIES=	graphics linux
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Mesa libGL runtime libraries (Rocky Linux ${LINUX_DIST_VER})
 
+LICENSE=	MIT
+
 USES=		linux:rl9
 USE_LDCONFIG=	yes
 USE_LINUX=	elfutils-libelf expat libdrm libglvnd llvm spirv-tools wayland xorglibs
