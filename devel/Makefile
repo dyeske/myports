@@ -1888,6 +1888,7 @@
     SUBDIR += p5-Alien-Base-ModuleBuild
     SUBDIR += p5-Alien-Build
     SUBDIR += p5-Alien-LibGumbo
+    SUBDIR += p5-Alien-Role-Dino
     SUBDIR += p5-Alien-SDL
     SUBDIR += p5-Alien-cmake3
     SUBDIR += p5-Alzabo
@@ -4800,6 +4801,7 @@
     SUBDIR += py-datrie
     SUBDIR += py-dbt-extractor
     SUBDIR += py-dbus
+    SUBDIR += py-dbus-deviation
     SUBDIR += py-ddsketch
     SUBDIR += py-ddt
     SUBDIR += py-ddtrace
@@ -5104,6 +5106,7 @@
     SUBDIR += py-ipython-pygments-lexers
     SUBDIR += py-ipython_genutils
     SUBDIR += py-ipywidgets
+    SUBDIR += py-isal
     SUBDIR += py-iso8601
     SUBDIR += py-isodate
     SUBDIR += py-isoduration
@@ -5204,6 +5207,7 @@
     SUBDIR += py-klepto
     SUBDIR += py-knack
     SUBDIR += py-l18n
+    SUBDIR += py-lap
     SUBDIR += py-lark
     SUBDIR += py-launchpadlib
     SUBDIR += py-lazr.config
@@ -6035,6 +6039,7 @@
     SUBDIR += py-sparse
     SUBDIR += py-speaklater
     SUBDIR += py-speg
+    SUBDIR += py-spin
     SUBDIR += py-spyder-kernels
     SUBDIR += py-sqids
     SUBDIR += py-sqlfluff
@@ -6248,6 +6253,7 @@
     SUBDIR += py-vulture
     SUBDIR += py-wadler-lindig
     SUBDIR += py-wadllib
+    SUBDIR += py-wait-for-it
     SUBDIR += py-wait-for2
     SUBDIR += py-warlock
     SUBDIR += py-watchdog
@@ -7276,6 +7282,7 @@
     SUBDIR += rubygem-cucumber-messages30
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
+    SUBDIR += rubygem-cucumber-tag-expressions8
     SUBDIR += rubygem-cucumber-wire
     SUBDIR += rubygem-curses
     SUBDIR += rubygem-cyoi
@@ -7553,8 +7560,8 @@
     SUBDIR += rubygem-hashdiff
     SUBDIR += rubygem-hashery
     SUBDIR += rubygem-hashie
-    SUBDIR += rubygem-hashie-gitlab
     SUBDIR += rubygem-hashie-forbidden_attributes
+    SUBDIR += rubygem-hashie-gitlab
     SUBDIR += rubygem-health_check
     SUBDIR += rubygem-health_check-rails-gitlab
     SUBDIR += rubygem-health_check-rails70
@@ -8150,6 +8157,7 @@
     SUBDIR += rubygem-thor
     SUBDIR += rubygem-thor0
     SUBDIR += rubygem-thor12
+    SUBDIR += rubygem-thor14
     SUBDIR += rubygem-thread-local
     SUBDIR += rubygem-thread_safe
     SUBDIR += rubygem-thrift
@@ -8259,6 +8267,7 @@
     SUBDIR += rubygem-xdg
     SUBDIR += rubygem-xdg7
     SUBDIR += rubygem-xdg8
+    SUBDIR += rubygem-xdg9
     SUBDIR += rubygem-xorcist
     SUBDIR += rubygem-xpath
     SUBDIR += rubygem-xxhash
@@ -8438,8 +8447,8 @@
     SUBDIR += tcl-memchan
     SUBDIR += tcl-mmap
     SUBDIR += tcl-signal
-    SUBDIR += tcl-trf
     SUBDIR += tcl-thread
+    SUBDIR += tcl-trf
     SUBDIR += tclap
     SUBDIR += tclap12
     SUBDIR += tclbsd

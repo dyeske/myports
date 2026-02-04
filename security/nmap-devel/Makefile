@@ -1,5 +1,6 @@
 PORTNAME=	nmap
 PORTVERSION=	7.95.${NMAP_COMMIT_DATE}
+PORTREVISION=	1
 CATEGORIES=	security
 PKGNAMESUFFIX=	-devel
 
@@ -18,9 +19,9 @@ LICENSE_PERMS=	auto-accept dist-mirror pkg-mirror pkg-sell
 
 IGNORE_FreeBSD_13=	 Does not build on FreeBSD 13.x due to OpenSSL 1.1.1
 
-.if !defined(MASTERDIR)
-
 LIB_DEPENDS=	libpcre2-16.so:devel/pcre2
+
+.if !defined(MASTERDIR)
 
 USES=		gmake cpe libtool
 
@@ -29,8 +30,8 @@ EXTRACT_AFTER_ARGS=	--exclude ${GH_PROJECT_DEFAULT}-${GH_TAGNAME_EXTRACT}/mswin3
 			--no-same-owner --no-same-permissions
 
 USE_GITHUB=	yes
-GH_TAGNAME=	240174c03
-NMAP_COMMIT_DATE=	20260112
+GH_TAGNAME=	a5b332ccd
+NMAP_COMMIT_DATE=	20260128
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=--without-localdirs \
@@ -47,6 +48,7 @@ OPTIONS_DEFAULT=NLS SSH2 SSL
 OPTIONS_SUB=	yes
 
 PCAP_DESC=		Build with libpcap from nmap
+PCAP_BROKEN=		Broken libdbus linkage with builtin PCAP
 SSH2_DESC=		SSH2 protocol support
 
 NLS_CONFIGURE_ENABLE=	nls

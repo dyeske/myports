@@ -1,10 +1,10 @@
 PORTNAME=	xastir
 DISTVERSIONPREFIX=	Release-
 DISTVERSION=	2.2.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	comms hamradio
 
-MAINTAINER=	carl@stagecraft.cx
+MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	X Amateur Station Tracking and Information Reporting
 WWW=		http://www.xastir.org/
 

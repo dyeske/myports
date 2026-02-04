@@ -80,7 +80,6 @@
     SUBDIR += badwolf
     SUBDIR += baikal
     SUBDIR += bareos-webui
-    SUBDIR += bareos22-webui
     SUBDIR += bareos23-webui
     SUBDIR += bareos24-webui
     SUBDIR += beehive
@@ -1756,6 +1755,7 @@
     SUBDIR += py-flask-theme
     SUBDIR += py-flask-uploads
     SUBDIR += py-flask-wtf
+    SUBDIR += py-flatnotes
     SUBDIR += py-flower
     SUBDIR += py-flup6
     SUBDIR += py-folium
@@ -1876,6 +1876,7 @@
     SUBDIR += py-priority
     SUBDIR += py-priority1
     SUBDIR += py-protego
+    SUBDIR += py-proxy.py
     SUBDIR += py-proxy_tools
     SUBDIR += py-puppetboard
     SUBDIR += py-py-restclient
@@ -2549,6 +2550,7 @@
     SUBDIR += suitecrm
     SUBDIR += suphp
     SUBDIR += surf
+    SUBDIR += surge
     SUBDIR += swiggle
     SUBDIR += sws
     SUBDIR += tailwindcss3

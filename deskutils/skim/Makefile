@@ -1,6 +1,6 @@
 PORTNAME=	skim
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.7.2
+DISTVERSION=	2.0.1
 CATEGORIES=	deskutils
 PKGNAMESUFFIX=	-fuzzy-finder
 
@@ -44,16 +44,17 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		block-buffer-0.10.4 \
 		bstr-1.12.1 \
 		bumpalo-3.19.1 \
-		bytemuck-1.24.0 \
+		bytemuck-1.25.0 \
 		bytes-1.11.0 \
 		castaway-0.2.4 \
 		cfg-if-1.0.4 \
+		cfg_aliases-0.1.1 \
 		cfg_aliases-0.2.1 \
-		clap-4.5.54 \
-		clap_builder-4.5.54 \
+		clap-4.5.56 \
+		clap_builder-4.5.56 \
 		clap_complete-4.5.65 \
 		clap_complete_nushell-4.5.10 \
-		clap_derive-4.5.49 \
+		clap_derive-4.5.55 \
 		clap_lex-0.7.7 \
 		clap_mangen-0.2.31 \
 		color-eyre-0.6.5 \
@@ -88,6 +89,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		digest-0.10.7 \
 		doctest-file-1.0.0 \
 		document-features-0.2.12 \
+		downcast-rs-1.2.1 \
 		either-1.15.0 \
 		encode_unicode-1.0.0 \
 		env_filter-0.1.4 \
@@ -124,7 +126,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		indenter-0.3.4 \
 		indexmap-2.13.0 \
 		indoc-2.0.7 \
-		insta-1.46.1 \
+		insta-1.46.2 \
 		instability-0.3.11 \
 		interprocess-2.2.3 \
 		is_terminal_polyfill-1.70.2 \
@@ -152,8 +154,9 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		mio-1.1.1 \
 		multiversion-0.8.0 \
 		multiversion-macros-0.8.0 \
+		nix-0.28.0 \
 		nix-0.29.0 \
-		nix-0.30.1 \
+		nix-0.31.1 \
 		nom-7.1.3 \
 		nom-8.0.0 \
 		num-conv-0.2.0 \
@@ -179,8 +182,9 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		phf_shared-0.11.3 \
 		pin-project-lite-0.2.16 \
 		pin-utils-0.1.0 \
-		portable-atomic-1.13.0 \
-		portable-atomic-util-0.2.4 \
+		portable-atomic-1.13.1 \
+		portable-atomic-util-0.2.5 \
+		portable-pty-0.9.0 \
 		powerfmt-0.2.0 \
 		ppv-lite86-0.2.21 \
 		proc-macro2-1.0.106 \
@@ -217,17 +221,20 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		serde-1.0.228 \
 		serde_core-1.0.228 \
 		serde_derive-1.0.228 \
+		serial2-0.2.33 \
 		sha2-0.10.9 \
 		sharded-slab-0.1.7 \
+		shared_library-0.1.9 \
 		shell-quote-0.7.2 \
+		shell-words-1.1.1 \
 		shlex-1.3.0 \
 		signal-hook-0.3.18 \
 		signal-hook-mio-0.2.5 \
 		signal-hook-registry-1.4.8 \
 		simdutf8-0.1.5 \
 		similar-2.7.0 \
-		siphasher-1.0.1 \
-		slab-0.4.11 \
+		siphasher-1.0.2 \
+		slab-0.4.12 \
 		smallvec-1.15.1 \
 		socket2-0.6.2 \
 		static_assertions-1.1.0 \
@@ -249,6 +256,8 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		thread_local-1.1.9 \
 		time-0.3.46 \
 		time-core-0.1.8 \
+		tinyvec-1.10.0 \
+		tinyvec_macros-0.1.1 \
 		tokio-1.49.0 \
 		tokio-macros-2.6.0 \
 		tokio-util-0.7.18 \
@@ -262,9 +271,11 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		unicase-2.9.0 \
 		unicode-display-width-0.3.0 \
 		unicode-ident-1.0.22 \
+		unicode-normalization-0.1.25 \
 		unicode-segmentation-1.12.0 \
 		unicode-truncate-2.0.1 \
 		unicode-width-0.2.2 \
+		unicode-xid-0.2.6 \
 		utf8parse-0.2.2 \
 		uuid-1.20.0 \
 		valuable-0.1.1 \
@@ -311,10 +322,11 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		windows_x86_64_gnullvm-0.53.1 \
 		windows_x86_64_msvc-0.52.6 \
 		windows_x86_64_msvc-0.53.1 \
+		winreg-0.10.1 \
 		winsafe-0.0.19 \
 		wit-bindgen-0.51.0 \
-		zerocopy-0.8.33 \
-		zerocopy-derive-0.8.33
+		zerocopy-0.8.37 \
+		zerocopy-derive-0.8.37
 
 PLIST_FILES=	bin/sk
 
