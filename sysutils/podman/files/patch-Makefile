@@ -1,0 +1,10 @@
+--- Makefile.orig	2025-12-17 07:11:11.865474000 -0500
++++ Makefile	2025-12-17 07:16:51.644023000 -0500
+@@ -58,6 +58,7 @@
+ USERSYSTEMDGENERATORSDIR ?= ${LIBDIR}/systemd/user-generators
+ SEQUOIA_SONAME_DIR =
+ REMOTETAGS ?= remote exclude_graphdriver_btrfs containers_image_openpgp
++BUILDFLAGS ?= -buildvcs=false
+ BUILDTAGS ?= \
+ 	grpcnotrace \
+ 	$(shell hack/apparmor_tag.sh) \
