@@ -664,6 +664,7 @@
     SUBDIR += electron37
     SUBDIR += electron38
     SUBDIR += electron39
+    SUBDIR += electron40
     SUBDIR += elf
     SUBDIR += elf-dissector
     SUBDIR += elfcat
@@ -734,7 +735,6 @@
     SUBDIR += freebsd-gcc13
     SUBDIR += freebsd-gcc14
     SUBDIR += freebsd-gcc15
-    SUBDIR += freebsd-git-devtools
     SUBDIR += freebsd-nvme-shim
     SUBDIR += freebsd-sysroot
     SUBDIR += frink
@@ -838,6 +838,7 @@
     SUBDIR += gio-sharp
     SUBDIR += git
     SUBDIR += git-absorb
+    SUBDIR += freebsd-git-arc
     SUBDIR += git-branchless
     SUBDIR += git-bug
     SUBDIR += git-cinnabar
@@ -1007,7 +1008,6 @@
     SUBDIR += hs-ormolu
     SUBDIR += hs-profiteur
     SUBDIR += hs-shake
-    SUBDIR += hs-spago
     SUBDIR += hs-threadscope
     SUBDIR += htable
     SUBDIR += hub
@@ -1672,6 +1672,7 @@
     SUBDIR += mergify
     SUBDIR += meson
     SUBDIR += meson-python
+    SUBDIR += mfc-candidates
     SUBDIR += microsoft-gsl
     SUBDIR += mill
     SUBDIR += mimalloc
@@ -1718,6 +1719,7 @@
     SUBDIR += newtonsoft-json
     SUBDIR += nextest
     SUBDIR += nextpnr
+    SUBDIR += nextpnr-devel
     SUBDIR += nexus2-oss
     SUBDIR += nimble
     SUBDIR += nini
@@ -4360,7 +4362,6 @@
     SUBDIR += py-Jinja2
     SUBDIR += py-Jinja2-doc
     SUBDIR += py-Js2Py
-    SUBDIR += py-Levenshtein
     SUBDIR += py-PYB11Generator
     SUBDIR += py-PeachPy
     SUBDIR += py-PyExecJS
@@ -5221,6 +5222,7 @@
     SUBDIR += py-lazy_imports
     SUBDIR += py-lazy_loader
     SUBDIR += py-legacy-api-wrap
+    SUBDIR += py-levenshtein
     SUBDIR += py-libcst
     SUBDIR += py-libcst03
     SUBDIR += py-libevdev
@@ -5369,6 +5371,7 @@
     SUBDIR += py-notify2
     SUBDIR += py-num2words
     SUBDIR += py-numba
+    SUBDIR += py-nvidia-ml-py
     SUBDIR += py-objgraph
     SUBDIR += py-objprint
     SUBDIR += py-objsize
@@ -6043,6 +6046,7 @@
     SUBDIR += py-speaklater
     SUBDIR += py-speg
     SUBDIR += py-spin
+    SUBDIR += py-spy
     SUBDIR += py-spyder-kernels
     SUBDIR += py-sqids
     SUBDIR += py-sqlfluff
@@ -6149,6 +6153,7 @@
     SUBDIR += py-tree-sitter-languages
     SUBDIR += py-tree-sitter-python
     SUBDIR += py-tree-sitter-regex
+    SUBDIR += py-tree-sitter-sql
     SUBDIR += py-tree-sitter-yaml
     SUBDIR += py-tree-sitter023
     SUBDIR += py-treelib
@@ -7659,6 +7664,7 @@
     SUBDIR += rubygem-licensee-gitlab
     SUBDIR += rubygem-lint_roller
     SUBDIR += rubygem-listen
+    SUBDIR += rubygem-listen-gitlab
     SUBDIR += rubygem-little-plugger
     SUBDIR += rubygem-local_time
     SUBDIR += rubygem-local_time-rails5
@@ -8057,7 +8063,6 @@
     SUBDIR += rubygem-sidekiq-bulk
     SUBDIR += rubygem-sidekiq-cron
     SUBDIR += rubygem-sidekiq-cron-rails-gitlab
-    SUBDIR += rubygem-sidekiq-cron-rails70
     SUBDIR += rubygem-sidekiq-gitlab
     SUBDIR += rubygem-sidekiq-scheduler
     SUBDIR += rubygem-sidekiq-unique-jobs
@@ -8376,6 +8381,7 @@
     SUBDIR += sope
     SUBDIR += sope2
     SUBDIR += sord
+    SUBDIR += spago
     SUBDIR += spark
     SUBDIR += sparsebitset
     SUBDIR += sparsehash

@@ -1083,6 +1083,7 @@
     SUBDIR += py-mitogen
     SUBDIR += py-mqttwarn
     SUBDIR += py-nagiosplugin
+    SUBDIR += py-nvitop
     SUBDIR += py-overlord
     SUBDIR += py-packet-python
     SUBDIR += py-pkginfo
@@ -1442,6 +1443,7 @@
     SUBDIR += treetop
     SUBDIR += triton
     SUBDIR += trueos-libqt5
+    SUBDIR += try-rs
     SUBDIR += ts
     SUBDIR += tty-clock
     SUBDIR += ttyd
