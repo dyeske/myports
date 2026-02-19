@@ -197,6 +197,8 @@
     SUBDIR += mysql91-server
     SUBDIR += mysql94-client
     SUBDIR += mysql94-server
+    SUBDIR += mysql96-client
+    SUBDIR += mysql96-server
     SUBDIR += mysqlbackup
     SUBDIR += mysqldump-secure
     SUBDIR += mysqlreport
@@ -669,14 +671,6 @@
     SUBDIR += postgresql-tds_fdw
     SUBDIR += postgresql-wal2json
     SUBDIR += postgresql-zhparser
-    SUBDIR += postgresql13-client
-    SUBDIR += postgresql13-contrib
-    SUBDIR += postgresql13-docs
-    SUBDIR += postgresql13-pgtcl
-    SUBDIR += postgresql13-plperl
-    SUBDIR += postgresql13-plpython
-    SUBDIR += postgresql13-pltcl
-    SUBDIR += postgresql13-server
     SUBDIR += postgresql14-client
     SUBDIR += postgresql14-contrib
     SUBDIR += postgresql14-docs
@@ -900,6 +894,7 @@
     SUBDIR += redis74
     SUBDIR += redis80
     SUBDIR += redis82
+    SUBDIR += redis84
     SUBDIR += redis_exporter
     SUBDIR += redisjson
     SUBDIR += retcl
@@ -995,7 +990,6 @@
     SUBDIR += rubygem-familia
     SUBDIR += rubygem-flipper-active_record
     SUBDIR += rubygem-flipper-active_record-rails-gitlab
-    SUBDIR += rubygem-flipper-active_record-rails70
     SUBDIR += rubygem-gdbm
     SUBDIR += rubygem-globalid
     SUBDIR += rubygem-globalid-rails-gitlab
@@ -1018,6 +1012,7 @@
     SUBDIR += rubygem-influxdb
     SUBDIR += rubygem-jdbc-mysql
     SUBDIR += rubygem-leo_manager_client
+    SUBDIR += rubygem-lmdb
     SUBDIR += rubygem-marginalia
     SUBDIR += rubygem-mario-redis-lock
     SUBDIR += rubygem-memcache

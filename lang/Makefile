@@ -19,6 +19,7 @@
     SUBDIR += c
     SUBDIR += cairo
     SUBDIR += cbmbasic
+    SUBDIR += cbqn
     SUBDIR += ccl
     SUBDIR += ceylon
     SUBDIR += cfortran
@@ -126,6 +127,7 @@
     SUBDIR += go-devel
     SUBDIR += go124
     SUBDIR += go125
+    SUBDIR += go126
     SUBDIR += gomacro
     SUBDIR += gprolog
     SUBDIR += gptscript

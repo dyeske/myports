@@ -1,6 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.2.4
+DISTVERSION=	2026.2.13
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -211,6 +211,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		diff-0.1.13 \
 		digest-0.10.7 \
 		directories-6.0.0 \
+		dirs-6.0.0 \
 		dirs-sys-0.5.0 \
 		displaydoc-0.2.5 \
 		document-features-0.2.12 \
@@ -537,7 +538,6 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		pest_derive-2.8.5 \
 		pest_generator-2.8.5 \
 		pest_meta-2.8.5 \
-		petgraph-0.7.1 \
 		petgraph-0.8.3 \
 		phf-0.11.3 \
 		phf_codegen-0.11.3 \
@@ -569,15 +569,13 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		proc-macro-error2-2.0.1 \
 		proc-macro2-1.0.106 \
 		prodash-31.0.0 \
-		prost-0.13.5 \
-		prost-build-0.13.5 \
-		prost-derive-0.13.5 \
-		prost-reflect-0.14.7 \
-		prost-reflect-0.15.3 \
-		prost-reflect-build-0.15.2 \
-		prost-reflect-derive-0.14.0 \
-		prost-reflect-derive-0.15.1 \
-		prost-types-0.13.5 \
+		prost-0.14.3 \
+		prost-build-0.14.3 \
+		prost-derive-0.14.3 \
+		prost-reflect-0.16.3 \
+		prost-reflect-build-0.16.0 \
+		prost-reflect-derive-0.16.0 \
+		prost-types-0.14.3 \
 		quick-xml-0.37.5 \
 		quinn-0.11.9 \
 		quinn-proto-0.11.13 \
@@ -665,7 +663,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		serde_plain-1.0.2 \
 		serde_regex-1.1.0 \
 		serde_repr-0.1.20 \
-		serde_spanned-0.6.9 \
+		serde_spanned-1.0.4 \
 		serde_urlencoded-0.7.1 \
 		serde_with-3.16.1 \
 		serde_with_macros-3.16.1 \
@@ -682,16 +680,17 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		shared_thread-0.2.0 \
 		shell-escape-0.1.5 \
 		shell-words-1.1.1 \
+		shellexpand-3.1.1 \
 		shlex-1.3.0 \
 		sigchld-0.2.4 \
 		signal-hook-0.3.18 \
 		signal-hook-0.4.3 \
 		signal-hook-registry-1.4.8 \
 		signature-2.2.0 \
-		sigstore-0.12.1 \
+		sigstore-0.13.0 \
 		sigstore-protobuf-specs-derive-0.0.1 \
-		sigstore-verification-0.1.8 \
-		sigstore_protobuf_specs-0.4.3 \
+		sigstore-verification-0.2.1 \
+		sigstore_protobuf_specs-0.5.0 \
 		simd-adler32-0.3.8 \
 		similar-2.7.0 \
 		siphasher-1.0.2 \
@@ -701,6 +700,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		smallvec-1.15.1 \
 		snafu-0.8.9 \
 		snafu-derive-0.8.9 \
+		snap-1.1.1 \
 		socket2-0.5.10 \
 		socket2-0.6.2 \
 		spin-0.9.8 \
@@ -740,9 +740,9 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		thiserror-impl-1.0.69 \
 		thiserror-impl-2.0.18 \
 		thread_local-1.1.9 \
-		time-0.3.46 \
+		time-0.3.47 \
 		time-core-0.1.8 \
-		time-macros-0.2.26 \
+		time-macros-0.2.27 \
 		tinystr-0.8.2 \
 		tinyvec-1.10.0 \
 		tinyvec_macros-0.1.1 \
@@ -756,10 +756,11 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		tokio-rustls-0.26.4 \
 		tokio-util-0.7.18 \
 		toml-0.5.11 \
-		toml-0.8.23 \
-		toml_datetime-0.6.11 \
-		toml_edit-0.22.27 \
-		toml_write-0.1.2 \
+		toml-0.9.11+spec-1.1.0 \
+		toml_datetime-0.7.5+spec-1.1.0 \
+		toml_edit-0.24.0+spec-1.1.0 \
+		toml_parser-1.0.6+spec-1.1.0 \
+		toml_writer-1.0.6+spec-1.1.0 \
 		tough-0.21.0 \
 		tower-0.5.3 \
 		tower-http-0.6.8 \

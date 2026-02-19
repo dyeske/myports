@@ -1,3 +1,491 @@
+  <vuln vid="67793feb-0b5b-11f1-a1c0-0050569f0b83">
+    <topic>powerdns-recursor -- Denial of Service</topic>
+    <affects>
+    <package>
+	<name>powerdns-recursor</name>
+	<range><lt>5.3.5</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PowerDNS Team reports:</p>
+	<blockquote cite="https://blog.powerdns.com/2025/12/08/powerdns-security-advisories-2025-07-and-2025-08">
+	<p>2025-07: Internal logic flaw in cache management can lead to
+	a denial of service in Recursor</p>
+	<p>2025-08: Insufficient validation of incoming notifies over
+	TCP can lead to a denial of service in Recursor</p>
+	<p>2026-01: Crafted zones can lead to increased resource usage in Recursor</p>
+	<p>2026-01: This problem can be triggered by publishing and querying a crafted
+	zone that causes large memory usage.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-59029</cvename>
+      <cvename>CVE-2025-59030</cvename>
+      <cvename>CVE-2026-24027</cvename>
+      <cvename>CVE-2026-0398</cvename>
+      <url>https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2025-07.html</url>
+      <url>https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2025-08.html</url>
+      <url>https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-01.html</url>
+    </references>
+    <dates>
+      <discovery>2025-12-08</discovery>
+      <entry>2026-02-16</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f9cb72e4-0b52-11f1-8e75-b42e991fc52e">
+    <topic>png -- CWE-122: Heap-based Buffer Overflow</topic>
+    <affects>
+    <package>
+	<name>png</name>
+	<range><lt>1.6.55</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3 reports:</p>
+	<blockquote cite="https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3">
+	  <p>LIBPNG is a reference library for use in applications
+	  that read, create, and manipulate PNG (Portable Network
+	  Graphics) raster image files.  Prior to 1.6.55, an
+	  out-of-bounds read vulnerability exists in the
+	  png_set_quantize() API function.  When the function is
+	  called with no histogram and the number of colors in the
+	  palette is more than twice the maximum supported by the
+	  user's display, certain palettes will cause the function to
+	  enter into an infinite loop that reads past the end of an
+	  internal heap-allocated buffer.  The images that trigger
+	  this vulnerability are valid per the PNG specification.
+	  This vulnerability is fixed in 1.6.55.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-25646</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-25646</url>
+    </references>
+    <dates>
+      <discovery>2026-02-10</discovery>
+      <entry>2026-02-16</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="590979aa-09f7-11f1-a730-5404a68ad561">
+    <topic>traefik -- TCP readTimeout bypass via STARTTLS on Postgres</topic>
+    <affects>
+    <package>
+	<name>traefik</name>
+	<range><lt>3.6.8</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The traefik project reports:</p>
+	<blockquote cite="https://github.com/traefik/traefik/security/advisories/GHSA-89p3-4642-cr2w">
+	  <p>There is a potential vulnerability in Traefik managing STARTTLS requests.
+	     An unauthenticated client can bypass Traefik entrypoint respondingTimeouts.readTimeout
+	     by sending the 8-byte Postgres SSLRequest (STARTTLS) prelude and then stalling,
+	     causing connections to remain open indefinitely, leading to a denial of service</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-25949</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2026-25949</url>
+    </references>
+    <dates>
+      <discovery>2026-02-11</discovery>
+      <entry>2026-02-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="17186409-09d2-11f1-a39c-b42e991fc52e">
+    <topic>munge -- CWE-787: Out-of-bounds Write</topic>
+    <affects>
+    <package>
+	<name>munge</name>
+	<range><lt>0.5.18</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://github.com/dun/munge/security/advisories/GHSA-r9cr-jf4v-75gh reports:</p>
+	<blockquote cite="https://github.com/dun/munge/security/advisories/GHSA-r9cr-jf4v-75gh">
+	  <p>MUNGE is an authentication service for creating and
+	  validating user credentials.  From 0.5 to 0.5.17, local
+	  attacker can exploit a buffer overflow vulnerability in
+	  munged (the MUNGE authentication daemon) to leak
+	  cryptographic key material from process memory.  With the
+	  leaked key material, the attacker could forge arbitrary
+	  MUNGE credentials to impersonate any user (including root)
+	  to services that rely on MUNGE for authentication.  The
+	  vulnerability allows a buffer overflow by sending a crafted
+	  message with an oversized address length field, corrupting
+	  munged's internal state and enabling extraction of the MAC
+	  subkey used for credential verification.  This vulnerability
+	  is fixed in 0.5.18.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-25506</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-25506</url>
+    </references>
+    <dates>
+      <discovery>2026-02-10</discovery>
+      <entry>2026-02-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="424d598b-09c4-11f1-85c5-a8a1599412c6">
+    <topic>chromium -- security fix</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>145.0.7632.75</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>145.0.7632.75</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html">
+	 <p>This update includes 1 security fix:</p>
+	 <ul>
+	    <li>[483569511] High CVE-2026-2441: Use after free in CSS. Reported by Shaheen Fazim on 2026-02-11</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-2441</cvename>
+      <url>https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html</url>
+    </references>
+    <dates>
+      <discovery>2026-02-13</discovery>
+      <entry>2026-02-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="027c6c07-065b-11f1-baae-589cfc023192">
+    <topic>expat -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+       <name>expat</name>
+       <range><lt>2.7.4</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+      <p>expat team reports:</p>
+      <blockquote cite="https://github.com/libexpat/libexpat/blob/R_2_7_4/expat/Changes">
+       <p>Update contains 2 security fixes:</p>
+       <ul>
+       <li>CVE-2026-24515: NULL dereference in function XML_ExternalEntityParserCreate</li>
+       <li>CVE-2026-25210: missing check for integer overflow in function doContent</li>
+       </ul>
+      </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-24515</cvename>
+      <cvename>CVE-2026-25210</cvename>
+    </references>
+    <dates>
+      <discovery>2026-01-31</discovery>
+      <entry>2026-02-10</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="e3afc190-0821-11f1-a857-6cc21735f730">
+    <topic>PostgreSQL -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+       <name>postgresql14-server</name>
+       <range><lt>14.21</lt></range>
+      </package>
+      <package>
+       <name>postgresql15-server</name>
+       <range><lt>15.16</lt></range>
+      </package>
+      <package>
+       <name>postgresql16-server</name>
+       <range><lt>16.12</lt></range>
+      </package>
+      <package>
+       <name>postgresql17-server</name>
+       <range><lt>17.8</lt></range>
+      </package>
+      <package>
+       <name>postgresql18-server</name>
+       <range><lt>18.2</lt></range>
+      </package>
+      <package>
+       <name>postgresql14-server</name>
+       <range><lt>14.21</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The PostgreSQL project reports:</p>
+	<blockquote cite="https://www.postgresql.org/about/news/postgresql-182-178-1612-1516-and-1421-released-3235/">
+	<p>
+	  Improper validation of type oidvector in PostgreSQL
+	  allows a database user to disclose a few bytes of server
+	  memory. We have not ruled out viability of attacks that
+	  arrange for presence of confidential information in
+	  disclosed bytes, but they seem unlikely.
+	</p>
+	<p>
+	  Missing validation of type of input in PostgreSQL
+	  intarray extension selectivity estimator function allows
+	  an object creator to execute arbitrary code as the
+	  operating system user running the database.
+	</p>
+	<p>
+	  Heap buffer overflow in PostgreSQL pgcrypto allows a
+	  ciphertext provider to execute arbitrary code as the
+	  operating system user running the database.
+	</p>
+	<p>
+	  Missing validation of multibyte character length in
+	  PostgreSQL text manipulation allows a database user to
+	  issue crafted queries that achieve a buffer overrun.
+	  That suffices to execute arbitrary code as the operating
+	  system user running the database.
+	</p>
+	<p>
+	  Heap buffer overflow in PostgreSQL pg_trgm allows a
+	  database user to achieve unknown impacts via a crafted
+	  input string. The attacker has limited control over the
+	  byte patterns to be written, but we have not ruled out
+	  the viability of attacks that lead to privilege
+	  escalation.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-2003</cvename>
+      <cvename>CVE-2026-2004</cvename>
+      <cvename>CVE-2026-2005</cvename>
+      <cvename>CVE-2026-2006</cvename>
+      <cvename>CVE-2026-2007</cvename>
+      <url>https://www.postgresql.org/about/news/postgresql-182-178-1612-1516-and-1421-released-3235/</url>
+    </references>
+    <dates>
+      <discovery>2026-02-12</discovery>
+      <entry>2026-02-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="7f9bac32-0800-11f1-8a6f-b42e991fc52e">
+    <topic>MongoDB Server -- CWE-704 Incorrect Type Conversion or Cast</topic>
+    <affects>
+    <package>
+	<name>mongodb70</name>
+	<range><lt>7.0.29</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://jira.mongodb.org/browse/SERVER-113685 reports:</p>
+	<blockquote cite="https://jira.mongodb.org/browse/SERVER-113685">
+	  <p>An authorized user may disable the MongoDB server by
+	  issuing a query against a collection that contains an
+	  invalid compound wildcard index.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-25613</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-25613</url>
+    </references>
+    <dates>
+      <discovery>2026-02-10</discovery>
+      <entry>2026-02-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="7b5671f9-0800-11f1-8a6f-b42e991fc52e">
+    <topic>MongoDB Server -- CWE-617 Reachable Assertion</topic>
+    <affects>
+    <package>
+	<name>mongodb80</name>
+	<range><lt>8.0.13</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://jira.mongodb.org/browse/SERVER-99119 reports:</p>
+	<blockquote cite="https://jira.mongodb.org/browse/SERVER-99119">
+	  <p>An authorized user may trigger a server crash by running
+	  a $geoNear pipeline with certain invalid index hints.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-25610</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-25610</url>
+    </references>
+    <dates>
+      <discovery>2026-02-10</discovery>
+      <entry>2026-02-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="77e32b14-0800-11f1-8a6f-b42e991fc52e">
+    <topic>MongoDB Server -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>mongodb80</name>
+	<range><lt>8.0.18</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://jira.mongodb.org/browse/SERVER-114126 reports:</p>
+	<blockquote cite="https://jira.mongodb.org/browse/SERVER-114126">
+	  <p>Complex queries can cause excessive memory usage in
+	  MongoDB Query Planner resulting in an Out-Of-Memory
+	    Crash.</p>
+	</blockquote>
+	<p>https://jira.mongodb.org/browse/SERVER-102364 reports:</p>
+	<blockquote cite="https://jira.mongodb.org/browse/SERVER-102364">
+	  <p>MongoDB Server may experience an out-of-memory failure while
+	  evaluating expressions that produce deeply nested documents. The
+	  issue arises in recursive functions because the server does not
+	    periodically check the depth of the expression.</p>
+	</blockquote>
+	<p>https://jira.mongodb.org/browse/SERVER-113532 reports:</p>
+	<blockquote cite="https://jira.mongodb.org/browse/SERVER-113532">
+	  <p>Inserting certain large documents into a replica set could lead to
+	  replica set secondaries not being able to fetch the oplog from the
+	  primary. This could stall replication inside the replica set leading
+	    to server crash.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-1850</cvename>
+      <cvename>CVE-2026-1849</cvename>
+      <cvename>CVE-2026-1847</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-1850</url>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-1849</url>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-1847</url>
+    </references>
+    <dates>
+      <discovery>2026-02-10</discovery>
+      <entry>2026-02-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="9d9940e7-071c-11f1-93ca-2cf05da270f3">
+    <topic>Gitlab -- vulnerabilities</topic>
+    <affects>
+<package>
+<name>gitlab-ce</name>
+<name>gitlab-ee</name>
+<range><ge>18.8.0</ge><lt>18.8.4</lt></range>
+<range><ge>18.7.0</ge><lt>18.7.4</lt></range>
+<range><ge>8.0.0</ge><lt>18.6.6</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://about.gitlab.com/releases/2026/02/10/patch-release-gitlab-18-8-4-released/">
+	  <p>Incomplete Validation issue in Web IDE impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in GraphQL introspection impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in JSON validation middleware impacts GitLab CE/EE</p>
+	  <p>Cross-site Scripting issue in Code Flow impacts GitLab CE/EE</p>
+	  <p>HTML Injection issue in test case titles impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in Markdown processor impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in Markdown Preview impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in dashboard impacts GitLab EE</p>
+	  <p>Server-Side Request Forgery issue in Virtual Registry impacts GitLab EE</p>
+	  <p>Improper Validation issue in diff parser impacts GitLab CE/EE</p>
+	  <p>Server-Side Request Forgery issue in Git repository import impacts GitLab CE/EE</p>
+	  <p>Authorization Bypass issue in iterations API impacts GitLab EE</p>
+	  <p>Missing Authorization issue in GLQL API impacts GitLab CE/EE</p>
+	  <p>Stored HTML Injection issue in project label impacts GitLab CE/EE</p>
+	  <p>Authorization Bypass issue in Pipeline Schedules API impacts GitLab CE/EE</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-7659</cvename>
+      <cvename>CVE-2025-8099</cvename>
+      <cvename>CVE-2026-0958</cvename>
+      <cvename>CVE-2025-14560</cvename>
+      <cvename>CVE-2026-0595</cvename>
+      <cvename>CVE-2026-1458</cvename>
+      <cvename>CVE-2026-1456</cvename>
+      <cvename>CVE-2026-1387</cvename>
+      <cvename>CVE-2025-12575</cvename>
+      <cvename>CVE-2026-1094</cvename>
+      <cvename>CVE-2025-12073</cvename>
+      <cvename>CVE-2026-1080</cvename>
+      <cvename>CVE-2025-14592</cvename>
+      <cvename>CVE-2026-1282</cvename>
+      <cvename>CVE-2025-14594</cvename>
+      <url>https://about.gitlab.com/releases/2026/02/10/patch-release-gitlab-18-8-4-released/</url>
+    </references>
+    <dates>
+      <discovery>2026-02-10</discovery>
+      <entry>2026-02-11</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="8d8012e5-0705-11f1-8148-bc241121aa0a">
+    <topic>FreeBSD -- blocklistd(8) socket leak</topic>
+    <affects>
+      <package>
+	<name>FreeBSD</name>
+	<range><ge>15.0</ge><lt>15.0_3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	<p>Due to a programming error, blocklistd leaks a socket descriptor
+	for each adverse event report it receives.</p>
+	<p>Once a certain number of leaked sockets is reached, blocklistd
+	becomes unable to run the helper script: a child process is forked,
+	but this child dereferences a null pointer and crashes before it
+	is able to exec the helper.  At this point, blocklistd still records
+	adverse events but is unable to block new addresses or unblock
+	addresses whose database entries have expired.</p>
+	<p>Once a second, much higher number of leaked sockets is reached,
+	blocklistd becomes unable to receive new adverse event reports.</p>
+	<h1>Impact:</h1>
+	<p>An attacker may take advantage of this by triggering a large
+	number of adverse events from sacrificial IP addresses to effectively
+	disable blocklistd before launching an attack.</p>
+	<p>Even in the absence of attacks or probes by would-be attackers,
+	adverse events will occur regularly in the course of normal operations,
+	and blocklistd will gradually run out file descriptors and become
+	ineffective.</p>
+	<p>The accumulation of open sockets may have knock-on effects on other
+	parts of the system, resulting in a general slowdown until blocklistd
+	is restarted.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-2261</cvename>
+      <freebsdsa>SA-26:03.blocklistd</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-02-10</discovery>
+      <entry>2026-02-11</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="9bc5a730-0585-11f1-85c5-a8a1599412c6">
     <topic>chromium -- multiple security fixes</topic>
     <affects>
@@ -166,7 +654,7 @@
     <affects>
       <package><name>python310</name> <range><ge>0</ge></range></package>
       <package><name>python311</name> <range><lt>3.11.14_2</lt></range></package>
-      <package><name>python312</name> <range><ge>0</ge></range></package>
+      <package><name>python312</name> <range><lt>3.12.12_4</lt></range></package>
       <package><name>python313</name> <range><lt>3.13.12</lt></range></package>
       <package><name>python313t</name> <range><lt>3.13.12</lt></range></package>
       <package><name>python314</name> <range><lt>3.14.3</lt></range></package>
@@ -193,6 +681,7 @@
     <dates>
       <discovery>2026-01-16</discovery>
       <entry>2026-02-04</entry>
+      <modified>2026-02-13</modified>
     </dates>
   </vuln>
 
