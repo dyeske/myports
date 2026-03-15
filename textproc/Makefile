@@ -360,6 +360,9 @@
     SUBDIR += kf6-sonnet
     SUBDIR += kf6-syntax-highlighting
     SUBDIR += kibana8
+    SUBDIR += kibana91
+    SUBDIR += kibana92
+    SUBDIR += kibana93
     SUBDIR += kiss-templates
     SUBDIR += kmfl-european-latin
     SUBDIR += kmfl-khmer
@@ -545,8 +548,8 @@
     SUBDIR += or-aspell
     SUBDIR += otree
     SUBDIR += ov
-    SUBDIR += oyo
     SUBDIR += ox-gfm.el
+    SUBDIR += oyo
     SUBDIR += p5-AI-Categorizer
     SUBDIR += p5-Algorithm-CheckDigits
     SUBDIR += p5-Algorithm-RabinKarp

@@ -11,6 +11,8 @@ WWW=		https://www.freecadweb.org/
 LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+DEPRECATED=	Depends on legacy ffmpeg4, consider migrating to multimedia/ffmpeg
+EXPIRATION_DATE=2026-06-30
 CONFLICTS_INSTALL=      freecad # bin/FreeCAD
 
 BUILD_DEPENDS=	doxygen:devel/doxygen \
@@ -65,8 +67,6 @@ USE_QT=		base svg tools
 USE_LDCONFIG=	yes
 
 CPE_VENDOR=	freecad_project
-
-VTK_VER=	9.5
 
 DOS2UNIX_GLOB=	*.txt *.h *.cpp *.py *.qss *.csv *.pov *.stp *.ui *.wrl *.WRL
 SHEBANG_FILES=	src/Tools/freecad-thumbnailer.in
@@ -145,4 +145,5 @@ post-install:
 	# ${INSTALL_SCRIPT} ${WRKSRC}/src/Tools/freecad-thumbnailer \
 	# 	${STAGEDIR}${PREFIX}/bin/freecad-thumbnailer
 
+.include <../../math/vtk9/Makefile.version>
 .include <bsd.port.mk>
