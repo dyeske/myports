@@ -452,6 +452,7 @@
     SUBDIR += openssl
     SUBDIR += openssl-agent
     SUBDIR += openssl-oqsprovider
+    SUBDIR += openssl-pkcs11provider
     SUBDIR += openssl-unsafe
     SUBDIR += openssl111
     SUBDIR += openssl33
@@ -898,6 +899,7 @@
     SUBDIR += py-base58
     SUBDIR += py-bcrypt
     SUBDIR += py-bitbox02
+    SUBDIR += py-blake3
     SUBDIR += py-btchip-python
     SUBDIR += py-cart
     SUBDIR += py-cerealizer
@@ -1372,6 +1374,7 @@
     SUBDIR += sudoscript
     SUBDIR += super
     SUBDIR += suricata
+    SUBDIR += susshi
     SUBDIR += swatchdog
     SUBDIR += tailscale
     SUBDIR += tang
