@@ -59,6 +59,8 @@
     SUBDIR += colortail
     SUBDIR += coloursum
     SUBDIR += colwide
+    SUBDIR += comfy-cli
+    SUBDIR += comfyui
     SUBDIR += compat.el
     SUBDIR += compat10x
     SUBDIR += compat11x
@@ -242,6 +244,7 @@
     SUBDIR += lazyread
     SUBDIR += lbann
     SUBDIR += lc
+    SUBDIR += lean-ctx
     SUBDIR += lesspipe
     SUBDIR += lf
     SUBDIR += libad9361-iio
@@ -285,6 +288,7 @@
     SUBDIR += mate-user-guide
     SUBDIR += mbuffer
     SUBDIR += mc
+    SUBDIR += mcp-inspector
     SUBDIR += mcp-probe
     SUBDIR += mdp
     SUBDIR += meshoptimizer
@@ -446,6 +450,7 @@
     SUBDIR += py-colored
     SUBDIR += py-colorzero
     SUBDIR += py-comfy-aimdo
+    SUBDIR += py-comfy-kitchen
     SUBDIR += py-comfyui-embedded-docs
     SUBDIR += py-comfyui-frontend-package
     SUBDIR += py-comfyui-workflow-templates
@@ -454,6 +459,7 @@
     SUBDIR += py-comfyui-workflow-templates-media-image
     SUBDIR += py-comfyui-workflow-templates-media-other
     SUBDIR += py-comfyui-workflow-templates-media-video
+    SUBDIR += py-compressed-tensors
     SUBDIR += py-cppman
     SUBDIR += py-crudini
     SUBDIR += py-csvw
@@ -515,17 +521,20 @@
     SUBDIR += py-llama-cpp-python
     SUBDIR += py-llm
     SUBDIR += py-llm-claude-3
+    SUBDIR += py-lm-format-enforcer
     SUBDIR += py-log_symbols
     SUBDIR += py-mcp
     SUBDIR += py-mem0ai
     SUBDIR += py-mffpy
     SUBDIR += py-misaki
+    SUBDIR += py-mistral-common
     SUBDIR += py-mixpanel
     SUBDIR += py-ml-collections
     SUBDIR += py-mmcv
     SUBDIR += py-mmdet
     SUBDIR += py-mmengine
     SUBDIR += py-mmsegmentation
+    SUBDIR += py-model-hosting-container-standards
     SUBDIR += py-molequeue
     SUBDIR += py-napari
     SUBDIR += py-napari-svg
@@ -537,6 +546,7 @@
     SUBDIR += py-onnx-tf
     SUBDIR += py-onnxconverter-common
     SUBDIR += py-openai
+    SUBDIR += py-openai-harmony
     SUBDIR += py-openai-whisper
     SUBDIR += py-openpaperwork-core
     SUBDIR += py-openpaperwork-gtk
@@ -614,10 +624,12 @@
     SUBDIR += py-uhi
     SUBDIR += py-uuid-utils
     SUBDIR += py-vaderSentiment
+    SUBDIR += py-vllm
     SUBDIR += py-wandb
     SUBDIR += py-wurlitzer
     SUBDIR += py-xformers
     SUBDIR += py-xgboost
+    SUBDIR += py-xgrammar
     SUBDIR += pyobd
     SUBDIR += pytorch
     SUBDIR += qbrew

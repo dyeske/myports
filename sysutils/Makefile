@@ -27,7 +27,6 @@
     SUBDIR += ah-tty
     SUBDIR += aimage
     SUBDIR += aird
-    SUBDIR += alfio
     SUBDIR += alloy
     SUBDIR += am-utils
     SUBDIR += amazon-ssm-agent
@@ -117,7 +116,6 @@
     SUBDIR += bchunk
     SUBDIR += beadm
     SUBDIR += beats8
-    SUBDIR += beats9
     SUBDIR += beats91
     SUBDIR += beats92
     SUBDIR += beats93
@@ -367,6 +365,7 @@
     SUBDIR += envconsul
     SUBDIR += epazote
     SUBDIR += erdtree
+    SUBDIR += erldash
     SUBDIR += etcmerge
     SUBDIR += ethname
     SUBDIR += evhz
@@ -537,6 +536,7 @@
     SUBDIR += imgurbash2
     SUBDIR += immortal
     SUBDIR += incron
+    SUBDIR += incus-client
     SUBDIR += infracost
     SUBDIR += initool
     SUBDIR += inotify-tools
@@ -1037,6 +1037,7 @@
     SUBDIR += pxattr
     SUBDIR += py-ansible-compat
     SUBDIR += py-ansible-core
+    SUBDIR += py-ansible-core218
     SUBDIR += py-ansible-core219
     SUBDIR += py-ansible-core220
     SUBDIR += py-ansible-lint
@@ -1389,6 +1390,7 @@
     SUBDIR += swapusage
     SUBDIR += sweeper
     SUBDIR += swtpm
+    SUBDIR += sylve
     SUBDIR += symlinks
     SUBDIR += symon
     SUBDIR += synergy
@@ -1437,8 +1439,6 @@
     SUBDIR += tldr
     SUBDIR += tlsdate
     SUBDIR += tm
-    SUBDIR += tmate
-    SUBDIR += tmate-ssh-server
     SUBDIR += tmpreaper
     SUBDIR += tmpwatch
     SUBDIR += tmux

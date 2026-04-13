@@ -1,5 +1,6 @@
 PORTNAME=	javacpp
 DISTVERSION=	1.5.13
+PORTREVISION=	1
 CATEGORIES=	java devel
 MASTER_SITES=	https://repo1.maven.org/maven2/org/bytedeco/${PORTNAME}/${DISTVERSION}/
 DISTFILES=	${DISTNAME}.jar
@@ -23,8 +24,6 @@ USES=		java
 USE_GITHUB=	nodefault
 GH_ACCOUNT=	bytedeco:test
 GH_PROJECT=	${PORTNAME}:test
-
-JAVA_VERSION=	21
 
 NO_BUILD=	yes
 

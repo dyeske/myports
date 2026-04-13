@@ -446,6 +446,7 @@
     SUBDIR += madronalib
     SUBDIR += malint
     SUBDIR += mamba
+    SUBDIR += maolan
     SUBDIR += mate-media
     SUBDIR += mclk-lv2
     SUBDIR += mda-lv2
@@ -686,6 +687,7 @@
     SUBDIR += qtractor
     SUBDIR += quimup
     SUBDIR += qxgedit
+    SUBDIR += radiotrope
     SUBDIR += ratatouille-lv2
     SUBDIR += raul
     SUBDIR += rawrec

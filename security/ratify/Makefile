@@ -1,5 +1,5 @@
 PORTNAME=	ratify
-DISTVERSION=	2.4.0
+DISTVERSION=	2.5.0
 CATEGORIES=	security
 
 MAINTAINER=	yuri@FreeBSD.org
