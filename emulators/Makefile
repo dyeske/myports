@@ -28,8 +28,8 @@
     SUBDIR += dps8m
     SUBDIR += dynamips-community
     SUBDIR += edumips64
+    SUBDIR += einstein-newton
     SUBDIR += elliott-803
-    SUBDIR += emu64
     SUBDIR += emulationstation
     SUBDIR += emutos
     SUBDIR += es-de
@@ -113,6 +113,7 @@
     SUBDIR += ppsspp
     SUBDIR += py-gns3-converter
     SUBDIR += py-m64py
+    SUBDIR += py-qemu.qmp
     SUBDIR += py-unicorn
     SUBDIR += qemu
     SUBDIR += qemu-cheri

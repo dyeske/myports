@@ -123,6 +123,7 @@
     SUBDIR += converseen
     SUBDIR += corrupter
     SUBDIR += cptutils
+    SUBDIR += crucible
     SUBDIR += crw
     SUBDIR += ctl
     SUBDIR += curator
@@ -498,6 +499,7 @@
     SUBDIR += libjxl
     SUBDIR += libjxr
     SUBDIR += libkdcraw
+    SUBDIR += libkdcraw-qt5
     SUBDIR += libkexiv2
     SUBDIR += libksane
     SUBDIR += libliftoff
@@ -1212,6 +1214,7 @@
     SUBDIR += skanpage
     SUBDIR += skia
     SUBDIR += spirv-cross
+    SUBDIR += spirv-headers
     SUBDIR += spirv-tools
     SUBDIR += springgraph
     SUBDIR += squish

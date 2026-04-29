@@ -14,7 +14,7 @@ MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	General-purpose full virtualizer for x86 hardware
 WWW=		https://www.virtualbox.org/
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 DEPRECATED=		Upstream EOL reaches on 2025-04-15, use emulators/virtualbox-ose${PKGNAMESUFFIX:S|0|2|} instead
@@ -66,8 +66,12 @@ WRKSRC=		${WRKDIR}/VirtualBox-${DISTVERSION}
 VBOXUSER?=	vboxusers
 VBOXWSUSER?=	vboxusers
 VBOXGROUP?=	vboxusers
+.if ${VBOXUSER} == vboxusers
 USERS=		${VBOXUSER}
+.endif
+.if ${VBOXGROUP} == vboxusers
 GROUPS=		${VBOXGROUP}
+.endif
 VBOX_DIR=	${PREFIX}/${VBOX_DIR_REL}
 VBOX_DIR_REL=	lib/virtualbox
 VBOX_ETC=	${PREFIX}/etc/vbox

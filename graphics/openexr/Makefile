@@ -1,6 +1,6 @@
 PORTNAME?=	openexr
-DISTVERSION?=	3.4.9 # ALSO update openexr-website-docs! -- verify sigstore: make makesum verify-sigstore
-PORTREVISION?=	0
+DISTVERSION?=	3.4.10 # ALSO update openexr-website-docs! -- verify sigstore: make makesum verify-sigstore
+PORTREVISION?=	1
 CATEGORIES=	graphics devel
 .if !defined(MASTERDIR)
 MASTER_SITES=	https://raw.githubusercontent.com/AcademySoftwareFoundation/openexr-images/v1.0/:testimages \
@@ -70,8 +70,7 @@ LDFLAGS+=	-pthread
 
 _MAJORVER=	3_4
 _VER=		33
-#_REL=		${PORTVERSION}
-_REL=		3.4.9
+_REL=		${PORTVERSION}
 PLIST_SUB+=	MAJORVER=${_MAJORVER} \
 		VER=${_VER} \
 		REL=${_REL}

@@ -1496,7 +1496,9 @@
     SUBDIR += rustdesk-server
     SUBDIR += ryu
     SUBDIR += s3m
+    SUBDIR += s3req
     SUBDIR += s5cmd
+    SUBDIR += s6-networking
     SUBDIR += sacc
     SUBDIR += sakisafecli
     SUBDIR += samba416

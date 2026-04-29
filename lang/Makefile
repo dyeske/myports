@@ -16,6 +16,7 @@
     SUBDIR += basic256
     SUBDIR += bend
     SUBDIR += bsh
+    SUBDIR += bun
     SUBDIR += bwbasic
     SUBDIR += c
     SUBDIR += cairo
@@ -101,6 +102,7 @@
     SUBDIR += gcc15
     SUBDIR += gcc15-devel
     SUBDIR += gcc16-devel
+    SUBDIR += gcc17-devel
     SUBDIR += gcc6-aux
     SUBDIR += gforth
     SUBDIR += ghc
@@ -213,6 +215,7 @@
     SUBDIR += neocmakelsp
     SUBDIR += nesasm
     SUBDIR += newlisp
+    SUBDIR += nickel
     SUBDIR += nickle
     SUBDIR += nim
     SUBDIR += njs

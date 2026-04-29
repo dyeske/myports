@@ -1,15 +1,16 @@
 PORTNAME=	xonsh
-DISTVERSION=	0.22.8
+DISTVERSION=	0.23.2
+PORTREVISION=	2
 CATEGORIES=	shells python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	eduardo@FreeBSD.org
-COMMENT=	Python-powered, cross-platform, Unix-gazing shell
+COMMENT=	Python-powered shell
 WWW=		https://xon.sh
 
 LICENSE=	BSD2CLAUSE
-LICENSE_FILE=	${WRKSRC}/license
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR}
@@ -38,7 +39,9 @@ PYTEST_BROKEN_TESTS=	\
 		test_integrations.py \
 		test_man.py \
 		test_os.xsh \
+		test_pipelines.py \
 		test_ptk_highlight.py \
+		test_stress.py \
 		test_specs.py
 SHEBANG_FILES=	tests/bin/cat tests/bin/pwd tests/bin/wc
 
@@ -46,7 +49,7 @@ NO_ARCH=	yes
 
 post-patch:
 	${REINPLACE_CMD} -e 's|python3|${PYTHON_CMD}|' \
-		${WRKSRC}/tests/test_integrations.py \
+		${WRKSRC}/tests/xintegration/test_integrations.py \
 		${WRKSRC}/tests/test_virtualenv_activator.py
 
 .include <bsd.port.mk>

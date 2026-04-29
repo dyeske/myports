@@ -1,6 +1,6 @@
 PORTNAME=	virtualbox-ose
-DISTVERSION=	7.2.6
-PORTREVISION?=	1
+DISTVERSION=	7.2.8
+PORTREVISION?=	0
 CATEGORIES=	emulators
 MASTER_SITES=	https://download.virtualbox.org/virtualbox/${DISTVERSION}/:src \
 		LOCAL/vvd:docs
@@ -14,7 +14,7 @@ MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	General-purpose full virtualizer for x86 hardware
 WWW=		https://www.virtualbox.org/
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 ONLY_FOR_ARCHS=	amd64
@@ -68,8 +68,12 @@ WRKSRC=		${WRKDIR}/VirtualBox-${DISTVERSION}
 VBOXUSER?=	vboxusers
 VBOXWSUSER?=	vboxusers
 VBOXGROUP?=	vboxusers
+.if ${VBOXUSER} == vboxusers
 USERS=		${VBOXUSER}
+.endif
+.if ${VBOXGROUP} == vboxusers
 GROUPS=		${VBOXGROUP}
+.endif
 VBOX_DIR=	${PREFIX}/${VBOX_DIR_REL}
 VBOX_DIR_REL=	lib/virtualbox
 VBOX_ETC=	${PREFIX}/etc/vbox
