@@ -339,6 +339,7 @@
     SUBDIR += boxed-cpp
     SUBDIR += boxfort
     SUBDIR += bpython
+    SUBDIR += brpc
     SUBDIR += brz
     SUBDIR += bsdbuild
     SUBDIR += bsdcflow
@@ -537,6 +538,7 @@
     SUBDIR += csoap
     SUBDIR += cssc
     SUBDIR += ctags
+    SUBDIR += ctags-lsp
     SUBDIR += ctre
     SUBDIR += ctypes.sh
     SUBDIR += cunit
@@ -744,6 +746,7 @@
     SUBDIR += freebsd-gcc14
     SUBDIR += freebsd-gcc15
     SUBDIR += freebsd-git-arc
+    SUBDIR += freebsd-git-pr
     SUBDIR += freebsd-nvme-shim
     SUBDIR += freebsd-sysroot
     SUBDIR += frink
@@ -1674,6 +1677,7 @@
     SUBDIR += magic_enum
     SUBDIR += magit
     SUBDIR += makedepend
+    SUBDIR += maki
     SUBDIR += malloy
     SUBDIR += manuals
     SUBDIR += marisa-trie
@@ -4329,6 +4333,7 @@
     SUBDIR += phpunit10
     SUBDIR += phpunit11
     SUBDIR += phpunit12
+    SUBDIR += phpunit13
     SUBDIR += phpunit8
     SUBDIR += phpunit9
     SUBDIR += physfs
@@ -4662,6 +4667,7 @@
     SUBDIR += py-buildbot-wsgi-dashboards
     SUBDIR += py-buildbot-www
     SUBDIR += py-bullet3
+    SUBDIR += py-bump-my-version
     SUBDIR += py-bump2version
     SUBDIR += py-bytecode
     SUBDIR += py-cabby
@@ -4953,11 +4959,13 @@
     SUBDIR += py-fam
     SUBDIR += py-fastbencode
     SUBDIR += py-fastcache
+    SUBDIR += py-fastcore
     SUBDIR += py-fasteners
     SUBDIR += py-fastentrypoints
     SUBDIR += py-fastf1
     SUBDIR += py-fastimport
     SUBDIR += py-fastjsonschema
+    SUBDIR += py-fastlite
     SUBDIR += py-fastnumbers
     SUBDIR += py-fastprogress
     SUBDIR += py-fastuuid
@@ -5637,6 +5645,7 @@
     SUBDIR += py-pre-commit
     SUBDIR += py-pre-commit-hooks
     SUBDIR += py-prefixed
+    SUBDIR += py-prek
     SUBDIR += py-preshed
     SUBDIR += py-preshed3
     SUBDIR += py-pretend
@@ -8460,6 +8469,7 @@
     SUBDIR += sedsed
     SUBDIR += seer-gdb
     SUBDIR += selene
+    SUBDIR += sem
     SUBDIR += semver
     SUBDIR += sentry-cli
     SUBDIR += serd
@@ -8697,6 +8707,7 @@
     SUBDIR += vc-intrinsics
     SUBDIR += vcglib
     SUBDIR += vdf
+    SUBDIR += vectorscan
     SUBDIR += venom
     SUBDIR += vera++
     SUBDIR += vexcl

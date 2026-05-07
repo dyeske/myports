@@ -210,6 +210,9 @@
     SUBDIR += foreign-cdm
     SUBDIR += forgejo
     SUBDIR += forgejo-lts
+    SUBDIR += forgejo11
+    SUBDIR += forgejo14
+    SUBDIR += forgejo15
     SUBDIR += formication
     SUBDIR += foswiki
     SUBDIR += free-sa-devel
@@ -372,6 +375,7 @@
     SUBDIR += lua-resty-session3
     SUBDIR += luakit
     SUBDIR += luakit-devel
+    SUBDIR += lubelogger
     SUBDIR += lux
     SUBDIR += lychee
     SUBDIR += lycheeorg
@@ -512,6 +516,7 @@
     SUBDIR += node22
     SUBDIR += node24
     SUBDIR += node25
+    SUBDIR += node26
     SUBDIR += nostromo
     SUBDIR += novnc
     SUBDIR += npc
@@ -520,6 +525,7 @@
     SUBDIR += npm-node22
     SUBDIR += npm-node24
     SUBDIR += npm-node25
+    SUBDIR += npm-node26
     SUBDIR += nyxt
     SUBDIR += oatpp
     SUBDIR += oauth2-proxy
@@ -1577,6 +1583,7 @@
     SUBDIR += py-dj52-django-timezone-field
     SUBDIR += py-dj52-django-treebeard
     SUBDIR += py-dj52-django-treenode
+    SUBDIR += py-dj52-django-unfold
     SUBDIR += py-dj52-djangorestframework
     SUBDIR += py-dj52-djangorestframework-guardian
     SUBDIR += py-dj52-drf-spectacular
@@ -1903,6 +1910,7 @@
     SUBDIR += py-pysmartdl
     SUBDIR += py-python-digitalocean
     SUBDIR += py-python-dotenv
+    SUBDIR += py-python-fasthtml
     SUBDIR += py-python-multipart
     SUBDIR += py-pyweblib
     SUBDIR += py-pywebview-gtk
@@ -2748,6 +2756,7 @@
     SUBDIR += yarn-node22
     SUBDIR += yarn-node24
     SUBDIR += yarn-node25
+    SUBDIR += yarn-node26
     SUBDIR += yarr
     SUBDIR += yaws
     SUBDIR += you-get

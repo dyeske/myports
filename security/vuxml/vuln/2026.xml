@@ -1,3 +1,216 @@
+  <vuln vid="9b5d6fbb-4893-11f1-82bf-3c7c3fba4204">
+    <topic>devel/ocaml-opam -- CWE-24 Path Traversal: '../filedir'</topic>
+    <affects>
+    <package>
+	<name>ocaml-opam</name>
+	<range><lt>2.5.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p><a href="https://github.com/ocaml/opam/releases/tag/2.5.1">https://github.com/ocaml/opam/releases/tag/2.5.1</a> reports:</p>
+	<blockquote cite="https://github.com/ocaml/opam/releases/tag/2.5.1">
+	  <p>In OCaml opam before 2.5.1, a .install field containing a destination
+filepath can use ../ to reach a parent directory.</p>
+	<p>Reported by <a href="https://github.com/andrew">Andrew Nesbitt</a> &lt;andrewnez@gmail.com&gt;.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-41082</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-41082</url>
+    </references>
+    <dates>
+      <discovery>2026-04-16</discovery>
+      <entry>2026-05-05</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="1ccc383b-486a-11f1-8b62-8447094a420f">
+    <topic>www/apache24 -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>apache24</name>
+	<range><lt>2.4.67</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Apache httpd project reports:</p>
+	<blockquote cite="https://dlcdn.apache.org/httpd/CHANGES_2.4.67">
+	  <p>mod_proxy_ajp: CVE-2026-34059, CVE-2026-34032, CVE-2026-33857, CVE-2026-28780</p>
+	  <p>multiple modules: CVE-2026-33523</p>
+	  <p>mod_authn_socache: CVE-2026-33007</p>
+	  <p>mod_auth_digest: CVE-2026-33006</p>
+	  <p>mod_dav_lock: mod_dav_lock</p>
+	  <p>mod_md: CVE-2026-29168</p>
+	  <p>mod_rewrite: CVE-2026-24072</p>
+	  <p>mod_http2: CVE-2026-23918</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-34059</cvename>
+      <cvename>CVE-2026-34032</cvename>
+      <cvename>CVE-2026-33857</cvename>
+      <cvename>CVE-2026-33523</cvename>
+      <cvename>CVE-2026-33007</cvename>
+      <cvename>CVE-2026-33006</cvename>
+      <cvename>CVE-2026-29169</cvename>
+      <cvename>CVE-2026-29168</cvename>
+      <cvename>CVE-2026-28780</cvename>
+      <cvename>CVE-2026-24072</cvename>
+      <cvename>CVE-2026-23918</cvename>
+      <url>https://dlcdn.apache.org/httpd/CHANGES_2.4.67</url>
+    </references>
+    <dates>
+      <discovery>2026-05-04</discovery>
+      <entry>2026-05-05</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="3c02dcfd-47d7-11f1-99fb-3497f65b111b">
+    <topic>modsecurity3 -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+       <name>modsecurity3</name>
+       <range><lt>3.0.15</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>
+       ModSecurity is an open source web application firewall engine.
+       </p>
+       <p>
+       According to the upstream changelog, multiple vulnerabilities have been fixed.
+       </p>
+       <ul>
+       <li>CVE-2026-42268: unsigned integer underflow in verify operators</li>
+       <li>CVE-2026-30923: buffer overflow in hex_decode</li>
+       </ul>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-42268</cvename>
+      <cvename>CVE-2026-30923</cvename>
+      <url>https://github.com/owasp-modsecurity/ModSecurity/blob/v3.0.15/CHANGES</url>
+    </references>
+    <dates>
+      <discovery>2026-04-28</discovery>
+      <entry>2026-05-04</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="e4a08820-470d-11f1-be75-b42e991fc52e">
+    <topic>Mozilla -- Memory safety bugs</topic>
+    <affects>
+    <package>
+	<name>firefox</name>
+	<range><lt>150.0.1,2</lt></range>
+    </package>
+    <package>
+	<name>firefox-esr</name>
+	<range><lt>140.10.1</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>150.0.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://bugzilla.mozilla.org/buglist.cgi?bug_id=2028537%2C2029911%2C2031121%2C2033602 reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/buglist.cgi?bug_id=2028537%2C2029911%2C2031121%2C2033602">
+	<p>
+	Memory safety bugs. Some of these bugs showed evidence of
+	memory corruption and we presume that with enough effort
+	some of these could have been exploited to run arbitrary
+	code.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-7323</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-7323</url>
+    </references>
+    <dates>
+      <discovery>2026-04-28</discovery>
+      <entry>2026-05-03</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a420f545-442c-11f1-b9b5-589cfc0dc9a2">
+    <topic>Prosody XMPP server advisory 2026-04-29</topic>
+    <affects>
+      <package>
+      <name>prosody</name>
+      <range><lt>13.0.5</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Prosody team reports:</p>
+	<blockquote cite="https://prosody.im/security/advisory_735dd9d3/">
+	<p>Traffic patterns were discovered which can cause Prosody to consume excessive
+	amounts of memory with much smaller amounts of incoming traffic. This traffic
+	can be sent by unauthenticated connections. It was discovered that
+	mod_proxy65’s access control was broken and incomplete due to two bugs.</p>
+	<p>The issue with unpausing connections was discovered and disclosed by <a href="https://github.com/MaxHearnden">Max Hearnden</a>.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://prosody.im/security/advisory_735dd9d3/</url>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="7ebfb0bf-44b4-11f1-8b82-3c7c3fba4204">
+    <topic>Text::CSV_XS -- CWE-825 Expired Pointer Dereference</topic>
+    <affects>
+    <package>
+	<name>p5-Text-CSV_XS</name>
+	<range><lt>1.62</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>H.Merijn Brand - Tux &lt;linux@tux.freedom.nl&gt; reports:</p>
+	<blockquote cite="https://github.com/cpan-authors/Text-CSV_XS/commit/c17f31a5f2bf36674748eb4b6e25672f0571a224.patch">
+	  <p>Text::CSV_XS versions before 1.62 for Perl have a use-after-free
+when registered callbacks extend the Perl argument stack, which may
+enable type confusion or memory corruption.
+
+The Parse, print, getline, and getline_all methods invoke registered
+callbacks (for example after_parse, before_print, or on_error) and
+cache the Perl argument stack pointer across the call.  If a callback
+extends the argument stack enough to trigger a reallocation, the
+return value is written through the stale pointer into the freed
+buffer, and the caller reads the original $self argument as the
+return value instead.
+
+Calling code that expects parsed data from getline_all receives the
+Text::CSV_XS object in its place, leading to logic errors or crashes.
+Text::CSV_XS objects used without any registered callbacks are not
+affected.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-7111</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-7111</url>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c3a9c5a6-4435-11f1-bb07-bc241121aa0a">
     <topic>FreeBSD -- Heap overflow in libnv</topic>
     <affects>
@@ -199,6 +412,41 @@
     <dates>
       <discovery>2026-04-29</discovery>
       <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="787cde46-4424-11f1-943f-05b19d100dca">
+    <topic>openexr -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>openexr</name>
+	<range><lt>3.4.11</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Cary Phillips reports:</p>
+	<blockquote cite="https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.11">
+	  <p>[OpenEXR v3.4.11 is a p]atch release that addresses the following security vulnerabilities:</p>
+	  <ul>
+	    <li>CVE-2026-42217 Shift exponent overflow in readVariableLengthInteger() (ImfIDManifest.cpp)</li>
+	    <li>CVE-2026-42216 Out-of-bounds read in IDManifest::init() during prefix expansion</li>
+	    <li>CVE-2026-41142 Integer overflow in ImageChannel::resize leads to heap OOB write via OpenEXRUtil public API</li>
+	    <li>OSS-fuzz 504280155 Heap-buffer-overflow in DwaCompressor_uncompress</li>
+	    <li>OSS-fuzz 505062709 Null-dereference READ in Imf_3_3::prefixFromLayerName</li>
+	  </ul>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-42217</cvename>
+      <cvename>CVE-2026-42216</cvename>
+      <cvename>CVE-2026-41142</cvename>
+      <url>https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.11</url>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-29</entry>
     </dates>
   </vuln>
 

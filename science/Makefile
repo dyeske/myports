@@ -349,6 +349,7 @@
     SUBDIR += py-geometric
     SUBDIR += py-gpaw
     SUBDIR += py-gsd
+    SUBDIR += py-gwlearn
     SUBDIR += py-h5json
     SUBDIR += py-h5netcdf
     SUBDIR += py-h5py
@@ -375,6 +376,7 @@
     SUBDIR += py-mmtf-python
     SUBDIR += py-mne
     SUBDIR += py-molmod
+    SUBDIR += py-morphio
     SUBDIR += py-mp-api
     SUBDIR += py-mpcontribs-client
     SUBDIR += py-mplhep
