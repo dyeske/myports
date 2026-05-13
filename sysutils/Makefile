@@ -399,6 +399,7 @@
     SUBDIR += finfo
     SUBDIR += firstboot-cloudsetup
     SUBDIR += firstboot-freebsd-update
+    SUBDIR += firstboot-pkg-upgrade
     SUBDIR += firstboot-pkgs
     SUBDIR += flasher
     SUBDIR += flashrom
@@ -511,6 +512,7 @@
     SUBDIR += hid-tools
     SUBDIR += highlnk
     SUBDIR += hilite
+    SUBDIR += hl
     SUBDIR += host-setup
     SUBDIR += hostctl
     SUBDIR += hourglass
@@ -827,6 +829,7 @@
     SUBDIR += openvox-agent8
     SUBDIR += openvox-server8
     SUBDIR += osinfo-db-tools
+    SUBDIR += osquery
     SUBDIR += p5-App-Regather
     SUBDIR += p5-App-RunCron
     SUBDIR += p5-App-ZFSCurses

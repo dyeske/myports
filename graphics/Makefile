@@ -155,6 +155,7 @@
     SUBDIR += drawing
     SUBDIR += drawio
     SUBDIR += drawpile
+    SUBDIR += drawy
     SUBDIR += drm-515-kmod
     SUBDIR += drm-61-kmod
     SUBDIR += drm-66-kmod
@@ -660,6 +661,7 @@
     SUBDIR += oidn
     SUBDIR += okular
     SUBDIR += open3d
+    SUBDIR += openboard
     SUBDIR += opencollada
     SUBDIR += opencolorio
     SUBDIR += opencolorio-tools
