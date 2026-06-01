@@ -549,6 +549,7 @@
     SUBDIR += opensearch219
     SUBDIR += opensp
     SUBDIR += openvanilla-framework
+    SUBDIR += openvpn-status-parser
     SUBDIR += or-aspell
     SUBDIR += otree
     SUBDIR += ov
@@ -1801,8 +1802,12 @@
     SUBDIR += re_graph
     SUBDIR += redet
     SUBDIR += redisearch
+    SUBDIR += redisearch2
     SUBDIR += redisearch20
     SUBDIR += redisearch22
+    SUBDIR += redisearch24
+    SUBDIR += redisearch26
+    SUBDIR += redisearch28
     SUBDIR += redland
     SUBDIR += redland-bindings
     SUBDIR += refdb

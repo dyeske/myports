@@ -47,7 +47,11 @@ EBUR128_DEFAULT?=	legacy
 # Possible values: full canna nox wayland devel_full devel_nox (default: nox)
 #EMACS_DEFAULT?=	nox
 # Possible values: 3.0, 4.0
+.  if ${ARCH} == powerpc64le
+FIREBIRD_DEFAULT?=	4.0
+.  else
 FIREBIRD_DEFAULT?=	3.0
+.  endif
 # Possible values: gfortran
 FORTRAN_DEFAULT?=	gfortran
 # Possible values: 3.2.3, 3.3.1
@@ -101,7 +105,7 @@ LINUX_DEFAULT?=		rl9
 .  endif
 # Possible values: 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, -devel (to be used when non-base compiler is required)
 LLVM_DEFAULT?=		19
-# Possible values: 5.1, 5.2, 5.3, 5.4
+# Possible values: 5.1, 5.2, 5.3, 5.4, 5.5
 LUA_DEFAULT?=		5.4
 # Possible values: luajit, luajit-openresty
 .  if ${ARCH:Mpowerpc64*}

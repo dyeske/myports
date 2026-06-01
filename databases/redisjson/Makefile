@@ -1,7 +1,7 @@
 PORTNAME=	redisjson
 DISTVERSIONPREFIX=	v
-DISTVERSION=	8.6.0
-PORTREVISION=	2
+DISTVERSION=	8.8.0
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	bofh@FreeBSD.org
@@ -29,6 +29,6 @@ GH_PROJECT=	RedisJSON
 PLIST_FILES=	lib/librejson.so
 
 do-install:
-	${INSTALL_LIB} ${CARGO_TARGET_DIR}/*/librejson.so ${STAGEDIR}${PREFIX}/lib
+	${INSTALL} -m 0755 ${CARGO_TARGET_DIR}/*/librejson.so ${STAGEDIR}${PREFIX}/lib
 
 .include <bsd.port.mk>

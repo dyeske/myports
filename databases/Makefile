@@ -176,6 +176,8 @@
     SUBDIR += mariadb114-server
     SUBDIR += mariadb118-client
     SUBDIR += mariadb118-server
+    SUBDIR += mariadb123-client
+    SUBDIR += mariadb123-server
     SUBDIR += mdbtools
     SUBDIR += mdbx
     SUBDIR += mdcached
@@ -907,8 +909,11 @@
     SUBDIR += redis80
     SUBDIR += redis82
     SUBDIR += redis84
+    SUBDIR += redis86
     SUBDIR += redis_exporter
+    SUBDIR += redisbloom
     SUBDIR += redisjson
+    SUBDIR += redisjson86
     SUBDIR += retcl
     SUBDIR += rocksdb
     SUBDIR += rocksdb-jni
