@@ -1,6 +1,6 @@
 PORTNAME=	infisical-cli
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.43.87
+DISTVERSION=	0.43.91
 CATEGORIES=	security
 
 MAINTAINER=	ale@FreeBSD.org
@@ -18,8 +18,6 @@ GO_LDFLAGS=	-X github.com/Infisical/infisical-merge/packages/util.CLI_VERSION=${
 OPTIONS_DEFINE=	BASH FISH MANPAGES ZSH
 OPTIONS_DEFAULT=BASH FISH MANPAGES ZSH
 OPTIONS_SUB=	yes
-
-#.include <bsd.port.options.mk>
 
 post-build-BASH-on:
 	@${MKDIR} ${WRKDIR}/completions
