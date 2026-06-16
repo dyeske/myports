@@ -37,7 +37,6 @@
     SUBDIR += clisp
     SUBDIR += clojure
     SUBDIR += clojure-mode.el
-    SUBDIR += clover
     SUBDIR += cocor
     SUBDIR += coffeescript
     SUBDIR += colm
@@ -307,6 +306,7 @@
     SUBDIR += python313
     SUBDIR += python313t
     SUBDIR += python314
+    SUBDIR += python314t
     SUBDIR += python315
     SUBDIR += qmasm
     SUBDIR += quickjs

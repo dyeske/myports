@@ -1,5 +1,5 @@
 PORTNAME=	langsmith
-DISTVERSION=	0.8.8
+DISTVERSION=	0.8.15
 CATEGORIES=	misc python # machine-learning
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -35,6 +35,6 @@ NO_ARCH=	yes
 
 TEST_ENV=	${MAKE_ENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
 
-# tests as of 0.8.8: 187 failed, 799 passed, 105 skipped, 3 xfailed, 66 warnings, 17 errors in 608.54s (0:10:08), many or all faiures are due to missing API keys
+# tests as of 0.8.15: 172 failed, 993 passed, 75 skipped, 3 xfailed, 52 warnings, 14 errors in 220.00s (0:03:40)
 
 .include <bsd.port.mk>
