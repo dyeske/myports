@@ -1,3 +1,146 @@
+  <vuln vid="ee1e7aef-7117-11f1-873f-2cf05da270f3">
+    <topic>Gitlab -- Vulnerabilities</topic>
+    <affects>
+<package>
+	<name>gitlab-ce</name>
+	<name>gitlab-ee</name>
+	<range><ge>19.1.0</ge><lt>19.1.1</lt></range>
+	<range><ge>19.0.0</ge><lt>19.0.3</lt></range>
+	<range><ge>8.3.0</ge><lt>18.11.6</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-1-released/">
+	  <p>Cross-site Scripting issue in Analytics Dashboard impacts GitLab EE</p>
+	  <p>Cross-site Scripting issue in Web IDE workbench asset handler impacts GitLab CE/EE</p>
+	  <p>Information Disclosure issue in Duo Workflows impacts GitLab EE</p>
+	  <p>Authorization Bypass issue in Virtual Registry Cleanup Policy API impacts GitLab EE</p>
+	  <p>Improper Authorization issue in Rapid Diffs impacts GitLab CE/EE</p>
+	  <p>Incorrect Authorization issue in DAST scanner and site profile management impacts GitLab EE</p>
+	  <p>Insufficient Filtering issue in CI/CD API impacts GitLab CE/EE</p>
+	  <p>Improper Input Validation issue in Snippets impacts GitLab CE/EE</p>
+	  <p>Incorrect Authorization issue in Maven Package Registry impacts GitLab CE/EE</p>
+	  <p>Improper Access Control issue in group packages API impacts GitLab CE/EE</p>
+	  <p>Improper Access Control issue in Protected Environments API impacts GitLab EE</p>
+	  <p>Missing Authorization issue in Security Dashboard impacts GitLab EE</p>
+	  <p>Server-Side Request Forgery issue in Repository Mirroring impacts GitLab CE/EE</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-10086</cvename>
+      <cvename>CVE-2026-10712</cvename>
+      <cvename>CVE-2026-12053</cvename>
+      <cvename>CVE-2026-5309</cvename>
+      <cvename>CVE-2026-2238</cvename>
+      <cvename>CVE-2026-11379</cvename>
+      <cvename>CVE-2026-8330</cvename>
+      <cvename>CVE-2026-1606</cvename>
+      <cvename>CVE-2026-5952</cvename>
+      <cvename>CVE-2026-5796</cvename>
+      <cvename>CVE-2026-0934</cvename>
+      <cvename>CVE-2026-3176</cvename>
+      <cvename>CVE-2026-12635</cvename>
+      <url>https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-1-released/</url>
+    </references>
+    <dates>
+      <discovery>2026-06-24</discovery>
+      <entry>2026-06-26</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="6a472f75-6fdc-11f1-bc26-8447094a420f">
+    <topic>go-git -- DoS vulnerability</topic>
+    <affects>
+      <package>
+	<name>go-git</name>
+	<range><lt>5.11.0</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The go-git project reports:</p>
+	<blockquote cite="https://github.com/go-git/go-git/security/advisories/GHSA-mw99-9chc-xw7r">
+	  <p>See link for details.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/go-git/go-git/security/advisories/GHSA-mw99-9chc-xw7r</url>
+    </references>
+    <dates>
+      <discovery>2023-12-24</discovery>
+      <entry>2026-06-24</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="71a85f96-6f18-11f1-8569-3c7c3fba4204">
+    <topic>ldns -- CWE-346 Origin Validation Error</topic>
+    <affects>
+    <package>
+	<name>ldns</name>
+	<range><ge>1.2.0</ge><lt>1.9.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p><a href="https://www.nlnetlabs.nl/downloads/ldns/CVE-2026-10846.txt">https://www.nlnetlabs.nl/downloads/ldns/CVE-2026-10846.txt</a> reports:</p>
+	<blockquote cite="https://www.nlnetlabs.nl/downloads/ldns/CVE-2026-10846.txt">
+	  <p>NLnet Labs ldns 1.2.0 up to and including versions 1.9.0, when used
+in applications as (stub) resolver over UDP, lacks matching the
+query destination address and port with the response source address
+and port.  Furthermore not the query ID, neither the question of
+the query is matched with that of the response.  This makes
+applications, that use ldns for (stub) resolver functionality over
+UDP, vulnerable for off-path poisoning attacks.  The drill tool,
+which is shipped with ldns, suffers from this vulnerability.</p>
+<p>We would like to thank Pablo Ruiz from <a href="https://www.codecome.ai/">codecome.ai</a> for finding and reporting
+this vulnerability.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-10846</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-10846</url>
+    </references>
+    <dates>
+      <discovery>2026-06-10</discovery>
+      <entry>2026-06-23</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="fe2e8bdc-ff48-4166-b285-59822c7cf473">
+    <topic>podman -- files outside build context may be included via malicious Git repo or tar archive</topic>
+    <affects>
+	<package>
+	<name>podman</name>
+	<range><lt>5.8.3</lt></range>
+	</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Podman developers report:</p>
+	<blockquote cite="https://github.com/podman-container-tools/buildah/security/advisories/GHSA-49p4-px3h-rq49">
+	  <p>Building a Dockerfile using an ADD or COPY instruction accessing
+	  a malicious Git repository or tar archive could cause files outside
+	  the build context directory to be included in the build context or
+	  copied into the build.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-44517</cvename>
+      <url>https://github.com/podman-container-tools/podman/releases/tag/v5.8.3</url>
+      <url>https://github.com/podman-container-tools/buildah/security/advisories/GHSA-49p4-px3h-rq49</url>
+    </references>
+    <dates>
+      <discovery>2026-06-22</discovery>
+      <entry>2026-06-22</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="46b654f8-6b28-11f1-b8e5-3497f65b111b">
     <topic>nginx -- multiple vulnerabilities</topic>
     <affects>

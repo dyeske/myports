@@ -742,6 +742,7 @@
     SUBDIR += pxtools
     SUBDIR += py-Elixir
     SUBDIR += py-PyGreSQL
+    SUBDIR += py-PyHive
     SUBDIR += py-Pyrseas
     SUBDIR += py-aesqlapius
     SUBDIR += py-agate-sql
@@ -799,6 +800,7 @@
     SUBDIR += py-mycli
     SUBDIR += py-mysql-connector-python
     SUBDIR += py-mysqlclient
+    SUBDIR += py-oracledb
     SUBDIR += py-ormar
     SUBDIR += py-oxyde
     SUBDIR += py-oxyde-core

@@ -248,6 +248,7 @@
     SUBDIR += haproxy26
     SUBDIR += haproxy28
     SUBDIR += haproxy30
+    SUBDIR += haproxy32
     SUBDIR += haproxy33
     SUBDIR += hblock
     SUBDIR += hexinject
@@ -1519,7 +1520,6 @@
     SUBDIR += sdl3_net
     SUBDIR += sdl_net
     SUBDIR += seaweedfs
-    SUBDIR += seda
     SUBDIR += self-service-password
     SUBDIR += sendemail
     SUBDIR += sendme

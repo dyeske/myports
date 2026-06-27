@@ -53,6 +53,7 @@
     SUBDIR += chrono
     SUBDIR += cinnamon-translations
     SUBDIR += claude-code
+    SUBDIR += claude-code-legacy
     SUBDIR += clawhub
     SUBDIR += clex
     SUBDIR += clifm
@@ -200,6 +201,7 @@
     SUBDIR += granulate
     SUBDIR += grc
     SUBDIR += grizzly
+    SUBDIR += grok-build
     SUBDIR += grok-cli
     SUBDIR += gwhich
     SUBDIR += hashcards
@@ -481,6 +483,7 @@
     SUBDIR += py-diffusers
     SUBDIR += py-eemeter
     SUBDIR += py-einops
+    SUBDIR += py-elevenlabs
     SUBDIR += py-emoji
     SUBDIR += py-equinox
     SUBDIR += py-evaluate
