@@ -6,10 +6,13 @@ PKGNAMEPREFIX=	apache-
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Apache Iceberg
-WWW=		https://rust.iceberg.apache.org/
+WWW=		https://rust.iceberg.apache.org/ \
+		https://github.com/apache/iceberg-rust
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_i386=	could not find `x86_64` in `arch` # see https://github.com/cloudwego/sonic-rs/issues/231
 
 BUILD_DEPENDS=	protoc:devel/protobuf
 LIB_DEPENDS=	libzstd.so:archivers/zstd

@@ -62,6 +62,7 @@
     SUBDIR += clpbar
     SUBDIR += code2prompt
     SUBDIR += codex
+    SUBDIR += colibri
     SUBDIR += colortail
     SUBDIR += coloursum
     SUBDIR += colwide
@@ -468,6 +469,7 @@
     SUBDIR += py-censys
     SUBDIR += py-cmap
     SUBDIR += py-codecarbon
+    SUBDIR += py-cohere
     SUBDIR += py-colorbrewer
     SUBDIR += py-colored
     SUBDIR += py-colorzero
@@ -485,6 +487,10 @@
     SUBDIR += py-comfyui-workflow-templates-media-video
     SUBDIR += py-compressed-tensors
     SUBDIR += py-cppman
+    SUBDIR += py-crewai
+    SUBDIR += py-crewai-cli
+    SUBDIR += py-crewai-core
+    SUBDIR += py-crewai-tools
     SUBDIR += py-crudini
     SUBDIR += py-csvw
     SUBDIR += py-cvat-sdk
@@ -512,6 +518,7 @@
     SUBDIR += py-google-ai-generativelanguage
     SUBDIR += py-google-genai
     SUBDIR += py-gpiozero
+    SUBDIR += py-groq
     SUBDIR += py-gymnasium
     SUBDIR += py-halo
     SUBDIR += py-haystack_ai
@@ -534,10 +541,18 @@
     SUBDIR += py-kokoro
     SUBDIR += py-langchain
     SUBDIR += py-langchain-anthropic
+    SUBDIR += py-langchain-aws
     SUBDIR += py-langchain-classic
     SUBDIR += py-langchain-community
+    SUBDIR += py-langchain-community-inspire-hep
     SUBDIR += py-langchain-core
+    SUBDIR += py-langchain-deepseek
+    SUBDIR += py-langchain-google-community
     SUBDIR += py-langchain-google-genai
+    SUBDIR += py-langchain-groq
+    SUBDIR += py-langchain-huggingface
+    SUBDIR += py-langchain-mcp-adapters
+    SUBDIR += py-langchain-ollama
     SUBDIR += py-langchain-openai
     SUBDIR += py-langchain-protocol
     SUBDIR += py-langchain-tests
@@ -565,6 +580,7 @@
     SUBDIR += py-lm-format-enforcer
     SUBDIR += py-log_symbols
     SUBDIR += py-mcp
+    SUBDIR += py-mda-xdrlib
     SUBDIR += py-mem0ai
     SUBDIR += py-mffpy
     SUBDIR += py-misaki
@@ -600,6 +616,7 @@
     SUBDIR += py-openpaperwork-core
     SUBDIR += py-openpaperwork-gtk
     SUBDIR += py-openvdb
+    SUBDIR += py-optimum
     SUBDIR += py-optuna
     SUBDIR += py-oterm
     SUBDIR += py-paddlepaddle
@@ -608,6 +625,9 @@
     SUBDIR += py-pdd
     SUBDIR += py-peft
     SUBDIR += py-pexpect
+    SUBDIR += py-pinecone
+    SUBDIR += py-pinecone-plugin-assistant
+    SUBDIR += py-pinecone-plugin-interface
     SUBDIR += py-pkbar
     SUBDIR += py-placekey
     SUBDIR += py-polars

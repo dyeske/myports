@@ -190,10 +190,12 @@
     SUBDIR += cfengine-masterfiles325
     SUBDIR += cfengine-masterfiles326
     SUBDIR += cfengine-masterfiles327
+    SUBDIR += cfengine-masterfiles328
     SUBDIR += cfengine324
     SUBDIR += cfengine325
     SUBDIR += cfengine326
     SUBDIR += cfengine327
+    SUBDIR += cfengine328
     SUBDIR += chaoskube
     SUBDIR += checkrestart
     SUBDIR += chezmoi
@@ -1112,6 +1114,7 @@
     SUBDIR += py-psutil
     SUBDIR += py-ptyprocess
     SUBDIR += py-puremagic
+    SUBDIR += py-py-consul
     SUBDIR += py-py-cpuinfo
     SUBDIR += py-pyinfra
     SUBDIR += py-python-bareos

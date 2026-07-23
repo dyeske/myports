@@ -1,15 +1,336 @@
+  <vuln vid="f4c57c5a-845a-11f1-b72c-8447094a420f">
+    <topic>Weechat -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>weechat</name>
+	<range><lt>4.9.4</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Weechat project reports:</p>
+	<blockquote cite="https://github.com/weechat/weechat/releases/tag/v4.9.4">
+	  <p>Write of logger file outside of configured path.</p>
+	  <p>Authentication bypass in Relay plugin, protocols "api" and "weechat".</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/weechat/weechat/releases/tag/v4.9.4</url>
+    </references>
+    <dates>
+      <discovery>2026-07-19</discovery>
+      <entry>2026-07-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="562ff91e-8407-11f1-bfde-10ffe07f9334">
+    <topic>Mailpit -- SMTP DATA line reader buffers over-limit input before size enforcement</topic>
+    <affects>
+      <package>
+	<name>mailpit</name>
+	<range><lt>1.30.5</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Mailpit author reports:</p>
+	<blockquote cite="https://github.com/axllent/mailpit/security/advisories/GHSA-r553-m4fv-5v97">
+	  <p>Mailpit's SMTP DATA reader enforces the configured
+	  MaxMessageSize only after bufio.Reader.ReadBytes('\n')
+	  has already buffered a complete DATA line. A remote
+	  unauthenticated SMTP client can send one line larger than
+	  the configured message-size cap and force memory allocation
+	  before Mailpit returns the expected 552 5.3.4 rejection,
+	  leaving patched versions still exposed to a single-line
+	  incomplete-fix variant of the earlier SMTP DATA body-size
+	  issue.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/axllent/mailpit/security/advisories/GHSA-r553-m4fv-5v97</url>
+    </references>
+    <dates>
+      <discovery>2026-07-20</discovery>
+      <entry>2026-07-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="272a2772-8367-11f1-82b9-901b0e9408dc">
+    <topic>tailscale -- Multiple vulnerabilities</topic>
+    <affects>
+<package>
+<name>tailscale</name>
+<range><lt>1.98.9</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Tailscale team reports:</p>
+	<blockquote cite="https://tailscale.com/changelog#2026-07-14">
+	  <p>Tailscale SSH Unix socket forwarding respects symlink
+	  permissions. This fix addresses a security vulnerability
+	  described in TS-2026-004.</p>
+	  <p>Tailscale Serve Unix socket proxy targets are restricted
+	  to the root user. This fix addresses a security
+	  vulnerability described in TS-2026-005.</p>
+	  <p>Tailscale SSH does not allow the use of UIDs or
+	  numeric-only usernames. This fix addresses a security
+	  vulnerability described in TS-2026-006.</p>
+	  <p>Nodes advertising Tailscale Services filter and reject
+	  packets from service IPs on ports they do not
+	  advertise. This fix addresses a security vulnerability
+	  described in TS-2026-007.</p>
+	  <p>Tailscale Serve and Tailscale Funnel terminate path walks
+	  for non-absolute paths, preventing CPU core pinning. This
+	  fix addresses a security vulnerability described in
+	  TS-2026-008.</p>
+	  <p>Tailscale SSH does not allow the use of usernames with
+	  leading dashes. This fix addresses a security vulnerability
+	  described in TS-2026-009.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://tailscale.com/changelog#2026-07-14</url>
+    </references>
+    <dates>
+      <discovery>2026-06-03</discovery>
+      <entry>2026-07-19</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="9645fcd7-82a1-11f1-8c96-5404a68ad561">
+    <topic>traefik -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+      <name>traefik</name>
+      <range><lt>3.7.8</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+      <p>The traefik project releases a new version addressing multiple vulnerabilities:</p>
+      <blockquote cite="https://github.com/traefik/traefik/releases/tag/v3.7.7">
+      <ul>
+      <li>GHSA-cxjq-mrr5-89rv (Authentication Bypass via Path Traversal in ReplacePathRegex Middleware)</li>
+      <li>GHSA-42cj-m3vj-89wv (CRD IngressRouteTCP ServersTransport Cross-Provider Namespace Bypass)</li>
+      <li>GHSA-qq9q-x9w4-chhj (Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion)</li>
+      </ul>
+      </blockquote>
+      <blockquote cite="https://github.com/traefik/traefik/releases/tag/v3.7.8">
+      <ul>
+      <li>GHSA-8rxv-jg7p-wvg3 (Kubernetes Ingress NGINX RewriteTarget Path Traversal Allows Route-Level Authentication Bypass)</li>
+      </ul>
+      </blockquote>
+      </body>
+    </description>
+    <references>
+      <url>https://github.com/traefik/traefik/releases/tag/v3.7.7</url>
+      <url>https://github.com/traefik/traefik/releases/tag/v3.7.8</url>
+    </references>
+    <dates>
+      <discovery>2026-07-08</discovery>
+      <entry>2026-07-18</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="0a0aca9f-8290-11f1-a93b-50ebf6bdf8e9">
+    <topic>phpmyfaq -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>phpmyfaq-php83</name>
+	<name>phpmyfaq-php84</name>
+	<name>phpmyfaq-php85</name>
+	<range><lt>4.1.6</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>phpMyFAQ team reports:</p>
+	<blockquote cite="https://www.phpmyfaq.de/security/advisory-2026-07-13/">
+	  <p>An authenticated administrator can supply an untrusted
+	    update-package path to the configuration API, causing phpMyFAQ
+	    to write an arbitrary PHP file to the server and thereby
+	    execute attacker-controlled code.</p>
+	  <p>An attacker can exploit a path traversal in the category image
+	    deletion routine to remove arbitrary files outside the intended
+	    directory, which can leave the installation in a state that
+	    allows a setup takeover.</p>
+	  <p>The two-factor authentication login flow can be completed
+	    without verifying the password factor, so an attacker who
+	    possesses only the second factor is able to authenticate as the
+	    victim.</p>
+	  <p>A delegated administrator with only the GROUP_EDIT permission
+	    can assign group memberships without restriction through
+	    GroupController::updateMembers, inheriting rights they do not
+	    hold and escalating their privileges.</p>
+	  <p>An authenticated user can inject SQL through an unescaped stop
+	    word inserted via StopWords::add(), allowing manipulation of the
+	    underlying database query.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://www.phpmyfaq.de/security/advisory-2026-07-13/</url>
+    </references>
+    <dates>
+      <discovery>2026-07-13</discovery>
+      <entry>2026-07-18</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="56feeac6-8263-11f1-92ba-bc24110523fe">
+    <topic>nginx -- multiple vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>nginx</name>
+	<range><lt>1.30.4,3</lt></range>
+    </package>
+    <package>
+	<name>nginx-devel</name>
+	<range><lt>1.31.3</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The nginx development team reports:</p>
+	<blockquote cite="https://nginx.org/en/security_advisories.html">
+	  <p>Buffer overflow when using map and regex
+	    (CVE-2026-42533). Severity: major.</p>
+	  <p>Memory disclosure when using ngx_http_slice_module
+	    (CVE-2026-60005). Severity: medium.</p>
+	  <p>Use-after-free when using ngx_http_ssi_module
+	    (CVE-2026-56434). Severity: medium.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-42533</cvename>
+      <cvename>CVE-2026-56434</cvename>
+      <cvename>CVE-2026-60005</cvename>
+      <url>https://nginx.org/en/security_advisories.html</url>
+    </references>
+    <dates>
+      <discovery>2026-07-15</discovery>
+      <entry>2026-07-18</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="e26b9011-80ef-11f1-b72c-8447094a420f">
+    <topic>liboqs -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>liboqs</name>
+	<range><lt>0.16.0</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OpenQuantumSafe project reports:</p>
+	<blockquote cite="https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0">
+	  <ul>
+	    <li>uninitialized encaps_derand pointer dereference</li>
+	    <li>out-of-bounds read in XMSS/XMSS^MT signature verification</li>
+	    <li>Integer underflow in CROSS crypto_sign_open()</li>
+	    <li>incorrect array size when calling secure_clean</li>
+	    <li>Implemented optimization barrier OQS_MEM_BLACK_BOX and applied to ct_select in FrodoKEM</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0</url>
+    </references>
+    <dates>
+      <discovery>2026-07-09</discovery>
+      <entry>2026-07-16</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="74d0291e-7f81-11f1-83e9-901b0e13f1a0">
+    <topic>Poppler: integer overflow in tilingPatternFill</topic>
+    <affects>
+    <package>
+	<name>poppler</name>
+	<name>poppler-glib</name>
+	<name>poppler-qt5</name>
+	<name>poppler-qt6</name>
+	<name>poppler-utils</name>
+	<range><lt>26.04.0_1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://access.redhat.com/errata/RHSA-2026:24984 reports:</p>
+	<blockquote cite="https://access.redhat.com/errata/RHSA-2026:24984">
+	  <p>A flaw was found in Poppler's Splash backend.  A remote attacker
+	could exploit this vulnerability by crafting a malicious PDF file
+	that, when rendered, triggers an integer overflow in the
+	`tilingPatternFill` function.  This overflow leads to an undersized
+	heap memory allocation, allowing a subsequent out-of-bounds write.
+	Successful exploitation could result in arbitrary code execution,
+	information disclosure, or denial of service within the context of
+	the application processing the PDF.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-10118</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-10118</url>
+    </references>
+    <dates>
+      <discovery>2026-06-01</discovery>
+      <entry>2026-07-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="b478ff13-7f6e-11f1-b594-3c7c3fba4204">
+    <topic>ocaml-opam -- opam install sandbox escape using symlinks</topic>
+    <affects>
+    <package>
+	<name>ocaml-opam</name>
+	<range><lt>2.5.2</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OCaml Team reports:</p>
+	<blockquote cite="https://github.com/ocaml/security-advisories/blob/main/advisories/2026/OSEC-2026-10.md">
+	  <p>Installing files through .install files do not check symlinks resolution of the target path, and so can bypass sandboxing.</p>
+	  <p>Credits:<br/>
+	    Reporter: "Kate Deplaix"<br/>
+	    Remediation Developer: "Nathan Rebours"<br/>
+	    Remediation Reviewer: "Raja Boujbel"<br/>
+	    Coordinator: "Hannes Mehnert"<br/>
+	  </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-57825</cvename>
+      <url>https://github.com/ocaml/security-advisories/blob/main/advisories/2026/OSEC-2026-10.md</url>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2026-57825</url>
+    </references>
+    <dates>
+      <discovery>2026-07-12</discovery>
+      <entry>2026-07-14</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="fa0c03dd-7c3a-11f1-8dc2-dca632daf43b">
     <topic>Apache HttpClient -- misinterpret malformed authority component</topic>
     <affects>
       <package>
-        <name>apache-commons-httpclient</name>
-        <name>jakarta-commons-httpclient</name>
-        <range><ge>3.1</ge></range>
+       <name>apache-commons-httpclient</name>
+       <name>jakarta-commons-httpclient</name>
+       <range><ge>3.1</ge></range>
       </package>
       <package>
-        <name>httpclient</name>
-        <range><lt>4.5.13</lt></range>
-        <range><ge>5.0.0</ge><lt>5.0.3</lt></range>
+       <name>httpclient</name>
+       <range><lt>4.5.13</lt></range>
+       <range><ge>5.0.0</ge><lt>5.0.3</lt></range>
       </package>
     </affects>
     <description>
@@ -34,9 +355,9 @@
     <topic>httpclient -- Improper Certificate Validation</topic>
     <affects>
       <package>
-        <name>apache-commons-httpclient</name>
-        <name>jakarta-commons-httpclient</name>
-        <range><ge>3.1</ge></range>
+       <name>apache-commons-httpclient</name>
+       <name>jakarta-commons-httpclient</name>
+       <range><ge>3.1</ge></range>
       </package>
     </affects>
     <description>
@@ -146,7 +467,7 @@
     <topic>libXfont2 -- Multiple vulnerabilities</topic>
     <affects>
       <package>
-	<name>xwayland</name>
+	<name>libXfont2</name>
 	<range><lt>2.0.8</lt></range>
       </package>
     </affects>
@@ -495,7 +816,7 @@
     <affects>
       <package>
 	<name>weechat</name>
-	<range><lt>4.7.3</lt></range>
+	<range><lt>4.9.3</lt></range>
       </package>
     </affects>
     <description>
@@ -2473,7 +2794,7 @@ rclone process user.</p>
     <affects>
     <package>
 	<name>ffmpeg</name>
-	<range><lt>8.1.2</lt></range>
+	<range><lt>8.1.2,1</lt></range>
     </package>
     <package>
 	<name>ffmpeg4</name>

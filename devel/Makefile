@@ -675,6 +675,7 @@
     SUBDIR += electron40
     SUBDIR += electron41
     SUBDIR += electron42
+    SUBDIR += electron43
     SUBDIR += elf
     SUBDIR += elf-dissector
     SUBDIR += elfcat
@@ -834,6 +835,7 @@
     SUBDIR += gengetopt
     SUBDIR += genht
     SUBDIR += genie
+    SUBDIR += getopt-ada
     SUBDIR += getoptions
     SUBDIR += gettext
     SUBDIR += gettext-lint
@@ -846,6 +848,7 @@
     SUBDIR += gflags
     SUBDIR += gfold
     SUBDIR += gh
+    SUBDIR += ghgrab
     SUBDIR += ghidra
     SUBDIR += ghostie
     SUBDIR += ghpr
@@ -918,6 +921,18 @@
     SUBDIR += glog
     SUBDIR += gmake
     SUBDIR += gn
+    SUBDIR += gnatcoll-bindings
+    SUBDIR += gnatcoll-bindings-cpp
+    SUBDIR += gnatcoll-bindings-gmp
+    SUBDIR += gnatcoll-bindings-iconv
+    SUBDIR += gnatcoll-bindings-lzma
+    SUBDIR += gnatcoll-bindings-omp
+    SUBDIR += gnatcoll-bindings-python
+    SUBDIR += gnatcoll-bindings-readline
+    SUBDIR += gnatcoll-bindings-syslog
+    SUBDIR += gnatcoll-bindings-zlib
+    SUBDIR += gnatcoll-core
+    SUBDIR += gnatcoll-minimal
     SUBDIR += gnome-builder
     SUBDIR += gnome-common
     SUBDIR += gnu-efi
@@ -987,6 +1002,7 @@
     SUBDIR += gwenhywfar
     SUBDIR += gwenhywfar-gtk3
     SUBDIR += gwenhywfar-qt6
+    SUBDIR += gwm
     SUBDIR += gzstream
     SUBDIR += hapy
     SUBDIR += hare
@@ -1061,6 +1077,7 @@
     SUBDIR += ignition-utils
     SUBDIR += ikos
     SUBDIR += imake
+    SUBDIR += immanent-checker
     SUBDIR += immer
     SUBDIR += imtui
     SUBDIR += include-what-you-use
@@ -4286,7 +4303,6 @@
     SUBDIR += pecl-msgpack
     SUBDIR += pecl-mustache
     SUBDIR += pecl-opentelemetry
-    SUBDIR += pecl-pcov
     SUBDIR += pecl-protobuf
     SUBDIR += pecl-psr
     SUBDIR += pecl-runkit7
@@ -4316,6 +4332,7 @@
     SUBDIR += php-ice37
     SUBDIR += php-libawl
     SUBDIR += php-maxminddb
+    SUBDIR += php-pcov
     SUBDIR += php-pie
     SUBDIR += php-raphf
     SUBDIR += php-swoole
@@ -5010,6 +5027,7 @@
     SUBDIR += py-expandvars
     SUBDIR += py-expecttest
     SUBDIR += py-expiringdict
+    SUBDIR += py-expression
     SUBDIR += py-extras
     SUBDIR += py-extremes
     SUBDIR += py-fabric
@@ -5439,6 +5457,7 @@
     SUBDIR += py-mmh3
     SUBDIR += py-mock
     SUBDIR += py-molecule
+    SUBDIR += py-molecule-plugins
     SUBDIR += py-mondrian
     SUBDIR += py-mongokit
     SUBDIR += py-monkeytype
@@ -7166,7 +7185,9 @@
     SUBDIR += rubygem-aws-sdk-servicediscovery
     SUBDIR += rubygem-aws-sdk-servicequotas
     SUBDIR += rubygem-aws-sdk-ses
+    SUBDIR += rubygem-aws-sdk-ses-gitlab
     SUBDIR += rubygem-aws-sdk-sesv2
+    SUBDIR += rubygem-aws-sdk-sesv2-gitlab
     SUBDIR += rubygem-aws-sdk-shield
     SUBDIR += rubygem-aws-sdk-signer
     SUBDIR += rubygem-aws-sdk-signerdata
@@ -8590,6 +8611,7 @@
     SUBDIR += sentry-cli
     SUBDIR += serd
     SUBDIR += serdisplib
+    SUBDIR += serialize
     SUBDIR += sfml
     SUBDIR += sfsexp
     SUBDIR += sgb
@@ -8767,6 +8789,7 @@
     SUBDIR += tkcvs
     SUBDIR += tkp4
     SUBDIR += tl-expected
+    SUBDIR += tla+
     SUBDIR += tllist
     SUBDIR += tlsh
     SUBDIR += tlx
