@@ -78,7 +78,7 @@ cleanwork:
 	time find . -type d \( -name 'work' -or -name 'work-*' \) \
 		-and -not -regex '.*/distfiles/.*' \
 		-and -not -name 'distfiles' \
-		-mindepth 2 -maxdepth 3 -exec echo rm -rf {} \;
+		-mindepth 2 -maxdepth 3 -exec rm -rf {} \;
 
 fetchindex: ${INDEXDIR}/${INDEXFILE}.${INDEX_COMPRESSION_FORMAT}
 	@if bsdcat < ${INDEXDIR}/${INDEXFILE}.${INDEX_COMPRESSION_FORMAT} > ${INDEXDIR}/${INDEXFILE}.tmp ; then \
