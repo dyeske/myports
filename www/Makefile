@@ -215,8 +215,10 @@
     SUBDIR += formication
     SUBDIR += foswiki
     SUBDIR += free-sa-devel
+    SUBDIR += freeipa-auth-gssapi
     SUBDIR += freenginx
     SUBDIR += freenginx-acme
+    SUBDIR += freenginx-acme-module
     SUBDIR += freenginx-devel
     SUBDIR += freeunit
     SUBDIR += freeunit-php
@@ -294,7 +296,9 @@
     SUBDIR += http_post
     SUBDIR += httpasyncclient
     SUBDIR += httpclient
+    SUBDIR += httpclient5
     SUBDIR += httpcore
+    SUBDIR += httpcore5
     SUBDIR += httptunnel
     SUBDIR += httpx
     SUBDIR += httrack
@@ -308,6 +312,7 @@
     SUBDIR += iocaine
     SUBDIR += iridium
     SUBDIR += janus
+    SUBDIR += jcef
     SUBDIR += jericho-html
     SUBDIR += jesred
     SUBDIR += jetty10
@@ -447,6 +452,7 @@
     SUBDIR += mod_jk
     SUBDIR += mod_limitipconn2
     SUBDIR += mod_log_sql
+    SUBDIR += mod_lookup_identity
     SUBDIR += mod_maxminddb
     SUBDIR += mod_memcache
     SUBDIR += mod_memcache_block
@@ -1533,6 +1539,7 @@
     SUBDIR += py-bokeh
     SUBDIR += py-bootstrap-flask
     SUBDIR += py-boto3
+    SUBDIR += py-boto3-stubs
     SUBDIR += py-botocore-stubs
     SUBDIR += py-bottle
     SUBDIR += py-bottle-cork
@@ -1749,7 +1756,6 @@
     SUBDIR += py-flask-jwt
     SUBDIR += py-flask-jwt-extended
     SUBDIR += py-flask-limiter
-    SUBDIR += py-flask-limiter3
     SUBDIR += py-flask-login
     SUBDIR += py-flask-marshmallow
     SUBDIR += py-flask-migrate

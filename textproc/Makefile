@@ -207,6 +207,7 @@
     SUBDIR += fcitx-qt5
     SUBDIR += fcitx-table-other
     SUBDIR += fcitx5
+    SUBDIR += fcitx5-afrim
     SUBDIR += fcitx5-configtool
     SUBDIR += fcitx5-gtk
     SUBDIR += fcitx5-gtk-common
@@ -473,7 +474,7 @@
     SUBDIR += lua-luaexpat
     SUBDIR += lua-lyaml
     SUBDIR += lucene
-    SUBDIR += lucene5
+    SUBDIR += lucene9
     SUBDIR += luceneplusplus
     SUBDIR += lv-aspell
     SUBDIR += makefaq
@@ -1332,6 +1333,7 @@
     SUBDIR += pod2mdoc
     SUBDIR += popup-stacks
     SUBDIR += ppower4
+    SUBDIR += presenterm
     SUBDIR += pugixml
     SUBDIR += pup
     SUBDIR += py-CommonMark
@@ -1785,6 +1787,7 @@
     SUBDIR += py-tiktoken
     SUBDIR += py-tinycss
     SUBDIR += py-tinycss2
+    SUBDIR += py-tinyhtml5
     SUBDIR += py-tokenizer
     SUBDIR += py-tokenizers
     SUBDIR += py-toml
@@ -1836,11 +1839,13 @@
     SUBDIR += py-zensical
     SUBDIR += py-zope.i18nmessageid
     SUBDIR += py-zpt
+    SUBDIR += py-zxing-cpp
     SUBDIR += pymupdf4llm-mcp
     SUBDIR += qo
     SUBDIR += qprint
     SUBDIR += qr
     SUBDIR += qrcodegen
+    SUBDIR += qrtfreader
     SUBDIR += qstardict
     SUBDIR += qt5-xml
     SUBDIR += qt5-xmlpatterns
@@ -2141,6 +2146,7 @@
     SUBDIR += sansi
     SUBDIR += sarep
     SUBDIR += sassc
+    SUBDIR += sasso
     SUBDIR += saxon-he
     SUBDIR += sc-aspell
     SUBDIR += scdoc

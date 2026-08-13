@@ -226,6 +226,8 @@
     SUBDIR += ods2sql
     SUBDIR += opendbviewer
     SUBDIR += opendbx
+    SUBDIR += openldap27-client
+    SUBDIR += openldap27-server
     SUBDIR += openvoxdb-terminus8
     SUBDIR += openvoxdb8
     SUBDIR += ora2pg
@@ -845,6 +847,7 @@
     SUBDIR += py-pyarrow
     SUBDIR += py-pyarrow-stubs
     SUBDIR += py-pyiceberg
+    SUBDIR += py-pylance
     SUBDIR += py-pylibmc
     SUBDIR += py-pymemcache
     SUBDIR += py-pymongo

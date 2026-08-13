@@ -1082,6 +1082,7 @@
     SUBDIR += py-vecrec
     SUBDIR += py-vispy
     SUBDIR += py-visvis
+    SUBDIR += py-vtracer
     SUBDIR += py-vulkan
     SUBDIR += py-wand
     SUBDIR += py-webcolors
@@ -1279,6 +1280,7 @@
     SUBDIR += volpack
     SUBDIR += vp
     SUBDIR += vpaint
+    SUBDIR += vtracer
     SUBDIR += vulkan-caps-viewer
     SUBDIR += vulkan-extension-layer
     SUBDIR += vulkan-headers
@@ -1286,7 +1288,6 @@
     SUBDIR += vulkan-tools
     SUBDIR += vulkan-utility-libraries
     SUBDIR += vulkan-validation-layers
-    SUBDIR += vv
     SUBDIR += waffle
     SUBDIR += waifu2x-converter-cpp
     SUBDIR += waifu2x-ncnn-vulkan

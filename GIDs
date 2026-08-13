@@ -7,7 +7,7 @@ mail:*:6:postfix,clamav
 ftp:*:14:
 smmsp:*:25:
 audio:*:43:
-video:*:44:lightdm
+video:*:44:lightdm,sddm
 bind:*:53:
 rdfdb:*:55:
 spamd:*:58:
@@ -333,7 +333,7 @@ autopulse:*:388:
 ldap:*:389:
 bunkerweb:*:390:
 dirsrv:*:391:
-# free: 392
+_turnserver:*:392:
 # free: 393
 # free: 394
 # free: 395
@@ -775,7 +775,7 @@ cirrus:*:828:
 # free: 830
 # free: 831
 beehive:*:832:
-# free: 833
+bhyvemgrd:*:833:
 pocket-id:*:834:
 filebrowser:*:835:
 tinyauth:*:836:
