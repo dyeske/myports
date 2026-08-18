@@ -1,3 +1,366 @@
+  <vuln vid="3a65fb7e-9ac2-11f1-bdc8-2cf05da270f3">
+    <topic>Gitlab -- Vulnerabilities</topic>
+    <affects>
+<package>
+	<name>gitlab-ce</name>
+	<name>gitlab-ee</name>
+	<range><ge>19.2.0</ge><lt>19.2.4</lt></range>
+	<range><ge>19.1.0</ge><lt>19.1.6</lt></range>
+	<range><ge>18.11.10</ge><lt>19.0.8</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-4-released/?nav=19.2.4">
+	  <p>Code Injection issue via GraphQL directive impacts GitLab CE/EE</p>
+	  <p>Cross-Site Request Forgery issue in GraphQL multiplex query handler impacts GitLab CE/EE</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-19478</cvename>
+      <cvename>CVE-2026-19650</cvename>
+      <url>https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-4-released/?nav=19.2.4</url>
+    </references>
+    <dates>
+      <discovery>2026-08-17</discovery>
+      <entry>2026-08-18</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="2f3568eb-999e-11f1-a655-3497f65b111b">
+    <topic>gitea -- Multiple vulnerabilities</topic>
+    <affects>
+    <package>
+    <name>gitea</name>
+    <range><lt>1.27.0</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitea reports</p>
+	<blockquote cite="https://blog.gitea.com/release-of-1.27.0/">
+	<p>This release contains fixes for 45 security issues,
+	including privilege escalation, remote denial of service,
+	server-side request forgery, authorization and token scope
+	bypasses, and information disclosure vulnerabilities.
+	Please upgrade as soon as possible.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-23603</cvename>
+      <cvename>CVE-2026-42931</cvename>
+      <cvename>CVE-2026-50105</cvename>
+      <cvename>CVE-2026-54481</cvename>
+      <cvename>CVE-2026-55982</cvename>
+      <cvename>CVE-2026-55984</cvename>
+      <cvename>CVE-2026-55986</cvename>
+      <cvename>CVE-2026-55987</cvename>
+      <cvename>CVE-2026-56443</cvename>
+      <cvename>CVE-2026-56654</cvename>
+      <cvename>CVE-2026-56657</cvename>
+      <cvename>CVE-2026-56750</cvename>
+      <cvename>CVE-2026-56755</cvename>
+      <cvename>CVE-2026-57886</cvename>
+      <cvename>CVE-2026-57894</cvename>
+      <cvename>CVE-2026-57897</cvename>
+      <cvename>CVE-2026-58314</cvename>
+      <cvename>CVE-2026-58416</cvename>
+      <cvename>CVE-2026-58417</cvename>
+      <cvename>CVE-2026-58420</cvename>
+      <cvename>CVE-2026-58425</cvename>
+      <cvename>CVE-2026-58427</cvename>
+      <cvename>CVE-2026-58428</cvename>
+      <cvename>CVE-2026-58429</cvename>
+      <cvename>CVE-2026-58431</cvename>
+      <cvename>CVE-2026-58432</cvename>
+      <cvename>CVE-2026-58433</cvename>
+      <cvename>CVE-2026-58434</cvename>
+      <cvename>CVE-2026-58435</cvename>
+      <cvename>CVE-2026-58436</cvename>
+      <cvename>CVE-2026-58437</cvename>
+      <cvename>CVE-2026-58438</cvename>
+      <cvename>CVE-2026-58439</cvename>
+      <cvename>CVE-2026-58440</cvename>
+      <cvename>CVE-2026-58441</cvename>
+      <cvename>CVE-2026-58442</cvename>
+      <cvename>CVE-2026-58443</cvename>
+      <cvename>CVE-2026-58444</cvename>
+      <cvename>CVE-2026-58445</cvename>
+      <cvename>CVE-2026-58507</cvename>
+      <cvename>CVE-2026-58508</cvename>
+      <cvename>CVE-2026-58510</cvename>
+      <cvename>CVE-2026-58511</cvename>
+      <cvename>CVE-2026-59763</cvename>
+      <cvename>CVE-2026-59765</cvename>
+      <url>https://blog.gitea.com/release-of-1.27.0/</url>
+    </references>
+    <dates>
+      <discovery>2026-07-13</discovery>
+      <entry>2026-08-16</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="05d311bc-9991-11f1-bc50-6cc21735f730">
+    <topic>PostgreSQL -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+       <name>postgresql14-server</name>
+       <range><lt>14.24</lt></range>
+      </package>
+      <package>
+       <name>postgresql15-server</name>
+       <range><lt>15.19</lt></range>
+      </package>
+      <package>
+       <name>postgresql16-server</name>
+       <range><lt>16.15</lt></range>
+      </package>
+      <package>
+       <name>postgresql17-server</name>
+       <range><lt>17.11</lt></range>
+      </package>
+      <package>
+       <name>postgresql18-server</name>
+       <range><lt>18.6</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The PostgreSQL project reports:</p>
+	<blockquote cite="https://www.postgresql.org/about/news/postgresql-186-1711-1615-1519-1424-and-19-beta-3-released-3365/">
+	<p>
+	  CVE-2026-6464: psql COPY FROM STDIN, if the copy fails
+	  before data rows begin, processes the following data lines
+	  as psql commands.
+	</p>
+	<p>
+	  CVE-2026-6469: ALTER TABLE ALTER TYPE incorrectly reassigns
+	  ownership of dependent extended statistics objects to the
+	  current user.
+	</p>
+	<p>
+	  CVE-2026-6470: Missing privilege check for type USAGE allows
+	  denial of service against ALTER and DROP of the type.
+	</p>
+	<p>
+	  CVE-2026-6471: Logical decoding lets a REPLICATION-
+	  privileged user dlopen an arbitrary file via the decoding
+	  plugin choice, running arbitrary code as the server's OS
+	  user.
+	</p>
+	<p>
+	  CVE-2026-14662: Integer wraparound in tsvector and tsquery
+	  functions can undersize an allocation, causing a buffer
+	  overflow and arbitrary code execution.
+	</p>
+	<p>
+	  CVE-2026-14663: pgcrypto silently encrypts to and decrypts
+	  from cleartext for ciphers OpenSSL has disabled, letting an
+	  attacker recover cleartext.
+	</p>
+	<p>
+	  CVE-2026-14664: Heap buffer overflow in the regexp engine
+	  allows arbitrary code execution via crafted input text.
+	</p>
+	<p>
+	  CVE-2026-14666: Row-level security policy caching can retain
+	  a stale policy after role changes, letting a user complete
+	  now-forbidden reads or writes.
+	</p>
+	<p>
+	  CVE-2026-14668: Type confusion in the ctid selectivity
+	  estimator discloses a derivative of an arbitrary 4-byte span
+	  of server memory.
+	</p>
+	<p>
+	  CVE-2026-14669: Heap buffer overflow in to_char(timestamptz)
+	  via a long POSIX timezone abbreviation allows arbitrary code
+	  execution.
+	</p>
+	<p>
+	  CVE-2026-14670: Heap buffer overflow in plperl, on return of
+	  a tied hash, allows the function owner to execute arbitrary
+	  code.
+	</p>
+	<p>
+	  CVE-2026-14671: Type confusion in module "refint" allows an
+	  object creator to execute arbitrary code.
+	</p>
+	<p>
+	  CVE-2026-14672: SCRAM authentication reveals whether a role
+	  exists via an observable difference in the reported
+	  iteration count.
+	</p>
+	<p>
+	  CVE-2026-14673: amcheck fails to clear an untrusted search
+	  path, letting an EXECUTE grantee run arbitrary functions as
+	  an expression index's owner.
+	</p>
+	<p>
+	  CVE-2026-14676: Heap buffer overflow in pg_stat_statements
+	  via crafted queries with array constants allows arbitrary
+	  code execution.
+	</p>
+	<p>
+	  CVE-2026-14677: Integer wraparound in 32-bit pltcl/plperl
+	  builds can undersize an allocation, allowing arbitrary code
+	  execution.
+	</p>
+	<p>
+	  CVE-2026-14678: pg_trgm's picksplit function reads past the
+	  end of a heap buffer, potentially disclosing limited memory.
+	</p>
+	<p>
+	  CVE-2026-14679: Stack buffer overflow in argument-name
+	  matching lets an object creator write a few attacker-
+	  influenced bytes into server memory.
+	</p>
+	<p>
+	  CVE-2026-14680: Type confusion via "internal"-typed function
+	  arguments allows any user to execute arbitrary code.
+	</p>
+	<p>
+	  CVE-2026-14681: GSSAPI encryption is not properly enforced
+	  when coupled with an initial direct SSL connection.
+	</p>
+	<p>
+	  CVE-2026-15741: Expression deparse of EXTRACT() allows SQL
+	  injection via a hostile object definition, affecting pg_dump
+	  and psql.
+	</p>
+	<p>
+	  CVE-2026-15742: Integer wraparound in fuzzystrmatch's
+	  levenshtein() functions allows writes to arbitrary addresses
+	  and code execution.
+	</p>
+	<p>
+	  CVE-2026-16238: Type confusion in
+	  pg_restore_attribute_stats() allows arbitrary code execution
+	  via conflated range/multirange values.
+	</p>
+	<p>
+	  CVE-2026-16239: Type confusion via cursor DECLARE and CLOSE
+	  allows a user to execute arbitrary code.
+	</p>
+	<p>
+	  CVE-2026-16241: Integer underflow in ECPG can crash the
+	  client via a bytea value lacking its mandatory prefix.
+	</p>
+	<p>
+	  CVE-2026-18024: The ascii() function reads past the end of a
+	  buffer, disclosing a few bytes of server memory.
+	</p>
+	<p>
+	  CVE-2026-18408: psql's \unrestrict lets a malicious pg_dump
+	  origin-server superuser execute arbitrary code in the
+	  restoring client.
+	</p>
+	<p>
+	  CVE-2026-19385: Heap buffer overflow in pg_dump, when
+	  dumping long function transform lists, allows arbitrary code
+	  execution.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-6464</cvename>
+      <cvename>CVE-2026-6469</cvename>
+      <cvename>CVE-2026-6470</cvename>
+      <cvename>CVE-2026-6471</cvename>
+      <cvename>CVE-2026-14662</cvename>
+      <cvename>CVE-2026-14663</cvename>
+      <cvename>CVE-2026-14664</cvename>
+      <cvename>CVE-2026-14666</cvename>
+      <cvename>CVE-2026-14668</cvename>
+      <cvename>CVE-2026-14669</cvename>
+      <cvename>CVE-2026-14670</cvename>
+      <cvename>CVE-2026-14671</cvename>
+      <cvename>CVE-2026-14672</cvename>
+      <cvename>CVE-2026-14673</cvename>
+      <cvename>CVE-2026-14676</cvename>
+      <cvename>CVE-2026-14677</cvename>
+      <cvename>CVE-2026-14678</cvename>
+      <cvename>CVE-2026-14679</cvename>
+      <cvename>CVE-2026-14680</cvename>
+      <cvename>CVE-2026-14681</cvename>
+      <cvename>CVE-2026-15741</cvename>
+      <cvename>CVE-2026-15742</cvename>
+      <cvename>CVE-2026-16238</cvename>
+      <cvename>CVE-2026-16239</cvename>
+      <cvename>CVE-2026-16241</cvename>
+      <cvename>CVE-2026-18024</cvename>
+      <cvename>CVE-2026-18408</cvename>
+      <cvename>CVE-2026-19385</cvename>
+      <url>https://www.postgresql.org/about/news/postgresql-186-1711-1615-1519-1424-and-19-beta-3-released-3365/</url>
+    </references>
+    <dates>
+      <discovery>2026-08-13</discovery>
+      <entry>2026-08-16</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="56449320-97c5-11f1-84d7-3c7c3fba4204">
+    <topic>OpenEXR -- 3.4.14 fixes multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>openexr</name>
+	<range><lt>3.4.14</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Cary Phillips reports:</p>
+	<blockquote cite="https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.14">
+	  <p>[The OpenEXR 3.4.14] release addresses the following security vulnerabilities:</p>
+	  <ul>
+	    <li>CVE-2026-68514: PyOpenEXR deep prefixed literal RGB key collision heap buffer overflow</li>
+	    <li>CVE-2026-68513: PyOpenEXR prefixed literal RGB key collision heap buffer overflow</li>
+	    <li>CVE-2026-62986: PyOpenEXR deep prefixed RGB stale lane disclosure</li>
+	    <li>CVE-2026-61703: PyOpenEXR deep mixed RGB heap buffer overflow</li>
+	    <li>CVE-2026-61555: empty multiView viewFromChannelName file crash</li>
+	    <li>CVE-2026-59985: ILP32 OpenEXRCore RLE decode heap OOB read DoS</li>
+	    <li>CVE-2026-59984: ILP32 B44 InputFile decode scratch buffer overflow</li>
+	    <li>CVE-2026-59983: ILP32 DeepTiledInputFile sample count table decode OOB read</li>
+	    <li>CVE-2026-59982: ILP32 DWAA InputFile packed AC buffer overflow</li>
+	    <li>CVE-2026-59981: OpenEXRUtil SampleCountChannel row nonzero dataWindow heap OOB read</li>
+	    <li>CVE-2026-59189: OpenEXRUtil DeepImageChannel row nonzero dataWindow heap OOB read</li>
+	    <li>CVE-2026-59187: OpenEXR exrmetrics deep pixelmode heap buffer overflow</li>
+	    <li>CVE-2026-59186: OpenEXR ILP32 TiledRgbaInputFile large tile Array2D heap OOB write</li>
+	    <li>CVE-2026-59184: OpenEXRUtil FlatImageChannel row nonzero dataWindow heap OOB write</li>
+	    <li>CVE-2026-59183: Signed Integer Overflow Leading to Out-of-Bounds Memory Access in Deep Tile Decoding</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-68514</cvename>
+      <cvename>CVE-2026-68513</cvename>
+      <cvename>CVE-2026-62986</cvename>
+      <cvename>CVE-2026-61703</cvename>
+      <cvename>CVE-2026-61555</cvename>
+      <cvename>CVE-2026-59985</cvename>
+      <cvename>CVE-2026-59984</cvename>
+      <cvename>CVE-2026-59983</cvename>
+      <cvename>CVE-2026-59982</cvename>
+      <cvename>CVE-2026-59981</cvename>
+      <cvename>CVE-2026-59189</cvename>
+      <cvename>CVE-2026-59187</cvename>
+      <cvename>CVE-2026-59186</cvename>
+      <cvename>CVE-2026-59184</cvename>
+      <cvename>CVE-2026-59183</cvename>
+      <url>https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.14</url>
+    </references>
+    <dates>
+      <discovery>2026-08-07</discovery>
+      <entry>2026-08-14</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="2c73b6d5-971c-11f1-bdc8-2cf05da270f3">
     <topic>Gitlab -- vulnerabilities</topic>
     <affects>
@@ -14582,8 +14945,8 @@ affected.</p>
   <vuln vid="30bda1c3-369b-11f1-b51c-6dd25bec137b">
     <topic>Python -- HTTP proxy CONNECT tunnel does not sanitize CR/LF</topic>
     <affects>
-      <package><name>python310</name><range><ge>0</ge></range></package>
-      <package><name>python311</name><range><ge>0</ge></range></package>
+      <package><name>python310</name><range><lt>3.10.21</lt></range></package>
+      <package><name>python311</name><range><lt>3.11.16</lt></range></package>
       <package><name>python312</name><range><lt>3.12.13_3</lt></range></package>
       <package><name>python313</name><range><lt>3.13.14</lt></range></package>
       <package><name>python313t</name><range><lt>3.13.14</lt></range></package>
@@ -14604,15 +14967,15 @@ affected.</p>
     <dates>
       <discovery>2026-03-20</discovery>
       <entry>2026-04-12</entry>
-      <modified>2026-06-19</modified>
+      <modified>2026-08-14</modified>
     </dates>
    </vuln>
 
   <vuln vid="5ec4dcf6-3588-11f1-b51c-6dd25bec137b">
     <topic>Python -- configparser vulnerable to excessive CPU use</topic>
     <affects>
-      <package><name>python310</name><range><ge>0</ge></range></package>
-      <package><name>python311</name><range><ge>0</ge></range></package>
+      <package><name>python310</name><range><lt>3.10.21</lt></range></package>
+      <package><name>python311</name><range><lt>3.11.16</lt></range></package>
       <package><name>python312</name><range><lt>3.12.13_4</lt></range></package>
       <package><name>python313</name><range><lt>3.13.14</lt></range></package>
       <package><name>python313t</name><range><lt>3.13.14</lt></range></package>
@@ -14632,7 +14995,7 @@ affected.</p>
     <dates>
       <discovery>2026-03-23</discovery>
       <entry>2026-04-12</entry>
-      <modified>2026-08-09</modified>
+      <modified>2026-08-14</modified>
     </dates>
   </vuln>
 
@@ -15369,7 +15732,7 @@ affected.</p>
     <package><name>python313t</name> <range><ge>0</ge></range></package>
     <package><name>python314</name> <range><ge>0</ge></range></package>
     <package><name>python314t</name> <range><ge>0</ge></range></package>
-    <package><name>python315</name> <range><ge>0</ge></range></package>
+    <package><name>python315</name> <range><lt>3.15.0.a6</lt></range></package>
     </affects>
     <description>
 	<body xmlns="http://www.w3.org/1999/xhtml">
@@ -15388,7 +15751,7 @@ affected.</p>
     <dates>
       <discovery>2026-01-20</discovery>
       <entry>2026-04-01</entry>
-      <modified>2026-08-08</modified>
+      <modified>2026-08-14</modified>
     </dates>
   </vuln>
 

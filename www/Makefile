@@ -249,6 +249,7 @@
     SUBDIR += glpi
     SUBDIR += gnome-user-share
     SUBDIR += go-anubis
+    SUBDIR += go-away
     SUBDIR += go-www
     SUBDIR += gobuffalo
     SUBDIR += gohugo
@@ -309,6 +310,8 @@
     SUBDIR += ikiwiki
     SUBDIR += ilias
     SUBDIR += imaginary
+    SUBDIR += immich
+    SUBDIR += immich-ml
     SUBDIR += iocaine
     SUBDIR += iridium
     SUBDIR += janus
@@ -384,7 +387,6 @@
     SUBDIR += lua-resty-lrucache
     SUBDIR += lua-resty-session
     SUBDIR += lua-resty-session3
-    SUBDIR += lua-stream-nginx-module
     SUBDIR += luakit
     SUBDIR += luakit-devel
     SUBDIR += lubelogger
@@ -526,6 +528,7 @@
     SUBDIR += nginx-full
     SUBDIR += nginx-lite
     SUBDIR += nginx-module-lua
+    SUBDIR += nginx-module-lua-stream
     SUBDIR += nginx-naxsi
     SUBDIR += nginx-prometheus-exporter
     SUBDIR += nginx-ultimate-bad-bot-blocker
@@ -1452,7 +1455,6 @@
     SUBDIR += pear-UDDI
     SUBDIR += pear-XML_GRDDL
     SUBDIR += pear-twig
-    SUBDIR += pecl-solr
     SUBDIR += pecl-yaf
     SUBDIR += pecl-yar
     SUBDIR += peersuite
@@ -1462,6 +1464,7 @@
     SUBDIR += phalcon
     SUBDIR += php-google-api-php-client
     SUBDIR += php-http
+    SUBDIR += php-solr
     SUBDIR += php82-opcache
     SUBDIR += php82-session
     SUBDIR += php82-tidy
