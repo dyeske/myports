@@ -189,7 +189,6 @@
     SUBDIR += git-secret
     SUBDIR += gitjacker
     SUBDIR += gitlab-analyzers-secrets
-    SUBDIR += globalprotect-openconnect
     SUBDIR += gnome-keyring
     SUBDIR += gnupg
     SUBDIR += gnupg-pkcs11-scd
@@ -440,6 +439,7 @@
     SUBDIR += olm
     SUBDIR += onionscan
     SUBDIR += op
+    SUBDIR += open-vulnerability-cli
     SUBDIR += openbao
     SUBDIR += openbsm
     SUBDIR += openca-ocspd
@@ -465,6 +465,7 @@
     SUBDIR += openssl35
     SUBDIR += openssl36
     SUBDIR += openssl40
+    SUBDIR += openssl41
     SUBDIR += openvas
     SUBDIR += openvpn
     SUBDIR += openvpn-admin
@@ -789,6 +790,7 @@
     SUBDIR += pam_yubico
     SUBDIR += pamtester
     SUBDIR += paperkey
+    SUBDIR += pass-cli
     SUBDIR += passh
     SUBDIR += passivedns
     SUBDIR += pcsc-tools
@@ -875,7 +877,6 @@
     SUBDIR += plasma6-kscreenlocker
     SUBDIR += plasma6-ksshaskpass
     SUBDIR += plasma6-kwallet-pam
-    SUBDIR += please
     SUBDIR += portacl-rc
     SUBDIR += proftpd-mod_clamav
     SUBDIR += proxytunnel
@@ -908,7 +909,7 @@
     SUBDIR += py-badkeys
     SUBDIR += py-base58
     SUBDIR += py-bcrypt
-    SUBDIR += py-biscuit-auth
+    SUBDIR += py-biscuit-python
     SUBDIR += py-bitbox02
     SUBDIR += py-blake3
     SUBDIR += py-btchip-python
@@ -1016,6 +1017,7 @@
     SUBDIR += py-netbox-secrets
     SUBDIR += py-nethsm
     SUBDIR += py-netmiko
+    SUBDIR += py-nettacker
     SUBDIR += py-nitrokey
     SUBDIR += py-noiseprotocol
     SUBDIR += py-notus-scanner
@@ -1188,12 +1190,14 @@
     SUBDIR += rubygem-doorkeeper-device_authorization_grant
     SUBDIR += rubygem-doorkeeper-i18n
     SUBDIR += rubygem-doorkeeper-i18n-rails72
+    SUBDIR += rubygem-doorkeeper-i18n-rails81
     SUBDIR += rubygem-doorkeeper-openid_connect
     SUBDIR += rubygem-doorkeeper-rails-gitlab
     SUBDIR += rubygem-doorkeeper-rails5
     SUBDIR += rubygem-doorkeeper-rails50
     SUBDIR += rubygem-doorkeeper-rails70
     SUBDIR += rubygem-doorkeeper-rails72
+    SUBDIR += rubygem-doorkeeper-rails81
     SUBDIR += rubygem-doorkeeper57-rails70
     SUBDIR += rubygem-duo_api
     SUBDIR += rubygem-ed25519
@@ -1448,6 +1452,7 @@
     SUBDIR += voa
     SUBDIR += vouch-proxy
     SUBDIR += vpnc
+    SUBDIR += vulnx
     SUBDIR += vuls
     SUBDIR += vulsrepo
     SUBDIR += vuxml
@@ -1475,6 +1480,7 @@
     SUBDIR += xmlsec1
     SUBDIR += xorsearch
     SUBDIR += xray-core
+    SUBDIR += y509
     SUBDIR += yafic
     SUBDIR += yapet
     SUBDIR += yara

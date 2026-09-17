@@ -1,10 +1,10 @@
 PORTNAME=	hared
 DISTVERSION=	1.0-45
 DISTVERSIONSUFFIX=	-g8341d8a
-PORTREVISION=	44
+PORTREVISION=	45
 CATEGORIES=	sysutils
 
-MAINTAINER=	0mp@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small Go server for inserting notifications into MQTT
 WWW=		https://github.com/jpmens/hared-hare
 

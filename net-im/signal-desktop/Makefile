@@ -1,7 +1,7 @@
 PORTNAME=	signal-desktop
 DISTVERSIONPREFIX=	v
-DISTVERSION=	8.18.0
-PORTREVISION=	5
+DISTVERSION=	8.27.0
+PORTREVISION=	1
 CATEGORIES=	net-im
 MASTER_SITES=	LOCAL/mikael/signal-desktop/:npm
 DISTFILES=	signal-desktop-${DISTVERSION}-npm-cache.tar.gz:npm
@@ -80,7 +80,7 @@ MAKE_ENV+=	PYTHONDONTWRITEBYTECODE=1
 
 _BUILD_DATE=	$$(date +'%s')
 
-ELECTRON_VER_MAJOR=	42
+ELECTRON_VER_MAJOR=	43
 PNPM_VERS=		10.18.1
 
 NODE_ARCH=	${ARCH:S/aarch64/arm64/:S/amd64/x64/}
@@ -98,8 +98,8 @@ PLIST_SUB+=	NOT_AARCH64=""
 .endif
 
 do-build:
-# electron-builder is stupid and tries to open ${LOCALBASE}/share/electron42/electron with WRITE priv
-# copy ${LOCALBASE}/share/electron42 in WRKDIR
+# electron-builder is stupid and tries to open ${LOCALBASE}/share/electron43/electron with WRITE priv
+# copy ${LOCALBASE}/share/electron43 in WRKDIR
 # it's needed for the do-install phase, it's here because of this issue
 # https://github.com/MikaelUrankar/signal-desktop/issues/6 (I don't know why it fails though)
 	@${RM} -r ${WRKDIR}/electron${ELECTRON_VER_MAJOR}
@@ -135,8 +135,8 @@ do-build:
 
 	cd ${WRKSRC} && \
 		${SETENV} ${MAKE_ENV} npm_config_nodedir=${LOCALBASE}/share/electron${ELECTRON_VER_MAJOR}/node_headers pnpm install
-	cd ${WRKSRC} && \
-		${SETENV} ${MAKE_ENV} pnpm run clean-transpile
+	cd ${WRKSRC}/packages/types && \
+		${SETENV} ${MAKE_ENV} pnpm run prepare
 
 	# found in reproducible-builds/docker-entrypoint.sh
 	cd ${WRKSRC}/sticker-creator && \
@@ -156,8 +156,12 @@ do-install:
 			--config.electronDist=${WRKDIR}/electron${ELECTRON_VER_MAJOR}
 
 	${MKDIR} ${STAGEDIR}${DATADIR}
-	cd ${BUILD_WRKSRC}/dist/${APP_OUT_DIR} && \
+	cd ${WRKSRC}/dist/${APP_OUT_DIR} && \
 		${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}
+
+	# install polkit policies so that backup works
+	cd ${WRKSRC}/build/policy-templates  && \
+		${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/share/polkit-1/actions
 
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/pixmaps
 	${INSTALL_DATA} ${WRKSRC}/images/signal-logo-desktop-linux.png \
@@ -165,7 +169,7 @@ do-install:
 	${INSTALL_DATA} ${FILESDIR}/${PORTNAME}.desktop \
 		${STAGEDIR}${PREFIX}/share/applications
 
-.for f in chromedriver mksnapshot v8_context_snapshot_generator
+.for f in chromedriver mksnapshot v8_context_snapshot_generator version resources/*.policy
 	${RM} ${STAGEDIR}${DATADIR}/${f}
 .endfor
 	${RM} -r ${STAGEDIR}${DATADIR}/gen

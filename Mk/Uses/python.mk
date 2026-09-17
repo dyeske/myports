@@ -636,7 +636,7 @@ _PYTHONPKGLIST=	${WRKDIR}/.PLIST.pymodtmp
 
 # cryptography* support
 .  if ${PYCRYPTOGRAPHY_DEFAULT} == rust
-CRYPTOGRAPHY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=49.0.0,1<50,1:security/py-cryptography@${PY_FLAVOR}
+CRYPTOGRAPHY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=49.0.0,1<51,1:security/py-cryptography@${PY_FLAVOR}
 .  else
 CRYPTOGRAPHY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography-legacy>=3.4.8_3,1:security/py-cryptography-legacy@${PY_FLAVOR}
 .  endif
@@ -654,7 +654,7 @@ TEST_DEPENDS+=	${CRYPTOGRAPHY_DEPENDS}
 .  endif
 
 # cython* support
-CYTHON_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cython>=3.2.4:lang/cython@${PY_FLAVOR}
+CYTHON_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cython>=3.2.9:lang/cython@${PY_FLAVOR}
 CYTHON0_DEPENDS=${PYTHON_PKGNAMEPREFIX}cython0>=0.29.37<3:lang/cython0@${PY_FLAVOR}
 
 .  if defined(_PYTHON_FEATURE_CYTHON)

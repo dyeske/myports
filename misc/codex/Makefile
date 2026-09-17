@@ -1,6 +1,6 @@
 PORTNAME=	codex
 DISTVERSIONPREFIX=	rust-v
-DISTVERSION=	0.149.0
+DISTVERSION=	0.154.0
 CATEGORIES=	misc devel
 
 MAINTAINER=	tagattie@FreeBSD.org
@@ -23,8 +23,11 @@ RUN_DEPENDS=	bash:shells/bash \
 		rg:textproc/ripgrep
 TEST_DEPENDS=	bash:shells/bash
 
-USES=		cargo gnome llvm:min=21 ninja:build python:test \
+USES=		cargo dos2unix gnome llvm:min=21 ninja:build python:test \
 		shebangfix ssl
+
+DOS2UNIX_WRKSRC=${WRKSRC_crate_mxc_telemetry}
+DOS2UNIX_REGEX=	.*/Cargo\.toml
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	openai
@@ -57,9 +60,6 @@ CARGO_CARGOLOCK=	${BUILD_WRKSRC}/Cargo.lock
 CARGO_BUILD_ARGS=	--bin ${PORTNAME} \
 			--bin ${PORTNAME}-code-mode-host \
 			--bin ${PORTNAME}-responses-api-proxy
-CARGO_INSTALL_PATH=	codex-rs/cli \
-			codex-rs/code-mode-host \
-			codex-rs/responses-api-proxy
 CARGO_TEST_ARGS=	--all-features --no-fail-fast
 CARGO_ENV=		OPENSSL_NO_VENDOR=1 \
 			V8_FROM_SOURCE=1 \
@@ -74,13 +74,13 @@ BINARY_ALIAS=	python3=${PYTHON_CMD} \
 		ar=${LOCALBASE}/bin/llvm-ar${LLVM_VERSION} \
 		nm=${LOCALBASE}/bin/llvm-nm${LLVM_VERSION} \
 		ld=${LOCALBASE}/bin/ld.lld${LLVM_VERSION}
+PORTSCOUT=	limit:^rust-v[0-9]\.
 
 BUILD_WRKSRC=	${WRKSRC}/codex-rs
 
 PLIST_FILES=	bin/${PORTNAME} \
 		bin/${PORTNAME}-code-mode-host \
-		bin/${PORTNAME}-responses-api-proxy \
-		bin/logs_client
+		bin/${PORTNAME}-responses-api-proxy
 PORTDOCS=	README.md config.md
 
 OPTIONS_DEFINE=		COMPLETIONS DOCS
@@ -99,6 +99,7 @@ post-extract:
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/bin/bash|${LOCALBASE}&|' \
+		${BUILD_WRKSRC}/app-server/tests/suite/v2/environment_info.rs \
 		${BUILD_WRKSRC}/cli/src/debug_sandbox/pid_tracker.rs \
 		${BUILD_WRKSRC}/core/src/command_canonicalization.rs \
 		${BUILD_WRKSRC}/core/src/command_canonicalization_tests.rs \
@@ -109,17 +110,22 @@ post-patch:
 		${BUILD_WRKSRC}/core/src/shell_snapshot_tests.rs \
 		${BUILD_WRKSRC}/core/src/shell_tests.rs \
 		${BUILD_WRKSRC}/core/src/tasks/user_shell_tests.rs \
-		${BUILD_WRKSRC}/core/src/tools/handlers/shell_tests.rs \
 		${BUILD_WRKSRC}/core/src/tools/handlers/unified_exec_tests.rs \
 		${BUILD_WRKSRC}/core/src/tools/runtimes/mod.rs \
 		${BUILD_WRKSRC}/core/src/tools/runtimes/mod_tests.rs \
 		${BUILD_WRKSRC}/core/src/tools/sandboxing_tests.rs \
+		${BUILD_WRKSRC}/core/src/unified_exec/process_manager_tests.rs \
 		${BUILD_WRKSRC}/core/tests/suite/exec.rs \
 		${BUILD_WRKSRC}/core/tests/suite/guardian_review.rs \
+		${BUILD_WRKSRC}/core/tests/suite/shell_snapshot.rs \
 		${BUILD_WRKSRC}/core/tests/suite/unified_exec.rs \
+		${BUILD_WRKSRC}/core/tests/suite/unified_exec_stdin_approval.rs \
+		${BUILD_WRKSRC}/core/tests/suite/unified_exec_stdin_review_size.rs \
 		${BUILD_WRKSRC}/core/tests/suite/user_notification.rs \
 		${BUILD_WRKSRC}/exec-server/src/process_sandbox_tests.rs \
-		${BUILD_WRKSRC}/exec-server/tests/file_system_unix.rs \
+		${BUILD_WRKSRC}/exec-server/src/shell_snapshot_tests.rs \
+		${BUILD_WRKSRC}/exec-server/tests/common/fake_bwrap.rs \
+		${BUILD_WRKSRC}/exec-server/tests/exec_process.rs \
 		${BUILD_WRKSRC}/shell-command/src/parse_command.rs \
 		${BUILD_WRKSRC}/shell-command/src/shell_detect.rs \
 		${BUILD_WRKSRC}/shell-command/src/shell_snapshot_tests.rs \
@@ -128,7 +134,9 @@ post-patch:
 		${BUILD_WRKSRC}/utils/path-uri/src/tests.rs
 	@${REINPLACE_CMD} -e 's|python3|${PYTHON_VERSION}|' \
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/command_exec.rs \
+		${BUILD_WRKSRC}/app-server/tests/suite/v2/guardian_v2.rs \
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/hooks_list.rs \
+		${BUILD_WRKSRC}/app-server/tests/suite/v2/selected_capability_stack.rs \
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/session_end.rs \
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/thread_queue.rs \
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/thread_resume.rs \
@@ -136,6 +144,7 @@ post-patch:
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/turn_interrupt.rs \
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/turn_start.rs \
 		${BUILD_WRKSRC}/app-server/tests/suite/v2/turn_start_zsh_fork.rs \
+		${BUILD_WRKSRC}/cli/tests/sandbox_tty.rs \
 		${BUILD_WRKSRC}/config/src/config_requirements.rs \
 		${BUILD_WRKSRC}/config/src/hooks_tests.rs \
 		${BUILD_WRKSRC}/core-plugins/src/script_attribution.rs \
@@ -151,14 +160,16 @@ post-patch:
 		${BUILD_WRKSRC}/core/tests/suite/compact.rs \
 		${BUILD_WRKSRC}/core/tests/suite/compact_remote_parity.rs \
 		${BUILD_WRKSRC}/core/tests/suite/exec.rs \
+		${BUILD_WRKSRC}/core/tests/suite/guardian_mcp_elicitation.rs \
 		${BUILD_WRKSRC}/core/tests/suite/hooks.rs \
 		${BUILD_WRKSRC}/core/tests/suite/hooks_mcp.rs \
+		${BUILD_WRKSRC}/core/tests/suite/interrupt_hooks.rs \
+		${BUILD_WRKSRC}/core/tests/suite/mcp_user_verification.rs \
 		${BUILD_WRKSRC}/core/tests/suite/network_approval.rs \
 		${BUILD_WRKSRC}/core/tests/suite/openai_file_mcp.rs \
 		${BUILD_WRKSRC}/core/tests/suite/subagent_notifications.rs \
 		${BUILD_WRKSRC}/core/tests/suite/token_budget.rs \
 		${BUILD_WRKSRC}/core/tests/suite/tool_lifecycle.rs \
-		${BUILD_WRKSRC}/core/tests/suite/tools.rs \
 		${BUILD_WRKSRC}/core/tests/suite/unified_exec.rs \
 		${BUILD_WRKSRC}/exec-server/tests/exec_process.rs \
 		${BUILD_WRKSRC}/exec/tests/suite/sandbox.rs \
@@ -172,6 +183,7 @@ post-patch:
 		${BUILD_WRKSRC}/hooks/src/events/post_tool_use.rs \
 		${BUILD_WRKSRC}/linux-sandbox/tests/suite/landlock.rs \
 		${BUILD_WRKSRC}/linux-sandbox/tests/suite/managed_proxy.rs \
+		${BUILD_WRKSRC}/memories/write/src/startup_tests.rs \
 		${BUILD_WRKSRC}/skills/src/invocation.rs \
 		${BUILD_WRKSRC}/skills/src/invocation_tests.rs \
 		${BUILD_WRKSRC}/tui/src/app/tests.rs \
@@ -180,8 +192,7 @@ post-patch:
 		${BUILD_WRKSRC}/tui/src/chatwidget/tests/exec_flow.rs \
 		${BUILD_WRKSRC}/tui/src/debug_config.rs \
 		${BUILD_WRKSRC}/tui/src/exec_command.rs \
-		${BUILD_WRKSRC}/tui/src/render/highlight.rs \
-		${BUILD_WRKSRC}/utils/pty/src/tests.rs
+		${BUILD_WRKSRC}/tui/src/render/highlight.rs
 
 post-build-COMPLETIONS-on:
 	@${MKDIR} ${WRKSRC}/completions
@@ -190,12 +201,13 @@ post-build-COMPLETIONS-on:
 		${WRKSRC}/completions/${PORTNAME}.${sh}
 .endfor
 
-post-install:
-.for prog in ${PLIST_FILES:Mbin/*}
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/${prog}
+do-install:
+.for prog in ${PLIST_FILES:Mbin/*:S|bin/||}
+	${INSTALL_PROGRAM} ${CARGO_TARGET_DIR}/*/${prog} \
+		${STAGEDIR}${PREFIX}/bin
 .endfor
 
-post-install-COMPLETIONS-on:
+do-install-COMPLETIONS-on:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/bash_completion.d \
 		${STAGEDIR}${PREFIX}/share/fish/completions \
 		${STAGEDIR}${PREFIX}/share/zsh/site-functions
@@ -206,7 +218,7 @@ post-install-COMPLETIONS-on:
 	${INSTALL_DATA} ${WRKSRC}/completions/${PORTNAME}.zsh \
 		${STAGEDIR}${PREFIX}/share/zsh/site-functions/_${PORTNAME}
 
-post-install-DOCS-on:
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_MAN} ${PORTDOCS:S|^|${BUILD_WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

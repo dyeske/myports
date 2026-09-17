@@ -1,6 +1,6 @@
 PORTNAME=	modsecurity3-nginx
 DISTVERSION=	1.0.4
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	security www
 MASTER_SITES=	https://nginx.org/download/
 DISTFILES=	${_NGINX_DISTNAME}${EXTRACT_SUFX}
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libmodsecurity.so:security/modsecurity3
 
 USES=		compiler:c11
 USE_GITHUB=	nodefault
-GH_TUPLE=	SpiderLabs:ModSecurity-nginx:e6a568a:modsecurity3
+GH_TUPLE=	owasp-modsecurity:ModSecurity-nginx:9eb44fd:modsecurity3
 
 HAS_CONFIGURE=	yes
 # Most arguments should be derived from www/nginx's Makefile to be in sync
@@ -83,8 +83,10 @@ _NGINX_RUNDIR=		${_NGINX_VARDIR}/run
 _NGINX_TMPDIR=		${_NGINX_VARDIR}/tmp/nginx
 _NGINX_VARDIR=	/var
 
+.include "${.CURDIR}/../../www/nginx/version.mk"
+
 _NGINX_PORTNAME=	nginx
-_NGINX_PORTVERSION=	1.30.4
+_NGINX_PORTVERSION=	${NGINX_VERSION}
 _NGINX_DISTNAME=	${_NGINX_PORTNAME}-${_NGINX_PORTVERSION}
 
 do-install:

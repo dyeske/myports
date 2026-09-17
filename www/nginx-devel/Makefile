@@ -1,10 +1,8 @@
 PORTNAME?=	nginx
 PORTVERSION=	${NGINX_VERSION}
 .include "version.mk"
-PORTREVISION=	5
 CATEGORIES=	www
-MASTER_SITES=	https://nginx.org/download/ \
-		LOCAL/osa
+MASTER_SITES=	https://nginx.org/download/
 PKGNAMESUFFIX?=	-devel
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
@@ -17,7 +15,7 @@ LICENSE_FILE?=	${WRKSRC}/LICENSE
 
 CONFLICTS_INSTALL=	nginx
 
-PORTSCOUT=	limit:^1\.2[8-9]\.[0-9]*
+PORTSCOUT=	limit:^1\.31\.[0-9]*
 
 USES=		cpe compiler:env
 
@@ -80,7 +78,7 @@ OPTIONS_GROUP_MAILGRP=	MAIL MAIL_IMAP MAIL_POP3 MAIL_SMTP MAIL_SSL
 OPTIONS_GROUP_STREAMGRP=	STREAM STREAM_REALIP STREAM_SSL \
 	STREAM_SSL_PREREAD
 
-OPTIONS_DEFINE=		DEBUG DEBUGLOG DSO FILE_AIO IPV6 NJS OTEL THREADS WWW
+OPTIONS_DEFINE=		DEBUG DEBUGLOG DSO FILE_AIO IPV6 NJS NJS_QJS NJS_XML OTEL THREADS WWW
 OPTIONS_DEFAULT?=	DSO FILE_AIO HTTP HTTP_ADDITION HTTP_AUTH_REQ HTTP_CACHE \
 		HTTP_DAV HTTP_FLV HTTP_GUNZIP_FILTER HTTP_GZIP_STATIC HTTP_MP4 \
 		HTTP_RANDOM_INDEX HTTP_REALIP HTTP_SECURE_LINK HTTP_SLICE HTTP_SSL \
@@ -255,9 +253,14 @@ CONFIGURE_ARGS+=	--with-ld-opt="-L ${LOCALBASE}/lib -lpcre"
 LIB_DEPENDS+=		libpcre.so:devel/pcre
 .endif
 
-.if ${PORT_OPTIONS:MNJS}
+.if ${PORT_OPTIONS:MNJS} && empty(PORT_OPTIONS:MNJS_XML)
+CONFIGURE_ENV+=		NJS_LIBXSLT=NO
+NJS_CONFIGURE_ARGS=	--no-libxml2
+.endif
+
+.if ${PORT_OPTIONS:MNJS_QJS}
 _NJS_QJS_CFLAGS=		-I ${LOCALBASE}/include/quickjs
-NJS_CONFIGURE_ARGS=	--cc-opt="${CFLAGS} -I${LOCALBASE}/include/quickjs" \
+NJS_CONFIGURE_ARGS+=	--cc-opt="${CFLAGS} -I${LOCALBASE}/include/quickjs" \
 			--ld-opt="-L${LOCALBASE}/lib" \
 			--with-quickjs
 .endif
@@ -269,8 +272,8 @@ pre-everything::
 .endif
 .if ${PORT_OPTIONS:MNJS}
 	@${ECHO_MSG} "The built-in njs scripting engine is EOL, deprecated since njs 1.0.0."
-	@${ECHO_MSG} "This port builds the recommended QuickJS engine as well; select it"
-	@${ECHO_MSG} "in nginx.conf via the js_engine qjs directive."
+	@${ECHO_MSG} "Upstream recommends the QuickJS engine instead: enable the NJS_QJS"
+	@${ECHO_MSG} "option and select it in nginx.conf via the js_engine qjs directive."
 .endif
 .if ${PORT_OPTIONS:MPASSENGER}
 	@${ECHO_MSG} "This port install Passenger module only"
@@ -333,6 +336,26 @@ post-patch-SFLOW-on:
 pre-configure-SMALL_LIGHT-on:
 	( cd ${WRKSRC_small_light} && ./setup )
 
+pre-configure-ARRAYVAR-on:
+	@${RM} -rf ${WRKSRC_arrayvar}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-array-var ${WRKSRC_arrayvar}
+	@${CHMOD} -R u+w ${WRKSRC_arrayvar}
+
+pre-configure-CACHE_PURGE-on:
+	@${RM} -rf ${WRKSRC_cache_purge}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-cache-purge ${WRKSRC_cache_purge}
+	@${CHMOD} -R u+w ${WRKSRC_cache_purge}
+
+pre-configure-DEVEL_KIT-on:
+	@${RM} -rf ${WRKSRC_devel_kit}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-ndk ${WRKSRC_devel_kit}
+	@${CHMOD} -R u+w ${WRKSRC_devel_kit}
+
+pre-configure-FORMINPUT-on:
+	@${RM} -rf ${WRKSRC_forminput}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-form-input ${WRKSRC_forminput}
+	@${CHMOD} -R u+w ${WRKSRC_forminput}
+
 pre-configure-LUA-on:
 	@${RM} -rf ${WRKSRC_lua}
 	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-lua ${WRKSRC_lua}
@@ -342,6 +365,17 @@ pre-configure-LUASTREAM-on:
 	@${RM} -rf ${WRKSRC_luastream}
 	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-lua-stream ${WRKSRC_luastream}
 	@${CHMOD} -R u+w ${WRKSRC_luastream}
+
+pre-configure-NJS-on:
+	@${RM} -rf ${WRKSRC_njs}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-njs ${WRKSRC_njs}
+	@${CHMOD} -R u+w ${WRKSRC_njs}
+	@${CHMOD} u+x ${WRKSRC_njs}/configure
+
+pre-configure-VOD-on:
+	@${RM} -rf ${WRKSRC_vod}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-vod ${WRKSRC_vod}
+	@${CHMOD} -R u+w ${WRKSRC_vod}
 
 do-configure-NJS-on:
 	( cd ${WRKSRC_njs} && ${SETENV} ${CONFIGURE_ENV} ${CONFIGURE_CMD} ${NJS_CONFIGURE_ARGS} )

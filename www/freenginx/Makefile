@@ -1,7 +1,7 @@
 PORTNAME=	freenginx
 PORTVERSION=	${NGINX_VERSION}
 .include "version.mk"
-PORTREVISION?=	8
+PORTREVISION?=	16
 CATEGORIES=	www
 MASTER_SITES=	https://freenginx.org/download/ \
 		LOCAL/joneum
@@ -243,9 +243,8 @@ CONFIGURE_ENV+=	EXTRA_PRE_CXXFLAGS="-std=c++14"
 .if empty(PORT_OPTIONS:MMODSECURITY3)
 CONFIGURE_ARGS+=	--with-ld-opt="-L ${LOCALBASE}/lib"
 .else
-
-ONFIGURE_ARGS+=	--with-ld-opt="-L ${LOCALBASE}/lib -lpcre2-8"
-IB_DEPENDS+=		libpcre2-8.so:devel/pcre2
+CONFIGURE_ARGS+=	--with-ld-opt="-L ${LOCALBASE}/lib -lpcre2-8"
+LIB_DEPENDS+=		libpcre2-8.so:devel/pcre2
 .endif
 
 .if ${PORT_OPTIONS:MNJS} && empty(PORT_OPTIONS:MNJS_XML)
@@ -334,6 +333,26 @@ post-patch-SFLOW-on:
 pre-configure-SMALL_LIGHT-on:
 	( cd ${WRKSRC_small_light} && ./setup )
 
+pre-configure-ARRAYVAR-on:
+	@${RM} -rf ${WRKSRC_arrayvar}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-array-var ${WRKSRC_arrayvar}
+	@${CHMOD} -R u+w ${WRKSRC_arrayvar}
+
+pre-configure-CACHE_PURGE-on:
+	@${RM} -rf ${WRKSRC_cache_purge}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-cache-purge ${WRKSRC_cache_purge}
+	@${CHMOD} -R u+w ${WRKSRC_cache_purge}
+
+pre-configure-DEVEL_KIT-on:
+	@${RM} -rf ${WRKSRC_devel_kit}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-ndk ${WRKSRC_devel_kit}
+	@${CHMOD} -R u+w ${WRKSRC_devel_kit}
+
+pre-configure-FORMINPUT-on:
+	@${RM} -rf ${WRKSRC_forminput}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-form-input ${WRKSRC_forminput}
+	@${CHMOD} -R u+w ${WRKSRC_forminput}
+
 pre-configure-LUA-on:
 	@${RM} -rf ${WRKSRC_lua}
 	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-lua ${WRKSRC_lua}
@@ -343,6 +362,17 @@ pre-configure-LUASTREAM-on:
 	@${RM} -rf ${WRKSRC_luastream}
 	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-lua-stream ${WRKSRC_luastream}
 	@${CHMOD} -R u+w ${WRKSRC_luastream}
+
+pre-configure-NJS-on:
+	@${RM} -rf ${WRKSRC_njs}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-njs ${WRKSRC_njs}
+	@${CHMOD} -R u+w ${WRKSRC_njs}
+	@${CHMOD} u+x ${WRKSRC_njs}/configure
+
+pre-configure-VOD-on:
+	@${RM} -rf ${WRKSRC_vod}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-vod ${WRKSRC_vod}
+	@${CHMOD} -R u+w ${WRKSRC_vod}
 
 do-configure-NJS-on:
 	( cd ${WRKSRC_njs} && ${SETENV} ${CONFIGURE_ENV} ${CONFIGURE_CMD} ${NJS_CONFIGURE_ARGS} )

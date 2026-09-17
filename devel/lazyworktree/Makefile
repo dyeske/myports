@@ -1,6 +1,6 @@
 PORTNAME=	lazyworktree
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.49.0
+DISTVERSION=	1.50.0
 CATEGORIES=	devel
 
 MAINTAINER=	olgeni@FreeBSD.org
@@ -14,6 +14,7 @@ USES=		go:modules
 
 GO_MODULE=	github.com/chmouel/lazyworktree
 GO_TARGET=	./cmd/lazyworktree
+GO_LDFLAGS=	-X main.version=${DISTVERSION}
 
 PLIST_FILES=	bin/lazyworktree
 

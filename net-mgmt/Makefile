@@ -373,6 +373,7 @@
     SUBDIR += rtrlib
     SUBDIR += rubygem-blimpy
     SUBDIR += rubygem-checkson
+    SUBDIR += rubygem-opn_api
     SUBDIR += rubygem-oxidized
     SUBDIR += rubygem-oxidized-script
     SUBDIR += rubygem-oxidized-web
@@ -387,7 +388,6 @@
     SUBDIR += sdig
     SUBDIR += seafile-client
     SUBDIR += seafile-gui
-    SUBDIR += seafile-server
     SUBDIR += semaphore
     SUBDIR += sendip
     SUBDIR += simplomon

@@ -107,6 +107,8 @@
     SUBDIR += dovecot-pigeonhole
     SUBDIR += dovecot-xaps
     SUBDIR += dovecot24
+    SUBDIR += dovecot24-pigeonhole
+    SUBDIR += dovecot24-wormhole
     SUBDIR += dspam
     SUBDIR += ecartis
     SUBDIR += elm
@@ -171,7 +173,6 @@
     SUBDIR += isbg
     SUBDIR += isoqlog
     SUBDIR += isync
-    SUBDIR += james
     SUBDIR += jamlib
     SUBDIR += jmba
     SUBDIR += junkfilter
@@ -293,6 +294,8 @@
     SUBDIR += opensmtpd-filter-dkimsign
     SUBDIR += opensmtpd-filter-rspamd
     SUBDIR += opensmtpd-filter-senderscore
+    SUBDIR += opensmtpd-table-passwd
+    SUBDIR += opensmtpd-table-postgres
     SUBDIR += opensmtpd-table-socketmap
     SUBDIR += opensmtpd-table-sqlite
     SUBDIR += osbf-lua
@@ -657,6 +660,7 @@
     SUBDIR += rubygem-roadie-rails-rails52
     SUBDIR += rubygem-roadie-rails-rails61
     SUBDIR += rubygem-roadie-rails-rails72
+    SUBDIR += rubygem-roadie-rails-rails81
     SUBDIR += rubygem-roadie3
     SUBDIR += rubygem-ruby-qmail
     SUBDIR += rubygem-valid_email

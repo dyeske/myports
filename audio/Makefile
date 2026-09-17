@@ -108,7 +108,6 @@
     SUBDIR += deadbeef-spectrogram-plugin
     SUBDIR += deadbeef-vu-meter-plugin
     SUBDIR += deadbeef-waveform-seekbar-plugin
-    SUBDIR += denemo
     SUBDIR += dexed
     SUBDIR += dgedit
     SUBDIR += din
@@ -131,6 +130,7 @@
     SUBDIR += ebumeter
     SUBDIR += ebur128
     SUBDIR += ecasound
+    SUBDIR += elevenlabs-cli
     SUBDIR += elisa
     SUBDIR += emms
     SUBDIR += enscribe
@@ -360,7 +360,6 @@
     SUBDIR += libinstpatch
     SUBDIR += libkcddb
     SUBDIR += libkeyfinder
-    SUBDIR += liblastfm
     SUBDIR += liblo
     SUBDIR += liblscp
     SUBDIR += libltc

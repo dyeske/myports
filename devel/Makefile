@@ -143,6 +143,7 @@
     SUBDIR += R-cran-sfsmisc
     SUBDIR += R-cran-sourcetools
     SUBDIR += R-cran-sparsevctrs
+    SUBDIR += R-cran-styler
     SUBDIR += R-cran-sys
     SUBDIR += R-cran-systemfonts
     SUBDIR += R-cran-testit
@@ -165,7 +166,6 @@
     SUBDIR += R-cran-whoami
     SUBDIR += R-cran-withr
     SUBDIR += R-cran-zeallot
-    SUBDIR += RStudio
     SUBDIR += SpecTcl
     SUBDIR += aarch64-none-elf-gcc
     SUBDIR += abi-compliance-checker
@@ -186,7 +186,6 @@
     SUBDIR += allegro5
     SUBDIR += amber
     SUBDIR += aml
-    SUBDIR += ammonite
     SUBDIR += amqp-cpp
     SUBDIR += android-tools
     SUBDIR += antlr
@@ -534,6 +533,7 @@
     SUBDIR += creduce
     SUBDIR += critcl
     SUBDIR += criterion
+    SUBDIR += croaring
     SUBDIR += cscope
     SUBDIR += cscout
     SUBDIR += csfml
@@ -670,12 +670,11 @@
     SUBDIR += efl
     SUBDIR += egypt
     SUBDIR += eiffelstudio
-    SUBDIR += electron37
-    SUBDIR += electron38
     SUBDIR += electron40
     SUBDIR += electron41
     SUBDIR += electron42
     SUBDIR += electron43
+    SUBDIR += electron44
     SUBDIR += elf
     SUBDIR += elf-dissector
     SUBDIR += elfcat
@@ -944,6 +943,7 @@
     SUBDIR += gnustep-make
     SUBDIR += go-bindata
     SUBDIR += go-bindata-assetfs
+    SUBDIR += go-blueprint
     SUBDIR += go-critic
     SUBDIR += go-git
     SUBDIR += go-mode.el
@@ -1014,6 +1014,7 @@
     SUBDIR += hcs12mem
     SUBDIR += heaptrack
     SUBDIR += heimdall
+    SUBDIR += heinz
     SUBDIR += heirloom-devtools
     SUBDIR += hexcompare
     SUBDIR += hexd
@@ -1393,7 +1394,6 @@
     SUBDIR += libgudev
     SUBDIR += libgusb
     SUBDIR += libgutenfetch
-    SUBDIR += libheinz
     SUBDIR += libhoard
     SUBDIR += libhtp
     SUBDIR += libibuddy
@@ -1918,6 +1918,7 @@
     SUBDIR += openapi
     SUBDIR += openapi-generator
     SUBDIR += openapi-tui
+    SUBDIR += opencircuitx
     SUBDIR += opencl
     SUBDIR += opencl-clang
     SUBDIR += opencvs
@@ -4318,7 +4319,6 @@
     SUBDIR += pecl-inotify
     SUBDIR += pecl-json_post
     SUBDIR += pecl-msgpack
-    SUBDIR += pecl-mustache
     SUBDIR += pecl-opentelemetry
     SUBDIR += pecl-protobuf
     SUBDIR += pecl-psr
@@ -4349,6 +4349,7 @@
     SUBDIR += php-ice37
     SUBDIR += php-libawl
     SUBDIR += php-maxminddb
+    SUBDIR += php-mustache
     SUBDIR += php-pcov
     SUBDIR += php-pie
     SUBDIR += php-raphf
@@ -4548,6 +4549,7 @@
     SUBDIR += py-array-api-compat
     SUBDIR += py-array-api-strict
     SUBDIR += py-arro3-core
+    SUBDIR += py-arro3-io
     SUBDIR += py-arrow
     SUBDIR += py-asciimatics
     SUBDIR += py-asgi-lifespan
@@ -5118,6 +5120,7 @@
     SUBDIR += py-flynt
     SUBDIR += py-foolscap
     SUBDIR += py-forbiddenfruit
+    SUBDIR += py-fortranformat
     SUBDIR += py-freebsd
     SUBDIR += py-freebsd-sysctl
     SUBDIR += py-freenas.utils
@@ -5137,7 +5140,6 @@
     SUBDIR += py-fuzzywuzzy
     SUBDIR += py-fypp
     SUBDIR += py-game
-    SUBDIR += py-game_sdl2
     SUBDIR += py-gapic-generator
     SUBDIR += py-gast
     SUBDIR += py-gelidum
@@ -5195,6 +5197,7 @@
     SUBDIR += py-guppy3
     SUBDIR += py-gyp
     SUBDIR += py-gyp-next
+    SUBDIR += py-hachoir
     SUBDIR += py-hacking
     SUBDIR += py-hammett
     SUBDIR += py-hash_ring
@@ -5244,6 +5247,7 @@
     SUBDIR += py-importlib-metadata
     SUBDIR += py-importlib-metadata6
     SUBDIR += py-importlib-metadata7
+    SUBDIR += py-importlib-metadata8
     SUBDIR += py-importlib-resources
     SUBDIR += py-in-n-out
     SUBDIR += py-incremental
@@ -5480,6 +5484,7 @@
     SUBDIR += py-mirakuru
     SUBDIR += py-mmh3
     SUBDIR += py-mock
+    SUBDIR += py-mockito
     SUBDIR += py-molecule
     SUBDIR += py-molecule-plugins
     SUBDIR += py-mondrian
@@ -5576,6 +5581,7 @@
     SUBDIR += py-opencensus-context
     SUBDIR += py-opendht
     SUBDIR += py-openfeature-sdk
+    SUBDIR += py-opengrok-tools
     SUBDIR += py-openstacksdk
     SUBDIR += py-opentelemetry-api
     SUBDIR += py-opentelemetry-configuration
@@ -5592,6 +5598,9 @@
     SUBDIR += py-opentelemetry-instrumentation-django
     SUBDIR += py-opentelemetry-instrumentation-fastapi
     SUBDIR += py-opentelemetry-instrumentation-flask
+    SUBDIR += py-opentelemetry-instrumentation-grpc
+    SUBDIR += py-opentelemetry-instrumentation-httpx
+    SUBDIR += py-opentelemetry-instrumentation-logging
     SUBDIR += py-opentelemetry-instrumentation-psycopg2
     SUBDIR += py-opentelemetry-instrumentation-requests
     SUBDIR += py-opentelemetry-instrumentation-urllib
@@ -5790,13 +5799,14 @@
     SUBDIR += py-proto-plus
     SUBDIR += py-protobuf
     SUBDIR += py-protobuf-compiler
+    SUBDIR += py-protobuf-py
+    SUBDIR += py-protobuf-py-ext
     SUBDIR += py-protoc-gen-validate
     SUBDIR += py-protovalidate
     SUBDIR += py-proxmoxer
     SUBDIR += py-psygnal
     SUBDIR += py-ptable
     SUBDIR += py-ptpython
-    SUBDIR += py-ptvsd
     SUBDIR += py-pudb
     SUBDIR += py-pure-eval
     SUBDIR += py-pure-sasl
@@ -5851,6 +5861,7 @@
     SUBDIR += py-pydantic-yaml
     SUBDIR += py-pydantic2
     SUBDIR += py-pydash
+    SUBDIR += py-pydata-google-auth
     SUBDIR += py-pydbus
     SUBDIR += py-pydecor
     SUBDIR += py-pydemumble
@@ -5869,7 +5880,6 @@
     SUBDIR += py-pygit2
     SUBDIR += py-pygls
     SUBDIR += py-pygobject
-    SUBDIR += py-pygpx
     SUBDIR += py-pyhashxx
     SUBDIR += py-pyhcl
     SUBDIR += py-pyicu
@@ -5972,7 +5982,6 @@
     SUBDIR += py-pytest-helpers-namespace
     SUBDIR += py-pytest-html
     SUBDIR += py-pytest-httpbin
-    SUBDIR += py-pytest-httpserver
     SUBDIR += py-pytest-httpx
     SUBDIR += py-pytest-instafail
     SUBDIR += py-pytest-isort
@@ -6027,6 +6036,7 @@
     SUBDIR += py-pytest-watcher
     SUBDIR += py-pytest-xdist
     SUBDIR += py-pytest-xprocess
+    SUBDIR += py-pytest_httpserver
     SUBDIR += py-python-application
     SUBDIR += py-python-bugzilla
     SUBDIR += py-python-dateutil
@@ -6034,7 +6044,6 @@
     SUBDIR += py-python-decouple
     SUBDIR += py-python-discovery
     SUBDIR += py-python-distutils-extra
-    SUBDIR += py-python-dtrace
     SUBDIR += py-python-easyconfig
     SUBDIR += py-python-editor
     SUBDIR += py-python-engineio
@@ -6370,7 +6379,6 @@
     SUBDIR += py-tree-sitter-yaml
     SUBDIR += py-tree-sitter023
     SUBDIR += py-treelib
-    SUBDIR += py-trimesh
     SUBDIR += py-trove-classifiers
     SUBDIR += py-ttictoc
     SUBDIR += py-ttkbootstrap
@@ -6404,6 +6412,7 @@
     SUBDIR += py-types-pyyaml
     SUBDIR += py-types-requests
     SUBDIR += py-types-retry
+    SUBDIR += py-types-s3transfer
     SUBDIR += py-types-setuptools
     SUBDIR += py-types-toml
     SUBDIR += py-typeshed-client
@@ -7025,6 +7034,7 @@
     SUBDIR += rubygem-aws-sdk-health
     SUBDIR += rubygem-aws-sdk-healthlake
     SUBDIR += rubygem-aws-sdk-iam
+    SUBDIR += rubygem-aws-sdk-iamtoolbox
     SUBDIR += rubygem-aws-sdk-identitystore
     SUBDIR += rubygem-aws-sdk-imagebuilder
     SUBDIR += rubygem-aws-sdk-importexport
@@ -7439,6 +7449,7 @@
     SUBDIR += rubygem-bin_struct
     SUBDIR += rubygem-bin_utils
     SUBDIR += rubygem-bindata
+    SUBDIR += rubygem-bindata-gitlab
     SUBDIR += rubygem-bindata24
     SUBDIR += rubygem-bindex
     SUBDIR += rubygem-binding_of_caller
@@ -7456,6 +7467,7 @@
     SUBDIR += rubygem-builder
     SUBDIR += rubygem-bullet
     SUBDIR += rubygem-bullet-rails72
+    SUBDIR += rubygem-bullet-rails81
     SUBDIR += rubygem-byebug
     SUBDIR += rubygem-c21e
     SUBDIR += rubygem-cabin
@@ -7981,6 +7993,7 @@
     SUBDIR += rubygem-multi_json
     SUBDIR += rubygem-multi_json-gitlab
     SUBDIR += rubygem-multi_test
+    SUBDIR += rubygem-multi_test1
     SUBDIR += rubygem-murmurhash3
     SUBDIR += rubygem-mustache
     SUBDIR += rubygem-mustache-sinatra
@@ -8589,6 +8602,7 @@
     SUBDIR += rubygem-wisper
     SUBDIR += rubygem-wisper2
     SUBDIR += rubygem-with_advisory_lock61
+    SUBDIR += rubygem-with_advisory_lock81
     SUBDIR += rubygem-with_env
     SUBDIR += rubygem-wmi-lite
     SUBDIR += rubygem-xdg
@@ -8612,6 +8626,7 @@
     SUBDIR += rust-analyzer
     SUBDIR += rust-bindgen-cli
     SUBDIR += rust-cbindgen
+    SUBDIR += rust-cxxbridge
     SUBDIR += rust-mode
     SUBDIR += rust-script
     SUBDIR += rustc-demangle
@@ -8651,7 +8666,6 @@
     SUBDIR += serdisplib
     SUBDIR += serialize
     SUBDIR += sfl-library
-    SUBDIR += sfml
     SUBDIR += sfsexp
     SUBDIR += sgb
     SUBDIR += shadered
@@ -8770,6 +8784,7 @@
     SUBDIR += talloc
     SUBDIR += talloc242
     SUBDIR += talloc243
+    SUBDIR += talloc244
     SUBDIR += task
     SUBDIR += taskctl
     SUBDIR += taskflow
@@ -8896,6 +8911,7 @@
     SUBDIR += violet
     SUBDIR += vipack
     SUBDIR += vitables
+    SUBDIR += vite-plus
     SUBDIR += volk
     SUBDIR += vstr
     SUBDIR += vxlog
@@ -8908,6 +8924,7 @@
     SUBDIR += wasi-compiler-rt20
     SUBDIR += wasi-compiler-rt21
     SUBDIR += wasi-compiler-rt22
+    SUBDIR += wasi-compiler-rt23
     SUBDIR += wasi-libc
     SUBDIR += wasi-libcxx
     SUBDIR += wasi-libcxx17
@@ -8976,6 +8993,7 @@
     SUBDIR += zeal
     SUBDIR += zfp
     SUBDIR += zix
+    SUBDIR += zizmor
     SUBDIR += zls
     SUBDIR += zookeeper
     SUBDIR += zthread

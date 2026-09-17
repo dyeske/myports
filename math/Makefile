@@ -355,6 +355,7 @@
     SUBDIR += flintqs
     SUBDIR += flopc++
     SUBDIR += form
+    SUBDIR += formfactor
     SUBDIR += fparser
     SUBDIR += fplll
     SUBDIR += freefem++
@@ -466,7 +467,6 @@
     SUBDIR += libdivsufsort
     SUBDIR += libfixmath
     SUBDIR += libflame
-    SUBDIR += libformfactor
     SUBDIR += libhomfly
     SUBDIR += libmesh
     SUBDIR += libnormaliz
@@ -582,6 +582,7 @@
     SUBDIR += octave-forge-database
     SUBDIR += octave-forge-dataframe
     SUBDIR += octave-forge-datatypes
+    SUBDIR += octave-forge-devtools
     SUBDIR += octave-forge-dicom
     SUBDIR += octave-forge-divand
     SUBDIR += octave-forge-doctest
@@ -973,6 +974,7 @@
     SUBDIR += py-blis
     SUBDIR += py-bottleneck
     SUBDIR += py-brial
+    SUBDIR += py-cbcbox
     SUBDIR += py-chaospy
     SUBDIR += py-clarabel
     SUBDIR += py-claripy
@@ -982,6 +984,7 @@
     SUBDIR += py-cmaes
     SUBDIR += py-cmyt
     SUBDIR += py-colormath
+    SUBDIR += py-colormath2
     SUBDIR += py-contourpy
     SUBDIR += py-conway-polynomials
     SUBDIR += py-cryptominisat
@@ -992,7 +995,6 @@
     SUBDIR += py-daqp
     SUBDIR += py-dcor
     SUBDIR += py-deap
-    SUBDIR += py-dgl
     SUBDIR += py-diffcp
     SUBDIR += py-dionysus
     SUBDIR += py-disjoint-set
@@ -1093,6 +1095,7 @@
     SUBDIR += py-osqp
     SUBDIR += py-pandas
     SUBDIR += py-pandas-datareader
+    SUBDIR += py-pandas-gbq
     SUBDIR += py-pandas-stubs
     SUBDIR += py-patsy
     SUBDIR += py-pcodec
@@ -1112,7 +1115,6 @@
     SUBDIR += py-pyclipper
     SUBDIR += py-pycosat
     SUBDIR += py-pygsl
-    SUBDIR += py-pygslodeiv2
     SUBDIR += py-pyhdfe
     SUBDIR += py-pyhull
     SUBDIR += py-pymc3

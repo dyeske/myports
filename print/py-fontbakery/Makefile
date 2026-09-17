@@ -1,5 +1,6 @@
 PORTNAME=	fontbakery
 PORTVERSION=	1.1.0
+PORTREVISION=	2
 CATEGORIES=	print python
 MASTER_SITES=	PYPI \
 		https://github.com/fonttools/fontbakery/releases/download/v${PORTVERSION}/
@@ -12,6 +13,9 @@ WWW=		https://font-bakery.readthedocs.io/en/latest/ \
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Depends on expired x11-fonts/py-cu2qu
+EXPIRATION_DATE=2026-09-30
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=61.0:devel/py-setuptools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}setuptools-scm>=6.2:devel/py-setuptools-scm@${PY_FLAVOR} \
@@ -55,7 +59,7 @@ TYPENETWORK_DESC=	Checks for Type Network
 
 FONTVAL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR}
 GOOGLEFONTS_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}axisregistry>=0.4.16<0.5:x11-fonts/py-axisregistry@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.7.1:www/py-beautifulsoup@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}beautifulsoup4>=4.7.1:www/py-beautifulsoup4@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}collidoscope>=0.5.2:print/py-collidoscope@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}fonttools>=0:print/py-fonttools@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}gflanguages>=0.7.7<0.8:x11-fonts/py-gflanguages@${PY_FLAVOR} \
@@ -65,7 +69,7 @@ GOOGLEFONTS_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}axisregistry>=0.4.16<0.5:x11-font
 			${PYTHON_PKGNAMEPREFIX}shaperglot>=1.2.0<2:x11-fonts/py-shaperglot@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}stringbrewer>=0:devel/py-stringbrewer@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}unicodedata2>=0:devel/py-unicodedata2@${PY_FLAVOR}
-TYPENETWORK_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.7.1:www/py-beautifulsoup@${PY_FLAVOR} \
+TYPENETWORK_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}beautifulsoup4>=4.7.1:www/py-beautifulsoup4@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}shaperglot>=1.0.0<2:x11-fonts/py-shaperglot@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}unicodedata2>=0:devel/py-unicodedata2@${PY_FLAVOR}
 

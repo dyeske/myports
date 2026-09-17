@@ -336,7 +336,7 @@ dirsrv:*:391:
 _turnserver:*:392:
 immich:*:393:
 mysqlrouter:*:394:
-# free: 395
+comentario:*:395:
 # free: 396
 rtorrent:*:397:
 tiarra:*:398:
@@ -773,7 +773,7 @@ _tuptime:*:827:
 cirrus:*:828:
 # free: 829
 # free: 830
-# free: 831
+telemt:*:831:
 beehive:*:832:
 bhyvemgrd:*:833:
 pocket-id:*:834:

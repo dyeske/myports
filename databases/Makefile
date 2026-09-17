@@ -146,6 +146,7 @@
     SUBDIR += libmemcached
     SUBDIR += libmongocrypt
     SUBDIR += libmswstr
+    SUBDIR += libnusqlite3
     SUBDIR += libnvpair
     SUBDIR += libodbc++
     SUBDIR += libpbl
@@ -198,6 +199,7 @@
     SUBDIR += mtop
     SUBDIR += mydumper
     SUBDIR += mysql++
+    SUBDIR += mysql-config-coder
     SUBDIR += mysql-connector-c++
     SUBDIR += mysql-connector-j
     SUBDIR += mysql-connector-odbc
@@ -582,6 +584,7 @@
     SUBDIR += pgbackrest
     SUBDIR += pgbadger
     SUBDIR += pgbarman
+    SUBDIR += pgbot
     SUBDIR += pgbouncer
     SUBDIR += pgdbf
     SUBDIR += pgjwt
@@ -601,6 +604,7 @@
     SUBDIR += pgschema
     SUBDIR += pgsql-http
     SUBDIR += pgtcl
+    SUBDIR += pgterm
     SUBDIR += pgtop
     SUBDIR += pgtui
     SUBDIR += pguri
@@ -677,10 +681,12 @@
     SUBDIR += plpgsql_check
     SUBDIR += pointcloud
     SUBDIR += postgis-jdbc
+    SUBDIR += postgis-tiger_geocoder
     SUBDIR += postgis33
     SUBDIR += postgis34
     SUBDIR += postgis35
     SUBDIR += postgis36
+    SUBDIR += postgis37
     SUBDIR += postgresql-idn
     SUBDIR += postgresql-jdbc
     SUBDIR += postgresql-libpgeasy
@@ -765,7 +771,6 @@
     SUBDIR += puredb
     SUBDIR += pxlib
     SUBDIR += pxtools
-    SUBDIR += py-Elixir
     SUBDIR += py-PyGreSQL
     SUBDIR += py-PyHive
     SUBDIR += py-PyPika
@@ -786,7 +791,6 @@
     SUBDIR += py-asyncmy
     SUBDIR += py-asyncpg
     SUBDIR += py-berkeleydb
-    SUBDIR += py-cassandra-driver
     SUBDIR += py-chroma-hnswlib
     SUBDIR += py-chromadb
     SUBDIR += py-couchdb
@@ -794,6 +798,7 @@
     SUBDIR += py-databases
     SUBDIR += py-databricks-sql-connector
     SUBDIR += py-datafusion
+    SUBDIR += py-db-dtypes
     SUBDIR += py-dbf
     SUBDIR += py-dbt-core
     SUBDIR += py-dbt-duckdb
@@ -801,6 +806,7 @@
     SUBDIR += py-dbt-snowflake
     SUBDIR += py-dbutils
     SUBDIR += py-deltalake
+    SUBDIR += py-django-pgware
     SUBDIR += py-duckdb
     SUBDIR += py-duckdb_engine
     SUBDIR += py-fakeredis
@@ -865,7 +871,6 @@
     SUBDIR += py-pylibmc
     SUBDIR += py-pymemcache
     SUBDIR += py-pymongo
-    SUBDIR += py-pymssql
     SUBDIR += py-pymysql
     SUBDIR += py-pyodbc
     SUBDIR += py-pypuppetdb
@@ -892,7 +897,6 @@
     SUBDIR += py-sqlalchemy-json
     SUBDIR += py-sqlalchemy-migrate
     SUBDIR += py-sqlalchemy-utils
-    SUBDIR += py-sqlalchemy10
     SUBDIR += py-sqlalchemy14
     SUBDIR += py-sqlalchemy20
     SUBDIR += py-sqlcipher3
@@ -953,6 +957,7 @@
     SUBDIR += redisbloom
     SUBDIR += redisjson
     SUBDIR += redisjson86
+    SUBDIR += redistimeseries
     SUBDIR += retcl
     SUBDIR += rocksdb
     SUBDIR += rocksdb-jni
@@ -1180,6 +1185,7 @@
     SUBDIR += tdb1
     SUBDIR += tdb1410
     SUBDIR += tdb1413
+    SUBDIR += tdb1415
     SUBDIR += tdbc
     SUBDIR += tile38
     SUBDIR += tiledb

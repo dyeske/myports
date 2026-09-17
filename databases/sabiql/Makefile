@@ -1,11 +1,11 @@
 PORTNAME=	sabiql
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.0.1
-PORTREVISION=	0
+DISTVERSION=	3.0.1
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	nivit@FreeBSD.org
-COMMENT=	Fast PostgreSQL and SQLite TUI to browse, query, and edit databases
+COMMENT=	PostgreSQL, MySQL and SQLite TUI to browse, query, and edit databases
 WWW=		https://github.com/riii111/sabiql
 
 LICENSE=	APACHE20 BSD0CLAUSE BSD2CLAUSE BSD3CLAUSE BSL CDLA20 ISCL MIT \
@@ -23,6 +23,9 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils
 USES=		cargo
 USE_GITHUB=	yes
 GH_ACCOUNT=	riii111
+
+CARGO_BUILD_ARGS=	--ignore-rust-version
+CARGO_INSTALL_ARGS=	--ignore-rust-version
 
 PLIST_FILES=	bin/sabiql
 

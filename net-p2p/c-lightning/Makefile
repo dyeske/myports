@@ -1,9 +1,8 @@
 PORTNAME=	c-lightning
-# To build from an arbitrary git commit comment PORTVERSION and PORTREVISION (if present)
-PORTVERSION=	26.06.6
+# To build from an arbitrary git commit set PORTVERSION=0, comment PORTREVISION (if present)
+# and set PKGNAMESUFFIX.
+PORTVERSION=	26.06.7
 DISTVERSIONPREFIX=	v
-# and uncomment the following two lines (use for example -git-HEAD or -git-f8d8348c)
-#PORTVERSION=	0
 #PKGNAMESUFFIX=	-git-f8d8348c
 CATEGORIES=	net-p2p finance
 
@@ -30,6 +29,7 @@ USES=		autoreconf:build \
 		libtool \
 		python:build \
 		shebangfix
+
 CPE_VENDOR=	elementsproject
 BINARY_ALIAS=	python3=${PYTHON_CMD} sed=${LOCALBASE}/bin/gsed
 ALL_TARGET=	default

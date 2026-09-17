@@ -1,5 +1,5 @@
 PORTNAME=	maturin
-DISTVERSION=	1.14.1
+DISTVERSION=	1.15.0
 PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	PYPI
@@ -17,7 +17,7 @@ LICENSE_FILE_APACHE20=	${WRKSRC}/license-apache
 LICENSE_FILE_MIT=	${WRKSRC}/license-mit
 
 BUILD_DEPENDS=	${PY_SETUPTOOLS} \
-		${PYTHON_PKGNAMEPREFIX}setuptools-rust>=1.4.0:devel/py-setuptools-rust@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setuptools-rust>=1.11.0:devel/py-setuptools-rust@${PY_FLAVOR} \
 		${PY_TOMLI} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0.36.2:devel/py-wheel@${PY_FLAVOR}
 LIB_DEPENDS=	libzstd.so:archivers/zstd

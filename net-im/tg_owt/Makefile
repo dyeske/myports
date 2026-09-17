@@ -1,5 +1,6 @@
 PORTNAME=	tg_owt
-PORTVERSION=	0.0.20260409
+PORTVERSION=	0.0.20260803
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	fluffy@FreeBSD.org
@@ -18,7 +19,6 @@ LIB_DEPENDS=	libabsl_base.so:devel/abseil \
 		libopenh264.so:multimedia/openh264 \
 		libopus.so:audio/opus \
 		libpipewire-0.3.so:multimedia/pipewire \
-		libprotobuf.so:devel/protobuf \
 		libsrtp2.so:net/libsrtp2 \
 		libvpx.so:multimedia/libvpx
 
@@ -28,7 +28,7 @@ USE_GL=		gbm gl
 USE_GITHUB=	yes
 USE_GNOME=	glib20
 GH_ACCOUNT=	desktop-app
-GH_TAGNAME=	89df288
+GH_TAGNAME=	19d51d3
 
 CMAME_ON=	TG_OWT_PACKAGED_BUILD
 

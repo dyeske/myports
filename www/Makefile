@@ -69,7 +69,6 @@
     SUBDIR += apache-mode.el
     SUBDIR += apache24
     SUBDIR += aquatone
-    SUBDIR += archiva
     SUBDIR += aria2
     SUBDIR += asql
     SUBDIR += authelia
@@ -128,6 +127,7 @@
     SUBDIR += codeberg-pages-server
     SUBDIR += codeigniter
     SUBDIR += colly
+    SUBDIR += comentario
     SUBDIR += coppermine
     SUBDIR += corepack
     SUBDIR += cpp-httplib
@@ -274,6 +274,7 @@
     SUBDIR += h2c
     SUBDIR += h2o
     SUBDIR += habari
+    SUBDIR += hedgedoc
     SUBDIR += hiawatha
     SUBDIR += hiawatha-monitor
     SUBDIR += homepage
@@ -323,7 +324,6 @@
     SUBDIR += jira-cli
     SUBDIR += jitsi-meet
     SUBDIR += jmeter
-    SUBDIR += joomla4
     SUBDIR += joomla5
     SUBDIR += joomla6
     SUBDIR += jwt-cli
@@ -527,8 +527,14 @@
     SUBDIR += nginx-devel
     SUBDIR += nginx-full
     SUBDIR += nginx-lite
+    SUBDIR += nginx-module-array-var
+    SUBDIR += nginx-module-cache-purge
+    SUBDIR += nginx-module-form-input
     SUBDIR += nginx-module-lua
     SUBDIR += nginx-module-lua-stream
+    SUBDIR += nginx-module-ndk
+    SUBDIR += nginx-module-njs
+    SUBDIR += nginx-module-vod
     SUBDIR += nginx-naxsi
     SUBDIR += nginx-prometheus-exporter
     SUBDIR += nginx-ultimate-bad-bot-blocker
@@ -1533,7 +1539,7 @@
     SUBDIR += py-azure-common
     SUBDIR += py-baize
     SUBDIR += py-beaker
-    SUBDIR += py-beautifulsoup
+    SUBDIR += py-beautifulsoup4
     SUBDIR += py-betamax
     SUBDIR += py-binarycookies
     SUBDIR += py-biscuits
@@ -1559,6 +1565,7 @@
     SUBDIR += py-cheroot
     SUBDIR += py-cherrypy
     SUBDIR += py-cherrypy-cors
+    SUBDIR += py-choreographer
     SUBDIR += py-cinemagoer
     SUBDIR += py-cross-web
     SUBDIR += py-crossplane
@@ -1573,13 +1580,6 @@
     SUBDIR += py-dash-bootstrap-components
     SUBDIR += py-ddgs
     SUBDIR += py-dj-database-url
-    SUBDIR += py-dj42-django-picklefield
-    SUBDIR += py-dj42-django-ranged-response
-    SUBDIR += py-dj42-django-simple-captcha
-    SUBDIR += py-dj42-django-webpack-loader
-    SUBDIR += py-dj42-django_statici18n
-    SUBDIR += py-dj42-djangorestframework
-    SUBDIR += py-dj42-djangosaml2
     SUBDIR += py-dj60-channels
     SUBDIR += py-dj60-django-auth-ldap
     SUBDIR += py-dj60-django-choices-field
@@ -1602,6 +1602,8 @@
     SUBDIR += py-dj60-drf-spectacular-sidecar
     SUBDIR += py-dj60-social-auth-app-django
     SUBDIR += py-dj60-strawberry-graphql-django
+    SUBDIR += py-dj61-django-stubs-ext
+    SUBDIR += py-dj61-djangorestframework
     SUBDIR += py-django-admin-rangefilter
     SUBDIR += py-django-advanced-filters
     SUBDIR += py-django-allauth
@@ -1662,6 +1664,7 @@
     SUBDIR += py-django-mptt
     SUBDIR += py-django-multiselectfield
     SUBDIR += py-django-netfields
+    SUBDIR += py-django-ninja
     SUBDIR += py-django-object-actions
     SUBDIR += py-django-otp
     SUBDIR += py-django-otp-yubikey
@@ -1709,7 +1712,6 @@
     SUBDIR += py-django-voting
     SUBDIR += py-django-webpack-loader
     SUBDIR += py-django-widget-tweaks
-    SUBDIR += py-django42
     SUBDIR += py-django52
     SUBDIR += py-django60
     SUBDIR += py-django61
@@ -1820,6 +1822,7 @@
     SUBDIR += py-google-cloud-vision
     SUBDIR += py-google-resumable-media
     SUBDIR += py-googlemaps
+    SUBDIR += py-googlesearch-python
     SUBDIR += py-grafana-dashboard-manager
     SUBDIR += py-granian
     SUBDIR += py-graphite-api
@@ -1914,6 +1917,7 @@
     SUBDIR += py-priority1
     SUBDIR += py-prometheus-fastapi-instrumentator
     SUBDIR += py-protego
+    SUBDIR += py-proxpi
     SUBDIR += py-proxy.py
     SUBDIR += py-proxy_tools
     SUBDIR += py-puppetboard
@@ -1953,6 +1957,7 @@
     SUBDIR += py-requests-mock
     SUBDIR += py-requests-oauthlib
     SUBDIR += py-requests-ratelimiter
+    SUBDIR += py-requests-sse
     SUBDIR += py-requests-toolbelt
     SUBDIR += py-requests-unixsocket
     SUBDIR += py-requests-wsgi-adapter
@@ -1970,8 +1975,6 @@
     SUBDIR += py-scalar-fastapi
     SUBDIR += py-scgi
     SUBDIR += py-scrapy
-    SUBDIR += py-seafdav
-    SUBDIR += py-seafobj
     SUBDIR += py-searxng-devel
     SUBDIR += py-secure-cookie
     SUBDIR += py-selector
@@ -2024,6 +2027,7 @@
     SUBDIR += py-wcag-contrast-ratio
     SUBDIR += py-webargs
     SUBDIR += py-webassets
+    SUBDIR += py-webdavclient3
     SUBDIR += py-webdriver_manager
     SUBDIR += py-webob
     SUBDIR += py-websocket-client
@@ -2068,6 +2072,7 @@
     SUBDIR += reddsaver
     SUBDIR += redmine60
     SUBDIR += redmine61
+    SUBDIR += redmine70
     SUBDIR += rejik
     SUBDIR += remark42
     SUBDIR += reportmagic
@@ -2398,6 +2403,7 @@
     SUBDIR += rubygem-rack-protection3
     SUBDIR += rubygem-rack-proxy
     SUBDIR += rubygem-rack-proxy-gitlab
+    SUBDIR += rubygem-rack-proxy0
     SUBDIR += rubygem-rack-session
     SUBDIR += rubygem-rack-session-gitlab
     SUBDIR += rubygem-rack-session10
@@ -2461,6 +2467,7 @@
     SUBDIR += rubygem-redis-rails-rails61
     SUBDIR += rubygem-requestjs-rails
     SUBDIR += rubygem-requestjs-rails-rails72
+    SUBDIR += rubygem-requestjs-rails-rails81
     SUBDIR += rubygem-responders
     SUBDIR += rubygem-responders-rails-gitlab
     SUBDIR += rubygem-responders-rails5
@@ -2566,7 +2573,6 @@
     SUBDIR += sarg
     SUBDIR += scloader
     SUBDIR += script4rss
-    SUBDIR += seahub
     SUBDIR += selenium
     SUBDIR += serendipity
     SUBDIR += serf

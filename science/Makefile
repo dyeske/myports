@@ -381,13 +381,11 @@
     SUBDIR += py-libpysal
     SUBDIR += py-libwignernj
     SUBDIR += py-lifelines
-    SUBDIR += py-mdp
     SUBDIR += py-mercantile
     SUBDIR += py-meshio
     SUBDIR += py-mmcif
     SUBDIR += py-mmtf-python
     SUBDIR += py-mne
-    SUBDIR += py-molmod
     SUBDIR += py-morphio
     SUBDIR += py-mp-api
     SUBDIR += py-mpcontribs-client
@@ -403,7 +401,6 @@
     SUBDIR += py-nixio
     SUBDIR += py-obspy
     SUBDIR += py-oddt
-    SUBDIR += py-openEMS
     SUBDIR += py-openbabel
     SUBDIR += py-openpiv
     SUBDIR += py-optking
@@ -457,6 +454,7 @@
     SUBDIR += py-scikit-fuzzy
     SUBDIR += py-scikit-learn
     SUBDIR += py-scikit-optimize
+    SUBDIR += py-scikit-rf
     SUBDIR += py-scikit-sparse
     SUBDIR += py-scimath
     SUBDIR += py-scipy
