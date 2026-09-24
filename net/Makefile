@@ -270,6 +270,7 @@
     SUBDIR += icmpinfo
     SUBDIR += icpld
     SUBDIR += identme
+    SUBDIR += if_pair-kmod
     SUBDIR += ifdepd
     SUBDIR += iffinder
     SUBDIR += ifstat
@@ -1192,6 +1193,7 @@
     SUBDIR += py-suds
     SUBDIR += py-terminado
     SUBDIR += py-tiny-proxy
+    SUBDIR += py-tinytuya
     SUBDIR += py-tofu
     SUBDIR += py-transip
     SUBDIR += py-trio

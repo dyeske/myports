@@ -3116,21 +3116,43 @@ _DISTFILES_FILE=${WRKDIR}/.distfiles
 _PATCH_SITES_FILE=${WRKDIR}/.patch_sites
 _PATCHFILES_FILE=${WRKDIR}/.patchfiles
 
+create-do-fetch-distfiles-files: .PHONY
+.    if !empty(DISTFILES)
+.      if !defined(_DO_FETCH_FILES_CREATED) || ${_DO_FETCH_FILES_CREATED} != ${PKGORIGIN}
+	@${MKDIR} ${WRKDIR}
+	@${RM} ${_MASTER_SITES_FILE} ${_DISTFILES_FILE}
+.        for site in ${_MASTER_SITES_ENV}
+	@printf '%s\n' "${site}" >> ${_MASTER_SITES_FILE}
+.        endfor
+.        for file in ${DISTFILES}
+	@printf '%s\n' "${file}" >> ${_DISTFILES_FILE}
+.        endfor
+.      endif
+.    endif
+
+create-do-fetch-patchfiles-files: .PHONY
+.    if defined(PATCHFILES) && !empty(PATCHFILES)
+.      if !defined(_DO_FETCH_FILES_CREATED) || ${_DO_FETCH_FILES_CREATED} != ${PKGORIGIN}
+	@${MKDIR} ${WRKDIR}
+	@${RM} ${_PATCH_SITES_FILE} ${_PATCHFILES_FILE}
+.        for site in ${_PATCH_SITES_ENV}
+	@printf '%s\n' "${site}" >> ${_PATCH_SITES_FILE}
+.        endfor
+.        for file in ${PATCHFILES}
+	@printf '%s\n' "${file:C/:-p[0-9]//}" >> ${_PATCHFILES_FILE}
+.        endfor
+.      endif
+.    endif
+
+
 # do-fetch does the fetching
 # fetch-list Prints out a list of files to fetch (useful to do a batch fetch)
 # fetch-url-list-int Used by fetch-urlall-list and fetch-url-list
-.    for _target in do-fetch fetch-list fetch-url-list-int makesum-fetch
+.    for _target in do-fetch fetch-list fetch-url-list-int
 .      if !target(${_target})
-${_target}:
+${_target}: create-do-fetch-distfiles-files create-do-fetch-patchfiles-files
 	@${MKDIR} ${WRKDIR}
 .        if !empty(DISTFILES)
-	@${RM} ${_MASTER_SITES_FILE} ${_DISTFILES_FILE}
-.          for site in ${_MASTER_SITES_ENV}
-	@printf '%s\n' "${site}" >> ${_MASTER_SITES_FILE}
-.          endfor
-.          for file in ${DISTFILES}
-	@printf '%s\n' "${file}" >> ${_DISTFILES_FILE}
-.          endfor
 	@${SETENV} \
 			${_DO_FETCH_ENV} \
 			dp_SITES_FILE=${_MASTER_SITES_FILE} \
@@ -3139,13 +3161,6 @@ ${_target}:
 			${SH} ${SCRIPTSDIR}/do-fetch.sh
 .        endif
 .        if defined(PATCHFILES) && !empty(PATCHFILES)
-	@${RM} ${_PATCH_SITES_FILE} ${_PATCHFILES_FILE}
-.          for site in ${_PATCH_SITES_ENV}
-	@printf '%s\n' "${site}" >> ${_PATCH_SITES_FILE}
-.          endfor
-.          for file in ${PATCHFILES}
-	@printf '%s\n' "${file}" >> ${_PATCHFILES_FILE}
-.          endfor
 	@${SETENV} \
 			${_DO_FETCH_ENV} \
 			dp_SITES_FILE=${_PATCH_SITES_FILE} \
@@ -3937,13 +3952,16 @@ _CKSUMFILES_FILE=${WRKDIR}/.cksumfiles
 # the options consistent when fetching and when makesum'ing.
 # As we're fetching new distfiles, that are not in the distinfo file, disable
 # checksum and sizes checks.
-makesum: check-sanity
-	@cd ${.CURDIR} && ${MAKE} makesum-fetch
+makesum: check-sanity create-do-fetch-distfiles-files create-do-fetch-patchfiles-files
+	@cd ${.CURDIR} && ${MAKE} fetch \
+			NO_CHECKSUM=yes \
+			DISABLE_SIZE=yes \
+			_DO_FETCH_FILES_CREATED=${PKGORIGIN}
 	@${MKDIR} ${WRKDIR}
 	@${RM} ${_CKSUMFILES_FILE}
-.          for file in ${_CKSUMFILES}
+.      for file in ${_CKSUMFILES}
 	@printf '%s\n' "${file}" >> ${_CKSUMFILES_FILE}
-.          endfor
+.      endfor
 	@${SETENV} \
 			${_CHECKSUM_INIT_ENV} \
 			dp_CHECKSUM_ALGORITHMS='${CHECKSUM_ALGORITHMS:tu}' \
@@ -3960,9 +3978,9 @@ checksum: fetch
 .      if !empty(_CKSUMFILES) && !defined(NO_CHECKSUM)
 	@${MKDIR} ${WRKDIR}
 	@${RM} ${_CKSUMFILES_FILE}
-.          for file in ${_CKSUMFILES}
+.        for file in ${_CKSUMFILES}
 	@printf '%s\n' "${file}" >> ${_CKSUMFILES_FILE}
-.          endfor
+.        endfor
 	@${SETENV} \
 			${_CHECKSUM_INIT_ENV} \
 			dp_CHECKSUM_ALGORITHMS='${CHECKSUM_ALGORITHMS:tu}' \
@@ -4024,6 +4042,11 @@ package-noinstall: package
 ################################################################
 # Dependency checking
 ################################################################
+
+.    for sp in ${_PKGS}
+BUILD_DEPENDS${_SP.${sp}}+=		${BUILD_RUN_DEPENDS${_SP.${sp}}}
+RUN_DEPENDS${_SP.${sp}}+=		${BUILD_RUN_DEPENDS${_SP.${sp}}}
+.    endfor
 
 .    if !target(depends)
 depends: pkg-depends extract-depends patch-depends lib-depends fetch-depends build-depends run-depends

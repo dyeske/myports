@@ -178,7 +178,6 @@
     SUBDIR += ggml
     SUBDIR += gimp-help-en
     SUBDIR += github-copilot-cli
-    SUBDIR += github-copilot-cli-legacy
     SUBDIR += github-copilot-language-server
     SUBDIR += gitlogue
     SUBDIR += gkrellm-gamma
@@ -496,6 +495,7 @@
     SUBDIR += py-csvw
     SUBDIR += py-cvat-sdk
     SUBDIR += py-datasets
+    SUBDIR += py-deepspeed
     SUBDIR += py-detecta
     SUBDIR += py-diffusers
     SUBDIR += py-eemeter

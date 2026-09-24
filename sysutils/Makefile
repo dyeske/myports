@@ -120,6 +120,7 @@
     SUBDIR += beats92
     SUBDIR += beats93
     SUBDIR += beats94
+    SUBDIR += beats95
     SUBDIR += bfs
     SUBDIR += bhyve-firmware
     SUBDIR += bhyve-rc
@@ -557,11 +558,18 @@
     SUBDIR += installwatch
     SUBDIR += intel-epct
     SUBDIR += intel-nvmupdate-700series
+    SUBDIR += intel-nvmupdate-700series-dell
     SUBDIR += intel-nvmupdate-e610
     SUBDIR += intel-nvmupdate-e810
+    SUBDIR += intel-nvmupdate-e810-e823-dell
+    SUBDIR += intel-nvmupdate-e810-lenovo
+    SUBDIR += intel-nvmupdate-e825-e830-dell
     SUBDIR += intel-nvmupdate-e830-e835
     SUBDIR += intel-nvmupdate-i210
+    SUBDIR += intel-nvmupdate-i210-i350-x550-700series-lenovo
     SUBDIR += intel-nvmupdate-i225-i226
+    SUBDIR += intel-nvmupdate-i350-x550-700series-hpe
+    SUBDIR += intel-nvmupdate-i350-x550-dell
     SUBDIR += intel-nvmupdate-x550
     SUBDIR += intel-pcm
     SUBDIR += intel-undervolt
@@ -695,6 +703,7 @@
     SUBDIR += logstash92
     SUBDIR += logstash93
     SUBDIR += logstash94
+    SUBDIR += logstash95
     SUBDIR += logtool
     SUBDIR += logwatch
     SUBDIR += loki
@@ -944,6 +953,7 @@
     SUBDIR += p5-User
     SUBDIR += p5-arclog
     SUBDIR += p5-reslog
+    SUBDIR += pack
     SUBDIR += packer
     SUBDIR += packmule
     SUBDIR += pacman
