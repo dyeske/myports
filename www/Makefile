@@ -376,6 +376,8 @@
     SUBDIR += linux-rl9-libnghttp2
     SUBDIR += linux-rl9-qt5-qtwebchannel
     SUBDIR += linux-rl9-qt5-qtwebsockets
+    SUBDIR += linux-rl9-webkit2gtk3
+    SUBDIR += linux-rl9-webkit2gtk3-jsc
     SUBDIR += linux-vieb
     SUBDIR += linux-widevine-cdm
     SUBDIR += litmus
@@ -1525,6 +1527,7 @@
     SUBDIR += py-aiohttp
     SUBDIR += py-aiohttp-client-cache
     SUBDIR += py-aiohttp-cors
+    SUBDIR += py-aiohttp-fast-zlib
     SUBDIR += py-aiohttp-jinja2
     SUBDIR += py-aiohttp-middlewares
     SUBDIR += py-aiohttp-oauthlib
@@ -1605,6 +1608,7 @@
     SUBDIR += py-dj60-drf-spectacular-sidecar
     SUBDIR += py-dj60-social-auth-app-django
     SUBDIR += py-dj60-strawberry-graphql-django
+    SUBDIR += py-dj61-django-debug-toolbar
     SUBDIR += py-dj61-django-stubs-ext
     SUBDIR += py-dj61-djangorestframework
     SUBDIR += py-django-admin-rangefilter
@@ -1967,6 +1971,7 @@
     SUBDIR += py-requests_ntlm
     SUBDIR += py-respx
     SUBDIR += py-restclient
+    SUBDIR += py-retry-requests
     SUBDIR += py-rfc3986
     SUBDIR += py-rfc3987
     SUBDIR += py-rfc3987-syntax

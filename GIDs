@@ -259,7 +259,7 @@ promscale:*:314:
 lavinmq:*:315:
 nut:*:316:
 hedgedoc:*:317:
-# free: 318, UID used by icingadirector
+rayfish:*:318:
 rustdesk:*:319:
 teleirc:*:320:
 caldera:*:321:
@@ -787,7 +787,7 @@ tcpcryptd:*:841:
 munin:*:842:
 dahdi:*:843:asterisk
 subsonic:*:844:
-# free: 845
+rauthy:*:845:
 sogod:*:846:
 domoticz:*:847:
 graylog:*:848:
