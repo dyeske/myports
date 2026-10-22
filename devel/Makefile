@@ -6102,6 +6102,7 @@
     SUBDIR += py-q
     SUBDIR += py-qasync
     SUBDIR += py-qcs-api-client
+    SUBDIR += py-qcs-api-client-common
     SUBDIR += py-qcs-sdk-python
     SUBDIR += py-qstylizer
     SUBDIR += py-qt5
@@ -7623,6 +7624,7 @@
     SUBDIR += rubygem-drb-gitlab
     SUBDIR += rubygem-dry-cli
     SUBDIR += rubygem-dry-configurable
+    SUBDIR += rubygem-dry-configurable-gitlab
     SUBDIR += rubygem-dry-container
     SUBDIR += rubygem-dry-core
     SUBDIR += rubygem-dry-core-gitlab
@@ -7994,7 +7996,6 @@
     SUBDIR += rubygem-mixlib-versioning
     SUBDIR += rubygem-mize
     SUBDIR += rubygem-mkrf
-    SUBDIR += rubygem-mmap2
     SUBDIR += rubygem-mocha
     SUBDIR += rubygem-molinillo
     SUBDIR += rubygem-moneta
@@ -8864,6 +8865,7 @@
     SUBDIR += tlsh
     SUBDIR += tlx
     SUBDIR += tnt
+    SUBDIR += tobi-try
     SUBDIR += tokei
     SUBDIR += tokio-console
     SUBDIR += toml11
@@ -8904,6 +8906,7 @@
     SUBDIR += unordered-dense
     SUBDIR += upnp
     SUBDIR += urjtag
+    SUBDIR += usage
     SUBDIR += ut
     SUBDIR += utf8cpp
     SUBDIR += uthash
