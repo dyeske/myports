@@ -1,0 +1,17 @@
+TIMESTAMP = 1787519382
+SHA256 (github-git-sizer-v1.5.0_GH0.tar.gz) = 07a5ac5f30401a17d164a6be8d52d3d474ee9c3fb7f60fd83a617af9f7e902bb
+SIZE (github-git-sizer-v1.5.0_GH0.tar.gz) = 78904
+SHA256 (davecgh-go-spew-v1.1.1_GH0.tar.gz) = 7d82b9bb7291adbe7498fe946920ab3e7fc9e6cbfc3b2294693fad00bf0dd17e
+SIZE (davecgh-go-spew-v1.1.1_GH0.tar.gz) = 42152
+SHA256 (go-yaml-yaml-v3.0.1_GH0.tar.gz) = cf05411540d3e6ef8f1fd88434b34f94cedaceb540329031d80e23b74540c4e5
+SIZE (go-yaml-yaml-v3.0.1_GH0.tar.gz) = 91173
+SHA256 (golang-sync-v0.1.0_GH0.tar.gz) = 81056c07b5dc1077f2d6ac0f7ce3d4ef199a3ff85c319ab03dcff22fa9ba2183
+SIZE (golang-sync-v0.1.0_GH0.tar.gz) = 19356
+SHA256 (pmezard-go-difflib-v1.0.0_GH0.tar.gz) = 28f3dc1b5c0efd61203ab07233f774740d3bf08da4d8153fb5310db6cea0ebda
+SIZE (pmezard-go-difflib-v1.0.0_GH0.tar.gz) = 11398
+SHA256 (spf13-pflag-v1.0.5_GH0.tar.gz) = 9a2cae1f8e8ab0d2cc8ebe468e871af28d9ac0962cf0520999e3ba85f0c7b808
+SIZE (spf13-pflag-v1.0.5_GH0.tar.gz) = 50796
+SHA256 (stretchr-testify-v1.7.0_GH0.tar.gz) = 560c0984072cb436b17bbce5699b205d5aa2beb58ef7a94530d7724b5739a8d6
+SIZE (stretchr-testify-v1.7.0_GH0.tar.gz) = 91073
+SHA256 (uber-go-goleak-v1.1.12_GH0.tar.gz) = e349c4d405f7118ba10c40cf156b0b593f0e9ba46db87e01df2fb095869f91d4
+SIZE (uber-go-goleak-v1.1.12_GH0.tar.gz) = 13678
