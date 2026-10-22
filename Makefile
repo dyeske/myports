@@ -74,6 +74,12 @@ INDEX_COMPRESSION_FORMAT?=	xz
 .error "Invalid compression format: ${INDEX_COMPRESSION_FORMAT}, expecting xz, bz2 or zst"
 .endif
 
+cleanwork:
+	time find . -type d \( -name 'work' -or -name 'work-*' \) \
+		-and -not -regex '.*/distfiles/.*' \
+		-and -not -name 'distfiles' \
+		-mindepth 3 -maxdepth 3 -exec rm -rf {} \;
+
 fetchindex: ${INDEXDIR}/${INDEXFILE}.${INDEX_COMPRESSION_FORMAT}
 	@if bsdcat < ${INDEXDIR}/${INDEXFILE}.${INDEX_COMPRESSION_FORMAT} > ${INDEXDIR}/${INDEXFILE}.tmp ; then \
 		chmod a+r ${INDEXDIR}/${INDEXFILE}.tmp; \
