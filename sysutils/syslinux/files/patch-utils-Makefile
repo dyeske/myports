@@ -1,0 +1,13 @@
+--- utils/Makefile.orig	2014-10-06 12:27:44.000000000 -0400
++++ utils/Makefile	2026-10-22 05:55:02.676670000 -0400
+@@ -17,8 +17,8 @@
+ VPATH = $(SRC)
+ include $(MAKEDIR)/syslinux.mk
+
+-CFLAGS   = $(GCCWARN) -Os -fomit-frame-pointer -D_FILE_OFFSET_BITS=64 -I$(SRC)
+-LDFLAGS  = -O2
++CFLAGS   = $(GCCWARN) -Os -fomit-frame-pointer -D_FILE_OFFSET_BITS=64 -I$(SRC) -I/usr/local/include
++LDFLAGS  = -O2 -L/usr/local/lib
+
+ C_TARGETS	 = isohybrid gethostip memdiskfind
+ SCRIPT_TARGETS	 = mkdiskimage

@@ -15,7 +15,7 @@
  	mtools/syslinux linux/syslinux extlinux/extlinux
 -ISUBDIRS = libinstaller mtools linux extlinux utils
 +#ISUBDIRS = libinstaller mtools linux extlinux utils
-+ISUBDIRS = libinstaller mtools
++ISUBDIRS = libinstaller mtools utils
  
  # Things to install in /usr/bin
  INSTALL_BIN   =	mtools/syslinux
