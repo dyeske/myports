@@ -13,17 +13,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	nasm:devel/nasm
 RUN_DEPENDS=	mtools:filesystems/mtools
-LIB_DEPENDS=	libicudata.so:devel/icu \
-		libuuid.so:misc/libuuid
+LIB_DEPENDS+=	libuuid.so:misc/libuuid
 
-USES=		perl5 gmake tar:xz libtool:build
+USES=		perl5 gmake tar:xz
 USE_PERL5=	build
-CPPFLAGS+=	-I${LOCALBASE}/include
 MAKE_ARGS=	CC="${CC}"
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 ALL_TARGET=	bios
-USE_LDCONFIG=	yes
 
 PLIST_FILES=	bin/syslinux \
 		bin/isohybrid \
@@ -59,6 +56,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/man/gethostip.1 ${STAGEDIR}${PREFIX}/share/man/man1
 	${FIND} -d ${WRKSRC} -type d -empty -delete
 	${MKDIR} ${STAGEDIR}${DATADIR}
-	(cd ${WRKSRC} && ${COPYTREE_SHARE} "bios efi32 efi64" ${STAGEDIR}${DATADIR})
+	(cd ${WRKSRC} && ${COPYTREE_SHARE} "bios efi32 efi64 utils" ${STAGEDIR}${DATADIR})
 
 .include <bsd.port.mk>
