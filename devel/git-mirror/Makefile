@@ -1,11 +1,11 @@
 PORTNAME=	git-mirror
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.14.11
+DISTVERSION=	0.14.17
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/bachp/git-mirror/releases/download/v${PORTVERSION}/
 
-MAINTAINER=	ports@FreeBSD.org
-COMMENT=	A utility to mirror git repositories
+MAINTAINER=	dyeske@gmail.com
+COMMENT=	Mirrors GitLan, GitHub, and other git repositories
 WWW=		https://github.com/bachp/git-mirror
 
 LICENSE=	MIT
@@ -15,13 +15,12 @@ USES=		cargo
 USE_GITHUB=	yes
 GH_ACCOUNT=	bachp
 
-CARGO_CRATES=	clap-4.4.6 \
-		colored-1.9.3 \
-		env_logger-0.10.0 \
+CARGO_CRATES=	colored-1.9.3 \
+		env_logger-0.11.10 \
 		term-0.7.0 \
 		junit-report-0.8.0 \
 		regex-1.9.1 \
-		libc-0.2.149 \
+		libc-0.2.183 \
 		termcolor-1.3.0 \
 		winapi-x86_64-pc-windows-gnu-0.4.0 \
 		is-terminal-0.4.9 \
@@ -31,7 +30,6 @@ CARGO_CRATES=	clap-4.4.6 \
 		anstream-0.6.0 \
 		heck-0.4.0 \
 		strsim-0.10.0 \
-		clap_lex-0.5.0 \
 		normalize-line-endings-0.3.0 \
 		itertools-0.10.3 \
 		float-cmp-0.9.0 \
@@ -137,7 +135,6 @@ CARGO_CRATES=	clap-4.4.6 \
 		errno-0.3.1 \
 		linux-raw-sys-0.4.3 \
 		foreign-types-shared-0.1.1 \
-		openssl-src-111.15.0+1.1.1k \
 		linux-raw-sys-0.3.8 \
 		tokio-native-tls-0.3.0 \
 		tokio-1.28.1 \
@@ -162,10 +159,7 @@ CARGO_CRATES=	clap-4.4.6 \
 		vcpkg-0.2.15 \
 		pkg-config-0.3.27 \
 		cc-1.0.67 \
-		openssl-macros-0.1.1 \
 		foreign-types-0.3.2 \
-		openssl-sys-0.9.89 \
-		openssl-0.10.55 \
 		want-0.3.0 \
 		socket2-0.4.9 \
 		httpdate-1.0.3 \
@@ -178,12 +172,13 @@ CARGO_CRATES=	clap-4.4.6 \
 		serde_urlencoded-0.7.1 \
 		http-0.2.9 \
 		futures-util-0.3.25 \
-		openssl-probe-0.1.5 \
 		futures-core-0.3.28 \
 		predicates-3.0.3 \
 		bytes-1.5.0 \
-		clap_builder-4.4.6 \
-		clap_derive-4.4.2 \
+		clap-4.6.1 \
+		clap_builder-4.6.0 \
+		clap_derive-4.6.1 \
+		clap_lex-1.0.0 \
 		rayon-1.8.0 \
 		base64-0.21.0 \
 		assert_cmd-2.0.12 \
