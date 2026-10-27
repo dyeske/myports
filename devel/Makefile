@@ -2510,7 +2510,6 @@
     SUBDIR += p5-DateTime-Format-Excel
     SUBDIR += p5-DateTime-Format-Flexible
     SUBDIR += p5-DateTime-Format-HTTP
-    SUBDIR += p5-DateTime-Format-IBeat
     SUBDIR += p5-DateTime-Format-ICal
     SUBDIR += p5-DateTime-Format-ISO8601
     SUBDIR += p5-DateTime-Format-Mail
@@ -3889,7 +3888,6 @@
     SUBDIR += p5-Test-XML
     SUBDIR += p5-Test-XML-Valid
     SUBDIR += p5-Test-YAML
-    SUBDIR += p5-Test-YAML-Meta
     SUBDIR += p5-Test-YAML-Valid
     SUBDIR += p5-Test-utf8
     SUBDIR += p5-Test2-Harness
@@ -4354,6 +4352,8 @@
     SUBDIR += php-pie
     SUBDIR += php-raphf
     SUBDIR += php-swoole
+    SUBDIR += php80-APCu
+    SUBDIR += php80-arcanist
     SUBDIR += php82-ffi
     SUBDIR += php82-gettext
     SUBDIR += php82-intl
@@ -5121,6 +5121,7 @@
     SUBDIR += py-flynt
     SUBDIR += py-foolscap
     SUBDIR += py-forbiddenfruit
+    SUBDIR += py-forklib
     SUBDIR += py-fortranformat
     SUBDIR += py-freebsd
     SUBDIR += py-freebsd-sysctl
@@ -5486,6 +5487,7 @@
     SUBDIR += py-minimongo
     SUBDIR += py-minio
     SUBDIR += py-mirakuru
+    SUBDIR += py-mktestdocs
     SUBDIR += py-mmh3
     SUBDIR += py-mock
     SUBDIR += py-mockito
@@ -8275,6 +8277,7 @@
     SUBDIR += rubygem-rb-kqueue
     SUBDIR += rubygem-rblineprof
     SUBDIR += rubygem-rbs
+    SUBDIR += rubygem-rbs-gitlab
     SUBDIR += rubygem-rbs_json_schema
     SUBDIR += rubygem-rbtrace
     SUBDIR += rubygem-rbtree
@@ -8690,7 +8693,6 @@
     SUBDIR += shell-toolbox
     SUBDIR += shflags
     SUBDIR += shfmt
-    SUBDIR += shiboken2
     SUBDIR += shiboken6
     SUBDIR += shiboken6-tools
     SUBDIR += shmap
