@@ -1,5 +1,6 @@
 PORTNAME=	ncnn
 DISTVERSION=	20261020
+PORTREVISION=	3
 CATEGORIES=	misc # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -21,6 +22,7 @@ GH_ACCOUNT=	Tencent
 
 CMAKE_ON=		NCNN_SYSTEM_GLSLANG \
 			NCNN_SHARED_LIB
+CMAKE_ARGS=		-DNCNN_VERSION=1000 # prevent this cmake operator: string(TIMESTAMP NCNN_VERSION "%Y%m%d") that makes NCNN_VERSION variable in time
 CMAKE_TESTING_ON=	NCNN_BUILD_TESTS
 
 OPTIONS_DEFINE=		VULKAN
@@ -28,7 +30,7 @@ OPTIONS_DEFAULT=	VULKAN
 
 VULKAN_DESC=		Vulkan compute support
 VULKAN_BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers \
-		glslangValidator:graphics/glslang
+			glslangValidator:graphics/glslang
 VULKAN_LIB_DEPENDS=	libvulkan.so:graphics/vulkan-loader
 VULKAN_CMAKE_BOOL=	NCNN_VULKAN
 
